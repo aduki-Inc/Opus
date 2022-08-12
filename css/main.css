@@ -10,7 +10,6 @@ main {
     /*  border: 1px solid blue;*/
     background-color: var(--bg-color-one);
     padding: 20px;
-    box-shadow: var(--box-shadow);
 }
 
 .welcome>.greeting {

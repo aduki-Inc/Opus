@@ -6,6 +6,9 @@ html{
     line-height: 1.15;
     background-color: var(--bg-color);
 }
+html.sr .load-hidden {
+    visibility: hidden;
+}
 body{
     margin: 0%;
     font-size: 1rem;
