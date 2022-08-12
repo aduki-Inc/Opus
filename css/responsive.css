@@ -30,7 +30,7 @@
     .most-read>.most-read-articles{
         flex-flow: column;
     }
-    .most-read-articles>.most-read-article .most-read-article-image{
+.most-read-article>.most-read-article-image{
         height: 300px;
     }
     footer>.copyright{
@@ -69,7 +69,6 @@
 .best-article>.best-article-image{
     width: 80%;
     min-height: 200px;
-    border: 2px solid teal;
 }
 .editors-pick>.editors-articles .editors-article{
     display: flex;
@@ -92,6 +91,80 @@
     /* Global */
     .under-title {
         font-size: .95em;
+    }
+    .article-title{
+        font-size: 1.2em;
+    }
+    /* End Of Global */
+    .under-title>.explore {
+        font-size: .9;
+    }
+    .welcome>.welcome-articles{
+       flex-flow: row;
+        overflow-x: scroll;
+        gap: 30px;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+    .welcome-articles>.welcome-article{
+        flex: 0 0 auto;
+        display: inline-flex;
+        width: 100%;
+        padding: 5px 5%;
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .welcome-articles>.welcome-article .welcome-image {
+        align-self: center;
+        width: 90%;
+        height: 150px;
+    }
+  .editors-article>.editors-article-image{
+        width: 90%;
+        max-height: 300px;
+        align-self: center;
+    }
+
+    .topics{
+        padding:10px 0%;
+    }
+    .topics>.topic-list{
+        padding: 0%;
+    }
+
+
+
+
+    footer{
+        display: flex;
+        flex-flow: column;
+        margin: 0%;
+    }
+    footer>.footer-section{
+        margin: 5px;
+        padding: 0%;
+    }
+    footer>.copyright{
+        padding: 0%;
+    }
+    footer>.copyright .down-co{
+        flex-flow: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        padding-left: 10px;
+        gap: 5px;
+        margin: 0%;
+        padding: 0%;
+        margin-bottom: 20px;
+    }
+    .copyright>.down-co a{
+        padding: 2px;
+        margin: 0%;
+    }
+    .copyright>.down-co p{
+        margin: 0%;
+        padding: 0%;
     }
 }
 }
