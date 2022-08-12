@@ -8,13 +8,15 @@ main {
 
 .welcome {
     /*  border: 1px solid blue;*/
-    background-color: var(--background-color);
+    background-color: var(--bg-color-one);
+    padding: 20px;
+    box-shadow: var(--box-shadow);
 }
 
 .welcome>.greeting {
     width: 100%;
     /*  border: 1px solid blue;*/
-    color: var(--title-color);
+    color: var(--title-one-color);
     font-weight: bold;
 }
 
@@ -128,6 +130,7 @@ main {
 main>.best {
     position: relative;
     /*  border: 1px solid blue;*/
+    padding: 20px;
     background-color: var(--background-color);
 }
 
@@ -198,15 +201,16 @@ main>.best {
     padding-left: 5px;
     font-size: 1.15em;
     line-height: 1.5em;
+    color: var(--summery-color);
 }
 
 .add-to {
     background-color: #0078d0;
     border: 0;
-    color: var(--background-color);
+    color: var(--button-text-color);
     cursor: pointer;
     display: inline-block;
-    margin-left: 5px;
+    margin: 15px 5px;
     font-size: 16px;
     font-weight: 600;
     outline: 0;
@@ -281,8 +285,8 @@ main>.best {
 .editors-pick{
   /*  border: 1px solid blue;*/
   display: block;
-  margin-top: 30px;
-  background-color: var(--background-color);
+  padding: 20px;
+  background-color: var(--bg-color-one);
 }
 .editors-pick>.editors-articles{
    /* border: 1px solid rgb(0, 255, 157);*/
@@ -326,7 +330,8 @@ main>.best {
 .most-read{
     /*  border: 1px solid blue;*/
     display: block;
-    margin: 50px 0%;
+    padding: 20px;
+    background-color: var(--background-color);
   }
   .most-read>.most-read-articles{
      /* border: 1px solid rgb(0, 255, 157);*/
@@ -359,10 +364,15 @@ main>.best {
   .topics{
    /* border: 1px solid rgb(0, 255, 157);*/
     background-color: var(--background-color);
-    padding: 20px;
     display: flex;
     align-items: center;
+    flex-flow: column;
     justify-content: space-around;
+    padding: 20px;
+  }
+  .discover-topis{
+    margin: 0%;
+    color: var(--title-color);
   }
   .topics>.topic-list{
   /*  border: 1px solid rgb(0, 255, 157);*/
@@ -376,8 +386,9 @@ main>.best {
     list-style-type: none;
   }
   .topics>.topic-list li{
-    border: 1px solid #0079d08f;
+    border: 1px solid var(--border-color);
     cursor: pointer;
+    color: var(--title-one-color);
     padding: 5px 15px;
     text-align: center;
     -webkit-border-radius: 50px;
