@@ -1,0 +1,110 @@
+/* CSS */
+header{
+    border-bottom: 1px solid #0079d02a;
+    background-color: var(--background-color);
+    z-index: 2;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 5%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.site-logo>.site-name{
+  color: var(--accent-color);
+}
+header>.header-links{
+ /*  border: 1px solid #0078d0;*/
+    height: 100%;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0%;
+}
+header>.header-links .header-list-item{
+   /*border: 1px solid #0078d0;*/
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    height: 100%;
+    padding: 0%;
+}
+.header-links>.header-list-item .header-link{
+   /* border: 5px solid #d000a3;*/
+   box-sizing: border-box;
+    text-decoration: none;
+    height: 100%;
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    padding: 10px 15px;
+    color: var(--title-one-color);
+}
+.header-links>.header-list-item .active-header-link{
+    border-bottom: 4px solid var(--accent-color);
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.header-links>.header-list-item .header-link:hover{
+    color: var(--accent-color);
+}
+/* THEME SWITCHER */
+.theme-switcher{
+  display: inline-block;
+  font-size: 1.1em;
+  font-weight: light;
+  cursor: pointer;
+  margin: 0%;
+  height: 100%;
+  padding: 10px 10px;
+}
+.getting-started {
+  background-color: #0078d0;
+  border: 0;
+  color: var(--background-color);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  outline: 0;
+  padding: 5px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 20px;
+  transition: all .3s;
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+}
+
+.getting-started:before {
+  background-color: initial;
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 125px;
+  content: "";
+  height: 50%;
+  left: 4%;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  transition: all .3s;
+  width: 92%;
+}
+
+.getting-started:hover {
+  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+  transform: scale(1.05);
+}
