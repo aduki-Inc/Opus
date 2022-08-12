@@ -152,11 +152,11 @@ main>.best {
     /*  border: 1px solid blue;*/
 }
 
-.best-articles>.large-article .best-article-image {
+.large-article>.best-article-image {
     width: 90%;
     min-height: 250px;
     padding: 5px;
-    border: 1px solid rgba(0, 0, 255, 0.507);
+  /*  border: 1px solid rgba(0, 0, 255, 0.507);*/
 }
 .best-article>.best-article  .best-article-image{
     width: 98%;
