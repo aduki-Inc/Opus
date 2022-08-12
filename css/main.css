@@ -1,10 +1,9 @@
 main {
     margin-top: 50px;
     margin: 80px 5%;
-}
-
-main>div {
-    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 .welcome {
@@ -358,13 +357,17 @@ main>.best {
 
   /* TOPICS */
   .topics{
-    border: 1px solid rgb(0, 255, 157);
+   /* border: 1px solid rgb(0, 255, 157);*/
+    background-color: var(--background-color);
     padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
   .topics>.topic-list{
-    border: 1px solid rgb(0, 255, 157);
-    padding: 2.5%;
-    width: 90%;
+  /*  border: 1px solid rgb(0, 255, 157);*/
+    padding: 20px;
+    width: 85%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -373,11 +376,24 @@ main>.best {
     list-style-type: none;
   }
   .topics>.topic-list li{
-    border: 1px solid rgb(0, 255, 157);
-    padding: 5px 10px;
+    border: 1px solid #0079d08f;
+    cursor: pointer;
+    padding: 5px 15px;
+    text-align: center;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
     border-radius: 50px;
+}
+.topics>.topic-list .active-list{
+    background-color: #0079d0b9;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+}
+.topics>.topic-list li:hover{
+    background-color: #0079d0b9;
+    color: #fff;
+    border: none;
 }
