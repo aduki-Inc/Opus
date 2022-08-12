@@ -1,0 +1,22 @@
+footer{
+    border: 1px solid blueviolet;
+    display: grid;
+    margin: 10px 5%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+footer>.footer-section{
+    border: 1px solid blue;
+}
+footer>.copyright{
+    grid-column: 1/5;
+    border: 1px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer>.copyright .down-co{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border: 1px solid blue;
+}
