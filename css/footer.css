@@ -13,7 +13,7 @@ footer>.footer-section{
 }
 footer>.footer-section h3{
     margin: 5px 5px;
-    color: var(-article-title-color);
+    color: var(--article-title-color);
 }
 footer>.footer-section .footer-links{
     list-style: none;
@@ -23,7 +23,7 @@ footer>.footer-section .footer-links{
 .footer-section>.footer-links a{
     text-decoration: none;
     display: inline-block;
-    color: var(--under-title-color);
+    color: var(--footer-link-color);
     font-size: 1em;
     margin-bottom: 5px;
 }
@@ -50,6 +50,7 @@ footer>.copyright .down-co{
 }
 .copyright>.down-co p{
     padding: 2px 10px;
+    color: var(--under-title-color);
 }
 
 .down-co>p a,
@@ -57,7 +58,7 @@ footer>.copyright .down-co{
 .copyright>.social-links a{
     padding-left: 5px;
     text-decoration: none;
-    color: var(--under-title-color);
+    color: var(--footer-link-color);
 }
 .down-co>p a:hover,
 .down-co>a:hover,
@@ -71,8 +72,9 @@ footer>.copyright .down-co{
 .copyright>.social-links h3{
     margin: 0%;
     padding: 5px 0px;
-    color: var(-article-title-color);
+    color: var(--article-title-color);
 }
 .copyright>.social-links a{
     padding: 5px 5px;
+    color: var(--footer-link-color);
 }
