@@ -12,5 +12,22 @@
     }
 }
 @media screen and (max-width: 800px){
-
+    .welcome>.welcome-articles{
+        flex-flow: column;
+        align-items: flex-start;
+    }
+    .editors-pick>.editors-articles .editors-article{
+        width: 100%;
+    }
+    .editors-articles>.editors-article .editors-article-image{
+        width: 300px;
+        height: 80%;
+        align-self: center;
+    }
+    .most-read>.most-read-articles{
+        flex-flow: column;
+    }
+    .most-read-articles>.most-read-article .most-read-article-image{
+        height: 300px;
+    }
 }
