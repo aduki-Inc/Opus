@@ -51,6 +51,8 @@ body{
         --button-text-color: rgb(255, 255, 255);
         --border-color: #0079d08f;
 
+        --bg-color-one: #fff;
+
         --box-shadow: none;
     }
   }
