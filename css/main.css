@@ -9,6 +9,7 @@ main {
 .welcome {
     /*  border: 1px solid blue;*/
     background-color: var(--background-color);
+    padding: 20px;
 }
 
 .welcome>.greeting {
@@ -128,6 +129,7 @@ main {
 main>.best {
     position: relative;
     /*  border: 1px solid blue;*/
+    padding: 20px;
     background-color: var(--background-color);
 }
 
@@ -198,6 +200,7 @@ main>.best {
     padding-left: 5px;
     font-size: 1.15em;
     line-height: 1.5em;
+    color: var(--summery-color);
 }
 
 .add-to {
@@ -281,7 +284,7 @@ main>.best {
 .editors-pick{
   /*  border: 1px solid blue;*/
   display: block;
-  margin-top: 30px;
+  padding: 20px;
   background-color: var(--background-color);
 }
 .editors-pick>.editors-articles{
@@ -326,7 +329,7 @@ main>.best {
 .most-read{
     /*  border: 1px solid blue;*/
     display: block;
-    margin: 50px 0%;
+    padding: 20px;
   }
   .most-read>.most-read-articles{
      /* border: 1px solid rgb(0, 255, 157);*/
@@ -359,10 +362,10 @@ main>.best {
   .topics{
    /* border: 1px solid rgb(0, 255, 157);*/
     background-color: var(--background-color);
-    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding: 20px;
   }
   .topics>.topic-list{
   /*  border: 1px solid rgb(0, 255, 157);*/

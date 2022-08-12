@@ -1,6 +1,7 @@
 footer{
    /* border: 1px solid blueviolet;*/
     display: grid;
+    padding: 20px;
     margin: 20px 5%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: var(--background-color);
@@ -35,7 +36,7 @@ footer>.copyright{
     grid-column: 1/5;
     padding: 30px 5px;
   /*  border: 1px solid blue;*/
-  border-top: 1px solid rgba(31, 29, 29, 0.226);
+ /* border-top: 1px solid rgba(31, 29, 29, 0.226);*/
     display: flex;
     align-items: center;
     justify-content: space-between;
