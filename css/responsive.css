@@ -1,0 +1,16 @@
+@media screen and (max-width: 1000px){
+    header{
+        margin: 0% ;
+        padding: 0%;
+    }
+    .header-links>.header-list-item .header-link{
+        padding: 10px 10px;
+    }
+    main,
+    footer{
+        margin: 40px 10px;
+    }
+}
+@media screen and (max-width: 800px){
+
+}
