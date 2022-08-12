@@ -365,8 +365,13 @@ main>.best {
     background-color: var(--background-color);
     display: flex;
     align-items: center;
+    flex-flow: column;
     justify-content: space-around;
     padding: 20px;
+  }
+  .discover-topis{
+    margin: 0%;
+    color: var(--title-color);
   }
   .topics>.topic-list{
   /*  border: 1px solid rgb(0, 255, 157);*/
@@ -380,8 +385,9 @@ main>.best {
     list-style-type: none;
   }
   .topics>.topic-list li{
-    border: 1px solid #0079d08f;
+    border: 1px solid var(--border-color);
     cursor: pointer;
+    color: var(--title-one-color);
     padding: 5px 15px;
     text-align: center;
     -webkit-border-radius: 50px;

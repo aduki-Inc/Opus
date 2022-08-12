@@ -13,6 +13,7 @@ footer>.footer-section{
 }
 footer>.footer-section h3{
     margin: 5px 5px;
+    color: var(-article-title-color);
 }
 footer>.footer-section .footer-links{
     list-style: none;
@@ -70,6 +71,7 @@ footer>.copyright .down-co{
 .copyright>.social-links h3{
     margin: 0%;
     padding: 5px 0px;
+    color: var(-article-title-color);
 }
 .copyright>.social-links a{
     padding: 5px 5px;
