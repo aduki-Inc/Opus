@@ -206,10 +206,10 @@ main>.best {
 .add-to {
     background-color: #0078d0;
     border: 0;
-    color: var(--background-color);
+    color: var(--button-text-color);
     cursor: pointer;
     display: inline-block;
-    margin-left: 5px;
+    margin: 15px 5px;
     font-size: 16px;
     font-weight: 600;
     outline: 0;
@@ -330,6 +330,7 @@ main>.best {
     /*  border: 1px solid blue;*/
     display: block;
     padding: 20px;
+    background-color: var(--background-color);
   }
   .most-read>.most-read-articles{
      /* border: 1px solid rgb(0, 255, 157);*/
