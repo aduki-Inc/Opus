@@ -26,8 +26,10 @@ body{
         --border-color: rgba(9, 205, 240, 0.445);
         --footer-link-color: #666;
 
+        --box-shadow: #e8e8ee 0 10px 20px -10px;
+
         --background-color: #0f0f1a;
-        --bg-user: #0a0a0f;
+        --bg-color-one: #0a0a0f;
     }
   }
 
@@ -43,5 +45,7 @@ body{
         --footer-link-color: #666;
         --button-text-color: rgb(255, 255, 255);
         --border-color: #0079d08f;
+
+        --box-shadow: none;
     }
   }

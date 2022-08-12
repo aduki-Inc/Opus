@@ -8,8 +8,9 @@ main {
 
 .welcome {
     /*  border: 1px solid blue;*/
-    background-color: var(--background-color);
+    background-color: var(--bg-color-one);
     padding: 20px;
+    box-shadow: var(--box-shadow);
 }
 
 .welcome>.greeting {
@@ -285,7 +286,7 @@ main>.best {
   /*  border: 1px solid blue;*/
   display: block;
   padding: 20px;
-  background-color: var(--background-color);
+  background-color: var(--bg-color-one);
 }
 .editors-pick>.editors-articles{
    /* border: 1px solid rgb(0, 255, 157);*/
