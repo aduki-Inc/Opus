@@ -8,7 +8,10 @@
     }
     main,
     footer{
-        margin: 40px 10px;
+        margin: 30px 10px;
+    }
+    main{
+        margin-top: 60px;
     }
 }
 @media screen and (max-width: 800px){
@@ -29,5 +32,8 @@
     }
     .most-read-articles>.most-read-article .most-read-article-image{
         height: 300px;
+    }
+    footer>.copyright{
+        flex-flow: column;
     }
 }
