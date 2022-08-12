@@ -1,14 +1,16 @@
 footer{
     border: 1px solid blueviolet;
     display: grid;
-    margin: 10px 5%;
+    margin: 50px 5%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 footer>.footer-section{
     border: 1px solid blue;
+    margin: 30px 5px;
 }
 footer>.copyright{
     grid-column: 1/5;
+    padding: 30px 5px;
     border: 1px solid blue;
     display: flex;
     align-items: center;
@@ -19,4 +21,15 @@ footer>.copyright .down-co{
     gap: 20px;
     align-items: center;
     border: 1px solid blue;
+}
+.copyright>.social-links{
+    border: 1px solid blue;
+    margin: 5px 30px;
+}
+.copyright>.social-links h3{
+    margin: 0%;
+    padding: 5px 0px;
+}
+.copyright>.social-links a{
+    padding: 2px 5px;
 }
