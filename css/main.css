@@ -15,7 +15,7 @@ main {
 .welcome>.greeting {
     width: 100%;
     /*  border: 1px solid blue;*/
-    color: var(--title-color);
+    color: var(--title-one-color);
     font-weight: bold;
 }
 

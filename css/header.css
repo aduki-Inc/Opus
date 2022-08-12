@@ -9,7 +9,7 @@ header{
     height: 50px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0% 5%;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
@@ -63,7 +63,6 @@ header>.header-links .header-list-item{
   cursor: pointer;
   margin: 0%;
   height: 100%;
-  padding: 10px 10px;
 }
 .getting-started {
   background-color: #0078d0;
