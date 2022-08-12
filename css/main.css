@@ -96,7 +96,7 @@ main {
     margin: 20px;
     width: 120px;
     height: 90px;
-    border: 1px solid rgb(0, 255, 157);
+   /* border: 1px solid rgb(0, 255, 157);*/
 }
 
 .welcome-article>.welcome-image img {
@@ -162,7 +162,7 @@ main>.best {
     width: 98%;
     height: 60%;
     padding: 5px;
-    border: 1px solid rgb(0, 255, 157);
+   /* border: 1px solid rgb(0, 255, 157);*/
 }
 
 .best-article .best-article-image img {
@@ -306,7 +306,7 @@ main>.best {
     column-gap: 10px;
 }
 .editors-articles>.editors-article .editors-article-image{
-    border: 1px solid rgb(0, 255, 157);
+   /* border: 1px solid rgb(0, 255, 157);*/
     grid-column: 1/2;
     grid-row: 1/5;
     min-width: 300px;
@@ -344,7 +344,7 @@ main>.best {
       gap: 20px;
   }
   .most-read-articles>.most-read-article .most-read-article-image{
-      border: 1px solid rgb(0, 255, 157);
+    /*  border: 1px solid rgb(0, 255, 157);*/
       min-width: 150px;
       height: 200px;
       padding: 5px;
