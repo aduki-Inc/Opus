@@ -5,11 +5,15 @@ main {
     flex-direction: column;
     gap: 50px;
 }
+.mobile-menu{
+    display: none;
+}
 
 .welcome {
     /*  border: 1px solid blue;*/
     background-color: var(--bg-color-one);
     padding: 20px;
+    
 }
 
 .welcome>.greeting {
@@ -92,7 +96,7 @@ main {
     margin: 20px;
     width: 120px;
     height: 90px;
-    border: 1px solid rgb(0, 255, 157);
+   /* border: 1px solid rgb(0, 255, 157);*/
 }
 
 .welcome-article>.welcome-image img {
@@ -148,17 +152,17 @@ main>.best {
     /*  border: 1px solid blue;*/
 }
 
-.best-articles>.large-article .best-article-image {
-    width: 98%;
+.large-article>.best-article-image {
+    width: 90%;
     min-height: 250px;
     padding: 5px;
-    border: 1px solid rgba(0, 0, 255, 0.507);
+  /*  border: 1px solid rgba(0, 0, 255, 0.507);*/
 }
-.best-article>.best-article-image  .best-article-image{
+.best-article>.best-article  .best-article-image{
     width: 98%;
     height: 60%;
     padding: 5px;
-    border: 1px solid rgb(0, 255, 157);
+   /* border: 1px solid rgb(0, 255, 157);*/
 }
 
 .best-article .best-article-image img {
@@ -302,7 +306,7 @@ main>.best {
     column-gap: 10px;
 }
 .editors-articles>.editors-article .editors-article-image{
-    border: 1px solid rgb(0, 255, 157);
+   /* border: 1px solid rgb(0, 255, 157);*/
     grid-column: 1/2;
     grid-row: 1/5;
     min-width: 300px;
@@ -340,7 +344,7 @@ main>.best {
       gap: 20px;
   }
   .most-read-articles>.most-read-article .most-read-article-image{
-      border: 1px solid rgb(0, 255, 157);
+    /*  border: 1px solid rgb(0, 255, 157);*/
       min-width: 150px;
       height: 200px;
       padding: 5px;

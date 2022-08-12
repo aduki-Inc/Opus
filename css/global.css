@@ -22,7 +22,7 @@ body{
         --title-one-color:#fff;
         --title-color: #0078d0;
         --author-link-color: rgb(16, 143, 165);
-        --article-title-color:#ececf5;
+        --article-title-color:rgba(102,247,113,1);
         --under-title-color: rgb(199, 197, 197);
         --summery-color: rgb(226, 224, 224);
         --button-text-color: rgb(199, 249, 255);
