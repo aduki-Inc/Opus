@@ -91,10 +91,6 @@
 }
 
 @media screen and (max-width: 500px) {
-    header {
-        display: none;
-    }
-
     html,
     body {
         margin: 0%;
@@ -303,9 +299,9 @@
     }
     header{
         z-index: 2;
-        display: flex;
+        display: none;
         flex-flow: column;
-        position: absolute;
+        position: fixed;
         border: unset;
         box-shadow: unset;
         height: max-content;
