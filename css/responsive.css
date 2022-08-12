@@ -76,7 +76,22 @@
     flex-flow: column;
     align-items: center;
 }
-@media screen and (max-width: 690px){
-    
+@media screen and (max-width: 500px){
+    header{
+        display: none;
+    }
+    html,
+    body{
+        margin: 0%;
+    }
+    main{
+        margin-left: 8px;
+        margin-right: 8px;
+        padding: 0%;
+    }
+    /* Global */
+    .under-title {
+        font-size: .95em;
+    }
 }
 }
