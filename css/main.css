@@ -149,12 +149,12 @@ main>.best {
 }
 
 .best-articles>.large-article .best-article-image {
-    width: 98%;
+    width: 90%;
     min-height: 250px;
     padding: 5px;
     border: 1px solid rgba(0, 0, 255, 0.507);
 }
-.best-article>.best-article-image  .best-article-image{
+.best-article>.best-article  .best-article-image{
     width: 98%;
     height: 60%;
     padding: 5px;
