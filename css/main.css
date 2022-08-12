@@ -5,11 +5,15 @@ main {
     flex-direction: column;
     gap: 50px;
 }
+.mobile-menu{
+    display: none;
+}
 
 .welcome {
     /*  border: 1px solid blue;*/
     background-color: var(--bg-color-one);
     padding: 20px;
+    
 }
 
 .welcome>.greeting {
