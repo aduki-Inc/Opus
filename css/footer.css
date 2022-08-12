@@ -8,6 +8,14 @@ footer>.footer-section{
     border: 1px solid blue;
     margin: 30px 5px;
 }
+footer>.footer-section h3{
+    margin: 0% 5px;
+}
+footer>.footer-section .footer-links{
+    list-style: none;
+    margin: 0%;
+    padding: 5px 10px;
+}
 footer>.copyright{
     grid-column: 1/5;
     padding: 30px 5px;
