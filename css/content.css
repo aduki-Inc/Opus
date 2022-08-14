@@ -33,3 +33,19 @@
     margin: 0%;
     border: 1px solid teal;
 }
+.section>.main-content>div{
+    border: 1px solid teal;
+    box-sizing: border-box;
+}
+.section>.main-content{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 12% 80% 8%;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 10px;
+}
+.content-title{
+    grid-column: 1/3;
+}
