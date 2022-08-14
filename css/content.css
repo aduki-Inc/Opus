@@ -1,4 +1,20 @@
 .content{
     border: 1px solid teal;
-    margin: 60px 5% 5% 30px;
+    margin: 80px 5% 30px 5%;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+}
+.content>.side-bar{
+    display: inline-block;
+    position: sticky;
+    top: 80px;
+    bottom: 60px;
+    width: 20%;
+    height: max-content;
+    min-height: 300px;
+    border: 1px solid teal;
+}
+.content>.section{
+    margin-left: 20%;
 }
