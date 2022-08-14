@@ -21,7 +21,7 @@ body{
         --accent-color: #0078d0;
         --accent: #1688f0;
         --bg-color: #000;
-        --text: #e5e5e5;
+        --text: rgba(121, 250, 250, 0.904);
         --title-one-color:#fff;
         --title-color: #0078d0;
         --author-link-color: rgb(16, 143, 165);

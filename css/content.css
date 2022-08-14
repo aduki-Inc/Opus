@@ -1,10 +1,10 @@
 .content{
    /* border: 1px solid teal;*/
-    margin: 80px 4% 30px 4%;
-    padding: 5px 0px 10px 5px;
+    margin: 80px 20px 30px 20px;
+    font-size: 16px;
     position: relative;
     display: grid;
-    grid-template-columns: 20% 1fr;
+    grid-template-columns: 18% 1fr;
     column-gap: 10px;
 }
 .content>.side-bar{
@@ -27,7 +27,7 @@
     margin: 0%;
     margin-bottom: 20px;
     grid-column: 2/3;
-    height: 500px;
+    height: max-content;
     display: grid;
     grid-template-columns: 1fr 25%;
 }
@@ -35,18 +35,20 @@
 .section>.side-content{
     margin: 0%;
   /*  border: 1px solid teal;*/
+  height: 100%;
 }
 .section>.main-content>div{
   /*  border: 1px solid teal;*/
     box-sizing: border-box;
 }
 .section>.main-content{
+    height: max-content;
     box-sizing: border-box;
     background: var(--content-gradient);
     position: relative;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 45px 80% 5%;
+    grid-template-rows: 45px minmax(auto, max-content) 5%;
     column-gap: 10px;
     row-gap: 10px;
 }
@@ -70,15 +72,20 @@
 .content-info{
     grid-column: 1/2;
     padding-left: 30px;
+    overflow-y: scroll;
+    overflow-x:unset;
+    white-space: hidden;
 }
 .content-info>.info-title{
     margin: 10px 0%;
     color: var(--article-title-color);
+    font-size: 2.5rem;
 }
 .content-info>p{
     margin: 8px 0%;
-    line-height: 1.2em;
-    color: var(--text);
+    font-size: 1.0rem;
+    line-height: 1.3em;
+    color: var(--title-one-color);
 }
 .content-info>.usage{
     margin: 8px 0px;
@@ -121,9 +128,11 @@
 }
 .content-footer{
     grid-column: 1/3;
-    padding-left: 30px;
     position: absolute;
-    bottom: 5px;
+    bottom: 10px;
+    background-color: var(--background-color);
+    padding: 10px;
+    padding-left: 30px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -165,17 +174,18 @@
 }
 .side-content>.quick-info{
     margin: 0%;
-    padding-left: 5px;
+    padding: 20px;
    /* border: 1px solid teal;*/
 }
 .side-content>.quick-info h3{
-    margin: 8px 5px;
+    margin: 5px 0px;
     color: var(--title-one-color);
 }
 .side-content>.quick-info p{
-    margin: 10px 10px;
+    margin: 10px 0px;
     line-height: 1.2em;
-    color: var(--text);
+    font-size: .9em;
+    color: rgba(121, 250, 250, 0.904);
 }
 .side-content>.number{
   /* border: 1px solid teal;*/

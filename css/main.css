@@ -13,7 +13,6 @@ main {
     /*  border: 1px solid blue;*/
     background-color: var(--bg-color-one);
     padding: 20px;
-    
 }
 
 .welcome>.greeting {

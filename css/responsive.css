@@ -279,11 +279,11 @@
         color: var(--site-name-color);
         background-color: var(--background-color);
         box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
-        border-radius: 50px;
         -webkit-border-radius: 50px;
         -moz-border-radius: 50px;
         -ms-border-radius: 50px;
         -o-border-radius: 50px;
+        border-radius: 50px;
 }
 
     .button-88 {
@@ -303,15 +303,15 @@
         border: none;
         box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
         letter-spacing: 0.05em;
-        border-radius: 50px;
         cursor: pointer;
-        user-select: none;
         -webkit-user-select: none;
+        user-select: none;
         touch-action: manipulation;
         -webkit-border-radius: 50px;
         -moz-border-radius: 50px;
         -ms-border-radius: 50px;
         -o-border-radius: 50px;
+        border-radius: 50px;
     }
 
     .button-88:hover {
