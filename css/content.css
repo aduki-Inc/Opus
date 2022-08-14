@@ -10,6 +10,7 @@
 .content>.side-bar{
     display: inline-block;
     grid-column: 1/2;
+    box-shadow: 0em 0.5em 2em -1.5em #000;
     position: -webkit-sticky;
     position: sticky;
     top: 50px;
@@ -17,12 +18,12 @@
     width: 100%;
     height: max-content;
     min-height: 300px;
-    border: 1px solid teal;
+   /* border: 1px solid teal;*/
 }
 .content>.section{
   /*  border: 1px solid rgb(23, 0, 128);*/
     background-color: var(--background-color);
-    box-shadow: 0em 0.5em 2em -1em #03030398;
+    box-shadow: 0em 0.5em 2em -1.5em #000;
     margin: 0%;
     margin-bottom: 20px;
     grid-column: 2/3;
@@ -41,7 +42,7 @@
 }
 .section>.main-content{
     box-sizing: border-box;
-    background: linear-gradient(350deg, rgb(240, 247, 241) 0%, rgb(255, 255, 255) 100%);
+    background: linear-gradient(350deg, rgba(43, 235, 187, 0.151) 1%, rgba(43, 235, 187, 0.151) 100%);
     position: relative;
     display: grid;
     grid-template-columns: 2fr 1fr;
