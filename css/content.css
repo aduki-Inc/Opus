@@ -17,7 +17,7 @@
     width: 100%;
     height: max-content;
     min-height: 500px;
-    background-color: rgba(43, 235, 187, 0.151);
+    background: var(--content-gradient);
    /* border: 1px solid teal;*/
 }
 .content>.section{
@@ -42,7 +42,7 @@
 }
 .section>.main-content{
     box-sizing: border-box;
-    background: linear-gradient(350deg, rgba(43, 235, 187, 0.151) 1%, rgba(43, 235, 187, 0.151) 100%);
+    background: var(--content-gradient);
     position: relative;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -144,7 +144,7 @@
     color: var(--accent-color);
 }
 .section>.side-content{
-    background: linear-gradient(0deg, rgb(82, 214, 120) 0%, rgb(185, 250, 191) 100%);
+    background: var(--side-content-gradient);
     display: flex;
     flex-flow: column;
     position: relative;

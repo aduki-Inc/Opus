@@ -33,6 +33,9 @@ body{
         --site-name-color: rgba(102,247,113,1);
         --link-hover-color: teal;
 
+        --content-gradient: linear-gradient(350deg, #0f0f1a 1%, #0f0f1a 100%);
+        --side-content-gradient:linear-gradient(0deg, #0a0a0f 0%, #0a0a0f 100%);
+
         --box-shadow: #e8e8ee 0 10px 20px -10px;
 
         --background-color: #0f0f1a;
@@ -58,6 +61,8 @@ body{
 
         --bg-color-one: #fff;
 
+        --content-gradient: linear-gradient(350deg, rgba(43, 235, 187, 0.151) 1%, rgba(43, 235, 187, 0.151) 100%);
+        --side-content-gradient:linear-gradient(0deg, rgb(82, 214, 120) 0%, rgb(185, 250, 191) 100%);
         --box-shadow: none;
     }
   }
