@@ -41,7 +41,7 @@
 }
 .section>.main-content{
     box-sizing: border-box;
-    background: linear-gradient(0deg, rgba(45, 236, 204, 0.233) 0%, rgb(255, 255, 255) 100%);
+    background: linear-gradient(350deg, rgba(45, 236, 204, 0.233) 0%, rgb(255, 255, 255) 100%);
     position: relative;
     display: grid;
     grid-template-columns: 2fr 1fr;
