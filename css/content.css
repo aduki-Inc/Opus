@@ -82,7 +82,7 @@
 .content-info>.info-title{
     margin: 10px 0%;
     color: var(--article-title-color);
-    font-size: 2.5rem;
+    font-size: 1.9rem;
 }
 .content-info>p{
     margin: 8px 0%;
@@ -118,10 +118,10 @@
 }
 .content-footer-links>a{
     text-decoration: none;
-    color: var(--footer-link-color);
+    color: var(--accent-color);
 }
 .content-footer-links>a:hover{
-    color: var(--accent-color);
+    color: teal;
 }
 .section>.side-content{
     background: var(--side-content-gradient);
