@@ -54,12 +54,14 @@
     margin: 0%;
     height: 100%;
     padding-top: 10px;
+    color: var( --title-color);
 }
 .content-info{
     grid-column: 1/2;
 }
 .content-info>.info-title{
     margin: 10px 0%;
+    color: var(--article-title-color);
 }
 .content-info>p{
     margin: 8px 0%;
