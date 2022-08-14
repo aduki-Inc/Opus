@@ -41,13 +41,18 @@
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 10% 80% 5%;
+    grid-template-rows: 8% 80% 5%;
     column-gap: 10px;
     row-gap: 10px;
     padding: 10px;
 }
 .content-title{
     grid-column: 1/3;
+}
+.content-title>h3{
+    margin: 0%;
+    height: 100%;
+    padding-top: 10px;
 }
 .content-footer{
     grid-column: 1/3;
