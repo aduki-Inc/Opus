@@ -1,6 +1,6 @@
 .content{
    /* border: 1px solid teal;*/
-    margin: 80px 20px 30px 20px;
+    margin: 80px 5% 30px 5%;
     font-size: 16px;
     position: relative;
     display: grid;
@@ -47,7 +47,7 @@
     background: var(--content-gradient);
     position: relative;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 45px minmax(auto, max-content) 5%;
     column-gap: 10px;
     row-gap: 10px;
@@ -70,11 +70,14 @@
     color: var( --title-color);
 }
 .content-info{
-    grid-column: 1/2;
+    grid-column: 1/3;
+    height: 400px;
+    padding-bottom: 40px;
     padding-left: 30px;
-    overflow-y: scroll;
+    padding-right: 10px;
+    overflow-y: auto;
     overflow-x:unset;
-    white-space: hidden;
+    white-space: unset;
 }
 .content-info>.info-title{
     margin: 10px 0%;
@@ -83,7 +86,7 @@
 }
 .content-info>p{
     margin: 8px 0%;
-    font-size: 1.0rem;
+    font-size: 1.1rem;
     line-height: 1.3em;
     color: var(--title-one-color);
 }
@@ -92,45 +95,11 @@
     margin-top: 20px;
     color: var(--title-one-color);
 }
-.content-facts{
-    grid-column: 2/3;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-items: center;
-    padding: 5px;
-}
-.content-facts>.fact-image{
-    margin: 0%;
-  /*  border: 1px solid rgb(15, 15, 2);*/
-    height: 35%;
-    width: 85%;
-}
-.content-facts>.fact-image img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.content-facts>.facts-data{
-   /* border: 1px solid brown;*/
-    text-align: start;
-    margin: 10px 0% 5px 15px;
-}
-.content-facts>.facts-data p{
-    margin: 0 0% 5px 0%;
-    line-height: 1.2em;
-    color: var(--summery-color);
-}
-.content-facts>.facts-data .facts-source{
-    font-size: .9em;
-    opacity: .8;
-    color: var(--user-link-color);
-}
 .content-footer{
     grid-column: 1/3;
     position: absolute;
     bottom: 10px;
-    background-color: var(--background-color);
+    background-color: var(--ba-color);
     padding: 10px;
     padding-left: 30px;
     width: 100%;
@@ -139,7 +108,7 @@
     justify-content: space-between;
 }
 .content-footer>.issue{
-    color: var(--user-link-color);
+    color: var(--under-title-color);
     opacity: .9;
 }
 .content-footer>.content-footer-links{
@@ -185,7 +154,7 @@
     margin: 10px 0px;
     line-height: 1.2em;
     font-size: .9em;
-    color: rgba(121, 250, 250, 0.904);
+    color: var(--quick-info);
 }
 .side-content>.number{
   /* border: 1px solid teal;*/
