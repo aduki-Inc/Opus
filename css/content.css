@@ -156,6 +156,12 @@
    /* background: var(--content-gradient);*/
     height: 45px;
     width: 100%;
+    text-align: center;
+    padding: 0%;
+    padding-top: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--accent-color);
 }
 .side-content>.quick-info{
     margin: 0%;
