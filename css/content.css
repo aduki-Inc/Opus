@@ -1,20 +1,35 @@
 .content{
     border: 1px solid teal;
     margin: 80px 5% 30px 5%;
+    padding: 5px 30px 10px 5px;
     position: relative;
-    display: flex;
-    flex-flow: column;
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    column-gap: 30px;
 }
 .content>.side-bar{
     display: inline-block;
+    grid-column: 1/2;
+    position: -webkit-sticky;
     position: sticky;
     top: 80px;
     bottom: 60px;
-    width: 20%;
+    width: 100%;
     height: max-content;
     min-height: 300px;
     border: 1px solid teal;
 }
 .content>.section{
-    margin-left: 20%;
+    border: 1px solid teal;
+    margin: 0%;
+    margin-bottom: 20px;
+    grid-column: 2/3;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 20%;
+}
+.section>.main-content,
+.section>.side-content{
+    margin: 0%;
+    border: 1px solid teal;
 }
