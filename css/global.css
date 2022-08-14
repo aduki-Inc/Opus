@@ -21,6 +21,7 @@ body{
         --accent-color: #0078d0;
         --accent: #1688f0;
         --bg-color: #000;
+        --text: #e5e5e5;
         --title-one-color:#fff;
         --title-color: #0078d0;
         --author-link-color: rgb(16, 143, 165);
@@ -35,6 +36,7 @@ body{
 
         --content-gradient: linear-gradient(350deg, #0f0f1a 1%, #0f0f1a 100%);
         --side-content-gradient:linear-gradient(0deg, #0a0a0f 0%, #0a0a0f 100%);
+        --border-bottom: rgba(0, 128, 128, 0.486);
 
         --box-shadow: #e8e8ee 0 10px 20px -10px;
 
@@ -46,6 +48,7 @@ body{
   @media (prefers-color-scheme: light) {
     :root{
         --accent-color: #0078d0;
+        --text: #091310;
         --author-link-color: rgb(16, 143, 165);
         --background-color:#fff;
         --title-one-color: #1a1a1a;
@@ -63,6 +66,7 @@ body{
 
         --content-gradient: linear-gradient(350deg, rgba(43, 235, 187, 0.151) 1%, rgba(43, 235, 187, 0.151) 100%);
         --side-content-gradient:linear-gradient(0deg, rgb(82, 214, 120) 0%, rgb(185, 250, 191) 100%);
+        --border-bottom: rgba(0, 128, 128, 0.486);
         --box-shadow: none;
     }
   }

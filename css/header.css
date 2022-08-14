@@ -11,7 +11,7 @@ header{
     align-items: center;
     justify-content: space-around;
     padding: 0% 5%;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 100px;
 }
 .site-logo>.site-name{
   color: var(--accent-color);
