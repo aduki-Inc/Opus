@@ -127,3 +127,32 @@
 .content-footer-links>a:hover{
     color: teal;
 }
+.section>.side-content{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+.side-content>.quick-info{
+    margin: 0%;
+    border: 1px solid teal;
+}
+.side-content>.quick-info h3{
+    margin: 8px 5px;
+    color: var(--article-title-color);
+}
+.side-content>.quick-info p{
+    margin: 8px 5px;
+}
+.side-content>.number{
+    border: 1px solid teal;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+.side-content>.number span{
+    display: inline-block;
+    font-size: 1.7rem;
+    color: rgba(102,247,113,1);
+}
