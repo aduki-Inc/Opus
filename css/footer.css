@@ -28,7 +28,7 @@ footer>.footer-section .footer-links{
     margin-bottom: 5px;
 }
 .footer-section>.footer-links a:hover{
-    color: var(--accent-color);
+    color:var(--link-hover-color);
 }
 hr{
     opacity: .5;
@@ -63,7 +63,7 @@ footer>.copyright .down-co{
 .down-co>p a:hover,
 .down-co>a:hover,
 .copyright>.social-links a:hover{
-    color: var(--accent-color);
+    color:var(--link-hover-color);
 }
 .copyright>.social-links{
    /* border: 1px solid blue;*/
