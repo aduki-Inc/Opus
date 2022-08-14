@@ -1,5 +1,5 @@
 .content{
-    border: 1px solid teal;
+   /* border: 1px solid teal;*/
     margin: 80px 4% 30px 4%;
     padding: 5px 0px 10px 5px;
     position: relative;
@@ -12,7 +12,7 @@
     grid-column: 1/2;
     position: -webkit-sticky;
     position: sticky;
-    top: 80px;
+    top: 50px;
     bottom: 60px;
     width: 100%;
     height: max-content;
@@ -20,7 +20,9 @@
     border: 1px solid teal;
 }
 .content>.section{
-    border: 1px solid rgb(23, 0, 128);
+  /*  border: 1px solid rgb(23, 0, 128);*/
+    background-color: var(--background-color);
+    box-shadow: 0 0.7em 1.5em -0.5em #03030398;
     margin: 0%;
     margin-bottom: 20px;
     grid-column: 2/3;
@@ -31,10 +33,10 @@
 .section>.main-content,
 .section>.side-content{
     margin: 0%;
-    border: 1px solid teal;
+  /*  border: 1px solid teal;*/
 }
 .section>.main-content>div{
-    border: 1px solid teal;
+  /*  border: 1px solid teal;*/
     box-sizing: border-box;
 }
 .section>.main-content{
@@ -42,22 +44,27 @@
     position: relative;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 8% 80% 5%;
+    grid-template-rows: 45px 80% 5%;
     column-gap: 10px;
     row-gap: 10px;
-    padding: 10px;
 }
 .content-title{
     grid-column: 1/3;
+    padding-left: 30px;
+     border-bottom: 1px solid teal;
+     display: flex;
+     align-items: center;
+     justify-items: center;
 }
-.content-title>h3{
+.content-title>h4{
     margin: 0%;
-    height: 100%;
-    padding-top: 10px;
+    padding: 0%;
+    height: max-content;
     color: var( --title-color);
 }
 .content-info{
     grid-column: 1/2;
+    padding-left: 30px;
 }
 .content-info>.info-title{
     margin: 10px 0%;
@@ -91,7 +98,7 @@
     object-fit: cover;
 }
 .content-facts>.facts-data{
-    border: 1px solid brown;
+   /* border: 1px solid brown;*/
     text-align: center;
     margin: 20px 0% 5px 0%;
 }
@@ -105,6 +112,7 @@
 }
 .content-footer{
     grid-column: 1/3;
+    padding-left: 30px;
     position: absolute;
     bottom: 5px;
     width: 100%;
@@ -122,34 +130,45 @@
 }
 .content-footer-links>a{
     text-decoration: none;
-    color: var(--footer-link-color);
+    color: var(--accent-color);
 }
 .content-footer-links>a:hover{
     color: teal;
 }
 .section>.side-content{
+    background: linear-gradient(0deg, rgb(82, 214, 120) 0%, rgb(185, 250, 191) 100%);
     display: flex;
     flex-flow: column;
-    justify-content: space-between;
+    position: relative;
+}
+.side-content>.fixed-top{
+    border-bottom: 1px solid teal;
+    height: 45px;
+    width: 100%;
 }
 .side-content>.quick-info{
     margin: 0%;
-    border: 1px solid teal;
+    padding-left: 5px;
+   /* border: 1px solid teal;*/
 }
 .side-content>.quick-info h3{
     margin: 8px 5px;
     color: var(--article-title-color);
 }
 .side-content>.quick-info p{
-    margin: 8px 5px;
+    margin: 10px 10px;
+    line-height: 1.2em;
 }
 .side-content>.number{
-    border: 1px solid teal;
+  /* border: 1px solid teal;*/
+   position: absolute;
+   bottom: 5px;
+   width: 100%;
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding-right: 20px;
+    padding: 10px 20px;
 }
 .side-content>.number span{
     display: inline-block;
