@@ -30,6 +30,7 @@ body{
         --button-text-color: rgb(199, 249, 255);
         --border-color: rgba(9, 205, 240, 0.445);
         --footer-link-color: #666;
+        --site-name-color: rgba(102,247,113,1);
 
         --box-shadow: #e8e8ee 0 10px 20px -10px;
 
@@ -51,6 +52,7 @@ body{
         --footer-link-color: #666;
         --button-text-color: rgb(255, 255, 255);
         --border-color: #0079d08f;
+        --site-name-color: rgba(20, 167, 62, 1);
 
         --bg-color-one: #fff;
 
