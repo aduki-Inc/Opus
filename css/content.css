@@ -1,11 +1,11 @@
 .content{
     border: 1px solid teal;
-    margin: 80px 5% 30px 5%;
-    padding: 5px 30px 10px 5px;
+    margin: 80px 4% 30px 4%;
+    padding: 5px 0px 10px 5px;
     position: relative;
     display: grid;
     grid-template-columns: 20% 1fr;
-    column-gap: 30px;
+    column-gap: 10px;
 }
 .content>.side-bar{
     display: inline-block;
@@ -20,13 +20,13 @@
     border: 1px solid teal;
 }
 .content>.section{
-    border: 1px solid teal;
+    border: 1px solid rgb(23, 0, 128);
     margin: 0%;
     margin-bottom: 20px;
     grid-column: 2/3;
     height: 550px;
     display: grid;
-    grid-template-columns: 1fr 20%;
+    grid-template-columns: 1fr 25%;
 }
 .section>.main-content,
 .section>.side-content{
@@ -53,6 +53,12 @@
     margin: 0%;
     height: 100%;
     padding-top: 10px;
+}
+.content-info{
+    grid-column: 1/2;
+}
+.content-info>.info-title{
+    margin: 0%;
 }
 .content-footer{
     grid-column: 1/3;
