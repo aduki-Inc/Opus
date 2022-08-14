@@ -10,20 +10,20 @@
 .content>.side-bar{
     display: inline-block;
     grid-column: 1/2;
-    box-shadow: 0em 0.5em 2em -1.5em #000;
+    box-shadow: 0em 0.5em 2em -2em #000;
     position: -webkit-sticky;
     position: sticky;
-    top: 50px;
-    bottom: 60px;
+    top: 60px;
     width: 100%;
     height: max-content;
-    min-height: 300px;
+    min-height: 500px;
+    background-color: rgba(43, 235, 187, 0.151);
    /* border: 1px solid teal;*/
 }
 .content>.section{
   /*  border: 1px solid rgb(23, 0, 128);*/
     background-color: var(--background-color);
-    box-shadow: 0em 0.5em 2em -1.5em #000;
+    box-shadow: 0em 0.5em 2em -2em #000;
     margin: 0%;
     margin-bottom: 20px;
     grid-column: 2/3;
@@ -141,7 +141,7 @@
     color: var(--footer-link-color);
 }
 .content-footer-links>a:hover{
-    color: teal;
+    color: var(--accent-color);
 }
 .section>.side-content{
     background: linear-gradient(0deg, rgb(82, 214, 120) 0%, rgb(185, 250, 191) 100%);
