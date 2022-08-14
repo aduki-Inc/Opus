@@ -69,9 +69,47 @@
     margin: 8px 0px;
     margin-top: 20px;
 }
+.content-facts{
+    grid-column: 2/3;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-items: center;
+    padding: 5px;
+}
+.content-facts>.fact-image{
+    margin: 0%;
+    border: 1px solid rgb(15, 15, 2);
+    height: 35%;
+    width: 80%;
+}
+.content-facts>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content-facts>.facts-data{
+    border: 1px solid brown;
+    text-align: center;
+    margin: 20px 0% 5px 0%;
+}
+.content-facts>.facts-data p{
+    margin: 10px 0% 5px 0%;
+}
+.content-facts>.facts-data .facts-source{
+    font-size: .9em;
+    opacity: .8;
+    color: var(--user-link-color);
+}
 .content-footer{
     grid-column: 1/3;
     position: absolute;
     bottom: 5px;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content-footer>.issue{
+    color: var();
 }
