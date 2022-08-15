@@ -38,7 +38,7 @@ body{
         --border-bottom: rgba(0, 128, 128, 0.486);
         --quick-info:rgba(121, 250, 250, 0.904);
 
-        --box-shadow: #e8e8ee 0 10px 20px -10px;
+        --shading:rgb(15, 15, 15);
 
         --background-color: #0f0f1a;
         --ba-color:#0f0f1a;
@@ -66,6 +66,7 @@ body{
 
         --bg-color-one: #fff;
         --ba-color: rgb(159, 247, 225);
+        --shading:rgb(140, 196, 186);
 
         --side-content:rgb(99, 252, 226);
         --border-bottom: rgba(0, 128, 128, 0.486);
