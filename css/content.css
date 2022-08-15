@@ -187,3 +187,6 @@ body{
     -o-border-radius: 50px;
      border-radius: 50px;
 }
+.content>.main-title{
+    border: 2px solid teal;
+}
