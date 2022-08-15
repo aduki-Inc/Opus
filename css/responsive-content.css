@@ -17,6 +17,7 @@
         display: grid;
         grid-template-columns: 1fr;
         height: max-content;
+        position: unset;
     }
     .main-content{
         display: flex;
@@ -37,6 +38,30 @@
         gap: 5px;
         flex-wrap: wrap;
         margin-bottom: 10px;
+    }
+    /* Cover Page */
+    .content>.main-title{
+        min-height: 250px;
+    }
+    .content>.main-title  .info{
+        margin-top: 80px;
+       /* border: 1px solid greenyellow;*/
+       padding-left: 20px;
+    }
+
+    .main-title>.info h1{
+        color: #fff;
+        font-size: 2.0rem;;
+    }
+    .main-title>.info h2{
+        color: rgb(239, 255, 254);
+        font-size: 1.5rem;
+        text-shadow: 0em 0.05em 0.5em rgb(55, 59, 59);
+    }
+    .main-title>.info p{
+        margin-bottom: 30px;
+        color: rgb(174, 248, 243);
+        font-size: 1.0rem;
     }
 }
 @media screen and (max-width: 500px){
