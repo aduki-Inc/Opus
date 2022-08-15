@@ -20,12 +20,13 @@ body{
     width: 100%;
     height: max-content;
     min-height: 500px;
-    background-color: var(--background-color);
+    background-color: var(--bg-color-one);
+    transition: "background .5s cubic-bezier(0.25,0.10,0.25,1.00)";
    /* border: 1px solid teal;*/
 }
 .content>.section{
-  /*  border: 1px solid rgb(23, 0, 128);*/
-    background-color: var(--background-color);
+    /*border: 1px solid rgb(23, 0, 128);
+    */
     box-shadow: 0em 0.5em 2em -2em #000;
     margin: 0%;
     margin-bottom: 20px;
@@ -33,6 +34,11 @@ body{
     height: max-content;
     display: grid;
     grid-template-columns: 1fr 25%;
+    -webkit-transition: "background .5s cubic-bezier(0.25,0.10,0.25,1.00)";
+    -moz-transition: "background .5s cubic-bezier(0.25,0.10,0.25,1.00)";
+    -ms-transition: "background .5s cubic-bezier(0.25,0.10,0.25,1.00)";
+    -o-transition: "background .5s cubic-bezier(0.25,0.10,0.25,1.00)";
+    transition: "background .5s cubic-bezier(0.25,0.10,0.25,1.00)";
 }
 .section>.main-content,
 .section>.side-content{
@@ -47,13 +53,18 @@ body{
 .section>.main-content{
     height: max-content;
     box-sizing: border-box;
-    background-color: var(--background-color);
+    background-color: var(--bg-color-one);
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 45px minmax(auto, max-content) 5%;
     column-gap: 10px;
     row-gap: 10px;
+    -webkit-transition: "background .5s cubic-bezier(0.25,0.10,0.25,1.00)";
+    -moz-transition: "background .5s cubic-bezier(0.25,0.10,0.25,1.00)";
+    -ms-transition: "background .5s cubic-bezier(0.25,0.10,0.25,1.00)";
+    -o-transition: "background .5s cubic-bezier(0.25,0.10,0.25,1.00)";
+    transition: "background .5s cubic-bezier(0.25,0.10,0.25,1.00)";
 }
 .content-title{
     box-sizing: border-box;
@@ -190,7 +201,7 @@ body{
 .content>.main-title{
    /* border: 2px solid teal;*/
     display: grid;
-    grid-template-columns: 1fr 25%;
+    grid-template-columns: 1fr 30%;
     height: 500px;
     background-image: url('/img/20220718-OmijimaIsland_ROW2080465862_UHD.jpg');
     background-repeat: no-repeat;
@@ -223,4 +234,22 @@ body{
     margin-bottom: 30px;
     color: rgb(174, 248, 243);
     font-size: 1.2rem;
+}
+.main-title>.side{
+    margin: 0%;
+    background-color: rgba(0, 0, 0, 0.342);
+    padding-left: 15px;
+}
+.main-title>.side h2{
+    margin: 0%;
+    padding: 10px 5px 0px 10px;
+    text-align: center;
+    color: var(--accent-color);
+    text-shadow: 0em 0.05em 0.6em rgb(243, 248, 248);
+    border-bottom: 3px solid var(--border-bottom);
+}
+.main-title>.side p{
+    color: #fff;
+    font-size: 1.1rem;
+    text-shadow: 0em 0.05em 0.5em rgb(55, 59, 59);
 }
