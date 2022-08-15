@@ -32,18 +32,32 @@ body{
     margin: 0%;
     padding: 10px 5px 5px 10px;
     text-align: center;
+    width: 100%;
     color: #fff;
     text-shadow: 0em 0.1em 0.3em #000;
+    border-bottom: 1px solid rgba(16, 100, 100, 0.397);
 }
 .side-bar>.section-list{
     list-style: none;
-    padding: 0%;
+    padding: 10px 0%;
     margin: 0%;
     width: 80%;
+    height: max-content;
     border: 1px solid teal;
+    display: flex;
+    flex-flow: column;
+    gap: 15px;
+    align-items: center;
 }
-.side-bar>.section-list li{
+.section-list>li {
+    height: max-content;
+    padding: 2px;
+}
+.section-list>li a{
     padding: 5px 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
     margin: 5px;
     background: linear-gradient(0deg, rgba(20, 167, 62, 1) 0%, rgba(102, 247, 113, 1) 100%);;
     border-radius: 10px;
