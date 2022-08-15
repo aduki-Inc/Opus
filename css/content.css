@@ -1,5 +1,5 @@
 body{
-    background-color: var(--background-color);
+    background-color: var(--bg-color);
 }
 .content{
    /* border: 1px solid teal;*/
@@ -7,8 +7,9 @@ body{
     font-size: 16px;
     position: relative;
     display: grid;
-    grid-template-columns: 18% 1fr;
+    grid-template-columns: 12% 1fr;
     column-gap: 10px;
+    background-color: transparent;
 }
 .content>.side-bar{
     display: inline-block;
@@ -26,7 +27,7 @@ body{
    display: flex;
    flex-flow: column;
    align-items: center;
-   gap: 30px;
+   gap: 10px;
 }
 .side-bar>.jump-to{
     margin: 0%;
@@ -41,13 +42,15 @@ body{
     list-style: none;
     padding: 10px 0%;
     margin: 0%;
-    width: 80%;
-    height: max-content;
-    border: 1px solid teal;
+    width: 100%;
+    height:auto;
+    overflow-y: auto;
+    /*border: 1px solid teal;*/
     display: flex;
     flex-flow: column;
     gap: 15px;
     align-items: center;
+    border-bottom: 1px solid rgba(16, 100, 100, 0.397)
 }
 .section-list>li {
     height: max-content;
@@ -141,6 +144,7 @@ body{
     overflow-y: auto;
     overflow-x:unset;
     white-space: unset;
+    scroll-behavior: smooth;
 }
 .content-info>.info-title{
     margin: 10px 0%;
