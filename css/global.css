@@ -15,7 +15,6 @@ body{
     font-size: 16px;
 
 }
-
 @media (prefers-color-scheme: dark) {
     :root{
         --accent-color: #0078d0;
@@ -35,7 +34,7 @@ body{
         --link-hover-color: teal;
 
         --content-gradient: linear-gradient(350deg, #0f0f1a 1%, #0f0f1a 100%);
-        --side-content-gradient:linear-gradient(0deg, #0a0a0f 0%, #0a0a0f 100%);
+        --side-content:#0a0a0f;
         --border-bottom: rgba(0, 128, 128, 0.486);
         --quick-info:rgba(121, 250, 250, 0.904);
 
@@ -68,8 +67,7 @@ body{
         --bg-color-one: #fff;
         --ba-color: rgb(159, 247, 225);
 
-        --content-gradient: linear-gradient(350deg, rgb(159, 247, 225) 1%, rgba(167, 250, 229, 0.151) 100%);
-        --side-content-gradient:linear-gradient(0deg, rgb(82, 214, 120) 0%, rgb(185, 250, 191) 100%);
+        --side-content:rgb(121, 250, 211);
         --border-bottom: rgba(0, 128, 128, 0.486);
         --box-shadow: none;
     }

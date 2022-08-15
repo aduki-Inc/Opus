@@ -55,17 +55,7 @@ header>.header-links .header-list-item{
 .header-links>.header-list-item .header-link:hover{
     color: var(--accent-color);
 }
-/* THEME SWITCHER */
-.theme-switcher{
-  display: inline-block;
-  font-size: 1.1em;
-  font-weight: light;
-  cursor: pointer;
-  margin: 0%;
-}
-.theme-switcher>i{
-  color: var(--accent-color);
-}
+
 .getting-started {
   background-color: #0078d0;
   border: 0;
