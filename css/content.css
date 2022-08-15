@@ -211,13 +211,16 @@ body{
     text-shadow: 0em 0.05em 0.5em rgb(55, 59, 59);
 }
 .main-title>.info h1{
-    color: rgb(47, 218, 209);
+    color: #fff;
+    font-size: 3.0rem;;
 }
 .main-title>.info h2{
-    color: #fff;
+    color: rgb(239, 255, 254);
+    font-size: 2rem;
     text-shadow: 0em 0.05em 0.5em rgb(55, 59, 59);
 }
 .main-title>.info p{
     margin-bottom: 30px;
-    text-shadow: 0em 0.05em 0.5em rgb(255, 255, 255);
+    color: rgb(174, 248, 243);
+    font-size: 1.2rem;
 }
