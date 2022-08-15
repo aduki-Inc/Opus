@@ -1,10 +1,10 @@
 footer{
-   /* border: 1px solid blueviolet;*/
+   border-top: 1px solid var(--border-color);
     display: grid;
     padding: 20px;
     margin: 20px 5%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    background-color: var(--bg-color-one);
+    background-color: var(--bg-color);
 }
 footer>.footer-section{
    /* border: 1px solid blue;*/
@@ -28,7 +28,7 @@ footer>.footer-section .footer-links{
     margin-bottom: 5px;
 }
 .footer-section>.footer-links a:hover{
-    color: var(--accent-color);
+    color:var(--link-hover-color);
 }
 hr{
     opacity: .5;
@@ -63,7 +63,7 @@ footer>.copyright .down-co{
 .down-co>p a:hover,
 .down-co>a:hover,
 .copyright>.social-links a:hover{
-    color: var(--accent-color);
+    color:var(--link-hover-color);
 }
 .copyright>.social-links{
    /* border: 1px solid blue;*/

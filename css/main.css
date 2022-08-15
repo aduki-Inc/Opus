@@ -13,7 +13,6 @@ main {
     /*  border: 1px solid blue;*/
     background-color: var(--bg-color-one);
     padding: 20px;
-    
 }
 
 .welcome>.greeting {
@@ -173,7 +172,7 @@ main>.best {
 
 .article-title {
     margin: 10px 0%;
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: var(--article-title-color);
     padding: 0%;
     padding-left: 5px;
@@ -393,7 +392,7 @@ main>.best {
   .topics>.topic-list li{
     border: 1px solid var(--border-color);
     cursor: pointer;
-    color: var(--title-one-color);
+    color: teal;
     padding: 5px 15px;
     text-align: center;
     -webkit-border-radius: 50px;
@@ -403,13 +402,13 @@ main>.best {
     border-radius: 50px;
 }
 .topics>.topic-list .active-list{
-    background-color: #0079d0b9;
+    background: linear-gradient(0deg, rgba(20, 167, 62, 1) 0%, rgba(102, 247, 113, 1) 100%);
     color: #fff;
     font-weight: bold;
     border: none;
 }
 .topics>.topic-list li:hover{
-    background-color: #0079d0b9;
+    background: linear-gradient(0deg, rgba(20, 167, 62, 1) 0%, rgba(102, 247, 113, 1) 100%);
     color: #fff;
     border: none;
 }

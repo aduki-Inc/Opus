@@ -15,12 +15,12 @@ body{
     font-size: 16px;
 
 }
-
 @media (prefers-color-scheme: dark) {
     :root{
         --accent-color: #0078d0;
         --accent: #1688f0;
         --bg-color: #000;
+        --text: rgba(121, 250, 250, 0.904);
         --title-one-color:#fff;
         --title-color: #0078d0;
         --author-link-color: rgb(16, 143, 165);
@@ -30,29 +30,46 @@ body{
         --button-text-color: rgb(199, 249, 255);
         --border-color: rgba(9, 205, 240, 0.445);
         --footer-link-color: #666;
+        --site-name-color: rgba(102,247,113,1);
+        --link-hover-color: teal;
 
-        --box-shadow: #e8e8ee 0 10px 20px -10px;
+        --content-gradient: linear-gradient(350deg, #0f0f1a 1%, #0f0f1a 100%);
+        --side-content:#0a0a0f;
+        --border-bottom: rgba(0, 128, 128, 0.486);
+        --quick-info:rgba(121, 250, 250, 0.904);
+
+        --shading:rgb(15, 15, 15);
 
         --background-color: #0f0f1a;
-        --bg-color-one: #0a0a0f;
+        --ba-color:#0f0f1a;
+        --bg-color-one: #0e0e0e;
     }
   }
 
   @media (prefers-color-scheme: light) {
     :root{
         --accent-color: #0078d0;
+        --text: #091310;
         --author-link-color: rgb(16, 143, 165);
         --background-color:#fff;
         --title-one-color: #1a1a1a;
         --title-color: #0078d0;
-        --article-title-color:#0a0a0f;
+        --article-title-color:#091310;
+      /*  --article-title-color:rgb(1, 161, 95);*/
         --under-title-color: #666;
         --footer-link-color: #666;
         --button-text-color: rgb(255, 255, 255);
         --border-color: #0079d08f;
+        --site-name-color: rgba(20, 167, 62, 1);
+        --link-hover-color: teal;
+        --quick-info:  #091310;
 
         --bg-color-one: #fff;
+        --ba-color: rgb(159, 247, 225);
+        --shading:rgb(140, 196, 186);
 
+        --side-content:rgb(99, 252, 226);
+        --border-bottom: rgba(0, 128, 128, 0.486);
         --box-shadow: none;
     }
   }
