@@ -42,7 +42,7 @@ body{
 
         --background-color: #0f0f1a;
         --ba-color:#0f0f1a;
-        --bg-color-one: #242424;
+        --bg-color-one: #3B3B3B;
     }
   }
 
@@ -67,7 +67,7 @@ body{
         --bg-color-one: #fff;
         --ba-color: rgb(159, 247, 225);
 
-        --side-content:rgb(121, 250, 211);
+        --side-content:rgb(99, 252, 226);
         --border-bottom: rgba(0, 128, 128, 0.486);
         --box-shadow: none;
     }
