@@ -188,5 +188,36 @@ body{
      border-radius: 50px;
 }
 .content>.main-title{
-    border: 2px solid teal;
+   /* border: 2px solid teal;*/
+    display: grid;
+    grid-template-columns: 1fr 25%;
+    height: 500px;
+    background-image: url('/img/20220718-OmijimaIsland_ROW2080465862_UHD.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content>.main-title  .info{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-left: 50px;
+    gap: 20px;
+}
+.main-title>.info h1,
+.main-title>.info h2,
+.main-title>.info p{
+    margin: 0%;
+    text-shadow: 0em 0.05em 0.5em rgb(55, 59, 59);
+}
+.main-title>.info h1{
+    color: rgb(47, 218, 209);
+}
+.main-title>.info h2{
+    color: #fff;
+    text-shadow: 0em 0.05em 0.5em rgb(55, 59, 59);
+}
+.main-title>.info p{
+    margin-bottom: 30px;
+    text-shadow: 0em 0.05em 0.5em rgb(255, 255, 255);
 }
