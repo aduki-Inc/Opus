@@ -65,7 +65,7 @@ body{
     color: rgb(255, 255, 255);
     font-weight: bold;
     margin: 5px;
-    background: linear-gradient(0deg, rgba(20, 167, 62, 1) 0%, var(--shading) 100%);;
+    background: linear-gradient(0deg, rgba(20, 167, 62, 1) 0%, var(--shading) 100%);
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
