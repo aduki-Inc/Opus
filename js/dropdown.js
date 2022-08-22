@@ -12,7 +12,7 @@ toggler.addEventListener("click", () =>{
     else{
         mobile.style.setProperty("display", 'flex');
     }
-},{once: true});
+});
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
