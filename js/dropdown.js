@@ -4,19 +4,19 @@ let toggler = document.querySelector("#menu-btn");
 let mobile = document.querySelector("#menu")
 
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('#menu-btn')) {
-        mobile.style.setProperty("display", 'none');
-    }
-}
-
 // Mobile NavBar
 toggler.addEventListener("click", () =>{
-    if (mobile.style.display == 'none') {
-        mobile.style.setProperty("display", 'flex');
-    }
-    else{
+    if (mobile.style.display == 'flex') {
         mobile.style.setProperty("display", 'none');
     }
-});
+    else{
+        mobile.style.setProperty("display", 'flex');
+    }
+},{once: true});
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('#menu-btn')) {
+          mobile.style.setProperty("display", 'none');
+      }
+  }

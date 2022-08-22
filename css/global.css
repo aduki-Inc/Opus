@@ -48,13 +48,13 @@ body{
 
   @media (prefers-color-scheme: light) {
     :root{
-        --accent-color: #0078d0;
+        --accent-color: rgb(202, 109, 3);
         --text: #091310;
         --author-link-color: rgb(16, 143, 165);
         --background-color:#fff;
         --title-one-color: #1a1a1a;
-        --title-color: #0078d0;
-        --article-title-color:#091310;
+        --title-color: var(--accent-color);
+        --article-title-color:rgb(29, 29, 29);;
       /*  --article-title-color:rgb(1, 161, 95);*/
         --under-title-color: #666;
         --footer-link-color: #666;

@@ -1,6 +1,6 @@
 /* CSS */
 header{
-    border-bottom: 1px solid #0079d02a;
+    border-bottom: 1px solid #d065002a;
     background-color: var(--bg-color-one);
     z-index: 2;
     position: fixed;
@@ -15,6 +15,7 @@ header{
 }
 .site-logo>.site-name{
   color: var(--accent-color);
+  text-shadow: -0.1rem 0.01rem 0.1rem rgb(184, 181, 181);
 }
 header>.header-links{
  /*  border: 1px solid #0078d0;*/
@@ -57,7 +58,7 @@ header>.header-links .header-list-item{
 }
 
 .getting-started {
-  background-color: #0078d0;
+  background-color: var(--accent-color);
   border: 0;
   color: var(--background-color);
   cursor: pointer;

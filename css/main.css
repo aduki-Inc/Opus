@@ -13,7 +13,9 @@ main {
     /*  border: 1px solid blue;*/
     background-color: var(--bg-color-one);
     padding: 20px;
+   /* box-shadow: -0.09rem 0.09rem 0.5rem 0.001rem  #0000009a;*/
 }
+
 
 .welcome>.greeting {
     width: 100%;
@@ -29,8 +31,9 @@ main {
     /*  border: 1px solid blue;*/
     color: var(--title-color);
     line-height: 1.2;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 600;
+    text-shadow: -0.1rem 0.01rem 0.1rem rgb(184, 181, 181);
 }
 
 
@@ -132,7 +135,7 @@ main {
 /* BEST ARTICLES */
 main>.best {
     position: relative;
-    /*  border: 1px solid blue;*/
+   /* border-left: 1px solid #d68203d8;*/
     padding: 20px;
     background-color: var(--background-color);
 }
@@ -172,7 +175,7 @@ main>.best {
 
 .article-title {
     margin: 10px 0%;
-    font-size: 1.3em;
+    font-size: 1.2rem;
     color: var(--article-title-color);
     padding: 0%;
     padding-left: 5px;
