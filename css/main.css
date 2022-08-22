@@ -31,7 +31,7 @@ main {
     /*  border: 1px solid blue;*/
     color: var(--title-color);
     line-height: 1.2;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 600;
     text-shadow: -0.05rem 0.05rem 0.009rem rgb(184, 181, 181);
 }
@@ -59,11 +59,11 @@ main {
     margin-right: 10px;
     padding: 0%;
     text-decoration: none;
-    color: var(--accent-color);
+    color: var(--author-link-color);
 }
 
 .under-title>.explore:hover {
-    color: #0667ad;
+    color: var(--accent-color);
     text-decoration: underline;
 }
 
