@@ -18,11 +18,28 @@
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
     .welcome>.welcome-articles {
         flex-flow: column;
         align-items: flex-start;
     }
+
+    .best-article>.best-article-image{
+        width: 98%;
+        height: max-content;
+        padding: 5px;
+        border-bottom: 1px solid rgb(255, 0, 64);
+    }
+    .most-read-articles>.most-read-article .most-read-article-image{
+         border: 1px solid rgb(0, 255, 157);
+          width: 50%;
+          height: auto;
+          padding: 5px;
+      }
+      .most-read-article>.most-read-article-image img{
+          width: 100%;
+          height: 100%;
+      }
 
     .editors-pick>.editors-articles .editors-article {
         width: 100%;
