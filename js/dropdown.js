@@ -1,7 +1,7 @@
 /* When the user clicks on the button,toggle between hiding and showing the dropdown content */
 
 let toggler = document.querySelector("#menu-btn");
-let mobile = document.querySelector("#menu")
+let mobile = document.querySelector(".header-mobile")
 
 
 // Mobile NavBar

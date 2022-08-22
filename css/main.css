@@ -5,7 +5,8 @@ main {
     flex-direction: column;
     gap: 50px;
 }
-.mobile-menu{
+.mobile-menu,
+.header-mobile{
     display: none;
 }
 

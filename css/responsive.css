@@ -272,7 +272,7 @@
         top: 0;
         right: 0px;
         display: block;
-        border-bottom: 1px solid rgba(150, 81, 2, 0.514);
+        border-bottom: 1px solid rgba(228, 130, 18, 0.199);
         background-color: var(--bg-color-one);
         z-index: 2;
         position: fixed;
@@ -335,7 +335,7 @@
     .button-88:active {
         box-shadow: 0 0.3em 1em -0.5em #14a73e98;
     }
-    header{
+    .header-mobile{
         z-index: 2;
         display: none;
         flex-flow: column;
@@ -349,12 +349,12 @@
         top: 50px;
         right: 2px;
         background-color: var(--bg-color-one);
-        box-shadow: -0.2em 0.2em 1.0em -0.7em #68676598
+        box-shadow: -0.2em 0.2em 1.0em -0.7em #68676598;
     }
-    header>.site-logo{
+    .header-mobile>.site-logo{
         display: none;
     }
-    header>.header-links{
+    .header-mobile>.header-links{
         display: flex;
         flex-flow: column;
         align-items: stretch;
