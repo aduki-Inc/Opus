@@ -50,7 +50,7 @@ body{
     :root{
         --accent-color: rgb(202, 109, 3);
         --text: #091310;
-        --author-link-color: rgb(16, 143, 165);
+        --author-link-color:   teal;
         --background-color:#fff;
         --title-one-color: #1a1a1a;
         --title-color: var(--accent-color);

@@ -33,7 +33,7 @@ main {
     line-height: 1.2;
     font-size: 1.5rem;
     font-weight: 600;
-    text-shadow: -0.1rem 0.01rem 0.1rem rgb(184, 181, 181);
+    text-shadow: -0.05rem 0.05rem 0.009rem rgb(184, 181, 181);
 }
 
 
@@ -63,7 +63,7 @@ main {
 }
 
 .under-title>.explore:hover {
-    color: #013b64;
+    color: #0667ad;
     text-decoration: underline;
 }
 
@@ -110,9 +110,9 @@ main {
 .welcome-articles>.welcome-article .article-title {
     grid-column: 2/3;
     height: max-content;
-    font-size: 1.3em;
+    font-size: 1.2rem;
     padding: 0%;
-    padding-top: 5px;
+    padding-top: 15px;
     /* border: 1px solid blue*/
 }
 
@@ -211,7 +211,7 @@ main>.best {
 }
 
 .add-to {
-    background-color: #0078d0;
+    background: linear-gradient(0deg, rgba(20, 167, 62, 1) 0%, rgba(102, 247, 113, 1) 100%);;
     border: 0;
     color: var(--button-text-color);
     cursor: pointer;
