@@ -15,7 +15,8 @@ header{
 }
 .site-logo>.site-name{
   color: var(--accent-color);
-  text-shadow: -0.1rem 0.01rem 0.1rem rgb(184, 181, 181);
+  text-shadow: var(--shadow-text);
+  font-size: 1.8rem;
 }
 header>.header-links{
  /*  border: 1px solid #0078d0;*/
@@ -37,23 +38,24 @@ header>.header-links .header-list-item{
     padding: 0%;
 }
 .header-links>.header-list-item .header-link{
-   /* border: 5px solid #d000a3;*/
+   /* border: 1px solid #d000a3;*/
    box-sizing: border-box;
     text-decoration: none;
-    height: 80%;
+    height: 100%;
     font-weight: 500;
     font-size: 1.0rem;
     line-height: 1.5rem;
     padding: 10px 15px;
+    text-align: center;
     color: var(--title-one-color);
-    text-shadow: -0.05rem 0.01rem 0.1rem rgb(184, 181, 181);
+    text-shadow: var(--shadow-text);
 }
 .header-links>.header-list-item .active-header-link{
-    border-bottom: 4px solid var(--accent-color);
+   /* border-bottom: 2px solid var(--accent-color);*/
     color: var(--accent-color);
+    padding-top: 12px;
     font-weight: 600;
     line-height: normal;
-    text-transform: uppercase;
 }
 
 .header-links>.header-list-item .header-link:hover{

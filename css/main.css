@@ -33,7 +33,7 @@ main {
     line-height: 1.2;
     font-size: 1.7rem;
     font-weight: 600;
-    text-shadow: -0.05rem 0.05rem 0.009rem rgb(184, 181, 181);
+    text-shadow: var(--shadow-text);
 }
 
 
