@@ -246,6 +246,11 @@
          justify-content: space-around;
          gap: 1px;
       }
+      .large-article>.article-title{
+        position: unset;
+        background-color: unset;
+        color: var(--article-title-color);
+      }
 
 
     footer {
