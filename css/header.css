@@ -1,6 +1,8 @@
 /* CSS */
-header{
-    border-bottom: 1px solid #0079d02a;
+header,
+.header-mobile{
+   /* border-bottom: 1px solid #d1650117;*/
+   border-bottom: 1px solid rgba(228, 130, 18, 0.199);
     background-color: var(--bg-color-one);
     z-index: 2;
     position: fixed;
@@ -11,12 +13,15 @@ header{
     align-items: center;
     justify-content: space-around;
     padding: 0% 5%;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 100px;
+    box-shadow: #d1650117 0px 8px 100px;
 }
 .site-logo>.site-name{
   color: var(--accent-color);
+  text-shadow: var(--shadow-text);
+  font-size: 1.8rem;
 }
-header>.header-links{
+header>.header-links,
+.header-mobile>.header-links{
  /*  border: 1px solid #0078d0;*/
     height: 100%;
     width: max-content;
@@ -25,7 +30,8 @@ header>.header-links{
     gap: 5px;
     padding: 0%;
 }
-header>.header-links .header-list-item{
+header>.header-links .header-list-item,
+.header-mobile>.header-links .header-list-item{
    /*border: 1px solid #0078d0;*/
     list-style-type: none;
     display: flex;
@@ -36,20 +42,24 @@ header>.header-links .header-list-item{
     padding: 0%;
 }
 .header-links>.header-list-item .header-link{
-   /* border: 5px solid #d000a3;*/
+   /* border: 1px solid #d000a3;*/
    box-sizing: border-box;
     text-decoration: none;
     height: 100%;
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.5rem;
     padding: 10px 15px;
+    text-align: center;
     color: var(--title-one-color);
+    text-shadow: var(--shadow-text);
 }
 .header-links>.header-list-item .active-header-link{
-    border-bottom: 4px solid var(--accent-color);
+   /* border-bottom: 2px solid var(--accent-color);*/
     color: var(--accent-color);
+    padding-top: 12px;
     font-weight: 600;
+    line-height: normal;
 }
 
 .header-links>.header-list-item .header-link:hover{
@@ -57,7 +67,7 @@ header>.header-links .header-list-item{
 }
 
 .getting-started {
-  background-color: #0078d0;
+  background: linear-gradient(0deg, rgba(20, 167, 62, 1) 0%, rgba(102, 247, 113, 1) 100%);;
   border: 0;
   color: var(--background-color);
   cursor: pointer;
@@ -65,7 +75,7 @@ header>.header-links .header-list-item{
   font-size: 18px;
   font-weight: 600;
   outline: 0;
-  padding: 5px 20px;
+  padding: 3px 18px;
   position: relative;
   text-align: center;
   text-decoration: none;

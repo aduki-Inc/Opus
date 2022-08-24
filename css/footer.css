@@ -30,9 +30,7 @@ footer>.footer-section .footer-links{
 .footer-section>.footer-links a:hover{
     color:var(--link-hover-color);
 }
-hr{
-    opacity: .5;
-}
+
 footer>.copyright{
     grid-column: 1/5;
     padding: 30px 5px;
