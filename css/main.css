@@ -30,11 +30,11 @@ main {
     box-sizing: border-box;
     width: 100%;
     /*  border: 1px solid blue;*/
-    color: var(--title-color);
+    color: var(--section-title-color);
     line-height: 1.2;
     font-size: 1.7rem;
     font-weight: 600;
-    text-shadow: var(--shadow-text);
+  /*  text-shadow: var(--shadow-text);*/
 }
 
 

@@ -18,8 +18,9 @@ body{
 @media (prefers-color-scheme: dark) {
     :root{
         --accent-color: rgb(255, 136, 0);
+        --section-title-color: rgb(255, 200, 137);
         --article-title-color:rgb(12, 179, 221);
-        
+
         --bg-color: #000;
         --text: rgba(121, 250, 250, 0.904);
         --title-one-color:#fff;
@@ -53,14 +54,16 @@ body{
   @media (prefers-color-scheme: light) {
     :root{
         --accent-color: rgb(202, 109, 3);
+        --section-title-color: rgb(238, 132, 11);
         --article-title-color: rgb(29, 29, 29);
+        --under-title-color: #666;
+        --footer-link-color: #666;
+
         --text: #091310;
         --author-link-color:   teal;
         --background-color:#fff;
         --title-one-color: #1a1a1a;
         --title-color: var(--accent-color);
-        --under-title-color: #666;
-        --footer-link-color: #666;
         --button-text-color: rgb(255, 255, 255);
         --border-color: #0079d08f;
         --site-name-color: rgba(20, 167, 62, 1);
