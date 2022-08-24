@@ -67,9 +67,9 @@ header>.header-links .header-list-item,
 }
 
 .getting-started {
-  background: linear-gradient(0deg, rgba(20, 167, 62, 1) 0%, rgba(102, 247, 113, 1) 100%);;
+  background: linear-gradient(0deg, rgb(12, 179, 221) 0%, rgb(12, 179, 221) 100%);;
   border: 0;
-  color: var(--background-color);
+  color: white;
   cursor: pointer;
   display: inline-block;
   font-size: 18px;
