@@ -178,6 +178,7 @@ main>.best {
 .article-title {
     margin: 10px 0%;
     font-size: 1.2rem;
+    font-weight: 400;
     color: var(--article-title-color);
     padding: 0%;
     padding-left: 5px;
@@ -207,8 +208,9 @@ main>.best {
 .article-summery {
     margin: 5px 0%;
     padding-left: 5px;
-    font-size: 1.15em;
-    line-height: 1.5em;
+    font-weight: 300;
+    font-size: 1.0em;
+    line-height: 1.3rem;
     color: var(--summery-color);
 }
 
@@ -222,7 +224,7 @@ main>.best {
     font-size: 16px;
     font-weight: 600;
     outline: 0;
-    padding: 3px 15px;
+    padding: 5px 20px;
     position: relative;
     text-align: center;
     text-decoration: none;

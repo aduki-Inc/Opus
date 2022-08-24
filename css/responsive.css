@@ -313,7 +313,7 @@
         padding: 5px 15px;
         color: white;
         background: #ad5389;
-        background: linear-gradient(0deg, rgba(20, 167, 62, 1) 0%, rgba(102, 247, 113, 1) 100%);
+        background: linear-gradient(0deg, rgb(3, 119, 148) 0%, rgb(5, 136, 201) 100%);
         border: none;
         box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
         letter-spacing: 0.05em;
