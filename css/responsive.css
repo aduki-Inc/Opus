@@ -188,13 +188,13 @@
         color: teal;
     }
     .topics>.topic-list .active-list{
-        background: linear-gradient(0deg, rgba(20, 167, 62, 1) 0%, rgba(102, 247, 113, 1) 100%);
+        background: linear-gradient(0deg, rgb(3, 119, 148) 0%, rgb(5, 136, 201) 100%);
         color: #fff;
         font-weight: bold;
         border: none;
     }
     .topics>.topic-list li:hover{
-        background: linear-gradient(0deg, rgba(20, 167, 62, 1) 0%, rgba(102, 247, 113, 1) 100%);
+        background: linear-gradient(0deg, rgb(3, 119, 148) 0%, rgb(5, 136, 201) 100%);
         color: #fff;
         border: none;
     }
