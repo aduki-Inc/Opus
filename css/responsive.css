@@ -232,6 +232,7 @@
        /* border: 1px solid rgba(246, 247, 243, 0.507);*/
         position: absolute;
         background-color: #0000005e;
+        color: white;
         width: 100%;
         padding: 5px 2px;
         bottom: 60px;
