@@ -18,15 +18,14 @@ body{
 @media (prefers-color-scheme: dark) {
     :root{
         --accent-color: rgb(255, 136, 0);
-        --section-title-color: rgb(255, 200, 137);
-        --article-title-color:rgb(12, 179, 221);
+        --section-title-color: rgb(250, 197, 136);
+        --article-title-color:rgb(214, 234, 240);
 
         --bg-color: #000;
         --text: rgba(121, 250, 250, 0.904);
         --title-one-color:#fff;
         --title-color: rgb(255, 136, 0);
         --author-link-color: rgb(16, 143, 165);
-
         --under-title-color: rgb(199, 197, 197);
         --summery-color: rgb(226, 224, 224);
 

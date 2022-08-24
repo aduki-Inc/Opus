@@ -159,9 +159,9 @@ main>.best {
 
 .best-article>.best-article-image{
     width: 98%;
-    height: 60%;
+    height: max-content;
     padding: 5px;
-   border-bottom: 1px solid rgb(0, 255, 157);
+  /* border-bottom: 1px solid rgb(0, 255, 157);*/
 }
 .large-article>.best-article-image {
     width: 90%;
@@ -213,7 +213,7 @@ main>.best {
 }
 
 .add-to {
-    background: linear-gradient(0deg, rgba(20, 167, 62, 1) 0%, rgba(102, 247, 113, 1) 100%);;
+    background: linear-gradient(0deg, rgb(3, 119, 148) 0%, rgb(11, 161, 236) 100%);
     border: 0;
     color: var(--button-text-color);
     cursor: pointer;
@@ -402,13 +402,13 @@ main>.best {
     border-radius: 50px;
 }
 .topics>.topic-list .active-list{
-    background: linear-gradient(0deg, rgba(20, 167, 62, 1) 0%, rgba(102, 247, 113, 1) 100%);
+    background: linear-gradient(0deg, rgb(3, 119, 148) 0%, rgb(5, 136, 201) 100%);
     color: #fff;
     font-weight: bold;
     border: none;
 }
 .topics>.topic-list li:hover{
-    background: linear-gradient(0deg, rgba(20, 167, 62, 1) 0%, rgba(102, 247, 113, 1) 100%);
+    background: linear-gradient(0deg, rgb(3, 119, 148) 0%, rgb(5, 136, 201) 100%);
     color: #fff;
     border: none;
 }
