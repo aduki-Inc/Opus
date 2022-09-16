@@ -58,16 +58,14 @@ body{
         --under-title-color: #666;
         --footer-link-color: #666;
 
-        --text: #091310;
+
         --gray-color:#808080;
         --hover-link-color:var(--accent-color);
+        --summery-color: #404040;
+
         --background-color:#fff;
         --title-one-color: #1a1a1a;
         --title-color: var(--accent-color);
-        --button-text-color: rgb(255, 255, 255);
-        --border-color: #0079d08f;
-        --site-name-color: rgba(20, 167, 62, 1);
-        --link-hover-color: teal;
         --quick-info:  #091310;
 
         --bg-color-one: #fff;
