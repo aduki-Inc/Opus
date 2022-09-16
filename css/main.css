@@ -146,13 +146,13 @@ main {
 /* BEST ARTICLES */
 main>.best {
     position: relative;
-   /* border-left: 1px solid #d68203d8;*/
+    border: 1px solid #d68203d8;
     padding: 20px;
     background-color: var(--background-color);
 }
 
 .best>.best-articles {
-    /*  border: 1px solid blue;*/
+    border: 1px solid blue;
     margin-top: 20px;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
