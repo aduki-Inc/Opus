@@ -259,6 +259,9 @@ main>.best {
     flex-flow: column;
     align-items: center;
 }
+.best>.best-articles .best-article>.article-info{
+    border: 1px solid rgb(255, 0, 111);
+}
 .best>.best-articles .best-article>.add-to{
     align-self: baseline;
     margin: 0%;
