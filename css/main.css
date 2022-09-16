@@ -257,7 +257,7 @@ main>.best {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     column-gap: 20px;
-    row-gap: 20px;
+    row-gap: 25px;
 }
 .best>.best-articles .best-article{
    /* border: 1px solid rgb(255, 0, 111);*/
