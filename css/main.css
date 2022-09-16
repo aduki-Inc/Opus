@@ -138,7 +138,7 @@ main {
      margin-left: 1px;
      margin-top: 5px;
  }
- .add-to>a>.save:hover,
+.add-to>a>.save:hover,
 .add-to>a>.share:hover{
     color: var(--hover-link-color);
 }
