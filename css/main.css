@@ -344,7 +344,7 @@ main>.best {
 }
 .editors-pick>.editors-articles .editors-article{
    /* border: 1px solid rgb(0, 255, 157);*/
-    width: 80%;
+    width: 75%;
     display: grid;
     grid-template-columns: 1fr 3fr;
     column-gap: 10px;
@@ -353,8 +353,8 @@ main>.best {
    /* border: 1px solid rgb(0, 255, 157);*/
     grid-column: 1/2;
     grid-row: 1/5;
-    width: auto;
-    height: 90%;
+    width: 100%;
+    height: 80%;
     padding: 20px;
 
 }
@@ -362,18 +362,19 @@ main>.best {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    box-shadow: #4a4a4917 0px 8px 1rem;
 }
 .editors-article>.article-info{
     grid-column: 2/3;
 }
 .editors-article>.add-to{
-    width: 100%;
-    margin: 15px 5px 0% 0%;
+    width: 98%;
+    margin: 20px 0px 0% 0%;
 }
 
 /* MOST READ - THREE COLUMN */
 .most-read{
-    /*  border: 1px solid blue;*/
+    border: 1px solid blue;
     display: block;
     padding: 20px;
     background-color: var(--background-color);
