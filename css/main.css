@@ -137,11 +137,11 @@ main {
 
 .welcome-article>.article-info .author {
     text-decoration: none;
-    color: var(--author-link-color);
+    color: var(--gray-color);
 }
 
 .welcome-article>.article-info .author:hover {
-    color: var(--accent-color);
+    color: var(--hover-link-color);
 }
 
 /* BEST ARTICLES */

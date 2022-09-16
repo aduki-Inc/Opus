@@ -59,7 +59,8 @@ body{
         --footer-link-color: #666;
 
         --text: #091310;
-        --author-link-color:   teal;
+        --gray-color:#808080;
+        --hover-link-color:var(--accent-color);
         --background-color:#fff;
         --title-one-color: #1a1a1a;
         --title-color: var(--accent-color);
