@@ -54,7 +54,7 @@ body{
     :root{
         --accent-color: rgb(202, 109, 3);
         --accent-color: #08b86f;
-        --section-title-color: rgb(238, 132, 11);
+        --section-title-color: #404040;
         --article-title-color: rgb(29, 29, 29);
         --under-title-color: #666;
         --footer-link-color: #666;
