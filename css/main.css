@@ -96,25 +96,38 @@ main {
 }
 
 .add-to {
-    border: 0;
+    /*border: 1px solid blue;*/
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 16px;
-    font-weight: 600;
+    min-height: 30px;
     padding: 0% 10px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
-    border-radius: 50px;
 }
 .add-to>a{
+   /* border: 1px solid rgb(225, 255, 0);*/
+    padding: 0%;
     display: flex;
+    height: 100%;
     align-items: center;
     gap: 5px;
     text-decoration: none;
+    color: var(--gray-color);
+}
+.add-to>a>.save{
+   /* border: 1px solid blue;*/
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+.add-to>a>.save>i{
+   /* border: 1px solid blue;*/
+    display: inline-block;
+    margin-right: 8px;
+    margin-top: 3px;
 }
 
 /* END OF GLOBAL STYLES */
@@ -247,10 +260,10 @@ main>.best {
 .best>.best-articles .best-article>.add-to{
     margin: 0%;
     margin-top: 10px;
-    width: 100%;
     position: absolute;
     bottom: 5px;
     left: 5px;
+    right: 5px;
 
 }
 
