@@ -103,17 +103,18 @@ main {
     justify-content: space-between;
     font-size: 16px;
     font-weight: 600;
-    text-decoration: none;
+    padding: 0% 10px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
     border-radius: 50px;
 }
-.add-to>.save{
+.add-to>a{
     display: flex;
     align-items: center;
     gap: 5px;
+    text-decoration: none;
 }
 
 /* END OF GLOBAL STYLES */
