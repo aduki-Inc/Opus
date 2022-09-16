@@ -430,9 +430,13 @@ main>.best {
     list-style-type: none;
   }
   .topics>.topic-list li{
+    margin: 10px 0px;
+  }
+  .topics>.topic-list li>a{
+    text-decoration: none;
+    color: teal;
     border: 1px solid var(--border-color);
     cursor: pointer;
-    color: teal;
     padding: 5px 15px;
     text-align: center;
     -webkit-border-radius: 50px;
@@ -441,13 +445,15 @@ main>.best {
     -o-border-radius: 50px;
     border-radius: 50px;
 }
-.topics>.topic-list .active-list{
+
+.topics>.topic-list .active-list>a{
     background: linear-gradient(0deg, rgb(3, 119, 148) 0%, rgb(5, 136, 201) 100%);
     color: #fff;
     font-weight: bold;
     border: none;
 }
-.topics>.topic-list li:hover{
+
+.topics>.topic-list li>a:hover{
     background: linear-gradient(0deg, rgb(3, 119, 148) 0%, rgb(5, 136, 201) 100%);
     color: #fff;
     border: none;
