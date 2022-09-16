@@ -117,25 +117,31 @@ main {
 }
 .add-to>a>.save,
 .add-to>a>.share{
-    border: 1px solid blue;
+   /* border: 1px solid blue;*/
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 5px;
+    text-align: center;
 }
 .add-to>a>.save>i{
    /* border: 1px solid blue;*/
     display: inline-block;
-    margin-right: 8px;
     margin-top: 3px;
+    margin-right: 3px;
 }
 .add-to>a>.share>i{
     /* border: 1px solid blue;*/
      display: inline-block;
-     margin-left: 3px;
-     margin-top: 3px;
+     font-size: 18px;
+     margin-left: 1px;
+     margin-top: 4px;
  }
+ .add-to>a>.save:hover,
+.add-to>a>.share:hover{
+    color: var(--hover-link-color);
+}
 
 /* END OF GLOBAL STYLES */
 
@@ -261,8 +267,7 @@ main>.best {
     align-items: center;
 }
 .best>.best-articles .best-article>.article-info{
-    border: 1px solid rgb(255, 0, 111);
-    margin-bottom: 10px;
+   /* border: 1px solid rgb(255, 0, 111);*/
 }
 .best>.best-articles .best-article>.add-to{
     margin: 0%;
