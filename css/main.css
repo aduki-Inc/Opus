@@ -131,7 +131,7 @@ main {
     grid-column: 2/3;
     grid-row: 3/4;
     align-self: baseline;
-    color: var(--author-link-color);
+    color: var(--gray-color);
    /* border: 1px solid blue;*/
 }
 
