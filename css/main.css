@@ -135,7 +135,7 @@ main {
     /* border: 1px solid blue;*/
      display: inline-block;
      font-size: 18px;
-     margin-left: 1px;
+     margin-left: 3px;
      margin-top: 5px;
  }
 .add-to>a>.save:hover,
