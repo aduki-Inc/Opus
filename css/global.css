@@ -52,21 +52,20 @@ body{
 
   @media (prefers-color-scheme: light) {
     :root{
-        --accent-color: rgb(202, 109, 3);
-        --section-title-color: rgb(238, 132, 11);
-        --article-title-color: rgb(29, 29, 29);
+        --accent-color: #08b86f;
+        --section-title-color: #404040;
+        --article-title-color: rgb(46, 46, 46);
         --under-title-color: #666;
         --footer-link-color: #666;
 
-        --text: #091310;
-        --author-link-color:   teal;
+        --gray-color:#808080;
+        --hover-link-color:var(--accent-color);
+        --summery-color: #404040;
         --background-color:#fff;
         --title-one-color: #1a1a1a;
-        --title-color: var(--accent-color);
-        --button-text-color: rgb(255, 255, 255);
-        --border-color: #0079d08f;
-        --site-name-color: rgba(20, 167, 62, 1);
-        --link-hover-color: teal;
+        --title-color: var(--section-title-color);
+
+        --border-color: #0079d0ae;
         --quick-info:  #091310;
 
         --bg-color-one: #fff;
