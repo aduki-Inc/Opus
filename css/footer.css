@@ -61,7 +61,7 @@ footer>.copyright .down-co{
 .down-co>p a:hover,
 .down-co>a:hover,
 .copyright>.social-links a:hover{
-    color:var(--link-hover-color);
+    color:var(--hover-link-color);
 }
 .copyright>.social-links{
    /* border: 1px solid blue;*/
