@@ -23,6 +23,7 @@ main {
     /*  border: 1px solid blue;*/
     color: var(--title-one-color);
     font-weight: bold;
+    margin: 10px 0px;
 }
 
 /*  GLOBAL TO OTHER ARTICLES */
