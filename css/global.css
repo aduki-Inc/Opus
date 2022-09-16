@@ -52,7 +52,6 @@ body{
 
   @media (prefers-color-scheme: light) {
     :root{
-        --accent-color: rgb(202, 109, 3);
         --accent-color: #08b86f;
         --section-title-color: #404040;
         --article-title-color: rgb(29, 29, 29);
