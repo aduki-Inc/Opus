@@ -216,6 +216,10 @@
          /* border: 1px solid rgb(0, 255, 157);*/
           width: 100%;
     }
+    footer{
+        margin: 0%;
+        padding: 0%;
+    }
 
 }
 
@@ -278,6 +282,28 @@
         align-self: center;
         width: 90%;
         height: 150px;
+    }
+
+    .best>.best-articles {
+       /* border: 1px solid rgb(0, 255, 157);*/
+        align-items: center;
+        gap: 30px;
+    }
+
+    .best>.best-articles>.large-article{
+        /*border: 1px solid rgb(0, 255, 157);*/
+        display: flex;
+        flex-flow: column;
+    }
+    .best>.best-articles>.best-article .best-article-image{
+        height: 120px;
+        width: 100%;
+        padding: 0%;
+    }
+    .best>.best-articles>.large-article .best-article-image{
+        grid-row: 1/2;
+        height: 50%;
+        padding: 0%;
     }
 
     footer {
