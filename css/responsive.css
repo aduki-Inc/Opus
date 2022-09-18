@@ -499,12 +499,12 @@
         display: none;
     }
     .topics{
-        margin-bottom: 60px;
+        margin-bottom: 10px;
     }
     .mobile-footer{
         box-sizing: border-box;
         background-color: var(--background-color);
-        box-shadow: 0.1rem 0.5rem 0.5rem 3rem #2a2b2a11;
+        box-shadow: 0rem 0rem 0.1rem 0.1rem #2a2b2a11;
         padding: 0% 25px;
         position: fixed;
         bottom: 0%;
