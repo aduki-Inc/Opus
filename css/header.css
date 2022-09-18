@@ -67,10 +67,10 @@ header>.header-links .header-list-item{
 }
 .getting-started {
   text-decoration: none;
-  padding: 3px 20px;
+  padding: 2px 18px;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
@@ -84,14 +84,10 @@ header>.header-links .header-list-item{
 }
 .sign-up{
   color: #1dbd7b;
-  border: var(--border);
+  border:1px solid var(--border-color);
 }
 .login{
   background-color: #1dbd7b;
   color: white;
 }
 
-
-.getting-started:hover {
-  transform: scale(1.05);
-}
