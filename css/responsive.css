@@ -231,6 +231,11 @@
     }
     header{
         height: 50px;
+        padding: 20px 10px;
+        gap: 0%;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid rgba(91, 90, 89, 0.199);
     }
 
     header #logon{
@@ -239,6 +244,16 @@
     header #start{
         display: flex;
       }
+
+    header .profile-section{
+          position: unset;
+          margin: 0%;
+          padding: 0%;
+      }
+    .profile-section>.profile-dropdown{
+        top: 50px;
+        right: 2px;
+    }
 
     main {
         margin: 70px 5px 5px 1px;
@@ -260,7 +275,13 @@
         font-weight: 500;
         margin-bottom: 2px;
     }
+    .article-info>.author {
+        font-size: 0.9rem;
+     }
 
+     .article-info>.read-time {
+        font-size: 0.9rem;
+     }
     .article-title {
         font-size: 1.15rem;
     }
