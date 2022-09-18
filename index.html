@@ -41,7 +41,68 @@
             <div class="theme-switcher">
                 <i class="fa fa-solid fa-moon"> Light</i>
             </div>
-            -->
+        -->
+        <!-- If A User Is Logged In-->
+        <div class="profile-section">
+            <div id="dropdown-btn" class="profile-image-wrapper">
+                <span class="active-status">
+                  <span class="dot"></span>
+                </span>
+                <img src="/media/{{ profile.photo }}" alt="" />
+            </div>
+            <div id="profile-dropdown" class="profile-dropdown">
+                <div class="go-to-profile">
+                  <div class="profile-image-wrapper">
+                    <img src="/media/{{ profile.photo }}" alt="" />
+                  </div>
+                  <div class="name-container">
+                    <h4 class="name">{{ user.first_name}} {{user.last_name}}</h4>
+                    <a href=" {% url 'profile' username=user.username %} " class="profile-link"
+                      >View Profile
+                      <span class="iconly-Arrow-Right icbo"></span>
+                    </a>
+                  </div>
+                </div>
+                <hr size="1" />
+                <ul class="linked-list top-links">
+                  <li class="dropdown-li">
+                    <a href="" class="dropdown-link">Dashboard</a>
+                  </li>
+                  <li class="dropdown-li">
+                    <a href="{% url 'user_post_list' %}" class="dropdown-link">Your Stats</a>
+                  </li>
+                  <li class="dropdown-li">
+                    <a href=" {% url 'profile' username=user.username %} " class="dropdown-link">Your Profile</a>
+                  </li>
+                  <li class="dropdown-li">
+                    <a href=" {% url 'user_post_list' %} " class="dropdown-link">Your Articles</a>
+                  </li>
+                </ul>
+                <hr size="1" />
+                <ul class="linked-list middle-links">
+                  <li class="dropdown-li">
+                    <a href="" class="dropdown-link">Explore</a>
+                  </li>
+                  <li class="dropdown-li">
+                    <a href="" class="dropdown-link">What's New?</a>
+                  </li>
+                  <li class="dropdown-li">
+                    <a href="" class="dropdown-link">Send Us Feedback</a>
+                  </li>
+                  <li class="dropdown-li">
+                    <a href="" class="dropdown-link">Settings</a>
+                  </li>
+                </ul>
+                <hr size="1" />
+                <ul class="linked-list log-out">
+                  <li class="dropdown-li">
+                    <a href="{% url 'logout' %}" class="dropdown-link log-out">Log Out</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+        <!-- If A User Is Not Sign Up-->
+        <!--
         <div class="account">
            <a title="Sign Up" href="" class="sign-up getting-started">
                 <span class="iconly-Add-User icli"></span>
@@ -52,6 +113,7 @@
                 <span class="text">Login</span>
            </a>
         </div>
+        -->
     </header>
 
     <main>
