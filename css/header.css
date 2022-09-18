@@ -1,6 +1,5 @@
 /* CSS */
-header,
-.header-mobile{
+header{
    /* border-bottom: 1px solid #d1650117;*/
    border-bottom: 1px solid rgba(91, 90, 89, 0.199);
     background-color: var(--background-color);
@@ -20,8 +19,7 @@ header,
   text-shadow: var(--shadow-text);
   font-size: 1.8rem;
 }
-header>.header-links,
-.header-mobile>.header-links{
+header>.header-links{
    /*border: 1px solid #0078d0;*/
     height: 100%;
     width: max-content;
@@ -31,8 +29,7 @@ header>.header-links,
     gap: 5px;
     padding: 0%;
 }
-header>.header-links .header-list-item,
-.header-mobile>.header-links .header-list-item{
+header>.header-links .header-list-item{
    /* border: 1px solid #0078d0;*/
     list-style-type: none;
     height: 100%;

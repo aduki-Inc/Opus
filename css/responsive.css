@@ -161,7 +161,8 @@
     main>.editors-pick,
     main>.best,
     main>.most-read,
-    main>.welcome{
+    main>.welcome,
+    .topics{
         border: none;
         box-shadow: none;
        }

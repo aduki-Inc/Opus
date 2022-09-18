@@ -145,12 +145,6 @@ main {
 
 /* END OF GLOBAL STYLES */
 
-
-.mobile-menu,
-.header-mobile{
-    display: none;
-}
-
 .welcome {
     /*  border: 1px solid blue;*/
     background-color: var(--background-color);
@@ -420,6 +414,8 @@ main>.best {
     flex-flow: column;
     justify-content: space-around;
     padding: 20px;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
   }
   .discover-topis{
     margin: 0%;
