@@ -1,6 +1,6 @@
 main {
     margin-top: 50px;
-    margin: 80px 6%;
+    margin: 75px 6%;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -132,7 +132,7 @@ main {
     margin-top: 3px;
     margin-right: 5px;
     font-size: 18px;
-    color: var(--hover-link-color);
+    color: var(--alt-accent-color);
 }
 .add-to>a>.share>i{
     /* border: 1px solid blue;*/
@@ -140,11 +140,11 @@ main {
      font-size: 18px;
      margin-left: 3px;
      margin-top: 5px;
-     color: var(--hover-link-color);
+     color: var(--alt-accent-color);
  }
 .add-to>a>.save:hover,
 .add-to>a>.share:hover{
-    color: var(--hover-link-color);
+    color: var(--alt-accent-color);
 }
 
 /* END OF GLOBAL STYLES */
