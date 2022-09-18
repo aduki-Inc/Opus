@@ -67,7 +67,7 @@ header>.header-links .header-list-item{
 }
 .getting-started {
   text-decoration: none;
-  padding: 2px 20px;
+  padding: 3px 20px;
   display: flex;
   align-items: center;
   gap: 5px;
@@ -83,11 +83,11 @@ header>.header-links .header-list-item{
   margin-top: 4px;
 }
 .sign-up{
-  color: var(--accent-color);
+  color: #1dbd7b;
   border: var(--border);
 }
 .login{
-  background-color: var(--accent-color);
+  background-color: #1dbd7b;
   color: white;
 }
 
