@@ -6,6 +6,7 @@ footer{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: var(--background-color);
 }
+
 footer>.footer-section{
    /* border: 1px solid blue;*/
    margin-bottom: 30px;
