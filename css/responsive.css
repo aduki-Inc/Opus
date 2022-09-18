@@ -154,8 +154,11 @@
     html,body{
         background-color: var(--background-color);
     }
+    header>.header-links{
+        display: none;
+    }
     main{
-        margin: 80px 0px;
+        margin: 75px 0px;
     }
     main>.editors-pick,
     main>.best,
@@ -226,6 +229,16 @@
     body {
         margin: 0%;
     }
+    header{
+        height: 50px;
+    }
+
+    header #logon{
+        display: none;
+    }
+    header #start{
+        display: flex;
+      }
 
     main {
         margin: 70px 5px 5px 1px;

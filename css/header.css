@@ -66,6 +66,9 @@ header>.header-links .header-list-item{
   display: flex;
   gap: 20px;
 }
+header #start{
+  display: none;
+}
 .getting-started {
   text-decoration: none;
   padding: 2px 18px;
