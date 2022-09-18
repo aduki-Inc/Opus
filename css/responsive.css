@@ -395,7 +395,7 @@
 
      .editors-articles>.editors-article .editors-article-image {
          height: 200px;
-         padding: 0%;
+         padding: 5%;
          margin-bottom: 20px;
          align-self: flex-start;
      }
