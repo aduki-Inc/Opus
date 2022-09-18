@@ -43,11 +43,11 @@ header>.header-links .header-list-item{
     text-decoration: none;
     height: 100%;
     padding: 0% 15px;
-    font-size: 1.1rem;
+    font-size: 1.0rem;
     line-height: 1.5rem;
     display: flex;
     align-items: center;
-    color: var(--title-one-color);
+    color: var(--article-title-color);
    /* text-shadow: var(--shadow-text);*/
 }
 .header-links>.header-list-item .active-header-link{
@@ -162,7 +162,7 @@ header>.header-links .header-list-item{
   position: absolute;
   background-color: white;
  /*background-color: rgb(228, 243, 214);*/
-  border: 1px solid #83858421;
+  border: var(--border);
   padding: 0%;
   padding-top: 8px;
   margin: 0%;
