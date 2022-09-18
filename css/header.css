@@ -254,7 +254,7 @@ header #start{
   padding: 0px 5px;
 }
 .profile-dropdown>.linked-list .dropdown-link:hover{
-  color: #08b86e;
+  color: var(--hover-link-color);
 }
 .profile-dropdown>.linked-list .log-out{
   color: rgb(219, 55, 55);

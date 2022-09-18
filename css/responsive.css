@@ -235,7 +235,8 @@
         gap: 0%;
         justify-content: space-between;
         align-items: center;
-        border: 1px solid rgba(91, 90, 89, 0.199);
+        border: none;
+        box-shadow: 0.1rem 0.5rem 3rem #2a2b2a1b;
     }
 
     header #logon{
