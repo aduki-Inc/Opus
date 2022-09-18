@@ -67,8 +67,7 @@ header>.header-links .header-list-item{
 }
 .getting-started {
   text-decoration: none;
-  border: var(--border);
-  padding: 2px 15px;
+  padding: 2px 20px;
   display: flex;
   align-items: center;
   gap: 5px;
@@ -78,8 +77,21 @@ header>.header-links .header-list-item{
   -o-border-radius: 50px;
   border-radius: 50px;
 }
+.getting-started>.icli{
+  font-size: 18px;
+  /*border: 1px solid gold;*/
+  margin-top: 4px;
+}
+.sign-up{
+  color: var(--accent-color);
+  border: var(--border);
+}
+.login{
+  background-color: var(--accent-color);
+  color: white;
+}
+
 
 .getting-started:hover {
-  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
   transform: scale(1.05);
 }
