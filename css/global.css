@@ -4,7 +4,7 @@
 }
 html{
     line-height: 1.15;
-    background-color: var(--bg-color);
+    background-color: var(--body-background-color);
 }
 html.sr .load-hidden {
     visibility: hidden;
@@ -13,10 +13,13 @@ body{
     margin: 0%;
     font-family: 'Product Sans', sans-serif;
     font-size: 16px;
+    background-color: var(--body-background-color);
 
 }
 @media (prefers-color-scheme: dark) {
     :root{
+        --body-background-color: rgb(40, 40, 41);
+
         --accent-color: rgb(255, 136, 0);
         --section-title-color: rgb(250, 197, 136);
         --article-title-color:rgb(250, 226, 204);
@@ -59,20 +62,16 @@ body{
         --footer-link-color: #666;
 
         --gray-color:#808080;
-        --hover-link-color:var(--accent-color);
+        --hover-link-color: rgb(15, 138, 196);;
         --summery-color: #404040;
+
         --background-color:#fff;
-        --title-one-color: #1a1a1a;
-        --title-color: var(--section-title-color);
+        --body-background-color: rgb(241, 242, 242);
 
         --border-color: #0079d0ae;
         --quick-info:  #091310;
 
-        --bg-color-one: #fff;
-        --ba-color: rgb(159, 247, 225);
-        --shading:rgb(140, 196, 186);
 
-        --side-content:rgb(99, 252, 226);
         --border-bottom: rgba(0, 128, 128, 0.486);
         --box-shadow: none;
 

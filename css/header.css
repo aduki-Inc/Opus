@@ -3,7 +3,7 @@ header,
 .header-mobile{
    /* border-bottom: 1px solid #d1650117;*/
    border-bottom: 1px solid rgba(91, 90, 89, 0.199);
-    background-color: var(--bg-color-one);
+    background-color: var(--background-color);
     z-index: 2;
     position: fixed;
     top: 0%;
