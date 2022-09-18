@@ -1,14 +1,17 @@
 @media screen and (max-width: 1090px) {
-    header {
-        margin: 0%;
-        padding: 0%;
-    }
 
     .header-links>.header-list-item .header-link {
         padding: 10px 10px;
     }
 
-
+    header{
+        padding: 0% 2%;
+    }
+    header .profile-section,
+    header .account{
+        position: absolute;
+        right: 2%;
+    }
     main {
         margin: 80px 2%;
     }

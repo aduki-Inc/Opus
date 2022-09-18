@@ -61,7 +61,8 @@ header>.header-links .header-list-item{
 }
 .account{
  /* border: 1px solid gold;*/
- justify-self: end;
+  position: absolute;
+  right: 5%;
   display: flex;
   gap: 20px;
 }
