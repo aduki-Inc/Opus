@@ -230,7 +230,7 @@
         margin: 0%;
     }
     header{
-        height: 50px;
+        height: 55px;
         gap: 0%;
         justify-content: space-between;
         align-items: center;
@@ -249,6 +249,7 @@
           box-sizing: 0%;
           position: unset;
           margin: 0%;
+          margin-right: 20px;
          /* border: 1px solid black;*/
           display: flex;
           align-items: center;
