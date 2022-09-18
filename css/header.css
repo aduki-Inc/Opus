@@ -60,44 +60,23 @@ header>.header-links .header-list-item{
 .header-links>.header-list-item .header-link:hover{
     color: var(--accent-color);
 }
-
+.account{
+ /* border: 1px solid gold;*/
+  display: flex;
+  gap: 20px;
+}
 .getting-started {
-  background: linear-gradient(0deg, rgb(3, 119, 148) 0%, rgb(5, 136, 201) 100%);
-  border: 0;
-  color: white;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 18px;
-  font-weight: 600;
-  outline: 0;
-  padding: 3px 18px;
-  position: relative;
-  text-align: center;
   text-decoration: none;
-  margin-right: 20px;
-  transition: all .3s;
-  -webkit-user-select: none;
-  user-select: none;
-  touch-action: manipulation;
+  border: var(--border);
+  padding: 2px 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
   border-radius: 50px;
-}
-
-.getting-started:before {
-  background-color: initial;
-  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
-  border-radius: 125px;
-  content: "";
-  height: 50%;
-  left: 4%;
-  opacity: .5;
-  position: absolute;
-  top: 0;
-  transition: all .3s;
-  width: 92%;
 }
 
 .getting-started:hover {
