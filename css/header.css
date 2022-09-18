@@ -11,7 +11,7 @@ header{
     align-items: center;
     gap: 8%;
     padding: 0% 6%;
-    box-shadow: #4a4a4917 0px 8px 1rem;
+   /* box-shadow: #4a4a4917 0px 8px 1rem;*/
 }
 .site-logo>.site-name{
   color: var(--accent-color);
@@ -99,15 +99,13 @@ header>.header-links .header-list-item{
 .profile-section{
   position: absolute;
   right: 5%;
-  margin: 0px 10px;
+  margin: 0px 20px;
   display: flex;
   flex-flow: row;
   align-items: flex-end;
  /* border: 1px solid rgb(8, 8, 8);*/
   cursor: pointer;
 }
-
-
 
 .profile-section>.profile-image-wrapper{
   border: 1px solid var(--border-color);
