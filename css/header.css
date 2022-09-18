@@ -11,6 +11,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    justify-items: end;
     padding: 0% 5%;
     box-shadow: #4a4a4917 0px 8px 1rem;
 }
@@ -101,7 +102,7 @@ header>.header-links .header-list-item{
   display: flex;
   flex-flow: row;
   align-items: flex-end;
-  border: 1px solid rgb(8, 8, 8);
+ /* border: 1px solid rgb(8, 8, 8);*/
   cursor: pointer;
 }
 
