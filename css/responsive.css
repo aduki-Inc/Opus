@@ -313,11 +313,12 @@
         justify-content: space-between;
         font-size: 16px;
         min-height: 30px;
-        padding: 0%;
+        font-size: 1.0rem;
+        padding: 0% 10px;
     }
     .add-to>a>.save,
     .add-to>a>.share{
-        font-size: 0.9rem;
+        font-size: 1.0rem;
     }
     .add-to>a>.save>i{
         font-size: 16px;
