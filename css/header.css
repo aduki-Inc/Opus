@@ -108,7 +108,7 @@ header #start{
   flex-flow: row;
   align-items: flex-end;
   justify-content: space-between;
-  gap: 15px;
+  gap: 20px;
  /* border: 1px solid rgb(8, 8, 8);*/
 }
 .profile-section>.icli{
