@@ -4,7 +4,7 @@
 }
 html{
     line-height: 1.15;
-    background-color: var(--bg-color);
+    background-color: var(--body-background-color);
 }
 html.sr .load-hidden {
     visibility: hidden;
@@ -13,10 +13,13 @@ body{
     margin: 0%;
     font-family: 'Product Sans', sans-serif;
     font-size: 16px;
+    background-color: var(--body-background-color);
 
 }
 @media (prefers-color-scheme: dark) {
     :root{
+        --body-background-color: rgb(40, 40, 41);
+
         --accent-color: rgb(255, 136, 0);
         --section-title-color: rgb(250, 197, 136);
         --article-title-color:rgb(250, 226, 204);
@@ -53,26 +56,25 @@ body{
   @media (prefers-color-scheme: light) {
     :root{
         --accent-color: #08b86f;
-        --section-title-color: #404040;
-        --article-title-color: rgb(46, 46, 46);
+        --alt-accent-color: rgb(255, 136, 0);
+        --section-title-color: rgb(46, 46, 46);
+        --article-title-color: #404040;
         --under-title-color: #666;
         --footer-link-color: #666;
 
         --gray-color:#808080;
-        --hover-link-color:var(--accent-color);
+        --hover-link-color: #1dbd7b;
         --summery-color: #404040;
-        --background-color:#fff;
-        --title-one-color: #1a1a1a;
-        --title-color: var(--section-title-color);
 
-        --border-color: #0079d0ae;
+        --background-color:#fff;
+        --body-background-color: rgb(241, 242, 242);
+        --box-shadow: 0rem 2rem 1.5rem #748f740e;
+        --border: 1px solid #83858442;
+
+        --border-color: #05e98a40;
         --quick-info:  #091310;
 
-        --bg-color-one: #fff;
-        --ba-color: rgb(159, 247, 225);
-        --shading:rgb(140, 196, 186);
 
-        --side-content:rgb(99, 252, 226);
         --border-bottom: rgba(0, 128, 128, 0.486);
         --box-shadow: none;
 

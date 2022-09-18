@@ -1,6 +1,6 @@
 main {
     margin-top: 50px;
-    margin: 80px 5%;
+    margin: 75px 6%;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -45,11 +45,12 @@ main {
     margin-right: 10px;
     padding: 0%;
     text-decoration: none;
-    color: var(--hover-link-color);
+    color: var(--gray-color);
 }
 
 .under-title>.explore:hover {
     text-decoration: underline;
+    color: var(--hover-link-color);
 }
 
 .article-title {
@@ -74,20 +75,21 @@ main {
 }
 
 .article-info>.author {
+   /* border: 1px solid blue;*/
     text-decoration: none;
-    color: var(--gray-color);
+    color: var(--hover-link-color);
 }
 
 .article-info>.author:hover {
     color: var(--hover-link-color);
 }
 
-.article-info>.read-time i {
-    color: var(--hover-link-color);
+.article-info>.read-time {
+    color: var(--gray-color);
 }
 
 .article-summery {
-    margin: 5px 0%;
+    margin: 10px 0%;
     padding-left: 5px;
     font-weight: 400;
     font-size: 1.12em;
@@ -130,6 +132,7 @@ main {
     margin-top: 3px;
     margin-right: 5px;
     font-size: 18px;
+    color: var(--alt-accent-color);
 }
 .add-to>a>.share>i{
     /* border: 1px solid blue;*/
@@ -137,25 +140,21 @@ main {
      font-size: 18px;
      margin-left: 3px;
      margin-top: 5px;
+     color: var(--alt-accent-color);
  }
 .add-to>a>.save:hover,
 .add-to>a>.share:hover{
-    color: var(--hover-link-color);
+    color: var(--alt-accent-color);
 }
 
 /* END OF GLOBAL STYLES */
 
-
-.mobile-menu,
-.header-mobile{
-    display: none;
-}
-
 .welcome {
     /*  border: 1px solid blue;*/
-    background-color: var(--bg-color-one);
+    background-color: var(--background-color);
     padding: 20px;
-   /* box-shadow: -0.09rem 0.09rem 0.5rem 0.001rem  #0000009a;*/
+    box-shadow: var(--box-shadow);
+    border: var(--border);
 }
 
 .welcome>.greeting {
@@ -249,6 +248,8 @@ main>.best {
     padding: 20px;
     height: max-content;
     background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
 }
 
 .best>.best-articles {
@@ -333,7 +334,9 @@ main>.best {
  /* border: 1px solid blue;*/
   display: block;
   padding: 20px;
-  background-color: var(--bg-color-one);
+  background-color: var(--background-color);
+  box-shadow: var(--box-shadow);
+  border: var(--border);
 }
 .editors-pick>.editors-articles{
    /* border: 1px solid rgb(0, 255, 157);*/
@@ -378,6 +381,8 @@ main>.best {
     display: block;
     padding: 20px;
     background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
   }
   .most-read>.most-read-articles{
       /*border: 1px solid rgb(0, 255, 157);*/
@@ -413,6 +418,8 @@ main>.best {
     flex-flow: column;
     justify-content: space-around;
     padding: 20px;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
   }
   .discover-topis{
     margin: 0%;
@@ -434,7 +441,7 @@ main>.best {
   }
   .topics>.topic-list li>a{
     text-decoration: none;
-    color: teal;
+    color: var(--hover-link-color);
     border: 1px solid var(--border-color);
     cursor: pointer;
     padding: 5px 15px;
@@ -447,15 +454,15 @@ main>.best {
 }
 
 .topics>.topic-list .active-list>a{
-    background: linear-gradient(0deg, rgb(3, 119, 148) 0%, rgb(5, 136, 201) 100%);
+    background: linear-gradient(0deg, #1dbd7b 0%,#1dbd7b 100%);
     color: #fff;
     font-weight: bold;
     border: none;
 }
 
 .topics>.topic-list li>a:hover{
-    background: linear-gradient(0deg, rgb(3, 119, 148) 0%, rgb(5, 136, 201) 100%);
+    background: linear-gradient(0deg, #1dbd7b 0%, #1dbd7b 100%);
     color: #fff;
     border: none;
-    font-weight: bold;
+   /* font-weight: bold;*/
 }

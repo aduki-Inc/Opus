@@ -25,13 +25,13 @@
                 <a href="#" class="header-link active-header-link">Home</a>
             </li>
             <li class="header-list-item">
-                <a href="#" class="header-link">Articles</a>
-            </li>
-            <li class="header-list-item">
                 <a href="#" class="header-link">Discover</a>
             </li>
             <li class="header-list-item">
-                <a href="#" class="header-link">Subscribe</a>
+                <a href="#" class="header-link">Newsletters</a>
+            </li>
+            <li class="header-list-item">
+                <a href="#" class="header-link">Discover</a>
             </li>
             <li class="header-list-item">
                 <a href="#" class="header-link">Donate</a>
@@ -41,47 +41,88 @@
             <div class="theme-switcher">
                 <i class="fa fa-solid fa-moon"> Light</i>
             </div>
-            -->
-        <div class="account">
-            <a href="#" class="getting-started" role="button">Get Started</a>
+        -->
+        <!-- If A User Is Logged In-->
+
+        <div class="profile-section">
+            <div id="dropdown-btn" class="profile-image-wrapper">
+                <span class="active-status">
+                  <span class="dot"></span>
+                </span>
+                <img src="img/pexels-pixabay-256262.jpg" alt="" />
+            </div>
+            <div id="profile-dropdown" class="profile-dropdown">
+                <div class="go-to-profile">
+                  <div class="profile-image-wrapper">
+                    <img src="img/pexels-pixabay-256262.jpg" alt="" />
+                  </div>
+                  <div class="name-container">
+                    <h4 class="name">Fredrick Ochieng</h4>
+                    <a href=" {% url 'profile' username=user.username %} " class="profile-link"
+                      >View Profile
+                      <span class="iconly-Arrow-Right icbo"></span>
+                    </a>
+                  </div>
+                </div>
+                <hr size="1" />
+                <ul class="linked-list top-links">
+                  <li class="dropdown-li">
+                    <a href="" class="dropdown-link">Dashboard</a>
+                  </li>
+                  <li class="dropdown-li">
+                    <a href="{% url 'user_post_list' %}" class="dropdown-link">Your Stats</a>
+                  </li>
+                  <li class="dropdown-li">
+                    <a href=" {% url 'profile' username=user.username %} " class="dropdown-link">Your Profile</a>
+                  </li>
+                  <li class="dropdown-li">
+                    <a href=" {% url 'user_post_list' %} " class="dropdown-link">Your Articles</a>
+                  </li>
+                </ul>
+                <hr size="1" />
+                <ul class="linked-list middle-links">
+                  <li class="dropdown-li">
+                    <a href="" class="dropdown-link">Explore</a>
+                  </li>
+                  <li class="dropdown-li">
+                    <a href="" class="dropdown-link">What's New?</a>
+                  </li>
+                  <li class="dropdown-li">
+                    <a href="" class="dropdown-link">Send Us Feedback</a>
+                  </li>
+                  <li class="dropdown-li">
+                    <a href="" class="dropdown-link">Settings</a>
+                  </li>
+                </ul>
+                <hr size="1" />
+                <ul class="linked-list log-out">
+                  <li class="dropdown-li">
+                    <a href="{% url 'logout' %}" class="dropdown-link log-out">Log Out</a>
+                  </li>
+                </ul>
+            </div>
         </div>
+    
+        <!-- If A User Is Not Sign Up--
+
+        <div id="logon" class="account">
+           <a title="Sign Up" href="" class="sign-up getting-started">
+                <span class="iconly-Add-User icli"></span>
+                <span class="text">Sign up</span>
+           </a>
+           <a title="Log In" href="" class="login getting-started">
+                <span class="iconly-Login icli"></span>
+                <span class="text">Login</span>
+           </a>
+        </div>
+
+        <div id="start" class="account">
+            <a title="Log In" href="" class="login getting-started">
+                 <span class="text">Get started</span>
+            </a>
+         </div>
+        -->
     </header>
-    <div class="header-mobile">
-        <div class="site-logo">
-            <h2 class="site-name">Opus</h2>
-        </div>
-        <ul class="header-links">
-            <li class="header-list-item">
-                <a href="#" class="header-link active-header-link">Home</a>
-            </li>
-            <li class="header-list-item">
-                <a href="#" class="header-link">Articles</a>
-            </li>
-            <li class="header-list-item">
-                <a href="#" class="header-link">Discover</a>
-            </li>
-            <li class="header-list-item">
-                <a href="#" class="header-link">Subscribe</a>
-            </li>
-            <li class="header-list-item">
-                <a href="#" class="header-link">Donate</a>
-            </li>
-        </ul>
-        <!--
-            <div class="theme-switcher">
-                <i class="fa fa-solid fa-moon"> Light</i>
-            </div>
-            -->
-        <div class="account">
-            <a href="#" class="getting-started" role="button">Get Started</a>
-        </div>
-    </div>
-    <div class="mobile-menu">
-        <div class="site-logo">
-            <h2 class="site-name">Opus</h2>
-        </div>
-        <button class="button-88" id="menu-btn" role="button">Menu</button>
-    </div>
 
     <main>
         <div class="welcome">
@@ -651,6 +692,17 @@
             </ul>
         </div>
     </main>
+    <div class="mobile-footer">
+        <a href="" class="mobile-footer-link active">
+            <span class="iconly-Home icli"></span>
+        </a>
+        <a href="" class="mobile-footer-link">
+            <span class="iconly-Search icli"></span>
+        </a>
+        <a href="" class="mobile-footer-link">
+            <span class="iconly-Edit icli">
+        </a>
+    </div>
     <footer>
         <div class="footer-section">
             <h3>Products</h3>
