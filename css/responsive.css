@@ -394,11 +394,16 @@
      }
 
      .editors-articles>.editors-article .editors-article-image {
-         height: 200px;
-         padding: 5%;
-         margin-bottom: 20px;
+         padding: 8%;
          align-self: flex-start;
      }
+     .editors-articles>.editors-article .editors-article-image img{
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+}
 
      /* Most Read */
      .most-read>.most-read-articles .most-read-article {
@@ -409,9 +414,7 @@
     }
 
     .most-read>.most-read-articles>.most-read-article .most-read-article-image {
-         height: 200px;
-         padding: 0%;
-         margin-bottom: 20px;
+         padding: 8%;
          align-self: center;
     }
     .topics>.topic-list{
