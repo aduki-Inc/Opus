@@ -171,55 +171,29 @@
         flex-wrap: wrap;
         gap: 20px;
     }
-    .best>.best-articles .b-one,
-    .best>.best-articles .b-two,
-    .best>.best-articles .b-three,
-    .best>.best-articles .b-four{
-        /*border: 1px solid rgb(0, 255, 157);*/
-        max-width: 300px;
-        min-height: unset;
-        height: max-content;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 5px;
-    }
+
     .best>.best-articles>.large-article{
         /*border: 1px solid rgb(0, 255, 157);*/
         display: grid;
-        grid-template-columns: 1fr 3fr;
+        grid-template-columns: 2fr 3fr;
         grid-template-rows: max-content;
         row-gap: 5px;
         column-gap: 20px;
     }
-    .best>.best-articles>.best-article .best-article-image{
-        height: 120px;
-        width: 100%;
-        padding: 0%;
-    }
+
     .best>.best-articles>.large-article .best-article-image{
         grid-column: 1/2;
         grid-row: 1/12;
         height: 60%;
         padding: 0%;
     }
-    .best>.best-articles>.best-article .article-title{
-        margin: 0%;
-        padding-top: 0%;
-       /* border: 1px solid rgb(0, 255, 157);*/
-    }
+
     .best>.best-articles>.large-article .article-summery{
        /* border: 1px solid rgb(0, 255, 157);*/
         grid-row: 3/4;
         margin: 0%;
     }
-    .best>.best-articles>.best-article .add-to{
-       /* border: 1px solid rgb(0, 255, 157);*/
-        position: unset;
-        grid-row: 4/5;
-        width: 98%;
-        margin-top: 15px;
-    }
+
     .best>.best-articles>.large-article .add-to{
        /* border: 1px solid rgb(0, 255, 157);*/
         position: unset;
@@ -234,18 +208,18 @@
          grid-template-columns: 1fr 3fr;
          column-gap: 10px;
      }
-     .most-read-articles>.most-read-article .add-to{
+    .most-read-articles>.most-read-article .add-to{
          /*border: 1px solid rgb(0, 255, 157);*/
          width: 95%;
      }
-     .most-read-articles>.most-read-article .most-read-article-image{
+    .most-read-articles>.most-read-article .most-read-article-image{
          /* border: 1px solid rgb(0, 255, 157);*/
            grid-column: 1/2;
            grid-row: 1/5;
            height: 70%;
            padding: 0%;
        }
-       .most-read-articles>.most-read-article .article-title{
+    .most-read-articles>.most-read-article .article-title{
          /* border: 1px solid rgb(0, 255, 157);*/
           margin: 0%;
           padding-top: 0%;
