@@ -231,12 +231,11 @@
     }
     header{
         height: 50px;
-        padding: 20px 10px;
         gap: 0%;
         justify-content: space-between;
         align-items: center;
         border: none;
-        box-shadow: 0.1rem 0.5rem 3rem #2a2b2a1b;
+        box-shadow: 0.1rem 0.5rem 3rem #2a2b2a11;
     }
 
     header #logon{
@@ -247,10 +246,16 @@
       }
 
     header .profile-section{
+          box-sizing: 0%;
           position: unset;
           margin: 0%;
-          padding: 0%;
+         /* border: 1px solid black;*/
+          display: flex;
+          align-items: center;
       }
+    .profile-section>.profile-image-wrapper{
+        margin: 0%;
+    }
     .profile-section>.profile-dropdown{
         top: 50px;
         right: 2px;
