@@ -434,7 +434,7 @@ main>.best {
   }
   .topics>.topic-list li>a{
     text-decoration: none;
-    color: teal;
+    color: var(--hover-link-color);
     border: 1px solid var(--border-color);
     cursor: pointer;
     padding: 5px 15px;
@@ -447,14 +447,14 @@ main>.best {
 }
 
 .topics>.topic-list .active-list>a{
-    background: linear-gradient(0deg, rgb(3, 119, 148) 0%, rgb(5, 136, 201) 100%);
+    background: linear-gradient(0deg, rgb(15, 138, 196) 0%,rgb(15, 138, 196) 100%);
     color: #fff;
     font-weight: bold;
     border: none;
 }
 
 .topics>.topic-list li>a:hover{
-    background: linear-gradient(0deg, rgb(3, 119, 148) 0%, rgb(5, 136, 201) 100%);
+    background: linear-gradient(0deg, rgb(15, 138, 196) 0%, rgb(15, 138, 196) 100%);
     color: #fff;
     border: none;
     font-weight: bold;
