@@ -155,7 +155,8 @@ main {
     /*  border: 1px solid blue;*/
     background-color: var(--background-color);
     padding: 20px;
-   /* box-shadow: -0.09rem 0.09rem 0.5rem 0.001rem  #0000009a;*/
+    box-shadow: var(--box-shadow);
+    border: var(--border);
 }
 
 .welcome>.greeting {
@@ -249,6 +250,8 @@ main>.best {
     padding: 20px;
     height: max-content;
     background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
 }
 
 .best>.best-articles {
@@ -334,6 +337,8 @@ main>.best {
   display: block;
   padding: 20px;
   background-color: var(--background-color);
+  box-shadow: var(--box-shadow);
+  border: var(--border);
 }
 .editors-pick>.editors-articles{
    /* border: 1px solid rgb(0, 255, 157);*/
@@ -378,6 +383,8 @@ main>.best {
     display: block;
     padding: 20px;
     background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
   }
   .most-read>.most-read-articles{
       /*border: 1px solid rgb(0, 255, 157);*/

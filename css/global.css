@@ -67,6 +67,8 @@ body{
 
         --background-color:#fff;
         --body-background-color: rgb(241, 242, 242);
+        --box-shadow: 0rem 2rem 1.5rem #748f740e;
+        --border: 1px solid #83858442;
 
         --border-color: #0079d0ae;
         --quick-info:  #091310;
