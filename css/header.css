@@ -162,13 +162,13 @@ header>.header-links .header-list-item{
   position: absolute;
   background-color: white;
  /*background-color: rgb(228, 243, 214);*/
- border: 1px solid #83858421;
+  border: 1px solid #83858421;
   padding: 0%;
   padding-top: 8px;
   margin: 0%;
-  width: 200px;
-  top: 75px;
-  right: 10px;
+  width: 220px;
+  top: 60px;
+  right: 5%;
   box-shadow: 0.1rem 0.5rem 1rem #2a2b2a31;
 }
 .profile-dropdown>.go-to-profile{
@@ -238,6 +238,8 @@ header>.header-links .header-list-item{
 }
 .profile-dropdown>.linked-list{
   margin: 10px 0px 12px 15px;
+  list-style-type: none;
+  padding: 0%;
 }
 .profile-dropdown>.linked-list>.dropdown-li{
   margin-top: 8px;
