@@ -393,9 +393,8 @@
      }
 
      .editors-articles>.editors-article .editors-article-image {
-         height: 150px;
+         height: 200px;
          padding: 0%;
-         width: 80%;
          margin-bottom: 20px;
          align-self: flex-start;
      }
@@ -409,7 +408,7 @@
     }
 
     .most-read>.most-read-articles>.most-read-article .most-read-article-image {
-         height: 180px;
+         height: 200px;
          padding: 0%;
          margin-bottom: 20px;
          align-self: center;
@@ -522,6 +521,6 @@
         color: var(--alt-accent-color);
     }
     .mobile-footer>a .icli{
-        font-size: 20px;
+        font-size: 25px;
     }
 }
