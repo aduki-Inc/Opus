@@ -74,16 +74,17 @@ main {
 }
 
 .article-info>.author {
+   /* border: 1px solid blue;*/
     text-decoration: none;
-    color: var(--gray-color);
+    color: var(--hover-link-color);
 }
 
 .article-info>.author:hover {
     color: var(--hover-link-color);
 }
 
-.article-info>.read-time i {
-    color: var(--hover-link-color);
+.article-info>.read-time {
+    color: var(--gray-color);
 }
 
 .article-summery {
@@ -130,6 +131,7 @@ main {
     margin-top: 3px;
     margin-right: 5px;
     font-size: 18px;
+    color: var(--hover-link-color);
 }
 .add-to>a>.share>i{
     /* border: 1px solid blue;*/
@@ -137,6 +139,7 @@ main {
      font-size: 18px;
      margin-left: 3px;
      margin-top: 5px;
+     color: var(--hover-link-color);
  }
 .add-to>a>.save:hover,
 .add-to>a>.share:hover{
