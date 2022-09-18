@@ -6,7 +6,7 @@ header{
     position: fixed;
     top: 0%;
     width: 100%;
-    height: 60px;
+    height: 70px;
     display: flex;
     align-items: center;
     gap: 8%;
@@ -120,7 +120,7 @@ header #start{
   /*border: 1px solid yellow;*/
   margin-top: 5px;
   padding: 0px;
-  font-size: 30px;
+  font-size: 35px;
   background-color: none;
   border-radius: 50px;
   /*box-shadow: 0rem 2rem 2rem #2a2b2a50;*/
@@ -151,9 +151,9 @@ header #start{
   position: relative;
   margin-top: 10px;
   padding: 3px;
-  width: 35px;
+  width: 38px;
+  height: 38px;
   cursor: pointer;
-  height: 35px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
