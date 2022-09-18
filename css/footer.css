@@ -4,7 +4,7 @@ footer{
     padding: 20px;
     margin: 20px 5%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    background-color: var(--bg-color);
+    background-color: var(--background-color);
 }
 footer>.footer-section{
    /* border: 1px solid blue;*/

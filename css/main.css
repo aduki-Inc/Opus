@@ -153,7 +153,7 @@ main {
 
 .welcome {
     /*  border: 1px solid blue;*/
-    background-color: var(--bg-color-one);
+    background-color: var(--background-color);
     padding: 20px;
    /* box-shadow: -0.09rem 0.09rem 0.5rem 0.001rem  #0000009a;*/
 }
@@ -333,7 +333,7 @@ main>.best {
  /* border: 1px solid blue;*/
   display: block;
   padding: 20px;
-  background-color: var(--bg-color-one);
+  background-color: var(--background-color);
 }
 .editors-pick>.editors-articles{
    /* border: 1px solid rgb(0, 255, 157);*/
