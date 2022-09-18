@@ -450,15 +450,15 @@ main>.best {
 }
 
 .topics>.topic-list .active-list>a{
-    background: linear-gradient(0deg, rgb(15, 138, 196) 0%,rgb(15, 138, 196) 100%);
+    background: linear-gradient(0deg, #1dbd7b 0%,#1dbd7b 100%);
     color: #fff;
     font-weight: bold;
     border: none;
 }
 
 .topics>.topic-list li>a:hover{
-    background: linear-gradient(0deg, rgb(15, 138, 196) 0%, rgb(15, 138, 196) 100%);
+    background: linear-gradient(0deg, #1dbd7b 0%, #1dbd7b 100%);
     color: #fff;
     border: none;
-    font-weight: bold;
+   /* font-weight: bold;*/
 }

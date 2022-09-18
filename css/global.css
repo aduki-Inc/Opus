@@ -56,13 +56,13 @@ body{
   @media (prefers-color-scheme: light) {
     :root{
         --accent-color: #08b86f;
-        --section-title-color: #404040;
-        --article-title-color: rgb(46, 46, 46);
+        --section-title-color: #08b86f;
+        --article-title-color: #404040;
         --under-title-color: #666;
         --footer-link-color: #666;
 
         --gray-color:#808080;
-        --hover-link-color: rgb(15, 138, 196);
+        --hover-link-color: #1dbd7b;
         --summery-color: #404040;
 
         --background-color:#fff;
@@ -70,7 +70,7 @@ body{
         --box-shadow: 0rem 2rem 1.5rem #748f740e;
         --border: 1px solid #83858442;
 
-        --border-color: #0079d0ae;
+        --border-color: #05e98a61;
         --quick-info:  #091310;
 
 
