@@ -230,14 +230,13 @@
         margin: 0%;
     }
     header{
-        height: 70px;
+        height: 68px;
         gap: 0%;
         justify-content: space-between;
         align-items: center;
         border: none;
         box-shadow: 0.1rem 0.5rem 3rem #2a2b2a11;
     }
-
     header #logon{
         display: none;
     }
@@ -258,7 +257,7 @@
         margin: 0%;
     }
     .profile-section>.profile-dropdown{
-        top: 50px;
+        top: 70px;
         right: 2px;
     }
 
