@@ -103,22 +103,57 @@ header #start{
 .profile-section{
   position: absolute;
   right: 5%;
-  margin: 0px 20px;
+  margin: 0px 10px;
   display: flex;
   flex-flow: row;
   align-items: flex-end;
+  justify-content: space-between;
+  gap: 15px;
  /* border: 1px solid rgb(8, 8, 8);*/
   cursor: pointer;
 }
+.profile-section>.icli{
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  color: #72ce26;
+  background-color: #72ce2600;
+  /*border: 1px solid yellow;*/
+  margin-top: 5px;
+  padding: 0px;
+  font-size: 35px;
+  background-color: none;
+  border-radius: 50px;
+  /*box-shadow: 0rem 2rem 2rem #2a2b2a50;*/
+}
+#text-count{
+  display: inline-block;
+  background-color: #08b86e;
+  width: 16px;
+  height: 16px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 3px;
+  position: absolute;
+  font-size: 0.7rem;
+  top: -2px;
+  right: 1px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+}
 
 .profile-section>.profile-image-wrapper{
-  border: 1px solid var(--border-color);
+  border: 1px solid #72ce26a2;
  /* box-shadow: 0rem 2rem 2rem #2a2b2a50;*/
   position: relative;
   margin-top: 10px;
   padding: 3px;
-  width: 38px;
-  height: 38px;
+  width: 35px;
+  height: 35px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
