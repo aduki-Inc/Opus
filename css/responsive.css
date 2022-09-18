@@ -160,7 +160,8 @@
     }
     main>.editors-pick,
     main>.best,
-    main>.most-read{
+    main>.most-read,
+    main>.welcome{
         border: none;
         box-shadow: none;
        }
@@ -173,32 +174,7 @@
     }
 
     .best>.best-articles>.large-article{
-        /*border: 1px solid rgb(0, 255, 157);*/
-        display: grid;
         grid-template-columns: 2fr 3fr;
-        grid-template-rows: max-content;
-        row-gap: 5px;
-        column-gap: 20px;
-    }
-
-    .best>.best-articles>.large-article .best-article-image{
-        grid-column: 1/2;
-        grid-row: 1/12;
-        height: 60%;
-        padding: 0%;
-    }
-
-    .best>.best-articles>.large-article .article-summery{
-       /* border: 1px solid rgb(0, 255, 157);*/
-        grid-row: 3/4;
-        margin: 0%;
-    }
-
-    .best>.best-articles>.large-article .add-to{
-       /* border: 1px solid rgb(0, 255, 157);*/
-        position: unset;
-        grid-row: 8/9;
-        width: 98%;
     }
 
     .most-read-articles>.most-read-article{
@@ -208,29 +184,8 @@
          grid-template-columns: 1fr 3fr;
          column-gap: 10px;
      }
-    .most-read-articles>.most-read-article .add-to{
-         /*border: 1px solid rgb(0, 255, 157);*/
-         width: 95%;
-     }
-    .most-read-articles>.most-read-article .most-read-article-image{
-         /* border: 1px solid rgb(0, 255, 157);*/
-           grid-column: 1/2;
-           grid-row: 1/5;
-           height: 70%;
-           padding: 0%;
-       }
-    .most-read-articles>.most-read-article .article-title{
-         /* border: 1px solid rgb(0, 255, 157);*/
-          margin: 0%;
-          padding-top: 0%;
-       }
 
     /* Editors Articles */
-    .editors-pick>.editors-articles{
-        /*border: 1px solid rgb(0, 255, 157);*/
-        display: flex;
-        flex-flow: column;
-    }
     .editors-pick>.editors-articles .editors-article {
         /* border: 1px solid rgb(0, 255, 157);*/
          width: 100%;
@@ -242,9 +197,25 @@
         grid-template-columns: 2fr 3fr;
      }
 
-     .most-read-article>.most-read-article-image {
-         height: 300px;
-     }
+     /* Topics */
+     .topics{
+        /* border: 1px solid rgb(0, 255, 157);*/
+         background-color: var(--background-color);
+         display: flex;
+         align-items: flex-start;
+         flex-flow: column;
+         justify-content: start;
+         padding: 10px;
+       }
+    .discover-topis{
+        margin: 0%;
+        align-self: center;
+        color: var(--title-color);
+      }
+    .topics>.topic-list{
+         /* border: 1px solid rgb(0, 255, 157);*/
+          width: 100%;
+    }
 
 }
 
