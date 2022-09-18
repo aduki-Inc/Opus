@@ -137,10 +137,10 @@ header #start{
   display: flex;
   align-items: center;
   justify-content: center;
-  right: -2px;
-  bottom: -1px;
-  width: 12px;
-  height: 12px;
+  right: -5px;
+  bottom: 2px;
+  width: 14px;
+  height: 14px;
   background-color: var(--background-color);
  /* border: 1px solid var(--border-color);*/
   -webkit-border-radius: 50px;
@@ -150,8 +150,9 @@ header #start{
   border-radius: 50px;
 }
 .profile-image-wrapper>.active-status>.dot{
-  height: 6px;
-  width: 6px;
+  height: 8px;
+  width: 8px;
+  border: var(--border);
   background-color: rgb(39, 204, 94);
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
