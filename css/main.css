@@ -719,7 +719,7 @@ main.feeds>.feed-contents>.article-wrapper>.summery-content>.article-footer{
     /*border: 1px solid rgb(82, 207, 24);*/
     background-color: #bbf58c;
     box-shadow: var(--box-shadow);
-    /*border: var(--border);*/
+    border: var(--border);
     width: 90%;
     height: 180px;
     margin: 0%;
