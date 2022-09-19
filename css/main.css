@@ -504,7 +504,7 @@ main.feeds>.feed-contents{
     padding: 10px;
 }
 main.feeds>.feed-contents>.feed-title{
-    /*border: 1px solid rgba(18, 18, 18, 0.198);*/
+   /* border: 1px solid rgba(18, 18, 18, 0.198);*/
     margin: 0%;
     padding: 0%;
     padding-left: 15px;
