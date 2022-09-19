@@ -700,7 +700,7 @@ main.feeds>.feed-contents>.article-wrapper>.summery-content>.article-footer{
     display: flex;
     flex-flow: column;
     align-items: center;
-    padding: 10px;
+    padding: 20px 0px 30px 0px;
     gap: 30px;
 }
 .stats{
@@ -808,7 +808,7 @@ main.feeds>.feed-contents>.article-wrapper>.summery-content>.article-footer{
     gap: 8px;
    /* border: var(--border);*/
 }
-.sidebar-content>.topics>.discover-topis{
+.sidebar-title{
     margin: 0%;
     width: max-content;
     font-weight: 500;
