@@ -4,7 +4,6 @@
 }
 html{
     line-height: 1.15;
-    background-color: white;
    /* background-color: var(--body-background-color);*/
 }
 html.sr .load-hidden {
@@ -14,7 +13,6 @@ body{
     margin: 0%;
     font-family: 'Product Sans', sans-serif;
     font-size: 16px;
-    background-color: white;
     /*background-color: var(--body-background-color);*/
 
 }
@@ -69,7 +67,7 @@ body{
         --summery-color: #404040;
 
         --background-color:#fff;
-        --body-background-color: rgb(246, 248, 252);
+        --body-background-color: rgb(241, 242, 242);
         --box-shadow: 0rem 2rem 1.5rem #748f740e;
         --border: 1px solid #83858442;
 
