@@ -73,7 +73,7 @@ main {
 
 .get-more{
    /* border: 1px solid blue;*/
-    color: var(--gray-color);
+    color: var(--hover-link-color);
     text-decoration: none;
     font-size: 18px;
     padding: 10px 0px 5px 0px;
@@ -81,9 +81,11 @@ main {
     margin: 10px 0% 0% 0%;
     border-top: 1px solid rgba(18, 18, 18, 0.198);
 }
+/*
 .get-more:hover{
     color: var(--alt-accent-color);
 }
+*/
 .article-info {
     padding-left: 5px;
     color: var(--gray-color);
@@ -683,4 +685,15 @@ main.feeds>.feed-contents>.article-wrapper>.summery-content>.article-footer{
 }
 .feed-contents>.article-wrapper>.summery-content>.article-footer>.article-actions>a:hover{
     color: var(--alt-accent-color);
+}
+
+/* Sidebar Content- DeskTop */
+.sidebar-content{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    border: 1px solid gray;
+    background-color: var(--background-color);
+    display: flex;
+    flex-flow: column;
+    gap: 30px;
 }
