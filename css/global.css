@@ -4,7 +4,8 @@
 }
 html{
     line-height: 1.15;
-    background-color: var(--body-background-color);
+    background-color: white;
+   /* background-color: var(--body-background-color);*/
 }
 html.sr .load-hidden {
     visibility: hidden;
@@ -13,7 +14,8 @@ body{
     margin: 0%;
     font-family: 'Product Sans', sans-serif;
     font-size: 16px;
-    background-color: var(--body-background-color);
+    background-color: white;
+    /*background-color: var(--body-background-color);*/
 
 }
 @media (prefers-color-scheme: dark) {

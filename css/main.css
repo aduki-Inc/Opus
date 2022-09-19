@@ -156,8 +156,8 @@ main {
     /*  border: 1px solid blue;*/
     background-color: var(--background-color);
     padding: 20px;
-    box-shadow: var(--box-shadow);
-    border: var(--border);
+   /* box-shadow: var(--box-shadow);
+    border: var(--border);*/
 }
 
 .welcome>.greeting {
@@ -251,8 +251,8 @@ main>.best {
     padding: 20px;
     height: max-content;
     background-color: var(--background-color);
-    box-shadow: var(--box-shadow);
-    border: var(--border);
+   /* box-shadow: var(--box-shadow);
+    border: var(--border);*/
 }
 
 .best>.best-articles {
@@ -338,8 +338,8 @@ main>.best {
   display: block;
   padding: 20px;
   background-color: var(--background-color);
-  box-shadow: var(--box-shadow);
-  border: var(--border);
+ /* box-shadow: var(--box-shadow);
+  border: var(--border);*/
 }
 .editors-pick>.editors-articles{
    /* border: 1px solid rgb(0, 255, 157);*/
@@ -350,9 +350,9 @@ main>.best {
 }
 .editors-pick>.editors-articles .editors-article{
    /* border: 1px solid rgb(0, 255, 157);*/
-    width: 75%;
+    width: 78%;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1.5fr 3fr;
     column-gap: 10px;
 }
 .editors-articles>.editors-article .editors-article-image{
@@ -384,8 +384,8 @@ main>.best {
     display: block;
     padding: 20px;
     background-color: var(--background-color);
-    box-shadow: var(--box-shadow);
-    border: var(--border);
+   /* box-shadow: var(--box-shadow);
+    border: var(--border);*/
   }
   .most-read>.most-read-articles{
       /*border: 1px solid rgb(0, 255, 157);*/
@@ -421,8 +421,8 @@ main>.best {
     flex-flow: column;
     justify-content: space-around;
     padding: 20px;
-    box-shadow: var(--box-shadow);
-    border: var(--border);
+    /*box-shadow: var(--box-shadow);
+    border: var(--border);*/
   }
   .discover-topis{
     margin: 0%;
