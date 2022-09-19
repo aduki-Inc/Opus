@@ -71,6 +71,19 @@ main {
     color: var(--article-title-color);
 }
 
+.get-more{
+   /* border: 1px solid blue;*/
+    color: var(--gray-color);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 0px 5px 0px;
+    text-align: center;
+    margin: 10px 0% 0% 0%;
+    border-top: 1px solid rgba(18, 18, 18, 0.198);
+}
+.get-more:hover{
+    color: var(--alt-accent-color);
+}
 .article-info {
     padding-left: 5px;
     color: var(--gray-color);
@@ -478,19 +491,48 @@ main.feeds{
     grid-template-columns: 2fr 1fr;
 }
 main.feeds>.feed-contents{
-   /* border: 1px solid rgb(0, 255, 157);*/
+    /*border: 1px solid rgb(0, 255, 157);*/
+    grid-column: 1/2;
     background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
     display: flex;
     flex-flow: column;
-    gap: 30px;
+    gap: 0px;
     padding: 10px;
 }
+main.feeds>.feed-contents>.feed-title{
+    /*border: 1px solid rgba(18, 18, 18, 0.198);*/
+    margin: 0%;
+    padding: 0%;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 2px;
+}
+main.feeds>.feed-contents>.feed-title>.section-title{
+  /*  border: 1px solid gray;*/
+    margin: 0%;
+    width: max-content;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--alt-accent-color);
+}
+main.feeds>.feed-contents>.feed-title>.icli{
+    /*border: 1px solid gray;*/
+    font-size: 20px;
+    margin-top: 10px;
+    color: var(--alt-accent-color);
+}
 main.feeds>.feed-contents>.article-wrapper{
-    border: 1px solid rgb(0, 255, 157);
+   /* border: 1px solid rgb(0, 255, 157);*/
     display: flex;
     flex-flow: column;
     gap: 5px;
-    margin: 0% 8px 0% 8px;
+    margin: 15px 8px 0% 8px;
+    padding: 20px 0px 0px 0%;
+    border-top: 1px solid rgba(18, 18, 18, 0.198);
 }
 /* Article Info*/
 main.feeds>.feed-contents>.article-wrapper>.article-info{
@@ -504,25 +546,27 @@ main.feeds>.feed-contents>.article-wrapper>.article-info{
 }
 main.feeds>.feed-contents>.article-wrapper>.article-info .profile-wrapper{
     margin-right: 5px;
-    width: 28px;
-    height: 28px;
+    width: 30px;
+    height: 30px;
     padding: 1px;
-    border: 1px solid var(--border-color);
-    border-radius: 50px;
+    /*border: 1px solid var(--border-color);*/
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
+    border-radius: 50px;
 }
 main.feeds>.feed-contents>.article-wrapper>.article-info>.profile-wrapper img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 50px;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
+    border-radius: 50px;
 }
 main.feeds>.feed-contents>.article-wrapper>.article-info a{
     color: var(--article-title-color);
@@ -614,11 +658,11 @@ main.feeds>.feed-contents>.article-wrapper>.summery-content>.article-footer{
     text-decoration: none;
     padding: 3px 12px 3px 10px;
     background-color: rgba(57, 56, 56, 0.087);
-    border-radius: 50px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
+    border-radius: 50px;
 }
 .feed-contents>.article-wrapper>.summery-content>.article-footer>.article-tags>.tag:hover{
     color: var(--hover-link-color)
