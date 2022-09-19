@@ -11,6 +11,9 @@ main {
     GLOBAL TO OTHER ARTICLES
 
 */
+.mobile-footer{
+    display: none;
+}
 .section-title {
     box-sizing: border-box;
     width: 100%;

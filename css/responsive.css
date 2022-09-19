@@ -259,7 +259,18 @@
     .profile-section>.profile-dropdown{
         top: 70px;
         right: 10px;
+        width: 250px;
     }
+    .profile-dropdown>.linked-list{
+        margin: 15px 0px 12px 15px;
+      }
+      .profile-dropdown>.linked-list>.dropdown-li{
+        margin-top: 10px;
+      }
+      .profile-dropdown>.linked-list .dropdown-link{
+        padding: 5px 5px;
+        font-size: 1.03rem;
+      }
 
     main {
         margin: 70px 5px 5px 1px;
