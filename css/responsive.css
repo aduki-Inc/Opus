@@ -164,6 +164,12 @@
          padding: 0px;
      }
 
+    /* Feeds*/
+    main.feeds{
+        display: flex;
+        flex-flow: column;
+    }
+
 }
 @media screen and (max-width: 750px) {
     html,body{
@@ -239,6 +245,17 @@
          width: 100%;
          height: 70%;
          padding: 5px;
+     }
+     /* Feeds */
+     body.feeds-body{
+        background-color: var(--background-color);
+    }
+
+     main.feeds>.feed-contents{
+         background-color: var(--background-color);
+         box-shadow: unset;
+         border: none;
+
      }
 
 }
@@ -526,6 +543,61 @@
         padding: 1px 15px;
         /*border: 1px solid #14a73e05;*/
         color: var(--accent-color);
+    }
+    /* Feeds */
+    main.feeds>.feed-contents>.article-wrapper>.summery-content{
+         border: 1px solid rgb(250, 27, 27);
+         padding: 0%;
+         display: block;
+         padding: 0% 0% 10px 0%;
+     }
+     main.feeds>.feed-contents>.article-wrapper>.summery-content>.article-title{
+        margin: 0%;
+    }
+     main.feeds>.feed-contents>.article-wrapper>.summery-content>.article-footer{
+        height: max-content;
+        padding: 0% 20px 0% 0%;
+        display: block;
+        flex-flow: column;
+        align-items: flex-start;
+        gap: 18px;
+        justify-content: space-between;
+    }
+    main.feeds>.feed-contents>.article-wrapper>.summery-content>.article-summery{
+        margin: 0%;
+       /* border: 1px solid gray;*/
+        grid-column: 1/3;
+        grid-row: 2/5;
+        font-size: 16px;
+        display: block;
+        margin: 0% 5px 0% 0%;
+    }
+    .summery-text{
+        margin: 0%;
+        padding: 0%;
+    }
+    #mobile-image{
+        float: left;
+        width: 150px;
+        height: 90px;
+        margin-right: 10px;
+        margin-bottom: 0%;
+        margin-top: 5px;
+        clear: none;
+    }
+    #mobile-image>img{
+        width: 100%;
+        height: 100%;
+        box-shadow: var(--box-shadow);
+        object-fit: cover;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+}
+    main.feeds>.feed-contents>.article-wrapper>.summery-content>.content-image-wrapper img{
+        /*float: right;*/
     }
 
 }
