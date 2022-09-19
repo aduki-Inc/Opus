@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opus - Topics </title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link href="https://fonts.cdnfonts.com/css/product-sans" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <header id="menu">
+        <div class="site-logo">
+            <h2 class="site-name">Opus</h2>
+        </div>
+        <ul class="header-links">
+            <li class="header-list-item">
+                <a href="#" class="header-link active-header-link">Home</a>
+            </li>
+            <li class="header-list-item">
+                <a href="#" class="header-link">Discover</a>
+            </li>
+            <li class="header-list-item">
+                <a href="#" class="header-link">Newsletters</a>
+            </li>
+            <li class="header-list-item">
+                <a href="#" class="header-link">Discover</a>
+            </li>
+            <li class="header-list-item">
+                <a href="#" class="header-link">Donate</a>
+            </li>
+        </ul>
+        <!--
+            <div class="theme-switcher">
+                <i class="fa fa-solid fa-moon"> Light</i>
+            </div>
+        -->
+
+        <!-- If A User Is Logged In-->
+        <!--
+        <div class="profile-section">
+            <span class="iconly-Notification icli">
+                <span id="text-count">5</span>
+            </span>
+            <div id="dropdown-btn" class="profile-image-wrapper">
+                <span class="active-status">
+                  <span class="dot"></span>
+                </span>
+                <img src="img/pexels-pixabay-256262.jpg" alt="" />
+            </div>
+            <div id="profile-dropdown" class="profile-dropdown">
+                <div class="go-to-profile">
+                  <div class="profile-image-wrapper">
+                    <img src="img/pexels-pixabay-256262.jpg" alt="" />
+                  </div>
+                  <div class="name-container">
+                    <h4 class="name">Fredrick Ochieng</h4>
+                    <a href=" {% url 'profile' username=user.username %} " class="profile-link"
+                      >View Profile
+                      <span class="iconly-Arrow-Right icbo"></span>
+                    </a>
+                  </div>
+                </div>
+                <hr size="1" />
+                <ul class="linked-list top-links">
+                  <li class="dropdown-li">
+                    <a href="" class="dropdown-link">Dashboard</a>
+                  </li>
+                  <li class="dropdown-li">
+                    <a href="{% url 'user_post_list' %}" class="dropdown-link">Your Stats</a>
+                  </li>
+                  <li class="dropdown-li">
+                    <a href=" {% url 'profile' username=user.username %} " class="dropdown-link">Your Profile</a>
+                  </li>
+                  <li class="dropdown-li">
+                    <a href=" {% url 'user_post_list' %} " class="dropdown-link">Your Articles</a>
+                  </li>
+                </ul>
+                <hr size="1" />
+                <ul class="linked-list middle-links">
+                  <li class="dropdown-li">
+                    <a href="" class="dropdown-link">Explore</a>
+                  </li>
+                  <li class="dropdown-li">
+                    <a href="" class="dropdown-link">What's New?</a>
+                  </li>
+                  <li class="dropdown-li">
+                    <a href="" class="dropdown-link">Send Us Feedback</a>
+                  </li>
+                  <li class="dropdown-li">
+                    <a href="" class="dropdown-link">Settings</a>
+                  </li>
+                </ul>
+                <hr size="1" />
+                <ul class="linked-list log-out">
+                  <li class="dropdown-li">
+                    <a href="{% url 'logout' %}" class="dropdown-link log-out">Log Out</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+       -->
+
+
+        <!-- If A User Is Not Sign Up-->
+
+        <div id="logon" class="account">
+           <a title="Sign Up" href="" class="sign-up getting-started">
+                <span class="iconly-Add-User icli"></span>
+                <span class="text">Sign up</span>
+           </a>
+           <a title="Log In" href="" class="login getting-started">
+                <span class="iconly-Login icli"></span>
+                <span class="text">Login</span>
+           </a>
+        </div>
+
+        <div id="start" class="account">
+            <a title="Log In" href="" class="start getting-started">
+                <span class="iconly-Login icli"></span>
+                 <span class="text">Get started</span>
+            </a>
+         </div>
+    </header>
+
+    <main class="feeds">
+        <div class="article-feeds feed-contents">
+            <div class="article-wrapper">
+                <div class="article-info">
+                    <a href="#" class="author">Fredrick Ochieng</a>
+                    <span class="read-time"><span>&#183;</span> 2 min </span>
+                </div>
+                <div class="article-footer">
+                    <div class="article-tag">
+                        <a href="#" class="tag">Javascript</a>
+                        <span class="read-time"><span>&#183;</span> 2 min Read </span>
+                    </div>
+                    <div class="article-actions">
+                        <a href="">
+                            <i class="iconly-Bookmark icli"></i>
+                        </a>
+                        <a href="">
+                            <i class="iconly-Send icli"> </i>
+                        </a>
+                        <a href="">
+                            <span class="iconly-More-Circle icli"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="topics">
+            <h2 class="discover-topis">Discover Topics</h2>
+            <ul class="topic-list">
+                <li class="active-list"> <a href="">Technology</a></li>
+                <li><a href="">Science</a></li>
+                <li><a href="">Health Care</a></li>
+                <li><a href="">Metaverse</a></li>
+                <li><a href="">Business</a></li>
+                <li><a href="">Artificial Intelligence</a></li>
+                <li><a href="">Web</a></li>
+                <li><a href="">5G</a></li>
+                <li><a href="">Local</a></li>
+                <li><a href="">Bio-Tech</a></li>
+                <li><a href="">Resources</a></li>
+                <li><a href="">Business</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Education</a></li>
+                <li><a href="">Entertainment</a></li>
+                <li><a href="">Food</a></li>
+                <li><a href="">Health & Fitness</a></li>
+                <li><a href="">Personal Finance</a></li>
+                <li><a href="">Self Improvement</a></li>
+                <li><a href="">Sports</a></li>
+                <li><a href="">Travel</a></li>
+            </ul>
+        </div>
+    </main>
+    <div class="mobile-footer">
+        <a href="" class="mobile-footer-link active">
+            <span class="iconly-Home icli"></span>
+        </a>
+        <a href="" class="mobile-footer-link">
+            <span class="iconly-Search icli"></span>
+        </a>
+        <a href="" class="mobile-footer-link">
+            <span class="iconly-Bag-2 icli"></span>
+        </a>
+        <a href="" class="mobile-footer-link">
+            <span class="iconly-Edit icli">
+        </a>
+    </div>
+    <script src="js/dropdown.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/reveal.js"></script>
+</body>
+
+</html>

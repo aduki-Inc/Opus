@@ -168,8 +168,6 @@ main {
     margin: 10px 0px;
 }
 
-
-
 .welcome>.welcome-articles {
     box-sizing: border-box;
    /* border: 1px solid blue;*/
@@ -338,7 +336,7 @@ main>.best {
   display: block;
   padding: 20px;
   background-color: var(--background-color);
- /* box-shadow: var(--box-shadow);
+  /*box-shadow: var(--box-shadow);
   border: var(--border);*/
 }
 .editors-pick>.editors-articles{
@@ -468,4 +466,11 @@ main>.best {
     color: #fff;
     border: none;
    /* font-weight: bold;*/
+}
+
+/* Feeds */
+main.feeds{
+    border: 1px solid rgb(0, 255, 157);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
