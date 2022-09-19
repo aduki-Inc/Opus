@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opus - Topics </title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link href="https://fonts.cdnfonts.com/css/product-sans" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body class="feeds-body">
+    <header id="menu">
+        <div class="site-logo">
+            <h2 class="site-name">Opus</h2>
+        </div>
+        <ul class="header-links">
+            <li class="header-list-item">
+                <a href="#" class="header-link active-header-link">Home</a>
+            </li>
+            <li class="header-list-item">
+                <a href="#" class="header-link">Discover</a>
+            </li>
+            <li class="header-list-item">
+                <a href="#" class="header-link">Newsletters</a>
+            </li>
+            <li class="header-list-item">
+                <a href="#" class="header-link">Discover</a>
+            </li>
+            <li class="header-list-item">
+                <a href="#" class="header-link">Donate</a>
+            </li>
+        </ul>
+        <!--
+            <div class="theme-switcher">
+                <i class="fa fa-solid fa-moon"> Light</i>
+            </div>
+        -->
+
+        <!-- If A User Is Logged In-->
+        <!--
+        <div class="profile-section">
+            <span class="iconly-Notification icli">
+                <span id="text-count">5</span>
+            </span>
+            <div id="dropdown-btn" class="profile-image-wrapper">
+                <span class="active-status">
+                  <span class="dot"></span>
+                </span>
+                <img src="img/pexels-pixabay-256262.jpg" alt="" />
+            </div>
+            <div id="profile-dropdown" class="profile-dropdown">
+                <div class="go-to-profile">
+                  <div class="profile-image-wrapper">
+                    <img src="img/pexels-pixabay-256262.jpg" alt="" />
+                  </div>
+                  <div class="name-container">
+                    <h4 class="name">Fredrick Ochieng</h4>
+                    <a href=" {% url 'profile' username=user.username %} " class="profile-link"
+                      >View Profile
+                      <span class="iconly-Arrow-Right icbo"></span>
+                    </a>
+                  </div>
+                </div>
+                <hr size="1" />
+                <ul class="linked-list top-links">
+                  <li class="dropdown-li">
+                    <a href="" class="dropdown-link">Dashboard</a>
+                  </li>
+                  <li class="dropdown-li">
+                    <a href="{% url 'user_post_list' %}" class="dropdown-link">Your Stats</a>
+                  </li>
+                  <li class="dropdown-li">
+                    <a href=" {% url 'profile' username=user.username %} " class="dropdown-link">Your Profile</a>
+                  </li>
+                  <li class="dropdown-li">
+                    <a href=" {% url 'user_post_list' %} " class="dropdown-link">Your Articles</a>
+                  </li>
+                </ul>
+                <hr size="1" />
+                <ul class="linked-list middle-links">
+                  <li class="dropdown-li">
+                    <a href="" class="dropdown-link">Explore</a>
+                  </li>
+                  <li class="dropdown-li">
+                    <a href="" class="dropdown-link">What's New?</a>
+                  </li>
+                  <li class="dropdown-li">
+                    <a href="" class="dropdown-link">Send Us Feedback</a>
+                  </li>
+                  <li class="dropdown-li">
+                    <a href="" class="dropdown-link">Settings</a>
+                  </li>
+                </ul>
+                <hr size="1" />
+                <ul class="linked-list log-out">
+                  <li class="dropdown-li">
+                    <a href="{% url 'logout' %}" class="dropdown-link log-out">Log Out</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+       -->
+
+
+        <!-- If A User Is Not Sign Up-->
+
+        <div id="logon" class="account">
+           <a title="Sign Up" href="" class="sign-up getting-started">
+                <span class="iconly-Add-User icli"></span>
+                <span class="text">Sign up</span>
+           </a>
+           <a title="Log In" href="" class="login getting-started">
+                <span class="iconly-Login icli"></span>
+                <span class="text">Login</span>
+           </a>
+        </div>
+
+        <div id="start" class="account">
+            <a title="Log In" href="" class="start getting-started">
+                <span class="iconly-Login icli"></span>
+                 <span class="text">Get started</span>
+            </a>
+         </div>
+    </header>
+
+    <main class="feeds">
+        <div class="article-feeds feed-contents">
+            <div class="feed-title">
+                <div class="section-title">For you</div>
+                <i class="iconly-Arrow-Right-Circle icli"></i>
+                <hr size="1" />
+            </div>
+            <div class="article-wrapper">
+                <div class="article-info">
+                    <div class="profile-wrapper">
+                        <img src="img/pro.jpg" alt="Profile">
+                    </div>
+                    <a href="#" class="author">Zachariah Ochieng</a>
+                    <span class="read-time posted"><span class="dot">&#183;</span> 9 min read </span>
+                    <span class="posted right"><i class="iconly-Calendar icli"></i> <span class="date">Jul 5</span></span>
+                </div>
+                <div class="summery-content">
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">This 40-Day Challenge can land you into MAANG!!</a>
+                    </h2>
+                    <div class="article-summery">
+                        <div id="mobile-image">
+                            <img id="" src="img/pexels-evie-shaffer-4004374.jpg" title="Someone's Image" alt="">
+                        </div>
+                        <p class="summery-text">
+                            We all know coding interview prep feels distressing.
+                            No matter how much you prepare, there’s something you forget to practice.
+                            It’s completely normal to feel this. But how can we overcome our emotions to ensure we...
+                        </p>
+                    </div>
+                    <div class="article-footer">
+                        <div class="article-tags">
+                            <a href="#" class="tag">Javascript</a>
+                            <a href="#" class="tag">Programming</a>
+                            <a href="#" class="tag">Recent</a>
+                        </div>
+                        <div class="article-actions">
+                            <a title="Save" href="">
+                                <i class="iconly-Bookmark icli"></i>
+                            </a>
+                            <a title="Share" href="">
+                                <i class="iconly-Send icli"> </i>
+                            </a>
+                            <a  title="More" href="">
+                                <span class="iconly-More-Circle icli"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="article-wrapper">
+                <div class="article-info">
+                    <div class="profile-wrapper">
+                        <img src="img/pro.jpg" alt="Profile">
+                    </div>
+                    <a href="#" class="author">Fredrick Ochieng</a>
+                    <span class="read-time posted"><span class="dot">&#183;</span> 9 min read </span>
+                    <span class="posted right"><i class="iconly-Calendar icli"></i> <span class="date">Jul 5</span></span>
+                </div>
+                <div class="summery-content">
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">This 40-Day Challenge can land you into MAANG!!</a>
+                    </h2>
+                    <div class="article-summery">
+                        <div id="mobile-image">
+                            <img id="" src="img/pexels-evie-shaffer-4004374.jpg" title="Someone's Image" alt="">
+                        </div>
+                        <p class="summery-text">
+                            We all know coding interview prep feels distressing.
+                            No matter how much you prepare, there’s something you forget to practice.
+                            It’s completely normal to feel this. But how can we overcome our emotions to ensure we...
+                        </p>
+                    </div>
+                    <div class="article-footer">
+                        <div class="article-tags">
+                            <a href="#" class="tag">Javascript</a>
+                            <a href="#" class="tag">Programming</a>
+                            <a href="#" class="tag">Recent</a>
+                        </div>
+                        <div class="article-actions">
+                            <a title="Save" href="">
+                                <i class="iconly-Bookmark icli"></i>
+                            </a>
+                            <a title="Share" href="">
+                                <i class="iconly-Send icli"> </i>
+                            </a>
+                            <a  title="More" href="">
+                                <span class="iconly-More-Circle icli"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="article-wrapper">
+                <div class="article-info">
+                    <div class="profile-wrapper">
+                        <img src="img/pro.jpg" alt="Profile">
+                    </div>
+                    <a href="#" class="author">Fredrick Ochieng</a>
+                    <span class="read-time posted"><span class="dot">&#183;</span> 9 min read </span>
+                    <span class="posted right"><i class="iconly-Calendar icli"></i> <span class="date">Jul 5</span></span>
+                </div>
+                <div class="summery-content">
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">This 40-Day Challenge can land you into MAANG!!</a>
+                    </h2>
+                    <div class="article-summery">
+                        <div id="mobile-image">
+                            <img id="" src="img/pexels-evie-shaffer-4004374.jpg" title="Someone's Image" alt="">
+                        </div>
+                        <p class="summery-text">
+                            We all know coding interview prep feels distressing.
+                            No matter how much you prepare, there’s something you forget to practice.
+                            It’s completely normal to feel this. But how can we overcome our emotions to ensure we...
+                        </p>
+                    </div>
+                    
+                    <div class="article-footer">
+                        <div class="article-tags">
+                            <a href="#" class="tag">Javascript</a>
+                            <a href="#" class="tag">Programming</a>
+                            <a href="#" class="tag">Recent</a>
+                        </div>
+                        <div class="article-actions">
+                            <a title="Save" href="">
+                                <i class="iconly-Bookmark icli"></i>
+                            </a>
+                            <a title="Share" href="">
+                                <i class="iconly-Send icli"> </i>
+                            </a>
+                            <a  title="More" href="">
+                                <span class="iconly-More-Circle icli"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="article-wrapper">
+                <div class="article-info">
+                    <div class="profile-wrapper">
+                        <img src="img/pro.jpg" alt="Profile">
+                    </div>
+                    <a href="#" class="author">Fredrick Ochieng</a>
+                    <span class="read-time posted"><span class="dot">&#183;</span> 9 min read </span>
+                    <span class="posted right"><i class="iconly-Calendar icli"></i> <span class="date">Jul 5</span></span>
+                </div>
+                <div class="summery-content">
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">This 40-Day Challenge can land you into MAANG!!</a>
+                    </h2>
+                    <div class="article-summery">
+                        <div id="mobile-image">
+                            <img id="" src="img/pexels-evie-shaffer-4004374.jpg" title="Someone's Image" alt="">
+                        </div>
+                        <p class="summery-text">
+                            We all know coding interview prep feels distressing.
+                            No matter how much you prepare, there’s something you forget to practice.
+                            It’s completely normal to feel this. But how can we overcome our emotions to ensure we...
+                        </p>
+                    </div>
+                    
+                    <div class="article-footer">
+                        <div class="article-tags">
+                            <a href="#" class="tag">Javascript</a>
+                            <a href="#" class="tag">Programming</a>
+                            <a href="#" class="tag">Recent</a>
+                        </div>
+                        <div class="article-actions">
+                            <a title="Save" href="">
+                                <i class="iconly-Bookmark icli"></i>
+                            </a>
+                            <a title="Share" href="">
+                                <i class="iconly-Send icli"> </i>
+                            </a>
+                            <a  title="More" href="">
+                                <span class="iconly-More-Circle icli"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="article-wrapper">
+                <div class="article-info">
+                    <div class="profile-wrapper">
+                        <img src="img/pro.jpg" alt="Profile">
+                    </div>
+                    <a href="#" class="author">Fredrick Ochieng</a>
+                    <span class="read-time posted"><span class="dot">&#183;</span> 9 min read </span>
+                    <span class="posted right"><i class="iconly-Calendar icli"></i> <span class="date">Jul 5</span></span>
+                </div>
+                <div class="summery-content">
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">This 40-Day Challenge can land you into MAANG!!</a>
+                    </h2>
+                    <div class="article-summery">
+                        <div id="mobile-image">
+                            <img id="" src="img/pexels-evie-shaffer-4004374.jpg" title="Someone's Image" alt="">
+                        </div>
+                        <p class="summery-text">
+                            We all know coding interview prep feels distressing.
+                            No matter how much you prepare, there’s something you forget to practice.
+                            It’s completely normal to feel this. But how can we overcome our emotions to ensure we...
+                        </p>
+                    </div>
+                    
+                    <div class="article-footer">
+                        <div class="article-tags">
+                            <a href="#" class="tag">Javascript</a>
+                            <a href="#" class="tag">Programming</a>
+                            <a href="#" class="tag">Recent</a>
+                        </div>
+                        <div class="article-actions">
+                            <a title="Save" href="">
+                                <i class="iconly-Bookmark icli"></i>
+                            </a>
+                            <a title="Share" href="">
+                                <i class="iconly-Send icli"> </i>
+                            </a>
+                            <a  title="More" href="">
+                                <span class="iconly-More-Circle icli"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="get-more">Get more articles based on your interest</a>
+        </div>
+        <div class="article-feeds feed-contents">
+            <div class="feed-title">
+                <div class="section-title">Trending articles</div>
+                <i class="iconly-Arrow-Right-Circle icli"></i>
+                <hr size="1" />
+            </div>
+            <div class="article-wrapper">
+                <div class="article-info">
+                    <div class="profile-wrapper">
+                        <img src="img/pro.jpg" alt="Profile">
+                    </div>
+                    <a href="#" class="author">Zachariah Ochieng</a>
+                    <span class="read-time posted"><span class="dot">&#183;</span> 9 min read </span>
+                    <span class="posted right"><i class="iconly-Calendar icli"></i> <span class="date">Jul 5</span></span>
+                </div>
+                <div class="summery-content">
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">This 40-Day Challenge can land you into MAANG!!</a>
+                    </h2>
+                    <div class="article-summery">
+                        <div id="mobile-image">
+                            <img id="" src="img/pexels-evie-shaffer-4004374.jpg" title="Someone's Image" alt="">
+                        </div>
+                        <p class="summery-text">
+                            We all know coding interview prep feels distressing.
+                            No matter how much you prepare, there’s something you forget to practice.
+                            It’s completely normal to feel this. But how can we overcome our emotions to ensure we...
+                        </p>
+                    </div>
+                    
+                    <div class="article-footer">
+                        <div class="article-tags">
+                            <a href="#" class="tag">Javascript</a>
+                            <a href="#" class="tag">Programming</a>
+                            <a href="#" class="tag">Recent</a>
+                        </div>
+                        <div class="article-actions">
+                            <a title="Save" href="">
+                                <i class="iconly-Bookmark icli"></i>
+                            </a>
+                            <a title="Share" href="">
+                                <i class="iconly-Send icli"> </i>
+                            </a>
+                            <a  title="More" href="">
+                                <span class="iconly-More-Circle icli"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="article-wrapper">
+                <div class="article-info">
+                    <div class="profile-wrapper">
+                        <img src="img/pro.jpg" alt="Profile">
+                    </div>
+                    <a href="#" class="author">Fredrick Ochieng</a>
+                    <span class="read-time posted"><span class="dot">&#183;</span> 9 min read </span>
+                    <span class="posted right"><i class="iconly-Calendar icli"></i> <span class="date">Jul 5</span></span>
+                </div>
+                <div class="summery-content">
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">This 40-Day Challenge can land you into MAANG!!</a>
+                    </h2>
+                    <div class="article-summery">
+                        <div id="mobile-image">
+                            <img id="" src="img/pexels-evie-shaffer-4004374.jpg" title="Someone's Image" alt="">
+                        </div>
+                        <p class="summery-text">
+                            We all know coding interview prep feels distressing.
+                            No matter how much you prepare, there’s something you forget to practice.
+                            It’s completely normal to feel this. But how can we overcome our emotions to ensure we...
+                        </p>
+                    </div>
+                    
+                    <div class="article-footer">
+                        <div class="article-tags">
+                            <a href="#" class="tag">Javascript</a>
+                            <a href="#" class="tag">Programming</a>
+                            <a href="#" class="tag">Recent</a>
+                        </div>
+                        <div class="article-actions">
+                            <a title="Save" href="">
+                                <i class="iconly-Bookmark icli"></i>
+                            </a>
+                            <a title="Share" href="">
+                                <i class="iconly-Send icli"> </i>
+                            </a>
+                            <a  title="More" href="">
+                                <span class="iconly-More-Circle icli"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="article-wrapper">
+                <div class="article-info">
+                    <div class="profile-wrapper">
+                        <img src="img/pro.jpg" alt="Profile">
+                    </div>
+                    <a href="#" class="author">Fredrick Ochieng</a>
+                    <span class="read-time posted"><span class="dot">&#183;</span> 9 min read </span>
+                    <span class="posted right"><i class="iconly-Calendar icli"></i> <span class="date">Jul 5</span></span>
+                </div>
+                <div class="summery-content">
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">This 40-Day Challenge can land you into MAANG!!</a>
+                    </h2>
+                    <div class="article-summery">
+                        <div id="mobile-image">
+                            <img id="" src="img/pexels-evie-shaffer-4004374.jpg" title="Someone's Image" alt="">
+                        </div>
+                        <p class="summery-text">
+                            We all know coding interview prep feels distressing.
+                            No matter how much you prepare, there’s something you forget to practice.
+                            It’s completely normal to feel this. But how can we overcome our emotions to ensure we...
+                        </p>
+                    </div>
+                    
+                    <div class="article-footer">
+                        <div class="article-tags">
+                            <a href="#" class="tag">Javascript</a>
+                            <a href="#" class="tag">Programming</a>
+                            <a href="#" class="tag">Recent</a>
+                        </div>
+                        <div class="article-actions">
+                            <a title="Save" href="">
+                                <i class="iconly-Bookmark icli"></i>
+                            </a>
+                            <a title="Share" href="">
+                                <i class="iconly-Send icli"> </i>
+                            </a>
+                            <a  title="More" href="">
+                                <span class="iconly-More-Circle icli"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="article-wrapper">
+                <div class="article-info">
+                    <div class="profile-wrapper">
+                        <img src="img/pro.jpg" alt="Profile">
+                    </div>
+                    <a href="#" class="author">Fredrick Ochieng</a>
+                    <span class="read-time posted"><span class="dot">&#183;</span> 9 min read </span>
+                    <span class="posted right"><i class="iconly-Calendar icli"></i> <span class="date">Jul 5</span></span>
+                </div>
+                <div class="summery-content">
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">This 40-Day Challenge can land you into MAANG!!</a>
+                    </h2>
+                    <div class="article-summery">
+                        <div id="mobile-image">
+                            <img id="" src="img/pexels-evie-shaffer-4004374.jpg" title="Someone's Image" alt="">
+                        </div>
+                        <p class="summery-text">
+                            We all know coding interview prep feels distressing.
+                            No matter how much you prepare, there’s something you forget to practice.
+                            It’s completely normal to feel this. But how can we overcome our emotions to ensure we...
+                        </p>
+                    </div>
+                    
+                    <div class="article-footer">
+                        <div class="article-tags">
+                            <a href="#" class="tag">Javascript</a>
+                            <a href="#" class="tag">Programming</a>
+                            <a href="#" class="tag">Recent</a>
+                        </div>
+                        <div class="article-actions">
+                            <a title="Save" href="">
+                                <i class="iconly-Bookmark icli"></i>
+                            </a>
+                            <a title="Share" href="">
+                                <i class="iconly-Send icli"> </i>
+                            </a>
+                            <a  title="More" href="">
+                                <span class="iconly-More-Circle icli"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="article-wrapper">
+                <div class="article-info">
+                    <div class="profile-wrapper">
+                        <img src="img/pro.jpg" alt="Profile">
+                    </div>
+                    <a href="#" class="author">Fredrick Ochieng</a>
+                    <span class="read-time posted"><span class="dot">&#183;</span> 9 min read </span>
+                    <span class="posted right"><i class="iconly-Calendar icli"></i> <span class="date">Jul 5</span></span>
+                </div>
+                <div class="summery-content">
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">This 40-Day Challenge can land you into MAANG!!</a>
+                    </h2>
+                    <div class="article-summery">
+                        <div id="mobile-image">
+                            <img id="" src="img/pexels-evie-shaffer-4004374.jpg" title="Someone's Image" alt="">
+                        </div>
+                        <p class="summery-text">
+                            We all know coding interview prep feels distressing.
+                            No matter how much you prepare, there’s something you forget to practice.
+                            It’s completely normal to feel this. But how can we overcome our emotions to ensure we...
+                        </p>
+                    </div>
+                    
+                    <div class="article-footer">
+                        <div class="article-tags">
+                            <a href="#" class="tag">Javascript</a>
+                            <a href="#" class="tag">Programming</a>
+                            <a href="#" class="tag">Recent</a>
+                        </div>
+                        <div class="article-actions">
+                            <a title="Save" href="">
+                                <i class="iconly-Bookmark icli"></i>
+                            </a>
+                            <a title="Share" href="">
+                                <i class="iconly-Send icli"> </i>
+                            </a>
+                            <a  title="More" href="">
+                                <span class="iconly-More-Circle icli"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="get-more">Get all trending articles now</a>
+        </div>
+        <div class="article-feeds feed-contents">
+            <div class="feed-title">
+                <div class="section-title">Recent articles</div>
+                <i class="iconly-Arrow-Right-Circle icli"></i>
+                <hr size="1" />
+            </div>
+            <div class="article-wrapper">
+                <div class="article-info">
+                    <div class="profile-wrapper">
+                        <img src="img/pro.jpg" alt="Profile">
+                    </div>
+                    <a href="#" class="author">Zachariah Ochieng</a>
+                    <span class="read-time posted"><span class="dot">&#183;</span> 9 min read </span>
+                    <span class="posted right"><i class="iconly-Calendar icli"></i> <span class="date">Jul 5</span></span>
+                </div>
+                <div class="summery-content">
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">This 40-Day Challenge can land you into MAANG!!</a>
+                    </h2>
+                    <div class="article-summery">
+                        <div id="mobile-image">
+                            <img id="" src="img/pexels-evie-shaffer-4004374.jpg" title="Someone's Image" alt="">
+                        </div>
+                        <p class="summery-text">
+                            We all know coding interview prep feels distressing.
+                            No matter how much you prepare, there’s something you forget to practice.
+                            It’s completely normal to feel this. But how can we overcome our emotions to ensure we...
+                        </p>
+                    </div>
+                    
+                    <div class="article-footer">
+                        <div class="article-tags">
+                            <a href="#" class="tag">Javascript</a>
+                            <a href="#" class="tag">Programming</a>
+                            <a href="#" class="tag">Recent</a>
+                        </div>
+                        <div class="article-actions">
+                            <a title="Save" href="">
+                                <i class="iconly-Bookmark icli"></i>
+                            </a>
+                            <a title="Share" href="">
+                                <i class="iconly-Send icli"> </i>
+                            </a>
+                            <a  title="More" href="">
+                                <span class="iconly-More-Circle icli"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="article-wrapper">
+                <div class="article-info">
+                    <div class="profile-wrapper">
+                        <img src="img/pro.jpg" alt="Profile">
+                    </div>
+                    <a href="#" class="author">Fredrick Ochieng</a>
+                    <span class="read-time posted"><span class="dot">&#183;</span> 9 min read </span>
+                    <span class="posted right"><i class="iconly-Calendar icli"></i> <span class="date">Jul 5</span></span>
+                </div>
+                <div class="summery-content">
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">This 40-Day Challenge can land you into MAANG!!</a>
+                    </h2>
+                    <div class="article-summery">
+                        <div id="mobile-image">
+                            <img id="" src="img/pexels-evie-shaffer-4004374.jpg" title="Someone's Image" alt="">
+                        </div>
+                        <p class="summery-text">
+                            We all know coding interview prep feels distressing.
+                            No matter how much you prepare, there’s something you forget to practice.
+                            It’s completely normal to feel this. But how can we overcome our emotions to ensure we...
+                        </p>
+                    </div>
+                    
+                    <div class="article-footer">
+                        <div class="article-tags">
+                            <a href="#" class="tag">Javascript</a>
+                            <a href="#" class="tag">Programming</a>
+                            <a href="#" class="tag">Recent</a>
+                        </div>
+                        <div class="article-actions">
+                            <a title="Save" href="">
+                                <i class="iconly-Bookmark icli"></i>
+                            </a>
+                            <a title="Share" href="">
+                                <i class="iconly-Send icli"> </i>
+                            </a>
+                            <a  title="More" href="">
+                                <span class="iconly-More-Circle icli"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="article-wrapper">
+                <div class="article-info">
+                    <div class="profile-wrapper">
+                        <img src="img/pro.jpg" alt="Profile">
+                    </div>
+                    <a href="#" class="author">Fredrick Ochieng</a>
+                    <span class="read-time posted"><span class="dot">&#183;</span> 9 min read </span>
+                    <span class="posted right"><i class="iconly-Calendar icli"></i> <span class="date">Jul 5</span></span>
+                </div>
+                <div class="summery-content">
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">This 40-Day Challenge can land you into MAANG!!</a>
+                    </h2>
+                    <div class="article-summery">
+                        <div id="mobile-image">
+                            <img id="" src="img/pexels-evie-shaffer-4004374.jpg" title="Someone's Image" alt="">
+                        </div>
+                        <p class="summery-text">
+                            We all know coding interview prep feels distressing.
+                            No matter how much you prepare, there’s something you forget to practice.
+                            It’s completely normal to feel this. But how can we overcome our emotions to ensure we...
+                        </p>
+                    </div>
+                    
+                    <div class="article-footer">
+                        <div class="article-tags">
+                            <a href="#" class="tag">Javascript</a>
+                            <a href="#" class="tag">Programming</a>
+                            <a href="#" class="tag">Recent</a>
+                        </div>
+                        <div class="article-actions">
+                            <a title="Save" href="">
+                                <i class="iconly-Bookmark icli"></i>
+                            </a>
+                            <a title="Share" href="">
+                                <i class="iconly-Send icli"> </i>
+                            </a>
+                            <a  title="More" href="">
+                                <span class="iconly-More-Circle icli"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="article-wrapper">
+                <div class="article-info">
+                    <div class="profile-wrapper">
+                        <img src="img/pro.jpg" alt="Profile">
+                    </div>
+                    <a href="#" class="author">Fredrick Ochieng</a>
+                    <span class="read-time posted"><span class="dot">&#183;</span> 9 min read </span>
+                    <span class="posted right"><i class="iconly-Calendar icli"></i> <span class="date">Jul 5</span></span>
+                </div>
+                <div class="summery-content">
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">This 40-Day Challenge can land you into MAANG!!</a>
+                    </h2>
+                    <div class="article-summery">
+                        <div id="mobile-image">
+                            <img id="" src="img/pexels-evie-shaffer-4004374.jpg" title="Someone's Image" alt="">
+                        </div>
+                        <p class="summery-text">
+                            We all know coding interview prep feels distressing.
+                            No matter how much you prepare, there’s something you forget to practice.
+                            It’s completely normal to feel this. But how can we overcome our emotions to ensure we...
+                        </p>
+                    </div>
+                    
+                    <div class="article-footer">
+                        <div class="article-tags">
+                            <a href="#" class="tag">Javascript</a>
+                            <a href="#" class="tag">Programming</a>
+                            <a href="#" class="tag">Recent</a>
+                        </div>
+                        <div class="article-actions">
+                            <a title="Save" href="">
+                                <i class="iconly-Bookmark icli"></i>
+                            </a>
+                            <a title="Share" href="">
+                                <i class="iconly-Send icli"> </i>
+                            </a>
+                            <a  title="More" href="">
+                                <span class="iconly-More-Circle icli"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="article-wrapper">
+                <div class="article-info">
+                    <div class="profile-wrapper">
+                        <img src="img/pro.jpg" alt="Profile">
+                    </div>
+                    <a href="#" class="author">Fredrick Ochieng</a>
+                    <span class="read-time posted"><span class="dot">&#183;</span> 9 min read </span>
+                    <span class="posted right"><i class="iconly-Calendar icli"></i> <span class="date">Jul 5</span></span>
+                </div>
+                <div class="summery-content">
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">This 40-Day Challenge can land you into MAANG!!</a>
+                    </h2>
+                    <div class="article-summery">
+                        <div id="mobile-image">
+                            <img id="" src="img/pexels-evie-shaffer-4004374.jpg" title="Someone's Image" alt="">
+                        </div>
+                        <p class="summery-text">
+                            We all know coding interview prep feels distressing.
+                            No matter how much you prepare, there’s something you forget to practice.
+                            It’s completely normal to feel this. But how can we overcome our emotions to ensure we...
+                        </p>
+                    </div>
+                    
+                    <div class="article-footer">
+                        <div class="article-tags">
+                            <a href="#" class="tag">Javascript</a>
+                            <a href="#" class="tag">Programming</a>
+                            <a href="#" class="tag">Recent</a>
+                        </div>
+                        <div class="article-actions">
+                            <a title="Save" href="">
+                                <i class="iconly-Bookmark icli"></i>
+                            </a>
+                            <a title="Share" href="">
+                                <i class="iconly-Send icli"> </i>
+                            </a>
+                            <a  title="More" href="">
+                                <span class="iconly-More-Circle icli"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="get-more">Get all trending articles now</a>
+        </div>
+        <div class="sidebar-content">
+            <div class="stats">
+                <h3 class="stats-title">My Stats</h3>
+                <div class="stats-today">
+                  <h4 class="today">Impressions</h4>
+                  <p class="today-stats">
+                    <span class="iconly-Show icbo"></span>403 Views
+                  </p>
+                </div>
+                <div class="stats-month">
+                  <h4 class="month">Engagements</h4>
+                  <p class="month-stats">
+                    <span class="iconly-User2 icbo"></span>47 Comments
+                  </p>
+                </div>
+                <a href=" {% url 'user_post_list' %}" class="go-to-articles"
+                  >See your articles performance
+                  <span class="iconly-Arrow-Right icli"></span>
+                </a>
+              </div>
+            <div class="topics">
+                <h2 class="sidebar-title">Discover Topics</h2>
+                <ul class="topic-list">
+                    <li> <a href="">Technology</a></li>
+                    <li><a href="">Science</a></li>
+                    <li><a href="">Web</a></li>
+                    <li><a href="">5G</a></li>
+                    <li><a href="">Food</a></li>
+                    <li><a href="">Health Care</a></li>
+                    <li><a href="">Metaverse</a></li>
+                    <li><a href="">Business</a></li>
+                    <li><a href="">Web</a></li>
+                    <li><a href="">5G</a></li>
+                    <li><a href="">Food</a></li>
+                    <li><a href="">Health & Fitness</a></li>
+                    <li><a href="">Personal Finance</a></li>
+                    <li><a href="">Self Improvement</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <div class="mobile-footer">
+        <a href="" class="mobile-footer-link active">
+            <span class="iconly-Home icli"></span>
+        </a>
+        <a href="" class="mobile-footer-link">
+            <span class="iconly-Search icli"></span>
+        </a>
+        <a href="" class="mobile-footer-link">
+            <span class="iconly-Bag-2 icli"></span>
+        </a>
+        <a href="" class="mobile-footer-link">
+            <span class="iconly-Edit icli">
+        </a>
+    </div>
+    <script src="js/dropdown.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/reveal.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opus - Topics </title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link href="https://fonts.cdnfonts.com/css/product-sans" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <header id="menu">
+        <div class="site-logo">
+            <h2 class="site-name">Opus</h2>
+        </div>
+        <ul class="header-links">
+            <li class="header-list-item">
+                <a href="#" class="header-link active-header-link">Home</a>
+            </li>
+            <li class="header-list-item">
+                <a href="#" class="header-link">Discover</a>
+            </li>
+            <li class="header-list-item">
+                <a href="#" class="header-link">Newsletters</a>
+            </li>
+            <li class="header-list-item">
+                <a href="#" class="header-link">Discover</a>
+            </li>
+            <li class="header-list-item">
+                <a href="#" class="header-link">Donate</a>
+            </li>
+        </ul>
+        <!--
+            <div class="theme-switcher">
+                <i class="fa fa-solid fa-moon"> Light</i>
+            </div>
+        -->
+
+        <!-- If A User Is Logged In-->
+        <!--
+        <div class="profile-section">
+            <span class="iconly-Notification icli">
+                <span id="text-count">5</span>
+            </span>
+            <div id="dropdown-btn" class="profile-image-wrapper">
+                <span class="active-status">
+                  <span class="dot"></span>
+                </span>
+                <img src="img/pexels-pixabay-256262.jpg" alt="" />
+            </div>
+            <div id="profile-dropdown" class="profile-dropdown">
+                <div class="go-to-profile">
+                  <div class="profile-image-wrapper">
+                    <img src="img/pexels-pixabay-256262.jpg" alt="" />
+                  </div>
+                  <div class="name-container">
+                    <h4 class="name">Fredrick Ochieng</h4>
+                    <a href=" {% url 'profile' username=user.username %} " class="profile-link"
+                      >View Profile
+                      <span class="iconly-Arrow-Right icbo"></span>
+                    </a>
+                  </div>
+                </div>
+                <hr size="1" />
+                <ul class="linked-list top-links">
+                  <li class="dropdown-li">
+                    <a href="" class="dropdown-link">Dashboard</a>
+                  </li>
+                  <li class="dropdown-li">
+                    <a href="{% url 'user_post_list' %}" class="dropdown-link">Your Stats</a>
+                  </li>
+                  <li class="dropdown-li">
+                    <a href=" {% url 'profile' username=user.username %} " class="dropdown-link">Your Profile</a>
+                  </li>
+                  <li class="dropdown-li">
+                    <a href=" {% url 'user_post_list' %} " class="dropdown-link">Your Articles</a>
+                  </li>
+                </ul>
+                <hr size="1" />
+                <ul class="linked-list middle-links">
+                  <li class="dropdown-li">
+                    <a href="" class="dropdown-link">Explore</a>
+                  </li>
+                  <li class="dropdown-li">
+                    <a href="" class="dropdown-link">What's New?</a>
+                  </li>
+                  <li class="dropdown-li">
+                    <a href="" class="dropdown-link">Send Us Feedback</a>
+                  </li>
+                  <li class="dropdown-li">
+                    <a href="" class="dropdown-link">Settings</a>
+                  </li>
+                </ul>
+                <hr size="1" />
+                <ul class="linked-list log-out">
+                  <li class="dropdown-li">
+                    <a href="{% url 'logout' %}" class="dropdown-link log-out">Log Out</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+       -->
+
+
+        <!-- If A User Is Not Sign Up-->
+
+        <div id="logon" class="account">
+           <a title="Sign Up" href="" class="sign-up getting-started">
+                <span class="iconly-Add-User icli"></span>
+                <span class="text">Sign up</span>
+           </a>
+           <a title="Log In" href="" class="login getting-started">
+                <span class="iconly-Login icli"></span>
+                <span class="text">Login</span>
+           </a>
+        </div>
+
+        <div id="start" class="account">
+            <a title="Log In" href="" class="start getting-started">
+                <span class="iconly-Login icli"></span>
+                 <span class="text">Get started</span>
+            </a>
+         </div>
+    </header>
+
+    <main>
+        <div class="best">
+            <div class="section-title">Business</div>
+            <div class="under-title">
+                <p class="text">What recently captured your interest</p>
+            </div>
+            <div class="best-articles">
+                <article class="best-article large-article">
+                    <div class="best-article-image">
+                        <img src="img/pexels-uzunov-rostislav-5011647.jpg" alt="">
+                    </div>
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">Reddit - Dive into
+                            anything</a>
+                    </h2>
+                    <div class="article-info">
+                        <a href="#" class="author">Femar</a>
+                        <span class="read-time"><span>&#183;</span> 2 min </span>
+                    </div>
+                    <p class="article-summery">
+                        Breadcrumbs is a subtle manipulation technique used
+                        to create a one-sided relationship.
+                        Here’s how to spot it and get over it, a bunch of
+                        lorem placeholder
+                        some information may sometimes overlaps rows and
+                        culumns in lorem.
+                    </p>
+                    <div class="add-to">
+                        <a href="">
+                            <span class="save"> <i class="iconly-Bookmark icli"></i>Save
+                                For Later</span> </a>
+                        <a href="">
+                            <span class="share">Share<i class="iconly-Send icli"> </i> </span>
+                        </a> 
+                    </div>
+                </article>
+                <article class="best-article b-one">
+                    <div class="best-article-image">
+                        <img src="img/w3ctag-2022-03-london-700w.jpg" alt="">
+                    </div>
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">Reddit - Dive into
+                            anything</a>
+                    </h2>
+                    <div class="article-info">
+                        <a href="#" class="author">Opus</a>
+                        <span class="read-time"><span>&#183;</span> 2 min </span>
+                    </div>
+                    <div class="add-to"> <a href=""><span class="save"> <i class="iconly-Bookmark icli"></i>Save
+                                For Later</span> </a> <a href="">
+                            <span class="share">Share<i class="iconly-Send icli"> </i> </span>
+                        </a> </div>
+                </article>
+                <article class="best-article b-two">
+                    <div class="best-article-image">
+                        <img src="img/what-is-agile.png" alt="">
+                    </div>
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">Reddit - Dive into
+                            anything</a>
+                    </h2>
+                    <div class="article-info">
+                        <a href="#" class="author">Opus</a>
+                        <span class="read-time"><span>&#183;</span> 2 min </span>
+                    </div>
+                    <div class="add-to"> <a href=""><span class="save"> <i class="iconly-Bookmark icli"></i>Save
+                                For Later</span> </a> <a href="">
+                            <span class="share">Share<i class="iconly-Send icli"> </i> </span>
+                        </a> </div>
+                </article>
+                <article class="best-article b-three">
+                    <div class="best-article-image">
+                        <img src="img/what-is-agile.png" alt="">
+                    </div>
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">Reddit - Dive into
+                            anything</a>
+                    </h2>
+                    <div class="article-info">
+                        <a href="#" class="author">Opus</a>
+                        <span class="read-time"><span>&#183;</span> 2 min </span>
+                    </div>
+                    <div class="add-to"> <a href=""><span class="save"> <i class="iconly-Bookmark icli"></i>Save
+                                For Later</span> </a> <a href="">
+                            <span class="share">Share<i class="iconly-Send icli"> </i> </span>
+                        </a> </div>
+                </article>
+                <article class="best-article b-four">
+                    <div class="best-article-image">
+                        <img src="img/pexels-evie-shaffer-4004374.jpg" alt="">
+                    </div>
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">Reddit - Dive into
+                            anything</a>
+                    </h2>
+                    <div class="article-info">
+                        <a href="#" class="author">Opus</a>
+                        <span class="read-time"><span>&#183;</span> 2 min </span>
+                    </div>
+                    <div class="add-to"> <a href=""><span class="save"> <i class="iconly-Bookmark icli"></i>Save
+                                For Later</span> </a> <a href="">
+                            <span class="share">Share<i class="iconly-Send icli"> </i> </span>
+                        </a> </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="editors-pick">
+            <div class="section-title">More On Business</div>
+            <div class="under-title">
+                <p class="text">What recently captured your interest</p>
+            </div>
+            <div class="editors-articles">
+                <article class="editors-article">
+                    <div class="editors-article-image">
+                        <img src="img/what-is-agile.png" alt="">
+                    </div>
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">Reddit - Dive into
+                            anything</a>
+                    </h2>
+                    <div class="article-info">
+                        <a href="#" class="author">Opus</a>
+                        <span class="read-time"><span>&#183;</span> 2 min </span>
+                    </div>
+                    <p class="article-summery">
+                        Breadcrumbs is a subtle manipulation technique used
+                        to create a one-sided relationship. Here’s how to
+                        spot it and get over it, a bunch of lorem
+                        placeholder some information may sometimes overlaps
+                        rows and culumns in lorem.
+                    </p>
+                    <div class="add-to"> <a href=""><span class="save"> <i class="iconly-Bookmark icli"></i>Save
+                                For Later</span> </a> <a href="">
+                            <span class="share">Share<i class="iconly-Send icli"> </i> </span>
+                        </a>
+                    </div>
+                </article>
+                <article class="editors-article">
+                    <div class="editors-article-image">
+                        <img src="img/what-is-agile.png" alt="">
+                    </div>
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">Reddit - Dive into
+                            anything</a>
+                    </h2>
+                    <div class="article-info">
+                        <a href="#" class="author">Opus</a>
+                        <span class="read-time"><span>&#183;</span> 2 min </span>
+                    </div>
+                    <p class="article-summery">
+                        Breadcrumbs is a subtle manipulation technique used
+                        to create a one-sided relationship. Here’s how to
+                        spot it and get over it, a bunch of lorem
+                        placeholder some information may sometimes overlaps
+                        rows and culumns in lorem.
+                    </p>
+                    <div class="add-to"> <a href=""><span class="save"> <i class="iconly-Bookmark icli"></i>Save
+                                For Later</span> </a> <a href="">
+                            <span class="share">Share<i class="iconly-Send icli"> </i> </span>
+                        </a>
+                    </div>
+                </article>
+                <article class="editors-article">
+                    <div class="editors-article-image">
+                        <img src="img/what-is-agile.png" alt="">
+                    </div>
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">Reddit - Dive into
+                            anything</a>
+                    </h2>
+                    <div class="article-info">
+                        <a href="#" class="author">Opus</a>
+                        <span class="read-time"><span>&#183;</span> 2 min </span>
+                    </div>
+                    <p class="article-summery">
+                        Breadcrumbs is a subtle manipulation technique used
+                        to create a one-sided relationship. Here’s how to
+                        spot it and get over it, a bunch of lorem
+                        placeholder some information may sometimes overlaps
+                        rows and culumns in lorem.
+                    </p>
+                    <div class="add-to"> <a href=""><span class="save"> <i class="iconly-Bookmark icli"></i>Save
+                                For Later</span> </a> <a href="">
+                            <span class="share">Share<i class="iconly-Send icli"> </i> </span>
+                        </a>
+                    </div>
+                </article>
+                <article class="editors-article">
+                    <div class="editors-article-image">
+                        <img src="img/what-is-agile.png" alt="">
+                    </div>
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">Reddit - Dive into
+                            anything</a>
+                    </h2>
+                    <div class="article-info">
+                        <a href="#" class="author">Opus</a>
+                        <span class="read-time"><span>&#183;</span> 2 min </span>
+                    </div>
+                    <p class="article-summery">
+                        Breadcrumbs is a subtle manipulation technique used
+                        to create a one-sided relationship. Here’s how to
+                        spot it and get over it, a bunch of lorem
+                        placeholder some information may sometimes overlaps
+                        rows and culumns in lorem.
+                    </p>
+                    <div class="add-to"> <a href=""><span class="save"> <i class="iconly-Bookmark icli"></i>Save
+                                For Later</span> </a> <a href="">
+                            <span class="share">Share<i class="iconly-Send icli"> </i> </span>
+                        </a>
+                    </div>
+                </article>
+                <article class="editors-article">
+                    <div class="editors-article-image">
+                        <img src="img/what-is-agile.png" alt="">
+                    </div>
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">Reddit - Dive into
+                            anything</a>
+                    </h2>
+                    <div class="article-info">
+                        <a href="#" class="author">Opus</a>
+                        <span class="read-time"><span>&#183;</span> 2 min </span>
+                    </div>
+                    <p class="article-summery">
+                        Breadcrumbs is a subtle manipulation technique used
+                        to create a one-sided relationship. Here’s how to
+                        spot it and get over it, a bunch of lorem
+                        placeholder some information may sometimes overlaps
+                        rows and culumns in lorem.
+                    </p>
+                    <div class="add-to"> <a href=""><span class="save"> <i class="iconly-Bookmark icli"></i>Save
+                                For Later</span> </a> <a href="">
+                            <span class="share">Share<i class="iconly-Send icli"> </i> </span>
+                        </a>
+                    </div>
+                </article>
+                <article class="editors-article">
+                    <div class="editors-article-image">
+                        <img src="img/what-is-agile.png" alt="">
+                    </div>
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">Reddit - Dive into
+                            anything</a>
+                    </h2>
+                    <div class="article-info">
+                        <a href="#" class="author">Opus</a>
+                        <span class="read-time"><span>&#183;</span> 2 min </span>
+                    </div>
+                    <p class="article-summery">
+                        Breadcrumbs is a subtle manipulation technique used
+                        to create a one-sided relationship. Here’s how to
+                        spot it and get over it, a bunch of lorem
+                        placeholder some information may sometimes overlaps
+                        rows and culumns in lorem.
+                    </p>
+                    <div class="add-to"> <a href=""><span class="save"> <i class="iconly-Bookmark icli"></i>Save
+                                For Later</span> </a> <a href="">
+                            <span class="share">Share<i class="iconly-Send icli"> </i> </span>
+                        </a>
+                    </div>
+                </article>
+                <article class="editors-article">
+                    <div class="editors-article-image">
+                        <img src="img/what-is-agile.png" alt="">
+                    </div>
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">Reddit - Dive into
+                            anything</a>
+                    </h2>
+                    <div class="article-info">
+                        <a href="#" class="author">Opus</a>
+                        <span class="read-time"><span>&#183;</span> 2 min </span>
+                    </div>
+                    <p class="article-summery">
+                        Breadcrumbs is a subtle manipulation technique used
+                        to create a one-sided relationship. Here’s how to
+                        spot it and get over it, a bunch of lorem
+                        placeholder some information may sometimes overlaps
+                        rows and culumns in lorem.
+                    </p>
+                    <div class="add-to"> <a href=""><span class="save"> <i class="iconly-Bookmark icli"></i>Save
+                                For Later</span> </a> <a href="">
+                            <span class="share">Share<i class="iconly-Send icli"> </i> </span>
+                        </a>
+                    </div>
+                </article>
+                <article class="editors-article">
+                    <div class="editors-article-image">
+                        <img src="img/what-is-agile.png" alt="">
+                    </div>
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">Reddit - Dive into
+                            anything</a>
+                    </h2>
+                    <div class="article-info">
+                        <a href="#" class="author">Opus</a>
+                        <span class="read-time"><span>&#183;</span> 2 min </span>
+                    </div>
+                    <p class="article-summery">
+                        Breadcrumbs is a subtle manipulation technique used
+                        to create a one-sided relationship. Here’s how to
+                        spot it and get over it, a bunch of lorem
+                        placeholder some information may sometimes overlaps
+                        rows and culumns in lorem.
+                    </p>
+                    <div class="add-to"> <a href=""><span class="save"> <i class="iconly-Bookmark icli"></i>Save
+                                For Later</span> </a> <a href="">
+                            <span class="share">Share<i class="iconly-Send icli"> </i> </span>
+                        </a>
+                    </div>
+                </article>
+                <article class="editors-article">
+                    <div class="editors-article-image">
+                        <img src="img/what-is-agile.png" alt="">
+                    </div>
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">Reddit - Dive into
+                            anything</a>
+                    </h2>
+                    <div class="article-info">
+                        <a href="#" class="author">Opus</a>
+                        <span class="read-time"><span>&#183;</span> 2 min </span>
+                    </div>
+                    <p class="article-summery">
+                        Breadcrumbs is a subtle manipulation technique used
+                        to create a one-sided relationship. Here’s how to
+                        spot it and get over it, a bunch of lorem
+                        placeholder some information may sometimes overlaps
+                        rows and culumns in lorem.
+                    </p>
+                    <div class="add-to"> <a href=""><span class="save"> <i class="iconly-Bookmark icli"></i>Save
+                                For Later</span> </a> <a href="">
+                            <span class="share">Share<i class="iconly-Send icli"> </i> </span>
+                        </a>
+                    </div>
+                </article>
+                <article class="editors-article">
+                    <div class="editors-article-image">
+                        <img src="img/what-is-agile.png" alt="">
+                    </div>
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">Reddit - Dive into
+                            anything</a>
+                    </h2>
+                    <div class="article-info">
+                        <a href="#" class="author">Opus</a>
+                        <span class="read-time"><span>&#183;</span> 2 min </span>
+                    </div>
+                    <p class="article-summery">
+                        Breadcrumbs is a subtle manipulation technique used
+                        to create a one-sided relationship. Here’s how to
+                        spot it and get over it, a bunch of lorem
+                        placeholder some information may sometimes overlaps
+                        rows and culumns in lorem.
+                    </p>
+                    <div class="add-to"> <a href=""><span class="save"> <i class="iconly-Bookmark icli"></i>Save
+                                For Later</span> </a> <a href="">
+                            <span class="share">Share<i class="iconly-Send icli"> </i> </span>
+                        </a>
+                    </div>
+                </article>
+                <article class="editors-article">
+                    <div class="editors-article-image">
+                        <img src="img/what-is-agile.png" alt="">
+                    </div>
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">Reddit - Dive into
+                            anything</a>
+                    </h2>
+                    <div class="article-info">
+                        <a href="#" class="author">Opus</a>
+                        <span class="read-time"><span>&#183;</span> 2 min </span>
+                    </div>
+                    <p class="article-summery">
+                        Breadcrumbs is a subtle manipulation technique used
+                        to create a one-sided relationship. Here’s how to
+                        spot it and get over it, a bunch of lorem
+                        placeholder some information may sometimes overlaps
+                        rows and culumns in lorem.
+                    </p>
+                    <div class="add-to"> <a href=""><span class="save"> <i class="iconly-Bookmark icli"></i>Save
+                                For Later</span> </a> <a href="">
+                            <span class="share">Share<i class="iconly-Send icli"> </i> </span>
+                        </a>
+                    </div>
+                </article>
+                <article class="editors-article">
+                    <div class="editors-article-image">
+                        <img src="img/what-is-agile.png" alt="">
+                    </div>
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">Reddit - Dive into
+                            anything</a>
+                    </h2>
+                    <div class="article-info">
+                        <a href="#" class="author">Opus</a>
+                        <span class="read-time"><span>&#183;</span> 2 min </span>
+                    </div>
+                    <p class="article-summery">
+                        Breadcrumbs is a subtle manipulation technique used
+                        to create a one-sided relationship. Here’s how to
+                        spot it and get over it, a bunch of lorem
+                        placeholder some information may sometimes overlaps
+                        rows and culumns in lorem.
+                    </p>
+                    <div class="add-to"> <a href=""><span class="save"> <i class="iconly-Bookmark icli"></i>Save
+                                For Later</span> </a> <a href="">
+                            <span class="share">Share<i class="iconly-Send icli"> </i> </span>
+                        </a>
+                    </div>
+                </article>
+                <article class="editors-article">
+                    <div class="editors-article-image">
+                        <img src="img/what-is-agile.png" alt="">
+                    </div>
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">Reddit - Dive into
+                            anything</a>
+                    </h2>
+                    <div class="article-info">
+                        <a href="#" class="author">Opus</a>
+                        <span class="read-time"><span>&#183;</span> 2 min </span>
+                    </div>
+                    <p class="article-summery">
+                        Breadcrumbs is a subtle manipulation technique used
+                        to create a one-sided relationship. Here’s how to
+                        spot it and get over it, a bunch of lorem
+                        placeholder some information may sometimes overlaps
+                        rows and culumns in lorem.
+                    </p>
+                    <div class="add-to"> <a href=""><span class="save"> <i class="iconly-Bookmark icli"></i>Save
+                                For Later</span> </a> <a href="">
+                            <span class="share">Share<i class="iconly-Send icli"> </i> </span>
+                        </a>
+                    </div>
+                </article>
+                <article class="editors-article">
+                    <div class="editors-article-image">
+                        <img src="img/what-is-agile.png" alt="">
+                    </div>
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">Reddit - Dive into
+                            anything</a>
+                    </h2>
+                    <div class="article-info">
+                        <a href="#" class="author">Opus</a>
+                        <span class="read-time"><span>&#183;</span> 2 min </span>
+                    </div>
+                    <p class="article-summery">
+                        Breadcrumbs is a subtle manipulation technique used
+                        to create a one-sided relationship. Here’s how to
+                        spot it and get over it, a bunch of lorem
+                        placeholder some information may sometimes overlaps
+                        rows and culumns in lorem.
+                    </p>
+                    <div class="add-to"> <a href=""><span class="save"> <i class="iconly-Bookmark icli"></i>Save
+                                For Later</span> </a> <a href="">
+                            <span class="share">Share<i class="iconly-Send icli"> </i> </span>
+                        </a>
+                    </div>
+                </article>
+                <article class="editors-article">
+                    <div class="editors-article-image">
+                        <img src="img/what-is-agile.png" alt="">
+                    </div>
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">Reddit - Dive into
+                            anything</a>
+                    </h2>
+                    <div class="article-info">
+                        <a href="#" class="author">Opus</a>
+                        <span class="read-time"><span>&#183;</span> 2 min </span>
+                    </div>
+                    <p class="article-summery">
+                        Breadcrumbs is a subtle manipulation technique used
+                        to create a one-sided relationship. Here’s how to
+                        spot it and get over it, a bunch of lorem
+                        placeholder some information may sometimes overlaps
+                        rows and culumns in lorem.
+                    </p>
+                    <div class="add-to"> <a href=""><span class="save"> <i class="iconly-Bookmark icli"></i>Save
+                                For Later</span> </a> <a href="">
+                            <span class="share">Share<i class="iconly-Send icli"> </i> </span>
+                        </a>
+                    </div>
+                </article>
+                <article class="editors-article">
+                    <div class="editors-article-image">
+                        <img src="img/what-is-agile.png" alt="">
+                    </div>
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">Reddit - Dive into
+                            anything</a>
+                    </h2>
+                    <div class="article-info">
+                        <a href="#" class="author">Opus</a>
+                        <span class="read-time"><span>&#183;</span> 2 min </span>
+                    </div>
+                    <p class="article-summery">
+                        Breadcrumbs is a subtle manipulation technique used
+                        to create a one-sided relationship. Here’s how to
+                        spot it and get over it, a bunch of lorem
+                        placeholder some information may sometimes overlaps
+                        rows and culumns in lorem.
+                    </p>
+                    <div class="add-to"> <a href=""><span class="save"> <i class="iconly-Bookmark icli"></i>Save
+                                For Later</span> </a> <a href="">
+                            <span class="share">Share<i class="iconly-Send icli"> </i> </span>
+                        </a>
+                    </div>
+                </article>
+                <article class="editors-article">
+                    <div class="editors-article-image">
+                        <img src="img/what-is-agile.png" alt="">
+                    </div>
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">Reddit - Dive into
+                            anything</a>
+                    </h2>
+                    <div class="article-info">
+                        <a href="#" class="author">Opus</a>
+                        <span class="read-time"><span>&#183;</span> 2 min </span>
+                    </div>
+                    <p class="article-summery">
+                        Breadcrumbs is a subtle manipulation technique used
+                        to create a one-sided relationship. Here’s how to
+                        spot it and get over it, a bunch of lorem
+                        placeholder some information may sometimes overlaps
+                        rows and culumns in lorem.
+                    </p>
+                    <div class="add-to"> <a href=""><span class="save"> <i class="iconly-Bookmark icli"></i>Save
+                                For Later</span> </a> <a href="">
+                            <span class="share">Share<i class="iconly-Send icli"> </i> </span>
+                        </a>
+                    </div>
+                </article>
+                <article class="editors-article">
+                    <div class="editors-article-image">
+                        <img src="img/what-is-agile.png" alt="">
+                    </div>
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">Reddit - Dive into
+                            anything</a>
+                    </h2>
+                    <div class="article-info">
+                        <a href="#" class="author">Opus</a>
+                        <span class="read-time"><span>&#183;</span> 2 min </span>
+                    </div>
+                    <p class="article-summery">
+                        Breadcrumbs is a subtle manipulation technique used
+                        to create a one-sided relationship. Here’s how to
+                        spot it and get over it, a bunch of lorem
+                        placeholder some information may sometimes overlaps
+                        rows and culumns in lorem.
+                    </p>
+                    <div class="add-to"> <a href=""><span class="save"> <i class="iconly-Bookmark icli"></i>Save
+                                For Later</span> </a> <a href="">
+                            <span class="share">Share<i class="iconly-Send icli"> </i> </span>
+                        </a>
+                    </div>
+                </article>
+                <article class="editors-article">
+                    <div class="editors-article-image">
+                        <img src="img/what-is-agile.png" alt="">
+                    </div>
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">Reddit - Dive into
+                            anything</a>
+                    </h2>
+                    <div class="article-info">
+                        <a href="#" class="author">Opus</a>
+                        <span class="read-time"><span>&#183;</span> 2 min </span>
+                    </div>
+                    <p class="article-summery">
+                        Breadcrumbs is a subtle manipulation technique used
+                        to create a one-sided relationship. Here’s how to
+                        spot it and get over it, a bunch of lorem
+                        placeholder some information may sometimes overlaps
+                        rows and culumns in lorem.
+                    </p>
+                    <div class="add-to"> <a href=""><span class="save"> <i class="iconly-Bookmark icli"></i>Save
+                                For Later</span> </a> <a href="">
+                            <span class="share">Share<i class="iconly-Send icli"> </i> </span>
+                        </a>
+                    </div>
+                </article>
+                <article class="editors-article">
+                    <div class="editors-article-image">
+                        <img src="img/what-is-agile.png" alt="">
+                    </div>
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">Reddit - Dive into
+                            anything</a>
+                    </h2>
+                    <div class="article-info">
+                        <a href="#" class="author">Opus</a>
+                        <span class="read-time"><span>&#183;</span> 2 min </span>
+                    </div>
+                    <p class="article-summery">
+                        Breadcrumbs is a subtle manipulation technique used
+                        to create a one-sided relationship. Here’s how to
+                        spot it and get over it, a bunch of lorem
+                        placeholder some information may sometimes overlaps
+                        rows and culumns in lorem.
+                    </p>
+                    <div class="add-to"> <a href=""><span class="save"> <i class="iconly-Bookmark icli"></i>Save
+                                For Later</span> </a> <a href="">
+                            <span class="share">Share<i class="iconly-Send icli"> </i> </span>
+                        </a>
+                    </div>
+                </article>
+                <article class="editors-article">
+                    <div class="editors-article-image">
+                        <img src="img/what-is-agile.png" alt="">
+                    </div>
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">Reddit - Dive into
+                            anything</a>
+                    </h2>
+                    <div class="article-info">
+                        <a href="#" class="author">Opus</a>
+                        <span class="read-time"><span>&#183;</span> 2 min </span>
+                    </div>
+                    <p class="article-summery">
+                        Breadcrumbs is a subtle manipulation technique used
+                        to create a one-sided relationship. Here’s how to
+                        spot it and get over it, a bunch of lorem
+                        placeholder some information may sometimes overlaps
+                        rows and culumns in lorem.
+                    </p>
+                    <div class="add-to"> <a href=""><span class="save"> <i class="iconly-Bookmark icli"></i>Save
+                                For Later</span> </a> <a href="">
+                            <span class="share">Share<i class="iconly-Send icli"> </i> </span>
+                        </a>
+                    </div>
+                </article>
+                <article class="editors-article">
+                    <div class="editors-article-image">
+                        <img src="img/what-is-agile.png" alt="">
+                    </div>
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">Reddit - Dive into
+                            anything</a>
+                    </h2>
+                    <div class="article-info">
+                        <a href="#" class="author">Opus</a>
+                        <span class="read-time"><span>&#183;</span> 2 min </span>
+                    </div>
+                    <p class="article-summery">
+                        Breadcrumbs is a subtle manipulation technique used
+                        to create a one-sided relationship. Here’s how to
+                        spot it and get over it, a bunch of lorem
+                        placeholder some information may sometimes overlaps
+                        rows and culumns in lorem.
+                    </p>
+                    <div class="add-to"> <a href=""><span class="save"> <i class="iconly-Bookmark icli"></i>Save
+                                For Later</span> </a> <a href="">
+                            <span class="share">Share<i class="iconly-Send icli"> </i> </span>
+                        </a>
+                    </div>
+                </article>
+                <article class="editors-article">
+                    <div class="editors-article-image">
+                        <img src="img/what-is-agile.png" alt="">
+                    </div>
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">Reddit - Dive into
+                            anything</a>
+                    </h2>
+                    <div class="article-info">
+                        <a href="#" class="author">Opus</a>
+                        <span class="read-time"><span>&#183;</span> 2 min </span>
+                    </div>
+                    <p class="article-summery">
+                        Breadcrumbs is a subtle manipulation technique used
+                        to create a one-sided relationship. Here’s how to
+                        spot it and get over it, a bunch of lorem
+                        placeholder some information may sometimes overlaps
+                        rows and culumns in lorem.
+                    </p>
+                    <div class="add-to"> <a href=""><span class="save"> <i class="iconly-Bookmark icli"></i>Save
+                                For Later</span> </a> <a href="">
+                            <span class="share">Share<i class="iconly-Send icli"> </i> </span>
+                        </a>
+                    </div>
+                </article>
+                <article class="editors-article">
+                    <div class="editors-article-image">
+                        <img src="img/pexels-evie-shaffer-4004374.jpg" alt="">
+                    </div>
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">Reddit - Dive into
+                            anything</a>
+                    </h2>
+                    <div class="article-info">
+                        <a href="#" class="author">Opus</a>
+                        <span class="read-time"><span>&#183;</span> 2 min </span>
+                    </div>
+                    <p class="article-summery">
+                        Breadcrumbs is a subtle manipulation technique used
+                        to create a one-sided relationship. Here’s how to
+                        spot it and get over it, a bunch of lorem
+                        placeholder some information may sometimes overlaps
+                        rows and culumns in lorem.
+                    </p>
+                    <div class="add-to"> <a href=""><span class="save"> <i class="iconly-Bookmark icli"></i>Save
+                                For Later</span> </a> <a href="">
+                            <span class="share">Share<i class="iconly-Send icli"> </i> </span>
+                        </a>
+                    </div>
+                </article>
+                <article class="editors-article">
+                    <div class="editors-article-image">
+                        <img src="img/pexels-pixabay-60582.jpg" alt="">
+                    </div>
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">Reddit - Dive into
+                            anything</a>
+                    </h2>
+                    <div class="article-info">
+                        <a href="#" class="author">Opus</a>
+                        <span class="read-time"><span>&#183;</span> 2 min </span>
+                    </div>
+                    <p class="article-summery">
+                        Breadcrumbs is a subtle manipulation technique used
+                        to create a one-sided relationship. Here’s how to
+                        spot it and get over it, a bunch of lorem
+                        placeholder some information may sometimes overlaps
+                        rows and culumns in lorem.
+                    </p>
+                    <div class="add-to"> <a href=""><span class="save"> <i class="iconly-Bookmark icli"></i>Save
+                                For Later</span> </a> <a href="">
+                            <span class="share">Share<i class="iconly-Send icli"> </i> </span>
+                        </a> </div>
+                </article>
+                <article class="editors-article">
+                    <div class="editors-article-image">
+                        <img src="img/pexels-pixabay-60582.jpg" alt="">
+                    </div>
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">Reddit - Dive into
+                            anything</a>
+                    </h2>
+                    <div class="article-info">
+                        <a href="#" class="author">Opus</a>
+                        <span class="read-time"><span>&#183;</span> 2 min </span>
+                    </div>
+                    <p class="article-summery">
+                        Breadcrumbs is a subtle manipulation technique used
+                        to create a one-sided relationship. Here’s how to
+                        spot it and get over it, a bunch of lorem
+                        placeholder some information may sometimes overlaps
+                        rows and culumns in lorem.
+                    </p>
+                    <div class="add-to"> <a href=""><span class="save"> <i class="iconly-Bookmark icli"></i>Save
+                                For Later</span> </a> <a href="">
+                            <span class="share">Share<i class="iconly-Send icli"> </i> </span>
+                        </a> </div>
+                </article>
+            </div>
+        </div>
+        <div class="topics">
+            <h2 class="discover-topis">Discover Topics</h2>
+            <ul class="topic-list">
+                <li class="active-list"> <a href="">Technology</a></li>
+                <li><a href="">Science</a></li>
+                <li><a href="">Health Care</a></li>
+                <li><a href="">Metaverse</a></li>
+                <li><a href="">Business</a></li>
+                <li><a href="">Artificial Intelligence</a></li>
+                <li><a href="">Web</a></li>
+                <li><a href="">5G</a></li>
+                <li><a href="">Local</a></li>
+                <li><a href="">Bio-Tech</a></li>
+                <li><a href="">Resources</a></li>
+                <li><a href="">Business</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Education</a></li>
+                <li><a href="">Entertainment</a></li>
+                <li><a href="">Food</a></li>
+                <li><a href="">Health & Fitness</a></li>
+                <li><a href="">Personal Finance</a></li>
+                <li><a href="">Self Improvement</a></li>
+                <li><a href="">Sports</a></li>
+                <li><a href="">Travel</a></li>
+            </ul>
+        </div>
+    </main>
+    <div class="mobile-footer">
+        <a href="" class="mobile-footer-link active">
+            <span class="iconly-Home icli"></span>
+        </a>
+        <a href="" class="mobile-footer-link">
+            <span class="iconly-Search icli"></span>
+        </a>
+        <a href="" class="mobile-footer-link">
+            <span class="iconly-Bag-2 icli"></span>
+        </a>
+        <a href="" class="mobile-footer-link">
+            <span class="iconly-Edit icli">
+        </a>
+    </div>
+    <footer>
+        <div class="footer-section">
+            <h3>Products</h3>
+            <ul class="footer-links">
+                <li><a href="">Must-read articles</a></li>
+                <li><a href="">Newsletter</a></li>
+                <li><a href="">Premium</a></li>
+                <li><a href="">Releases</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Company</h3>
+            <ul class="footer-links">
+                <li><a href="">About</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Blog</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Resources</h3>
+            <ul class="footer-links">
+                <li><a href="">Get help</a></li>
+                <li><a href="">Contribute</a></li>
+                <li><a href="">Opus for publishers</a></li>
+                <li><a href="">Advertise</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Resources</h3>
+            <ul class="footer-links">
+                <li><a href="">Get the Docs</a></li>
+                <li><a href="">Download Pdfs</a></li>
+                <li><a href="">Become An Editor</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <div class="down-co">
+                <p> © 2022<a href="#">aduki, Inc.</a></p>
+                <a href="">Privacy policy </a>
+                <a href="">Terms of service </a>
+                <a href="">Cookie preferences</a>
+            </div>
+
+            <div class="social-links">
+                <h3>Follow Us</h3>
+                <a href="#" title="Facebook">
+                    <i class="fa fa-brands fa-facebook"></i></a>
+                <a href="#" title="Twitter">
+                    <i class="fa fa-brandsfa-twitter"></i></a>
+                <a href="#" title="LinkedIn">
+                <i class="fa fa-brandsfa-linkedin"></i></a>
+                <a href="#" title="Instagram">
+                <i class="fa fa-brand fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/dropdown.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/reveal.js"></script>
+</body>
+
+</html>
