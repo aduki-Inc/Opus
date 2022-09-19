@@ -71,9 +71,11 @@ header #start{
 }
 .getting-started {
   text-decoration: none;
-  padding: 2px 18px;
+  padding: 2px 15px;
+  min-width: 100px;
   display: flex;
   align-items: center;
+  justify-content: start;
   gap: 10px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -90,7 +92,7 @@ header #start{
   color: #1dbd7b;
   border:1px solid var(--border-color);
 }
-.login{
+.login,a.start{
   background-color: #1dbd7b;
   color: white;
 }

@@ -271,7 +271,10 @@
         padding: 5px 5px;
         font-size: 1.03rem;
       }
-
+      a.start{
+        padding: 4px 18px 4px 12px;
+        font-size: 18px;
+      }
     main {
         margin: 70px 5px 5px 1px;
         padding: 0%;
