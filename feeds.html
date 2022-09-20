@@ -16,121 +16,132 @@
 </head>
 
 <body class="feeds-body">
+    <!--
     <header id="menu">
         <div class="site-logo">
             <h2 class="site-name">Opus</h2>
         </div>
-        <ul class="header-links">
-            <li class="header-list-item">
-                <a href="#" class="header-link active-header-link">Home</a>
-            </li>
-            <li class="header-list-item">
-                <a href="#" class="header-link">Discover</a>
-            </li>
-            <li class="header-list-item">
-                <a href="#" class="header-link">Newsletters</a>
-            </li>
-            <li class="header-list-item">
-                <a href="#" class="header-link">Discover</a>
-            </li>
-            <li class="header-list-item">
-                <a href="#" class="header-link">Donate</a>
-            </li>
-        </ul>
-        <!--
-            <div class="theme-switcher">
-                <i class="fa fa-solid fa-moon"> Light</i>
+        <div class="welcome">
+              <h3 class="welcome-title">Welcome to Opus.</h3>
+              <p class="welcome-message">Hello femar, welcome back!</p>
             </div>
-        -->
-
-        <!-- If A User Is Logged In-->
-        <!--
-        <div class="profile-section">
-            <span class="iconly-Notification icli">
-                <span id="text-count">5</span>
-            </span>
-            <div id="dropdown-btn" class="profile-image-wrapper">
-                <span class="active-status">
-                  <span class="dot"></span>
-                </span>
-                <img src="img/pexels-pixabay-256262.jpg" alt="" />
-            </div>
-            <div id="profile-dropdown" class="profile-dropdown">
-                <div class="go-to-profile">
-                  <div class="profile-image-wrapper">
-                    <img src="img/pexels-pixabay-256262.jpg" alt="" />
-                  </div>
-                  <div class="name-container">
-                    <h4 class="name">Fredrick Ochieng</h4>
-                    <a href=" {% url 'profile' username=user.username %} " class="profile-link"
-                      >View Profile
-                      <span class="iconly-Arrow-Right icbo"></span>
-                    </a>
-                  </div>
+            <div class="search">
+              <form action="" method="get">
+                <input type="text" placeholder="Search Opus" />
+                <input class="iconly-Search icli" type="submit" value="Search" />
+                <span class="iconly-Search icli"></span>
+              </form>
+              <div class="create">
+                <span id="create-Btn" class="iconly-Plus icbo"></span>
+                <div class="create-dropdown">
+                    <h2 class="create-title">Contribute</h2>
+                    <a href="" title="Create" id="create"><span>Create Article</span><i class="iconly-Arrow-Right icbo"></i></a>
+                    <a href="" title="Create" id="create"><span>Add a Review</span><i class="iconly-Arrow-Right icbo"></i></a>
+                    <a href="" title="Create" id="create"><span>Add Product</span><i class="iconly-Arrow-Right icbo"></i></a>
+                    <a href="" title="Create" id="create"><span>Edit Your Articles</span><i class="iconly-Arrow-Right icbo"></i></a>
+                    <a href="" title="Create" id="create"><span>Become An Editor</span><i class="iconly-Arrow-Right icbo"></i></a>
+                    <a href="" title="Create" id="create"><span>Help Center</span><i class="iconly-Arrow-Right icbo"></i></a>
                 </div>
-                <hr size="1" />
-                <ul class="linked-list top-links">
-                  <li class="dropdown-li">
-                    <a href="" class="dropdown-link">Dashboard</a>
-                  </li>
-                  <li class="dropdown-li">
-                    <a href="{% url 'user_post_list' %}" class="dropdown-link">Your Stats</a>
-                  </li>
-                  <li class="dropdown-li">
-                    <a href=" {% url 'profile' username=user.username %} " class="dropdown-link">Your Profile</a>
-                  </li>
-                  <li class="dropdown-li">
-                    <a href=" {% url 'user_post_list' %} " class="dropdown-link">Your Articles</a>
-                  </li>
-                </ul>
-                <hr size="1" />
-                <ul class="linked-list middle-links">
-                  <li class="dropdown-li">
-                    <a href="" class="dropdown-link">Explore</a>
-                  </li>
-                  <li class="dropdown-li">
-                    <a href="" class="dropdown-link">What's New?</a>
-                  </li>
-                  <li class="dropdown-li">
-                    <a href="" class="dropdown-link">Send Us Feedback</a>
-                  </li>
-                  <li class="dropdown-li">
-                    <a href="" class="dropdown-link">Settings</a>
-                  </li>
-                </ul>
-                <hr size="1" />
-                <ul class="linked-list log-out">
-                  <li class="dropdown-li">
-                    <a href="{% url 'logout' %}" class="dropdown-link log-out">Log Out</a>
-                  </li>
-                </ul>
-            </div>
+              </div>
         </div>
-       -->
-
-
-        <!-- If A User Is Not Sign Up-->
-
-        <div id="logon" class="account">
-           <a title="Sign Up" href="" class="sign-up getting-started">
-                <span class="iconly-Add-User icli"></span>
-                <span class="text">Sign up</span>
-           </a>
-           <a title="Log In" href="" class="login getting-started">
-                <span class="iconly-Login icli"></span>
-                <span class="text">Login</span>
-           </a>
-        </div>
-
-        <div id="start" class="account">
-            <a title="Log In" href="" class="start getting-started">
-                <span class="iconly-Login icli"></span>
-                 <span class="text">Get started</span>
-            </a>
-         </div>
     </header>
+-->
 
     <main class="feeds">
+        <div class="feeds-header">
+                <div class="welcome">
+                  <h3 class="welcome-title">Welcome to Opus.</h3>
+                  <p class="welcome-message">Hello femar, welcome back!</p>
+                </div>
+                <!--
+                <div class="search">
+                  <form action="" method="get">
+                    <input type="text" placeholder="Search Opus" />
+                    <input class="iconly-Search icli" type="submit" value="Search" />
+                    <span class="iconly-Search icli"></span>
+                  </form>
+               </div>
+               -->
+        </div>
+        <div class="dashboard-sidebar">
+            <div class="sidebar-nav">
+              <div class="content-nav">
+                <ul class="linked-list content-list">
+                  <li class="content-link">
+                    <a class="link data-active" href=" {% url 'dashboard' %}">
+                      <span class="iconly-Home icli"></span>
+                      <span class="link-text">Home</span>
+                    </a>
+                  </li>
+                  <li class="content-link">
+                    <a class="link" href=" {% url 'create_post' %}">
+                      <span class="iconly-Plus icli"></span>
+                      <span class="link-text">Create</span>
+                    </a>
+                  </li>
+                  <li class="content-link">
+                    <a class="link" href="{% url 'user_issue_list' %}">
+                      <span class="iconly-Search icli"></span>
+                      <span class="link-text">Search</span>
+                    </a>
+                  </li>
+                  <li class="content-link">
+                    <a class="link " href="{% url 'user_product_list' %}">
+                      <span class="iconly-Bag-2 icli"></span>
+                      <span class="link-text">Products</span>
+                    </a>
+                  </li>
+                  <li class="content-link">
+                    <a class="link" href="#">
+                      <span class="iconly-Discovery icli"></span>
+                      <span class="link-text">Explore</span>
+                    </a>
+                  </li>
+                  <li class="content-link">
+                    <a class="link" href="#">
+                      <span class="iconly-Heart icli"></span>
+                      <span class="link-text">Donate</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="hr"></div>
+              <div class="settings-nav">
+                <ul class="linked-list settings-list">
+                  <li class="content-link">
+                    <a class="link " href=" {% url 'profile' username=user.username %}">
+                      <span class="iconly-Profile icli"></span>
+                      <span class="link-text">Profile</span>
+                    </a>
+                  </li>
+                  <li class="content-link">
+                    <a class="link " href="#">
+                      <span class="iconly-Bookmark icli"></span>
+                      <span class="link-text">My List</span>
+                    </a>
+                  </li>
+                  <li class="content-link">
+                    <a class="link " href="#">
+                      <span class="iconly-Chart icli"></span>
+                      <span class="link-text">Trending</span>
+                    </a>
+                  </li>
+                  <li class="content-link">
+                    <a class="link " href="#">
+                      <span class="iconly-More-Circle icli"></span>
+                      <span class="link-text">Themes</span>
+                    </a>
+                  </li>
+                  <li class="content-link">
+                    <a class="link" href="{% url 'user_issue_list' %}">
+                      <span class="iconly-Document icli"></span>
+                      <span class="link-text">Newsletters</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </div>
         <div class="article-feeds feed-contents">
             <div class="feed-title">
                 <div class="section-title">For you</div>
@@ -144,7 +155,54 @@
                     </div>
                     <a href="#" class="author">Zachariah Ochieng</a>
                     <span class="read-time posted"><span class="dot">&#183;</span> 9 min read </span>
-                    <span class="posted right"><i class="iconly-Calendar icli"></i> <span class="date">Jul 5</span></span>
+                    <span class="posted right"><i class="iconly-Time-Circle icli"></i> <span class="date">Jul 5</span></span>
+                </div>
+                <div class="summery-content">
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">This 40-Day Challenge can land you into MAANG!!</a>
+                    </h2>
+                    <div class="article-summery">
+                        <div id="mobile-image">
+                            <img id="" src="img/pexels-evie-shaffer-4004374.jpg" title="Someone's Image" alt="">
+                        </div>
+                        <p class="summery-text">
+                            We all know coding interview prep feels distressing.
+                            No matter how much you prepare, there’s something you forget to practice.
+                            It’s completely normal to feel this. But how can we overcome our emotions to ensure we...
+                        </p>
+                    </div>
+                    <div class="article-footer">
+                        <div class="article-tags">
+                            <a href="#" class="tag">Javascript</a>
+                            <a href="#" class="tag">Programming</a>
+                            <a href="#" class="tag">Recent</a>
+                        </div>
+                        <div class="article-actions">
+                            <a title="Save" href="">
+                                <i class="iconly-Bookmark icbo"></i>
+                            </a>
+                            <a title="Share" href="">
+                                <i class="iconly-Send icli"> </i>
+                            </a>
+                            <div  title="More" class="more" href="">
+                                <span id="moreBtn" class="iconly-More-Circle icli"></span>
+                                <div id="more-actions" class="more-actions">
+                                    <a href="" title="Author" class="view-author">View author</a>
+                                    <a href="" title="Report" class="view-author">Report</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="article-wrapper">
+                <div class="article-info">
+                    <div class="profile-wrapper">
+                        <img src="img/pro.jpg" alt="Profile">
+                    </div>
+                    <a href="#" class="author">Fredrick Ochieng</a>
+                    <span class="read-time posted"><span class="dot">&#183;</span> 9 min read </span>
+                    <span class="posted right"><i class="iconly-Time-Circle icli"></i> <span class="date">Jul 5</span></span>
                 </div>
                 <div class="summery-content">
                     <h2 class="article-title">
@@ -173,9 +231,13 @@
                             <a title="Share" href="">
                                 <i class="iconly-Send icli"> </i>
                             </a>
-                            <a  title="More" href="">
-                                <span class="iconly-More-Circle icli"></span>
-                            </a>
+                            <div  title="More" class="more" href="">
+                                <span id="moreBtn" class="iconly-More-Circle icli"></span>
+                                <div id="more-actions" class="more-actions">
+                                    <a href="" title="Author" class="view-author">View author</a>
+                                    <a href="" title="Report" class="view-author">Report</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -187,7 +249,7 @@
                     </div>
                     <a href="#" class="author">Fredrick Ochieng</a>
                     <span class="read-time posted"><span class="dot">&#183;</span> 9 min read </span>
-                    <span class="posted right"><i class="iconly-Calendar icli"></i> <span class="date">Jul 5</span></span>
+                    <span class="posted right"><i class="iconly-Time-Circle icli"></i> <span class="date">Jul 5</span></span>
                 </div>
                 <div class="summery-content">
                     <h2 class="article-title">
@@ -216,9 +278,13 @@
                             <a title="Share" href="">
                                 <i class="iconly-Send icli"> </i>
                             </a>
-                            <a  title="More" href="">
-                                <span class="iconly-More-Circle icli"></span>
-                            </a>
+                            <div  title="More" class="more" href="">
+                                <span id="moreBtn" class="iconly-More-Circle icli"></span>
+                                <div id="more-actions" class="more-actions">
+                                    <a href="" title="Author" class="view-author">View author</a>
+                                    <a href="" title="Report" class="view-author">Report</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -230,7 +296,7 @@
                     </div>
                     <a href="#" class="author">Fredrick Ochieng</a>
                     <span class="read-time posted"><span class="dot">&#183;</span> 9 min read </span>
-                    <span class="posted right"><i class="iconly-Calendar icli"></i> <span class="date">Jul 5</span></span>
+                    <span class="posted right"><i class="iconly-Time-Circle icli"></i> <span class="date">Jul 5</span></span>
                 </div>
                 <div class="summery-content">
                     <h2 class="article-title">
@@ -260,9 +326,13 @@
                             <a title="Share" href="">
                                 <i class="iconly-Send icli"> </i>
                             </a>
-                            <a  title="More" href="">
-                                <span class="iconly-More-Circle icli"></span>
-                            </a>
+                            <div  title="More" class="more" href="">
+                                <span id="moreBtn" class="iconly-More-Circle icli"></span>
+                                <div id="more-actions" class="more-actions">
+                                    <a href="" title="Author" class="view-author">View author</a>
+                                    <a href="" title="Report" class="view-author">Report</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -274,7 +344,7 @@
                     </div>
                     <a href="#" class="author">Fredrick Ochieng</a>
                     <span class="read-time posted"><span class="dot">&#183;</span> 9 min read </span>
-                    <span class="posted right"><i class="iconly-Calendar icli"></i> <span class="date">Jul 5</span></span>
+                    <span class="posted right"><i class="iconly-Time-Circle icli"></i> <span class="date">Jul 5</span></span>
                 </div>
                 <div class="summery-content">
                     <h2 class="article-title">
@@ -304,53 +374,13 @@
                             <a title="Share" href="">
                                 <i class="iconly-Send icli"> </i>
                             </a>
-                            <a  title="More" href="">
-                                <span class="iconly-More-Circle icli"></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="article-wrapper">
-                <div class="article-info">
-                    <div class="profile-wrapper">
-                        <img src="img/pro.jpg" alt="Profile">
-                    </div>
-                    <a href="#" class="author">Fredrick Ochieng</a>
-                    <span class="read-time posted"><span class="dot">&#183;</span> 9 min read </span>
-                    <span class="posted right"><i class="iconly-Calendar icli"></i> <span class="date">Jul 5</span></span>
-                </div>
-                <div class="summery-content">
-                    <h2 class="article-title">
-                        <a href="" title="Article Title" class="article-title-link">This 40-Day Challenge can land you into MAANG!!</a>
-                    </h2>
-                    <div class="article-summery">
-                        <div id="mobile-image">
-                            <img id="" src="img/pexels-evie-shaffer-4004374.jpg" title="Someone's Image" alt="">
-                        </div>
-                        <p class="summery-text">
-                            We all know coding interview prep feels distressing.
-                            No matter how much you prepare, there’s something you forget to practice.
-                            It’s completely normal to feel this. But how can we overcome our emotions to ensure we...
-                        </p>
-                    </div>
-                    
-                    <div class="article-footer">
-                        <div class="article-tags">
-                            <a href="#" class="tag">Javascript</a>
-                            <a href="#" class="tag">Programming</a>
-                            <a href="#" class="tag">Recent</a>
-                        </div>
-                        <div class="article-actions">
-                            <a title="Save" href="">
-                                <i class="iconly-Bookmark icli"></i>
-                            </a>
-                            <a title="Share" href="">
-                                <i class="iconly-Send icli"> </i>
-                            </a>
-                            <a  title="More" href="">
-                                <span class="iconly-More-Circle icli"></span>
-                            </a>
+                            <div  title="More" class="more" href="">
+                                <span id="moreBtn" class="iconly-More-Circle icli"></span>
+                                <div id="more-actions" class="more-actions">
+                                    <a href="" title="Author" class="view-author">View author</a>
+                                    <a href="" title="Report" class="view-author">Report</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -370,7 +400,7 @@
                     </div>
                     <a href="#" class="author">Zachariah Ochieng</a>
                     <span class="read-time posted"><span class="dot">&#183;</span> 9 min read </span>
-                    <span class="posted right"><i class="iconly-Calendar icli"></i> <span class="date">Jul 5</span></span>
+                    <span class="posted right"><i class="iconly-Time-Circle icli"></i> <span class="date">Jul 5</span></span>
                 </div>
                 <div class="summery-content">
                     <h2 class="article-title">
@@ -400,9 +430,13 @@
                             <a title="Share" href="">
                                 <i class="iconly-Send icli"> </i>
                             </a>
-                            <a  title="More" href="">
-                                <span class="iconly-More-Circle icli"></span>
-                            </a>
+                            <div  title="More" class="more" href="">
+                                <span id="moreBtn" class="iconly-More-Circle icli"></span>
+                                <div id="more-actions" class="more-actions">
+                                    <a href="" title="Author" class="view-author">View author</a>
+                                    <a href="" title="Report" class="view-author">Report</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -414,7 +448,7 @@
                     </div>
                     <a href="#" class="author">Fredrick Ochieng</a>
                     <span class="read-time posted"><span class="dot">&#183;</span> 9 min read </span>
-                    <span class="posted right"><i class="iconly-Calendar icli"></i> <span class="date">Jul 5</span></span>
+                    <span class="posted right"><i class="iconly-Time-Circle icli"></i> <span class="date">Jul 5</span></span>
                 </div>
                 <div class="summery-content">
                     <h2 class="article-title">
@@ -444,9 +478,13 @@
                             <a title="Share" href="">
                                 <i class="iconly-Send icli"> </i>
                             </a>
-                            <a  title="More" href="">
-                                <span class="iconly-More-Circle icli"></span>
-                            </a>
+                            <div  title="More" class="more" href="">
+                                <span id="moreBtn" class="iconly-More-Circle icli"></span>
+                                <div id="more-actions" class="more-actions">
+                                    <a href="" title="Author" class="view-author">View author</a>
+                                    <a href="" title="Report" class="view-author">Report</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -458,7 +496,7 @@
                     </div>
                     <a href="#" class="author">Fredrick Ochieng</a>
                     <span class="read-time posted"><span class="dot">&#183;</span> 9 min read </span>
-                    <span class="posted right"><i class="iconly-Calendar icli"></i> <span class="date">Jul 5</span></span>
+                    <span class="posted right"><i class="iconly-Time-Circle icli"></i> <span class="date">Jul 5</span></span>
                 </div>
                 <div class="summery-content">
                     <h2 class="article-title">
@@ -488,9 +526,13 @@
                             <a title="Share" href="">
                                 <i class="iconly-Send icli"> </i>
                             </a>
-                            <a  title="More" href="">
-                                <span class="iconly-More-Circle icli"></span>
-                            </a>
+                            <div  title="More" class="more" href="">
+                                <span id="moreBtn" class="iconly-More-Circle icli"></span>
+                                <div id="more-actions" class="more-actions">
+                                    <a href="" title="Author" class="view-author">View author</a>
+                                    <a href="" title="Report" class="view-author">Report</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -502,7 +544,7 @@
                     </div>
                     <a href="#" class="author">Fredrick Ochieng</a>
                     <span class="read-time posted"><span class="dot">&#183;</span> 9 min read </span>
-                    <span class="posted right"><i class="iconly-Calendar icli"></i> <span class="date">Jul 5</span></span>
+                    <span class="posted right"><i class="iconly-Time-Circle icli"></i> <span class="date">Jul 5</span></span>
                 </div>
                 <div class="summery-content">
                     <h2 class="article-title">
@@ -532,9 +574,13 @@
                             <a title="Share" href="">
                                 <i class="iconly-Send icli"> </i>
                             </a>
-                            <a  title="More" href="">
-                                <span class="iconly-More-Circle icli"></span>
-                            </a>
+                            <div  title="More" class="more" href="">
+                                <span id="moreBtn" class="iconly-More-Circle icli"></span>
+                                <div id="more-actions" class="more-actions">
+                                    <a href="" title="Author" class="view-author">View author</a>
+                                    <a href="" title="Report" class="view-author">Report</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -546,7 +592,7 @@
                     </div>
                     <a href="#" class="author">Fredrick Ochieng</a>
                     <span class="read-time posted"><span class="dot">&#183;</span> 9 min read </span>
-                    <span class="posted right"><i class="iconly-Calendar icli"></i> <span class="date">Jul 5</span></span>
+                    <span class="posted right"><i class="iconly-Time-Circle icli"></i> <span class="date">Jul 5</span></span>
                 </div>
                 <div class="summery-content">
                     <h2 class="article-title">
@@ -576,9 +622,13 @@
                             <a title="Share" href="">
                                 <i class="iconly-Send icli"> </i>
                             </a>
-                            <a  title="More" href="">
-                                <span class="iconly-More-Circle icli"></span>
-                            </a>
+                            <div  title="More" class="more" href="">
+                                <span id="moreBtn" class="iconly-More-Circle icli"></span>
+                                <div id="more-actions" class="more-actions">
+                                    <a href="" title="Author" class="view-author">View author</a>
+                                    <a href="" title="Report" class="view-author">Report</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -598,7 +648,7 @@
                     </div>
                     <a href="#" class="author">Zachariah Ochieng</a>
                     <span class="read-time posted"><span class="dot">&#183;</span> 9 min read </span>
-                    <span class="posted right"><i class="iconly-Calendar icli"></i> <span class="date">Jul 5</span></span>
+                    <span class="posted right"><i class="iconly-Time-Circle icli"></i> <span class="date">Jul 5</span></span>
                 </div>
                 <div class="summery-content">
                     <h2 class="article-title">
@@ -628,9 +678,13 @@
                             <a title="Share" href="">
                                 <i class="iconly-Send icli"> </i>
                             </a>
-                            <a  title="More" href="">
-                                <span class="iconly-More-Circle icli"></span>
-                            </a>
+                            <div  title="More" class="more" href="">
+                                <span id="moreBtn" class="iconly-More-Circle icli"></span>
+                                <div id="more-actions" class="more-actions">
+                                    <a href="" title="Author" class="view-author">View author</a>
+                                    <a href="" title="Report" class="view-author">Report</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -642,7 +696,7 @@
                     </div>
                     <a href="#" class="author">Fredrick Ochieng</a>
                     <span class="read-time posted"><span class="dot">&#183;</span> 9 min read </span>
-                    <span class="posted right"><i class="iconly-Calendar icli"></i> <span class="date">Jul 5</span></span>
+                    <span class="posted right"><i class="iconly-Time-Circle icli"></i> <span class="date">Jul 5</span></span>
                 </div>
                 <div class="summery-content">
                     <h2 class="article-title">
@@ -672,9 +726,13 @@
                             <a title="Share" href="">
                                 <i class="iconly-Send icli"> </i>
                             </a>
-                            <a  title="More" href="">
-                                <span class="iconly-More-Circle icli"></span>
-                            </a>
+                            <div  title="More" class="more" href="">
+                                <span id="moreBtn" class="iconly-More-Circle icli"></span>
+                                <div id="more-actions" class="more-actions">
+                                    <a href="" title="Author" class="view-author">View author</a>
+                                    <a href="" title="Report" class="view-author">Report</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -686,7 +744,7 @@
                     </div>
                     <a href="#" class="author">Fredrick Ochieng</a>
                     <span class="read-time posted"><span class="dot">&#183;</span> 9 min read </span>
-                    <span class="posted right"><i class="iconly-Calendar icli"></i> <span class="date">Jul 5</span></span>
+                    <span class="posted right"><i class="iconly-Time-Circle icli"></i> <span class="date">Jul 5</span></span>
                 </div>
                 <div class="summery-content">
                     <h2 class="article-title">
@@ -716,9 +774,13 @@
                             <a title="Share" href="">
                                 <i class="iconly-Send icli"> </i>
                             </a>
-                            <a  title="More" href="">
-                                <span class="iconly-More-Circle icli"></span>
-                            </a>
+                            <div  title="More" class="more" href="">
+                                <span id="moreBtn" class="iconly-More-Circle icli"></span>
+                                <div id="more-actions" class="more-actions">
+                                    <a href="" title="Author" class="view-author">View author</a>
+                                    <a href="" title="Report" class="view-author">Report</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -730,7 +792,7 @@
                     </div>
                     <a href="#" class="author">Fredrick Ochieng</a>
                     <span class="read-time posted"><span class="dot">&#183;</span> 9 min read </span>
-                    <span class="posted right"><i class="iconly-Calendar icli"></i> <span class="date">Jul 5</span></span>
+                    <span class="posted right"><i class="iconly-Time-Circle icli"></i> <span class="date">Jul 5</span></span>
                 </div>
                 <div class="summery-content">
                     <h2 class="article-title">
@@ -760,9 +822,13 @@
                             <a title="Share" href="">
                                 <i class="iconly-Send icli"> </i>
                             </a>
-                            <a  title="More" href="">
-                                <span class="iconly-More-Circle icli"></span>
-                            </a>
+                            <div  title="More" class="more" href="">
+                                <span id="moreBtn" class="iconly-More-Circle icli"></span>
+                                <div id="more-actions" class="more-actions">
+                                    <a href="" title="Author" class="view-author">View author</a>
+                                    <a href="" title="Report" class="view-author">Report</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -774,7 +840,7 @@
                     </div>
                     <a href="#" class="author">Fredrick Ochieng</a>
                     <span class="read-time posted"><span class="dot">&#183;</span> 9 min read </span>
-                    <span class="posted right"><i class="iconly-Calendar icli"></i> <span class="date">Jul 5</span></span>
+                    <span class="posted right"><i class="iconly-Time-Circle icli"></i> <span class="date">Jul 5</span></span>
                 </div>
                 <div class="summery-content">
                     <h2 class="article-title">
@@ -804,14 +870,262 @@
                             <a title="Share" href="">
                                 <i class="iconly-Send icli"> </i>
                             </a>
-                            <a  title="More" href="">
-                                <span class="iconly-More-Circle icli"></span>
-                            </a>
+                            <div  title="More" class="more" href="">
+                                <span id="moreBtn" class="iconly-More-Circle icli"></span>
+                                <div id="more-actions" class="more-actions">
+                                    <a href="" title="Author" class="view-author">View author</a>
+                                    <a href="" title="Report" class="view-author">Report</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <a href="" class="get-more">Get all trending articles now</a>
+            <a href="" class="get-more">Get all Recent articles now</a>
+        </div>
+        <div class="article-feeds feed-contents">
+            <div class="feed-title">
+                <div class="section-title">Most Engagements</div>
+                <i class="iconly-Arrow-Right-Circle icli"></i>
+                <hr size="1" />
+            </div>
+            <div class="article-wrapper">
+                <div class="article-info">
+                    <div class="profile-wrapper">
+                        <img src="img/pro.jpg" alt="Profile">
+                    </div>
+                    <a href="#" class="author">Zachariah Ochieng</a>
+                    <span class="read-time posted"><span class="dot">&#183;</span> 9 min read </span>
+                    <span class="posted right"><i class="iconly-Time-Circle icli"></i> <span class="date">Jul 5</span></span>
+                </div>
+                <div class="summery-content">
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">This 40-Day Challenge can land you into MAANG!!</a>
+                    </h2>
+                    <div class="article-summery">
+                        <div id="mobile-image">
+                            <img id="" src="img/pexels-evie-shaffer-4004374.jpg" title="Someone's Image" alt="">
+                        </div>
+                        <p class="summery-text">
+                            We all know coding interview prep feels distressing.
+                            No matter how much you prepare, there’s something you forget to practice.
+                            It’s completely normal to feel this. But how can we overcome our emotions to ensure we...
+                        </p>
+                    </div>
+                    <div class="article-footer">
+                        <div class="article-tags">
+                            <a href="#" class="tag">Javascript</a>
+                            <a href="#" class="tag">Programming</a>
+                            <a href="#" class="tag">Recent</a>
+                        </div>
+                        <div class="article-actions">
+                            <a title="Save" href="">
+                                <i class="iconly-Bookmark icli"></i>
+                            </a>
+                            <a title="Share" href="">
+                                <i class="iconly-Send icli"> </i>
+                            </a>
+                            <div  title="More" class="more" href="">
+                                <span id="moreBtn" class="iconly-More-Circle icli"></span>
+                                <div id="more-actions" class="more-actions">
+                                    <a href="" title="Author" class="view-author">View author</a>
+                                    <a href="" title="Report" class="view-author">Report</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="article-wrapper">
+                <div class="article-info">
+                    <div class="profile-wrapper">
+                        <img src="img/pro.jpg" alt="Profile">
+                    </div>
+                    <a href="#" class="author">Fredrick Ochieng</a>
+                    <span class="read-time posted"><span class="dot">&#183;</span> 9 min read </span>
+                    <span class="posted right"><i class="iconly-Time-Circle icli"></i> <span class="date">Jul 5</span></span>
+                </div>
+                <div class="summery-content">
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">This 40-Day Challenge can land you into MAANG!!</a>
+                    </h2>
+                    <div class="article-summery">
+                        <div id="mobile-image">
+                            <img id="" src="img/pexels-evie-shaffer-4004374.jpg" title="Someone's Image" alt="">
+                        </div>
+                        <p class="summery-text">
+                            We all know coding interview prep feels distressing.
+                            No matter how much you prepare, there’s something you forget to practice.
+                            It’s completely normal to feel this. But how can we overcome our emotions to ensure we...
+                        </p>
+                    </div>
+
+                    <div class="article-footer">
+                        <div class="article-tags">
+                            <a href="#" class="tag">Javascript</a>
+                            <a href="#" class="tag">Programming</a>
+                            <a href="#" class="tag">Recent</a>
+                        </div>
+                        <div class="article-actions">
+                            <a title="Save" href="">
+                                <i class="iconly-Bookmark icli"></i>
+                            </a>
+                            <a title="Share" href="">
+                                <i class="iconly-Send icli"> </i>
+                            </a>
+                            <div  title="More" class="more" href="">
+                                <span id="moreBtn" class="iconly-More-Circle icli"></span>
+                                <div id="more-actions" class="more-actions">
+                                    <a href="" title="Author" class="view-author">View author</a>
+                                    <a href="" title="Report" class="view-author">Report</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="article-wrapper">
+                <div class="article-info">
+                    <div class="profile-wrapper">
+                        <img src="img/pro.jpg" alt="Profile">
+                    </div>
+                    <a href="#" class="author">Fredrick Ochieng</a>
+                    <span class="read-time posted"><span class="dot">&#183;</span> 9 min read </span>
+                    <span class="posted right"><i class="iconly-Time-Circle icli"></i> <span class="date">Jul 5</span></span>
+                </div>
+                <div class="summery-content">
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">This 40-Day Challenge can land you into MAANG!!</a>
+                    </h2>
+                    <div class="article-summery">
+                        <div id="mobile-image">
+                            <img id="" src="img/pexels-evie-shaffer-4004374.jpg" title="Someone's Image" alt="">
+                        </div>
+                        <p class="summery-text">
+                            We all know coding interview prep feels distressing.
+                            No matter how much you prepare, there’s something you forget to practice.
+                            It’s completely normal to feel this. But how can we overcome our emotions to ensure we...
+                        </p>
+                    </div>
+                    <div class="article-footer">
+                        <div class="article-tags">
+                            <a href="#" class="tag">Javascript</a>
+                            <a href="#" class="tag">Programming</a>
+                            <a href="#" class="tag">Recent</a>
+                        </div>
+                        <div class="article-actions">
+                            <a title="Save" href="">
+                                <i class="iconly-Bookmark icli"></i>
+                            </a>
+                            <a title="Share" href="">
+                                <i class="iconly-Send icli"> </i>
+                            </a>
+                            <div  title="More" class="more" href="">
+                                <span id="moreBtn" class="iconly-More-Circle icli"></span>
+                                <div id="more-actions" class="more-actions">
+                                    <a href="" title="Author" class="view-author">View author</a>
+                                    <a href="" title="Report" class="view-author">Report</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="article-wrapper">
+                <div class="article-info">
+                    <div class="profile-wrapper">
+                        <img src="img/pro.jpg" alt="Profile">
+                    </div>
+                    <a href="#" class="author">Fredrick Ochieng</a>
+                    <span class="read-time posted"><span class="dot">&#183;</span> 9 min read </span>
+                    <span class="posted right"><i class="iconly-Time-Circle icli"></i> <span class="date">Jul 5</span></span>
+                </div>
+                <div class="summery-content">
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">This 40-Day Challenge can land you into MAANG!!</a>
+                    </h2>
+                    <div class="article-summery">
+                        <div id="mobile-image">
+                            <img id="" src="img/pexels-evie-shaffer-4004374.jpg" title="Someone's Image" alt="">
+                        </div>
+                        <p class="summery-text">
+                            We all know coding interview prep feels distressing.
+                            No matter how much you prepare, there’s something you forget to practice.
+                            It’s completely normal to feel this. But how can we overcome our emotions to ensure we...
+                        </p>
+                    </div>
+                    <div class="article-footer">
+                        <div class="article-tags">
+                            <a href="#" class="tag">Javascript</a>
+                            <a href="#" class="tag">Programming</a>
+                            <a href="#" class="tag">Recent</a>
+                        </div>
+                        <div class="article-actions">
+                            <a title="Save" href="">
+                                <i class="iconly-Bookmark icli"></i>
+                            </a>
+                            <a title="Share" href="">
+                                <i class="iconly-Send icli"> </i>
+                            </a>
+                            <div  title="More" class="more" href="">
+                                <span id="moreBtn" class="iconly-More-Circle icli"></span>
+                                <div id="more-actions" class="more-actions">
+                                    <a href="" title="Author" class="view-author">View author</a>
+                                    <a href="" title="Report" class="view-author">Report</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="article-wrapper">
+                <div class="article-info">
+                    <div class="profile-wrapper">
+                        <img src="img/pro.jpg" alt="Profile">
+                    </div>
+                    <a href="#" class="author">Fredrick Ochieng</a>
+                    <span class="read-time posted"><span class="dot">&#183;</span> 9 min read </span>
+                    <span class="posted right"><i class="iconly-Time-Circle icli"></i> <span class="date">Jul 5</span></span>
+                </div>
+                <div class="summery-content">
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">This 40-Day Challenge can land you into MAANG!!</a>
+                    </h2>
+                    <div class="article-summery">
+                        <div id="mobile-image">
+                            <img id="" src="img/pexels-evie-shaffer-4004374.jpg" title="Someone's Image" alt="">
+                        </div>
+                        <p class="summery-text">
+                            We all know coding interview prep feels distressing.
+                            No matter how much you prepare, there’s something you forget to practice.
+                            It’s completely normal to feel this. But how can we overcome our emotions to ensure we...
+                        </p>
+                    </div>
+                    <div class="article-footer">
+                        <div class="article-tags">
+                            <a href="#" class="tag">Javascript</a>
+                            <a href="#" class="tag">Programming</a>
+                            <a href="#" class="tag">Recent</a>
+                        </div>
+                        <div class="article-actions">
+                            <a title="Save" href="">
+                                <i class="iconly-Bookmark icli"></i>
+                            </a>
+                            <a title="Share" href="">
+                                <i class="iconly-Send icli"> </i>
+                            </a>
+                            <div  title="More" class="more" href="">
+                                <span id="moreBtn" class="iconly-More-Circle icli"></span>
+                                <div id="more-actions" class="more-actions">
+                                    <a href="" title="Author" class="view-author">View author</a>
+                                    <a href="" title="Report" class="view-author">Report</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="get-more">Get articles with most engagements</a>
         </div>
         <div class="sidebar-content">
             <div class="stats">
@@ -855,16 +1169,16 @@
         </div>
     </main>
     <div class="mobile-footer">
-        <a href="" class="mobile-footer-link active">
+        <a href="" title="Home" class="mobile-footer-link active">
             <span class="iconly-Home icli"></span>
         </a>
-        <a href="" class="mobile-footer-link">
+        <a href="" title="Search" class="mobile-footer-link">
             <span class="iconly-Search icli"></span>
         </a>
-        <a href="" class="mobile-footer-link">
+        <a href="" title="Products" class="mobile-footer-link">
             <span class="iconly-Bag-2 icli"></span>
         </a>
-        <a href="" class="mobile-footer-link">
+        <a href="" title="Create" class="mobile-footer-link">
             <span class="iconly-Edit icli">
         </a>
     </div>
