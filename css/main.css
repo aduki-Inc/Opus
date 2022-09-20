@@ -563,7 +563,7 @@ main.feeds>.feed-contents>.article-wrapper>.article-info>.profile-wrapper img{
     height: 100%;
     object-fit: cover;
     box-shadow: var(--box-shadow);
-    border: var(--border);
+    /*border: var(--border);*/
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
@@ -690,13 +690,49 @@ main.feeds>.feed-contents>.article-wrapper>.summery-content>.article-footer{
     gap: 20px;
     padding: 0% 10px;
 }
-.feed-contents>.article-wrapper>.summery-content>.article-footer>.article-actions>a{
+.feed-contents>.article-wrapper>.summery-content>.article-footer>.article-actions>a,
+.feed-contents>.article-wrapper>.summery-content>.article-footer>.article-actions>div
+{
     text-decoration: none;
     font-size: 20px;
     color: var(--gray-color);
 }
-.feed-contents>.article-wrapper>.summery-content>.article-footer>.article-actions>a:hover{
+.feed-contents>.article-wrapper>.summery-content>.article-footer>.article-actions>a>.icbo{
     color: var(--alt-accent-color);
+}
+.feed-contents>.article-wrapper>.summery-content>.article-footer>.article-actions>a:hover,
+.feed-contents>.article-wrapper>.summery-content>.article-footer>.article-actions>div:hover{
+    color: var(--alt-accent-color);
+}
+.feed-contents>.article-wrapper>.summery-content>.article-footer>.article-actions>div.more{
+   /* border: 1px solid gray;*/
+    position: relative;
+    display: inline-block;
+}
+.feed-contents>.article-wrapper>.summery-content>.article-footer>.article-actions>div.more>.more-actions{
+    position: absolute;
+    background-color: var(--background-color);
+    padding: 4px 10px;
+    display: none;
+    flex-flow: column;
+    gap: 5px;
+    border: var(--border);
+    width: max-content;
+    bottom: 30px;
+    left: -72px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+.feed-contents>.article-wrapper>.summery-content>.article-footer>.article-actions>div.more>.more-actions>a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: var(--gray-color);
+}
+.feed-contents>.article-wrapper>.summery-content>.article-footer>.article-actions>div.more>.more-actions>a:hover{
+    color: var(--hover-link-color);
 }
 
 /* Sidebar Content- DeskTop */
