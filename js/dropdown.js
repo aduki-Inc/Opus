@@ -59,27 +59,24 @@ window.onclick = function(event) {
   }
 
 
-/*
-// When the user clicks on the button,toggle between hiding and showing the dropdown content 
-
-let toggler = document.querySelector("#menu-btn");
-let mobile = document.querySelector(".header-mobile")
-
-
-// Mobile NavBar
-toggler.addEventListener("click", () =>{
-    if (mobile.style.display == 'flex') {
-        mobile.style.setProperty("display", 'none');
-    }
-    else{
-        mobile.style.setProperty("display", 'flex');
-    }
-});
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-    if (!event.target.matches('#menu-btn')) {
-          mobile.style.setProperty("display", 'none');
-      }
-  }
-*/
+// All Sidebar Links
+let sidebarLinks = document.querySelectorAll('.link')
+if(sidebarLinks != null){
+    //Adding an event when mouse enter the element
+    sidebarLinks.forEach(link =>{
+        link.addEventListener('mouseenter', (event) =>{
+            let span = link.querySelector('#select')
+            //span.classList.add('specific-link')
+            link.classList.add('active-link')
+            link.appendChild(span)
+        })
+    })
+    //Adding an event When mouse leaves the element
+    sidebarLinks.forEach(link =>{
+        link.addEventListener('mouseleave', (event) =>{
+            let span = link.querySelector('#select')
+        // span.classList.remove('specific-link')
+            link.classList.remove('active-link')
+        })
+    })
+}

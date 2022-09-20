@@ -455,6 +455,7 @@ header .search>.create>.create-dropdown>a:hover{
    z-index: 2;
    margin: 0%;
    padding: 0%;
+   padding-top: 15px;
    height: max-content;
    /*border-left: var(--border);*/
    background-color: var(--background-color);
@@ -470,12 +471,18 @@ header .search>.create>.create-dropdown>a:hover{
    flex-flow: column;
    margin: 10px 0%;
 }
-
+.sidebar-nav>.hr{
+  width: 60%;
+  border-bottom: var(--border);
+  margin-left: 15px;
+}
+.content-nav{
+  margin: 10px 0px;
+}
 .settings-nav{
   /* border: 1px solid rgb(12, 190, 92);*/
    margin: 10px 0px;
-   padding-top: 10px;
-   border-top: var(--border);
+  /* border-top: var(--border);*/
 }
 
 .linked-list{
@@ -485,9 +492,9 @@ header .search>.create>.create-dropdown>a:hover{
    list-style-type: none;
 }
 .linked-list>.content-link{
-  /* border: 1px solid rgb(247, 23, 7);*/
+   /*border: 1px solid rgb(247, 23, 7);*/
    padding: 2px 0%;
-   margin: 0%;
+   margin: 0px 0%;
    margin-bottom: 0px;
 }
 .linked-list>.content-link .link{
@@ -496,7 +503,6 @@ header .search>.create>.create-dropdown>a:hover{
    position: relative;
    padding: 0%;
    margin: 0%;
-   padding-left: 0px;
    text-align: center;
    font-size: 20px;
    text-decoration: none;
