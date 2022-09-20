@@ -79,7 +79,7 @@ main {
     padding: 10px 0px 5px 0px;
     text-align: center;
     margin: 10px 0% 0% 0%;
-    border-top: 1px solid rgba(18, 18, 18, 0.198);
+    /*border-top: 1px solid rgba(18, 18, 18, 0.198);*/
 }
 /*
 .get-more:hover{
@@ -512,7 +512,7 @@ main.feeds>.feed-contents{
     display: flex;
     flex-flow: column;
     gap: 0px;
-    padding: 10px;
+    padding: 50px 10px 10px 10px;
 }
 main.feeds>.feed-contents>.feed-title{
    /* border: 1px solid rgba(18, 18, 18, 0.198);*/
