@@ -20,6 +20,32 @@
         <div class="site-logo">
             <h2 class="site-name">Opus</h2>
         </div>
+        <div class="welcome">
+              <h3 class="welcome-title">Welcome to Opus.</h3>
+              <p class="welcome-message">Hello femar, welcome back!</p>
+            </div>
+            <div class="search">
+              <form action="" method="get">
+                <input type="text" placeholder="Search Opus" />
+                <input class="iconly-Search icli" type="submit" value="Search" />
+                <span class="iconly-Search icli"></span>
+              </form>
+              <div class="create">
+                <span id="create-Btn" class="iconly-Plus icbo"></span>
+                <div class="create-dropdown">
+                    <h2 class="create-title">Contribute</h2>
+                    <a href="" title="Create" id="create"><span>Create Article</span><i class="iconly-Arrow-Right icbo"></i></a>
+                    <a href="" title="Create" id="create"><span>Add a Review</span><i class="iconly-Arrow-Right icbo"></i></a>
+                    <a href="" title="Create" id="create"><span>Add Product</span><i class="iconly-Arrow-Right icbo"></i></a>
+                    <a href="" title="Create" id="create"><span>Edit Your Articles</span><i class="iconly-Arrow-Right icbo"></i></a>
+                    <a href="" title="Create" id="create"><span>Become An Editor</span><i class="iconly-Arrow-Right icbo"></i></a>
+                    <a href="" title="Create" id="create"><span>Help Center</span><i class="iconly-Arrow-Right icbo"></i></a>
+                </div>
+              </div>
+        </div>
+
+     <!-- If User Is Not Signed In-->
+     <!--
         <ul class="header-links">
             <li class="header-list-item">
                 <a href="#" class="header-link active-header-link">Home</a>
@@ -37,6 +63,7 @@
                 <a href="#" class="header-link">Donate</a>
             </li>
         </ul>
+    -->
         <!--
             <div class="theme-switcher">
                 <i class="fa fa-solid fa-moon"> Light</i>
@@ -44,7 +71,7 @@
         -->
 
         <!-- If A User Is Logged In-->
-        <!--
+
         <div class="profile-section">
             <span class="iconly-Notification icli">
                 <span id="text-count">5</span>
@@ -106,11 +133,9 @@
                 </ul>
             </div>
         </div>
-       -->
-
 
         <!-- If A User Is Not Sign Up-->
-
+<!--
         <div id="logon" class="account">
            <a title="Sign Up" href="" class="sign-up getting-started">
                 <span class="iconly-Add-User icli"></span>
@@ -128,9 +153,88 @@
                  <span class="text">Get started</span>
             </a>
          </div>
+        -->
     </header>
 
     <main class="feeds">
+        <div class="dashboard-sidebar">
+            <div class="sidebar-nav">
+              <div class="content-nav">
+                <ul class="linked-list content-list">
+                  <li class="content-link">
+                    <a class="link data-active" href=" {% url 'dashboard' %}">
+                      <span class="iconly-Home icli"></span>
+                      <span class="link-text">Home</span>
+                    </a>
+                  </li>
+                  <li class="content-link">
+                    <a class="link" href=" {% url 'create_post' %}">
+                      <span class="iconly-Plus icli"></span>
+                      <span class="link-text">Create</span>
+                    </a>
+                  </li>
+                  <li class="content-link">
+                    <a class="link" href="{% url 'user_post_list' %}">
+                      <span class="iconly-Paper icli"> </span>
+                      <span class="link-text">Articles</span>
+                    </a>
+                  </li>
+                  <li class="content-link">
+                    <a class="link" href="{% url 'user_issue_list' %}">
+                      <span class="iconly-Document icli"></span>
+                      <span class="link-text">Newsletters</span>
+                    </a>
+                  </li>
+                  <li class="content-link">
+                    <a class="link " href="{% url 'user_product_list' %}">
+                      <span class="iconly-Info-Circle icli"></span>
+                      <span class="link-text">Device Info</span>
+                    </a>
+                  </li>
+                  <li class="content-link">
+                    <a class="link" href="#">
+                      <span class="iconly-Discovery icli"></span>
+                      <span class="link-text">Explore</span>
+                    </a>
+                  </li>
+                  <li class="content-link">
+                    <a class="link" href="#">
+                      <span class="iconly-Heart icli"></span>
+                      <span class="link-text">Donate</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="settings-nav">
+                <ul class="linked-list settings-list">
+                  <li class="content-link">
+                    <a class="link " href=" {% url 'profile' username=user.username %}">
+                      <span class="iconly-Profile icli"></span>
+                      <span class="link-text">Profile</span>
+                    </a>
+                  </li>
+                  <li class="content-link">
+                    <a class="link " href="#">
+                      <span class="iconly-Bookmark icli"></span>
+                      <span class="link-text">My List</span>
+                    </a>
+                  </li>
+                  <li class="content-link">
+                    <a class="link " href="#">
+                      <span class="iconly-Chart icli"></span>
+                      <span class="link-text">Trending</span>
+                    </a>
+                  </li>
+                  <li class="content-link">
+                    <a class="link " href="#">
+                      <span class="iconly-More-Circle icli"></span>
+                      <span class="link-text">Themes</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </div>
         <div class="article-feeds feed-contents">
             <div class="feed-title">
                 <div class="section-title">For you</div>
@@ -220,9 +324,60 @@
                             <a title="Share" href="">
                                 <i class="iconly-Send icli"> </i>
                             </a>
-                            <a  title="More" href="">
-                                <span class="iconly-More-Circle icli"></span>
+                            <div  title="More" class="more" href="">
+                                <span id="moreBtn" class="iconly-More-Circle icli"></span>
+                                <div id="more-actions" class="more-actions">
+                                    <a href="" title="Author" class="view-author">View author</a>
+                                    <a href="" title="Report" class="view-author">Report</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="article-wrapper">
+                <div class="article-info">
+                    <div class="profile-wrapper">
+                        <img src="img/pro.jpg" alt="Profile">
+                    </div>
+                    <a href="#" class="author">Fredrick Ochieng</a>
+                    <span class="read-time posted"><span class="dot">&#183;</span> 9 min read </span>
+                    <span class="posted right"><i class="iconly-Calendar icli"></i> <span class="date">Jul 5</span></span>
+                </div>
+                <div class="summery-content">
+                    <h2 class="article-title">
+                        <a href="" title="Article Title" class="article-title-link">This 40-Day Challenge can land you into MAANG!!</a>
+                    </h2>
+                    <div class="article-summery">
+                        <div id="mobile-image">
+                            <img id="" src="img/pexels-evie-shaffer-4004374.jpg" title="Someone's Image" alt="">
+                        </div>
+                        <p class="summery-text">
+                            We all know coding interview prep feels distressing.
+                            No matter how much you prepare, there’s something you forget to practice.
+                            It’s completely normal to feel this. But how can we overcome our emotions to ensure we...
+                        </p>
+                    </div>
+                    <div class="article-footer">
+                        <div class="article-tags">
+                            <a href="#" class="tag">Javascript</a>
+                            <a href="#" class="tag">Programming</a>
+                            <a href="#" class="tag">Recent</a>
+                        </div>
+                        <div class="article-actions">
+                            <a title="Save" href="">
+                                <i class="iconly-Bookmark icli"></i>
                             </a>
+                            <a title="Share" href="">
+                                <i class="iconly-Send icli"> </i>
+                            </a>
+                            <div  title="More" class="more" href="">
+                                <span id="moreBtn" class="iconly-More-Circle icli"></span>
+                                <div id="more-actions" class="more-actions">
+                                    <a href="" title="Author" class="view-author">View author</a>
+                                    <a href="" title="Report" class="view-author">Report</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -264,9 +419,13 @@
                             <a title="Share" href="">
                                 <i class="iconly-Send icli"> </i>
                             </a>
-                            <a  title="More" href="">
-                                <span class="iconly-More-Circle icli"></span>
-                            </a>
+                            <div  title="More" class="more" href="">
+                                <span id="moreBtn" class="iconly-More-Circle icli"></span>
+                                <div id="more-actions" class="more-actions">
+                                    <a href="" title="Author" class="view-author">View author</a>
+                                    <a href="" title="Report" class="view-author">Report</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -308,53 +467,13 @@
                             <a title="Share" href="">
                                 <i class="iconly-Send icli"> </i>
                             </a>
-                            <a  title="More" href="">
-                                <span class="iconly-More-Circle icli"></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="article-wrapper">
-                <div class="article-info">
-                    <div class="profile-wrapper">
-                        <img src="img/pro.jpg" alt="Profile">
-                    </div>
-                    <a href="#" class="author">Fredrick Ochieng</a>
-                    <span class="read-time posted"><span class="dot">&#183;</span> 9 min read </span>
-                    <span class="posted right"><i class="iconly-Calendar icli"></i> <span class="date">Jul 5</span></span>
-                </div>
-                <div class="summery-content">
-                    <h2 class="article-title">
-                        <a href="" title="Article Title" class="article-title-link">This 40-Day Challenge can land you into MAANG!!</a>
-                    </h2>
-                    <div class="article-summery">
-                        <div id="mobile-image">
-                            <img id="" src="img/pexels-evie-shaffer-4004374.jpg" title="Someone's Image" alt="">
-                        </div>
-                        <p class="summery-text">
-                            We all know coding interview prep feels distressing.
-                            No matter how much you prepare, there’s something you forget to practice.
-                            It’s completely normal to feel this. But how can we overcome our emotions to ensure we...
-                        </p>
-                    </div>
-                    
-                    <div class="article-footer">
-                        <div class="article-tags">
-                            <a href="#" class="tag">Javascript</a>
-                            <a href="#" class="tag">Programming</a>
-                            <a href="#" class="tag">Recent</a>
-                        </div>
-                        <div class="article-actions">
-                            <a title="Save" href="">
-                                <i class="iconly-Bookmark icli"></i>
-                            </a>
-                            <a title="Share" href="">
-                                <i class="iconly-Send icli"> </i>
-                            </a>
-                            <a  title="More" href="">
-                                <span class="iconly-More-Circle icli"></span>
-                            </a>
+                            <div  title="More" class="more" href="">
+                                <span id="moreBtn" class="iconly-More-Circle icli"></span>
+                                <div id="more-actions" class="more-actions">
+                                    <a href="" title="Author" class="view-author">View author</a>
+                                    <a href="" title="Report" class="view-author">Report</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -404,9 +523,13 @@
                             <a title="Share" href="">
                                 <i class="iconly-Send icli"> </i>
                             </a>
-                            <a  title="More" href="">
-                                <span class="iconly-More-Circle icli"></span>
-                            </a>
+                            <div  title="More" class="more" href="">
+                                <span id="moreBtn" class="iconly-More-Circle icli"></span>
+                                <div id="more-actions" class="more-actions">
+                                    <a href="" title="Author" class="view-author">View author</a>
+                                    <a href="" title="Report" class="view-author">Report</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -448,9 +571,13 @@
                             <a title="Share" href="">
                                 <i class="iconly-Send icli"> </i>
                             </a>
-                            <a  title="More" href="">
-                                <span class="iconly-More-Circle icli"></span>
-                            </a>
+                            <div  title="More" class="more" href="">
+                                <span id="moreBtn" class="iconly-More-Circle icli"></span>
+                                <div id="more-actions" class="more-actions">
+                                    <a href="" title="Author" class="view-author">View author</a>
+                                    <a href="" title="Report" class="view-author">Report</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -492,9 +619,13 @@
                             <a title="Share" href="">
                                 <i class="iconly-Send icli"> </i>
                             </a>
-                            <a  title="More" href="">
-                                <span class="iconly-More-Circle icli"></span>
-                            </a>
+                            <div  title="More" class="more" href="">
+                                <span id="moreBtn" class="iconly-More-Circle icli"></span>
+                                <div id="more-actions" class="more-actions">
+                                    <a href="" title="Author" class="view-author">View author</a>
+                                    <a href="" title="Report" class="view-author">Report</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -536,9 +667,13 @@
                             <a title="Share" href="">
                                 <i class="iconly-Send icli"> </i>
                             </a>
-                            <a  title="More" href="">
-                                <span class="iconly-More-Circle icli"></span>
-                            </a>
+                            <div  title="More" class="more" href="">
+                                <span id="moreBtn" class="iconly-More-Circle icli"></span>
+                                <div id="more-actions" class="more-actions">
+                                    <a href="" title="Author" class="view-author">View author</a>
+                                    <a href="" title="Report" class="view-author">Report</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -580,9 +715,13 @@
                             <a title="Share" href="">
                                 <i class="iconly-Send icli"> </i>
                             </a>
-                            <a  title="More" href="">
-                                <span class="iconly-More-Circle icli"></span>
-                            </a>
+                            <div  title="More" class="more" href="">
+                                <span id="moreBtn" class="iconly-More-Circle icli"></span>
+                                <div id="more-actions" class="more-actions">
+                                    <a href="" title="Author" class="view-author">View author</a>
+                                    <a href="" title="Report" class="view-author">Report</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -632,9 +771,13 @@
                             <a title="Share" href="">
                                 <i class="iconly-Send icli"> </i>
                             </a>
-                            <a  title="More" href="">
-                                <span class="iconly-More-Circle icli"></span>
-                            </a>
+                            <div  title="More" class="more" href="">
+                                <span id="moreBtn" class="iconly-More-Circle icli"></span>
+                                <div id="more-actions" class="more-actions">
+                                    <a href="" title="Author" class="view-author">View author</a>
+                                    <a href="" title="Report" class="view-author">Report</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -676,9 +819,13 @@
                             <a title="Share" href="">
                                 <i class="iconly-Send icli"> </i>
                             </a>
-                            <a  title="More" href="">
-                                <span class="iconly-More-Circle icli"></span>
-                            </a>
+                            <div  title="More" class="more" href="">
+                                <span id="moreBtn" class="iconly-More-Circle icli"></span>
+                                <div id="more-actions" class="more-actions">
+                                    <a href="" title="Author" class="view-author">View author</a>
+                                    <a href="" title="Report" class="view-author">Report</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -720,9 +867,13 @@
                             <a title="Share" href="">
                                 <i class="iconly-Send icli"> </i>
                             </a>
-                            <a  title="More" href="">
-                                <span class="iconly-More-Circle icli"></span>
-                            </a>
+                            <div  title="More" class="more" href="">
+                                <span id="moreBtn" class="iconly-More-Circle icli"></span>
+                                <div id="more-actions" class="more-actions">
+                                    <a href="" title="Author" class="view-author">View author</a>
+                                    <a href="" title="Report" class="view-author">Report</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -764,9 +915,13 @@
                             <a title="Share" href="">
                                 <i class="iconly-Send icli"> </i>
                             </a>
-                            <a  title="More" href="">
-                                <span class="iconly-More-Circle icli"></span>
-                            </a>
+                            <div  title="More" class="more" href="">
+                                <span id="moreBtn" class="iconly-More-Circle icli"></span>
+                                <div id="more-actions" class="more-actions">
+                                    <a href="" title="Author" class="view-author">View author</a>
+                                    <a href="" title="Report" class="view-author">Report</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -808,9 +963,13 @@
                             <a title="Share" href="">
                                 <i class="iconly-Send icli"> </i>
                             </a>
-                            <a  title="More" href="">
-                                <span class="iconly-More-Circle icli"></span>
-                            </a>
+                            <div  title="More" class="more" href="">
+                                <span id="moreBtn" class="iconly-More-Circle icli"></span>
+                                <div id="more-actions" class="more-actions">
+                                    <a href="" title="Author" class="view-author">View author</a>
+                                    <a href="" title="Report" class="view-author">Report</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -859,9 +1018,13 @@
                             <a title="Share" href="">
                                 <i class="iconly-Send icli"> </i>
                             </a>
-                            <a  title="More" href="">
-                                <span class="iconly-More-Circle icli"></span>
-                            </a>
+                            <div  title="More" class="more" href="">
+                                <span id="moreBtn" class="iconly-More-Circle icli"></span>
+                                <div id="more-actions" class="more-actions">
+                                    <a href="" title="Author" class="view-author">View author</a>
+                                    <a href="" title="Report" class="view-author">Report</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -903,9 +1066,13 @@
                             <a title="Share" href="">
                                 <i class="iconly-Send icli"> </i>
                             </a>
-                            <a  title="More" href="">
-                                <span class="iconly-More-Circle icli"></span>
-                            </a>
+                            <div  title="More" class="more" href="">
+                                <span id="moreBtn" class="iconly-More-Circle icli"></span>
+                                <div id="more-actions" class="more-actions">
+                                    <a href="" title="Author" class="view-author">View author</a>
+                                    <a href="" title="Report" class="view-author">Report</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -946,9 +1113,13 @@
                             <a title="Share" href="">
                                 <i class="iconly-Send icli"> </i>
                             </a>
-                            <a  title="More" href="">
-                                <span class="iconly-More-Circle icli"></span>
-                            </a>
+                            <div  title="More" class="more" href="">
+                                <span id="moreBtn" class="iconly-More-Circle icli"></span>
+                                <div id="more-actions" class="more-actions">
+                                    <a href="" title="Author" class="view-author">View author</a>
+                                    <a href="" title="Report" class="view-author">Report</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -989,9 +1160,13 @@
                             <a title="Share" href="">
                                 <i class="iconly-Send icli"> </i>
                             </a>
-                            <a  title="More" href="">
-                                <span class="iconly-More-Circle icli"></span>
-                            </a>
+                            <div  title="More" class="more" href="">
+                                <span id="moreBtn" class="iconly-More-Circle icli"></span>
+                                <div id="more-actions" class="more-actions">
+                                    <a href="" title="Author" class="view-author">View author</a>
+                                    <a href="" title="Report" class="view-author">Report</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1032,9 +1207,13 @@
                             <a title="Share" href="">
                                 <i class="iconly-Send icli"> </i>
                             </a>
-                            <a  title="More" href="">
-                                <span class="iconly-More-Circle icli"></span>
-                            </a>
+                            <div  title="More" class="more" href="">
+                                <span id="moreBtn" class="iconly-More-Circle icli"></span>
+                                <div id="more-actions" class="more-actions">
+                                    <a href="" title="Author" class="view-author">View author</a>
+                                    <a href="" title="Report" class="view-author">Report</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

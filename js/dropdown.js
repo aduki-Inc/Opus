@@ -16,19 +16,47 @@ if (dropdownBtn != null && dropdownModal != null){
 /* Feeds Dropdown */
 moreButtons = document.querySelectorAll('#moreBtn')
 
-moreButtons.forEach( (btn) => {
-    btn.addEventListener('click', ()=>{
-        parent = btn.parentElement;
-        actionsModal = parent.lastElementChild;
-        if (actionsModal.style.display == 'none') {
-            actionsModal.style.setProperty("display", 'flex');
-        }
-        else{
-            actionsModal.style.setProperty("display", 'none');
-        }
-    })
-});
+if (moreButtons != null){
+    moreButtons.forEach( (btn) => {
+        btn.addEventListener('click', ()=>{
+            parent = btn.parentElement;
+            actionsModal = parent.lastElementChild;
+            if (actionsModal.style.display == 'none') {
+                actionsModal.style.setProperty("display", 'flex');
+            }
+            else{
+                actionsModal.style.setProperty("display", 'none');
+            }
+        })
+    });
+}
 
+/* Create Buttons */
+createButtons = document.querySelectorAll('#Create')
+
+if(createButtons != null){
+    createButtons.forEach((createButton) =>{
+        createButton.addEventListener('mouseover', ()=>{
+                last = createButton.lastElementChild
+                last.style.setProperty('display', 'flex')
+        })
+    })
+}
+
+/* Create Dropdown*/
+createButton = document.querySelector('#create-Btn')
+createModal = document.querySelector('.create-dropdown')
+
+if(createButton != null && createModal !=null){
+    createButton.addEventListener('click', ()=>{
+        createModal.style.setProperty('display', 'flex')
+    })
+}
+window.onclick = function(event) {
+    if (!event.target.matches('#create-Btn')) {
+          createModal.style.setProperty("display", 'none');
+      }
+  }
 
 
 /*
