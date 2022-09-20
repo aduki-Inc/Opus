@@ -315,6 +315,7 @@ hr{
 .feeds-header{
   border-bottom: var(--border);
   background-color: var(--background-color);
+  height: 60px;
   z-index: 3;
   max-height: max-content;
   display: flex;
@@ -463,26 +464,26 @@ hr{
 /* Sidebar Menu */
 
 .dashboard-sidebar{
-  grid-column: 1/2;
-  grid-row: 2/3;
+   grid-column: 1/2;
+   grid-row: 2/3;
    z-index: 2;
    margin: 0%;
    padding: 0%;
-   padding-top: 15px;
    height: max-content;
-   /*border-left: var(--border);*/
+  /* border-left: var(--border);*/
    background-color: var(--background-color);
    display: flex;
    flex-flow: column;
    position: sticky;
-   top: 70px;
+   top: 60px;
 }
 
 .sidebar-nav{
    /*border: 1px solid rgb(155, 12, 190);*/
+   padding: 0%;
    display: flex;
    flex-flow: column;
-   margin: 10px 0%;
+   margin: 0%;
 }
 .sidebar-nav>.hr{
   width: 60%;
@@ -490,7 +491,7 @@ hr{
   margin-left: 15px;
 }
 .content-nav{
-  margin: 10px 0px;
+  margin: 10px 0% 10px 0%;
 }
 .settings-nav{
   /* border: 1px solid rgb(12, 190, 92);*/
