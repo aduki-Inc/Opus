@@ -312,7 +312,18 @@ hr{
 /*
     1.1 Header Welcome Message
 */
-header .welcome{
+.feeds-header{
+  border-bottom: var(--border);
+  background-color: var(--background-color);
+  z-index: 3;
+  max-height: max-content;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.feeds-header .welcome{
   /* border: 1px solid rgb(9, 21, 184);*/
    margin: 0%;
    padding: 5px 0 5px 0;
@@ -323,13 +334,13 @@ header .welcome{
    justify-items: center;
    background-color: #5e6e5802;
 }
-header .welcome>.welcome-title{
+.feeds-header .welcome>.welcome-title{
    margin: 0%;
    padding: 0%;
    font-size: 20px;
    color: #404040;
 }
-header .welcome>.welcome-message{
+.feeds-header .welcome>.welcome-message{
    margin: 0%;
    padding: 0%;
    color: #808080;
@@ -340,7 +351,7 @@ header .welcome>.welcome-message{
     1.2 Header Search Section
 */
 
-header .search{
+.feeds-header .search{
   /* border: 1px solid gray;*/
    margin: 0%;
    padding: 0%;
@@ -350,7 +361,7 @@ header .search{
    align-items: center;
    gap: 30px;
 }
-header .search>form{
+.feeds-header .search>form{
   /*border: 1px solid gray;*/
    width: max-content;
    position: relative;
@@ -364,7 +375,7 @@ header .search>form{
 }
 
 
-header .search>form>input[type='text']{
+.feeds-header .search>form>input[type='text']{
    border: none;
    outline: 1px solid #08b86f62;
   /* box-shadow: 0rem 2rem 2rem #6b796b50;*/
@@ -378,7 +389,7 @@ header .search>form>input[type='text']{
    -o-border-radius: 2px;
    border-radius: 2px;
 }
-header .search>form>input[type='submit']{
+.feeds-header .search>form>input[type='submit']{
    display: none;
    height: 25px;
    font-size: 16px;
@@ -392,7 +403,7 @@ header .search>form>input[type='submit']{
    -o-border-radius: 50px;
    border-radius: 50px;
 }
-header .search>form>span.icli{
+.feeds-header .search>form>span.icli{
    /*border: 1px solid #9cd66c71;*/
    display: inline-block;
    padding: 2px;
@@ -402,18 +413,18 @@ header .search>form>span.icli{
    right: 10px;
    top: 6px;
 }
-header .search>.create{
+.feeds-header.search>.create{
   /*border: 1px solid #9cd66c71;*/
   position: relative;
 }
-header .search>.create>span{
+.feeds-header .search>.create>span{
   font-size: 30px;
   display: inline-block;
   cursor: pointer;
   margin-top: 10px;
   color: var(--accent-color);
 }
-header .search>.create>.create-dropdown{
+.feeds-header .search>.create>.create-dropdown{
   background-color: var(--background-color);
   border: var(--border);
   box-shadow: var(--box-shadow);
@@ -426,7 +437,7 @@ header .search>.create>.create-dropdown{
   flex-flow: column;
   gap: 10px;
 }
-header .search>.create>.create-dropdown>a{
+.feeds-header .search>.create>.create-dropdown>a{
   /*border: 1px solid gray;*/
   text-decoration: none;
   color: var(--gray-color);
@@ -435,23 +446,25 @@ header .search>.create>.create-dropdown>a{
   flex-wrap: nowrap;
   gap: 10px;
 }
-header .search>.create>.create-dropdown>h2{
+.feeds-header.search>.create>.create-dropdown>h2{
   margin: 0%;
   margin-bottom: 5px;
   color: var(--alt-accent-color);
 }
-header .search>.create>.create-dropdown>a>i{
+.feeds-header .search>.create>.create-dropdown>a>i{
  /* border: 1px solid gray;*/
   display: inline-block;
   margin-top: 5px;
 }
-header .search>.create>.create-dropdown>a:hover{
+.feeds-header .search>.create>.create-dropdown>a:hover{
   color: var(--hover-link-color);
 }
 
 /* Sidebar Menu */
 
 .dashboard-sidebar{
+  grid-column: 1/2;
+  grid-row: 2/3;
    z-index: 2;
    margin: 0%;
    padding: 0%;

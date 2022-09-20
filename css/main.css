@@ -490,9 +490,17 @@ body.feeds-body{
 }
 main.feeds{
    /* border: 1px solid rgb(0, 255, 157);*/
+    margin-top: 0%;
     display: grid;
     grid-template-columns: 150px 5fr 2fr;
     column-gap: 0px;
+    row-gap: 0%;
+}
+main.feeds>.feeds-header{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    position: sticky;
+    top: 0%;
 }
 main.feeds>.feed-contents{
     /*border: 1px solid rgb(0, 255, 157);*/
@@ -753,7 +761,7 @@ main.feeds>.feed-contents>.article-wrapper>.summery-content>.article-footer{
     top: 75px;
     height: max-content;
     grid-column: 3/4;
-    grid-row: 1/2;
+    grid-row: 2/3;
     background-color: var(--background-color);
    /* box-shadow: var(--box-shadow);*/
    /* border: var(--border);*/
