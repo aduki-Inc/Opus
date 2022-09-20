@@ -457,6 +457,7 @@ header .search>.create>.create-dropdown>a:hover{
    padding: 0%;
    height: max-content;
    /*border-left: var(--border);*/
+   background-color: var(--background-color);
    display: flex;
    flex-flow: column;
    position: sticky;

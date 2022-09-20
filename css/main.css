@@ -492,14 +492,14 @@ main.feeds{
    /* border: 1px solid rgb(0, 255, 157);*/
     display: grid;
     grid-template-columns: 150px 5fr 2fr;
-    column-gap: 20px;
+    column-gap: 0px;
 }
 main.feeds>.feed-contents{
     /*border: 1px solid rgb(0, 255, 157);*/
     grid-column: 2/3;
     background-color: var(--background-color);
     box-shadow: var(--box-shadow);
-    border: var(--border);
+    border-bottom: var(--border);
     border-top: none;
     display: flex;
     flex-flow: column;
@@ -585,8 +585,10 @@ main.feeds>.feed-contents>.article-wrapper>.article-info .posted{
     text-align: center;
 }
 main.feeds>.feed-contents>.article-wrapper>.article-info .right{
-    display: inline-block;
-   /* border: 1px solid gray;*/
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    /*border: 1px solid gray;*/
     position: absolute;
     right: 5px;
     font-size: 0.9rem;
@@ -604,6 +606,12 @@ main.feeds>.feed-contents>.article-wrapper>.article-info .posted>.date{
     font-size: 0.95rem;
     padding-top: 0px;
     margin: 0px;
+}
+main.feeds>.feed-contents>.article-wrapper>.article-info .posted>.icli{
+    /*border: 1px solid gray;*/
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 3px;
 }
 /* Summery Content Info*/
 main.feeds>.feed-contents>.article-wrapper>.summery-content{
@@ -747,8 +755,8 @@ main.feeds>.feed-contents>.article-wrapper>.summery-content>.article-footer{
     grid-column: 3/4;
     grid-row: 1/2;
     background-color: var(--background-color);
-    box-shadow: var(--box-shadow);
-    border: var(--border);
+   /* box-shadow: var(--box-shadow);*/
+   /* border: var(--border);*/
     display: flex;
     flex-flow: column;
     align-items: center;
