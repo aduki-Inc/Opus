@@ -450,11 +450,11 @@
          align-self: flex-start;
      }
      .editors-articles>.editors-article .editors-article-image img{
-        border-radius: 5px;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
         -ms-border-radius: 5px;
         -o-border-radius: 5px;
+        border-radius: 5px;
 }
 
      /* Most Read */
@@ -673,11 +673,11 @@
         height: 100%;
         box-shadow: var(--box-shadow);
         object-fit: cover;
-        border-radius: 5px;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
         -ms-border-radius: 5px;
         -o-border-radius: 5px;
+        border-radius: 5px;
     }
     /* Sidebar Content- DeskTop */
     .sidebar-content{
