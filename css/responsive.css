@@ -642,6 +642,7 @@
     .feed-contents>.article-wrapper>.summery-content>.article-footer>.article-actions{
         align-self: flex-end;
         padding: 0%;
+        margin-right: 5px;
     }
 
 
