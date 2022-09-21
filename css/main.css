@@ -620,9 +620,9 @@ main.feeds>.feed-contents>.article-wrapper>.article-info .posted>.date{
 }
 main.feeds>.feed-contents>.article-wrapper>.article-info .posted>.icli{
     /*border: 1px solid gray;*/
-    font-size: 20px;
+    font-size: 18px;
     display: inline-block;
-    margin-top: 3px;
+    padding-top: 2px;
 }
 /* Summery Content Info*/
 main.feeds>.feed-contents>.article-wrapper>.summery-content{
@@ -779,7 +779,7 @@ main.feeds>.feed-contents>.article-wrapper>.summery-content>.article-footer{
     background-color: #bbf58c;
     box-shadow: var(--box-shadow);
     border: var(--border);
-    width: 90%;
+    width: 95%;
     height: 180px;
     margin: 0%;
     padding: 15px 5px 20px  15px;
