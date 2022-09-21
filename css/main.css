@@ -500,8 +500,8 @@ main.feeds{
    /* border: 1px solid rgb(0, 255, 157);*/
     margin-top: 10px;
     display: grid;
-    grid-template-columns: 150px 5fr 2fr;
-    column-gap: 0px;
+    grid-template-columns: 120px 3fr 1.5fr;
+    column-gap: 30px;
     row-gap: 0%;
 }
 main.feeds>.feeds-header{
