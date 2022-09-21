@@ -699,7 +699,7 @@
     }
     main.feeds>.feeds-header>.header-content>.site-title{
        /* border: 1px solid rgb(218, 20, 20);*/
-       font-size: 20px;
+       font-size: 23px;
        /* position: fixed;
         top: 10px;
         left: 10px;*/
@@ -889,6 +889,9 @@
         -ms-border-radius: 5px;
         -o-border-radius: 5px;
         border-radius: 5px;
+    }
+    .feed-contents>.article-wrapper>.summery-content>.article-footer>.article-actions>div{
+        cursor: unset;
     }
     /* Sidebar Content- DeskTop */
     .sidebar-content{
