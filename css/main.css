@@ -497,8 +497,9 @@ body.feeds-body{
    background-color: var(--background-color);
 }
 main.feeds{
+    position: relative;
    /* border: 1px solid rgb(0, 255, 157);*/
-    margin-top: 10px;
+    margin-top: 0px;
     display: grid;
     grid-template-columns: 120px 3fr 1.5fr;
     column-gap: 30px;
@@ -766,7 +767,7 @@ main.feeds>.feed-contents>.article-wrapper>.summery-content>.article-footer{
     grid-row: 2/3;
     background-color: var(--background-color);
    /* box-shadow: var(--box-shadow);*/
-    border: var(--border);
+    /* border: var(--border);*/
     display: flex;
     flex-flow: column;
     align-items: center;
