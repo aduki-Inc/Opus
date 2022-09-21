@@ -744,7 +744,7 @@
     width: 28px;
     height: 3px;
     background-color: var(--gray-color);
-    margin-block: 9px; /*Adds separation to the bottom and the bottom*/
+    margin-block: 10px; /*Adds separation to the bottom and the bottom*/
     border-radius: 4px;
     transition: transform .5s,
     opacity .25s;
@@ -806,6 +806,12 @@
     main.feeds>.feed-contents>.article-wrapper>.article-info{
        /* border: 1px solid rgb(250, 27, 27);*/
         padding: 0%;
+    }
+    main.feeds>.feed-contents>.article-wrapper>.article-info .posted>.icli{
+       /* border: 1px solid gray;*/
+        font-size: 16px;
+        display: inline;
+        padding-top: 0px;
     }
     main.feeds>.feed-contents>.article-wrapper>.summery-content{
         /* border: 1px solid rgb(250, 27, 27);*/
