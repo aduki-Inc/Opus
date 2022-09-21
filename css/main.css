@@ -735,7 +735,7 @@ main.feeds>.feed-contents>.article-wrapper>.summery-content>.article-footer{
 .feed-contents>.article-wrapper>.summery-content>.article-footer>.article-actions>div.more>.more-actions{
     position: absolute;
     background-color: var(--background-color);
-    padding: 4px 10px;
+    padding: 5px 10px;
     display: none;
     flex-flow: column;
     gap: 5px;
@@ -751,7 +751,7 @@ main.feeds>.feed-contents>.article-wrapper>.summery-content>.article-footer{
 }
 .feed-contents>.article-wrapper>.summery-content>.article-footer>.article-actions>div.more>.more-actions>a{
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: var(--gray-color);
 }
 .feed-contents>.article-wrapper>.summery-content>.article-footer>.article-actions>div.more>.more-actions>a:hover{
