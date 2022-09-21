@@ -508,13 +508,14 @@ main.feeds>.feeds-header{
     grid-column: 2/3;
     grid-row: 1/2;
     position: sticky;
-    top: 0%;
+    top: 10px;
+    z-index: 3;
 }
 main.feeds>.feed-contents{
     /*border: 1px solid rgb(0, 255, 157);*/
     grid-column: 2/3;
     background-color: var(--background-color);
-    box-shadow: var(--box-shadow);
+   /* box-shadow: var(--box-shadow);*/
     /*border-bottom: var(--border);*/
     border-top: none;
     display: flex;
