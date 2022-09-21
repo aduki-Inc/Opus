@@ -582,3 +582,6 @@ main.feeds>.feeds-header{
   /* border: 1px solid rgb(18, 223, 223);*/
 }
 
+.hamburger{
+  display: none;
+}

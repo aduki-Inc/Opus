@@ -689,6 +689,7 @@
 
 /* Hamburger Menu*/
 .hamburger{
+    display: inline-block;
     background-color: transparent;
     position: fixed;
     top: 20px;
