@@ -724,7 +724,7 @@
     .logo-container{
         display: none;
     }
-    
+
 
 /* Hamburger Menu*/
 .hamburger{
@@ -733,7 +733,7 @@
     background-color: transparent;
     position: fixed;
     top: 5px;
-    right: 5px;
+    right: 10px;
     border: none;
     outline: none;
     cursor: pointer;
@@ -741,8 +741,8 @@
   /* General styles for the lines */
   .hamburger .line{
     display: block;
-    width: 28px;
-    height: 3px;
+    width: 30px;
+    height: 4px;
     background-color: var(--gray-color);
     margin-block: 9px; /*Adds separation to the bottom and the bottom*/
     border-radius: 4px;
@@ -806,6 +806,12 @@
     main.feeds>.feed-contents>.article-wrapper>.article-info{
        /* border: 1px solid rgb(250, 27, 27);*/
         padding: 0%;
+    }
+    main.feeds>.feed-contents>.article-wrapper>.article-info .posted>.icli{
+       /* border: 1px solid gray;*/
+        font-size: 17px;
+        display: inline;
+        padding-top: 0px;
     }
     main.feeds>.feed-contents>.article-wrapper>.summery-content{
         /* border: 1px solid rgb(250, 27, 27);*/
