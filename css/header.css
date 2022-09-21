@@ -465,17 +465,17 @@ hr{
 
 .dashboard-sidebar{
    grid-column: 1/2;
-   grid-row: 2/3;
+   grid-row: 1/3;
    z-index: 2;
    margin: 0%;
    padding: 0%;
    height: max-content;
-  /* border-left: var(--border);*/
+   border-left: var(--border);
    background-color: var(--background-color);
    display: flex;
    flex-flow: column;
    position: sticky;
-   top: 60px;
+   top: 50px;
 }
 
 .sidebar-nav{
@@ -532,14 +532,14 @@ hr{
 }
 
 .content-link>.link>.icli{
-   font-size: 22px;
+   font-size: 20px;
    display: inline-block;
    margin-top: 4px;
    margin-left: 10px;
    margin-right: 5px;
 }
 .content-link>.link>.link-text{
-   font-size: 17px;
+   font-size: 16px;
    display: inline-block;
    text-align: center;
    margin-top: 0%;
