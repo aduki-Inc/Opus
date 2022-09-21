@@ -312,11 +312,17 @@ hr{
 /*
     1.1 Header Welcome Message
 */
+main.feeds>.feeds-header{
+  grid-column: 2/3;
+  grid-row: 1/2;
+  position: sticky;
+  top: 0px;
+  height: 70px;
+  z-index: 3;
+}
 .feeds-header{
   border-bottom: var(--border);
   background-color: var(--background-color);
-  height: 60px;
-  z-index: 3;
   max-height: max-content;
   display: flex;
   flex-flow: row;
@@ -324,28 +330,21 @@ hr{
   align-items: center;
   justify-content: space-between;
 }
-.feeds-header .welcome{
-  /* border: 1px solid rgb(9, 21, 184);*/
+
+.feeds-header>.header-content{
+   border: 1px solid rgb(9, 21, 184);
    margin: 0%;
-   padding: 5px 0 5px 0;
-   margin-left: 30px;
+   padding: 0%;
    display: flex;
    gap: 5px;
-   flex-flow: column;
+   flex-flow: row;
    justify-items: center;
-   background-color: #5e6e5802;
 }
-.feeds-header .welcome>.welcome-title{
+.feeds-header .header-content>.site-title{
    margin: 0%;
    padding: 0%;
    font-size: 20px;
    color: #404040;
-}
-.feeds-header .welcome>.welcome-message{
-   margin: 0%;
-   padding: 0%;
-   color: #808080;
-   font-size: 0.9rem;
 }
 
 /*
@@ -374,8 +373,6 @@ hr{
    align-items: center;
    justify-content: center;
 }
-
-
 .feeds-header .search>form>input[type='text']{
    border: none;
    outline: 1px solid #08b86f62;

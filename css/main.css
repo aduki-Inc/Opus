@@ -504,13 +504,7 @@ main.feeds{
     column-gap: 30px;
     row-gap: 0%;
 }
-main.feeds>.feeds-header{
-    grid-column: 2/3;
-    grid-row: 1/2;
-    position: sticky;
-    top: 10px;
-    z-index: 3;
-}
+
 main.feeds>.feed-contents{
     /*border: 1px solid rgb(0, 255, 157);*/
     grid-column: 2/3;
@@ -521,7 +515,7 @@ main.feeds>.feed-contents{
     display: flex;
     flex-flow: column;
     gap: 0px;
-    padding: 13px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
 }
 main.feeds>.feed-contents>.feed-title{
    /* border: 1px solid rgba(18, 18, 18, 0.198);*/
@@ -766,13 +760,13 @@ main.feeds>.feed-contents>.article-wrapper>.summery-content>.article-footer{
 /* Sidebar Content- DeskTop */
 .sidebar-content{
     position: sticky;
-    top: 60px;
+    top: 70px;
     height: max-content;
     grid-column: 3/4;
     grid-row: 2/3;
     background-color: var(--background-color);
    /* box-shadow: var(--box-shadow);*/
-   /* border: var(--border);*/
+    border: var(--border);
     display: flex;
     flex-flow: column;
     align-items: center;
