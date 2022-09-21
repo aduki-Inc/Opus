@@ -689,8 +689,21 @@
         position: sticky;
         top: 0px;
         height: 60px;
-        border: unset;
-      }
+        display: flex;
+        align-items: center;
+    }
+    main.feeds>.feeds-header>.header-content{
+        /*border: 1px solid rgb(218, 20, 20);*/
+        display: flex;
+        align-items: center;
+    }
+    main.feeds>.feeds-header>.header-content>.site-title{
+       /* border: 1px solid rgb(218, 20, 20);*/
+       font-size: 20px;
+       /* position: fixed;
+        top: 10px;
+        left: 10px;*/
+    }
     .dashboard-sidebar{
         display: none;
         position: fixed;
@@ -711,12 +724,7 @@
     .logo-container{
         display: none;
     }
-    .header-content>.site-title{
-        /*border: 1px solid rgb(218, 20, 20);*/
-        position: fixed;
-        top: 10px;
-        left: 10px;
-    }
+    
 
 /* Hamburger Menu*/
 .hamburger{
