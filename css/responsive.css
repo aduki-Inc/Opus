@@ -369,6 +369,21 @@
     header #start{
         display: flex;
       }
+    main.feeds{
+        margin-top: 0px;
+        column-gap: 10px;
+        padding: 0%;
+        margin: 0%;
+
+    }
+    main.feeds>.feeds-header{
+       /* border: 1px solid rgb(218, 20, 20);*/
+        padding: 0%;
+        margin: 0%;
+        position: sticky;
+        top: 0px;
+        height: 50px;
+      }
     main.feeds>.feeds-header{
         grid-column: 1/4;
 
@@ -658,21 +673,31 @@
          font-size: 0.9rem;
      }
     main.feeds{
-        margin-top: 80px;
+        margin-top: 0px;
         display: grid;
         grid-template-columns: 1fr;
+        row-gap: 20px;
     }
 
     .feeds-header .header-content>.header-links{
         display: none;
     }
+    main.feeds>.feeds-header{
+       /* border: 1px solid rgb(218, 20, 20);*/
+        padding: 0%;
+        margin: 0%;
+        position: sticky;
+        top: 0px;
+        height: 60px;
+        border: unset;
+      }
     .dashboard-sidebar{
         display: none;
         position: fixed;
         box-shadow: var(--box-shadow);
         border: var(--border);
         z-index: 4;
-        top: 65px;
+        top: 60px;
         right: 5px;
         min-width: 180px;
         padding: 10px 20px;
@@ -686,13 +711,20 @@
     .logo-container{
         display: none;
     }
+    .header-content>.site-title{
+        /*border: 1px solid rgb(218, 20, 20);*/
+        position: fixed;
+        top: 10px;
+        left: 10px;
+    }
 
 /* Hamburger Menu*/
 .hamburger{
+    z-index: 10;
     display: inline-block;
     background-color: transparent;
     position: fixed;
-    top: 20px;
+    top: 5px;
     right: 5px;
     border: none;
     outline: none;
@@ -701,8 +733,8 @@
   /* General styles for the lines */
   .hamburger .line{
     display: block;
-    width: 30px;
-    height: 4px;
+    width: 28px;
+    height: 3px;
     background-color: var(--gray-color);
     margin-block: 9px; /*Adds separation to the bottom and the bottom*/
     border-radius: 4px;
