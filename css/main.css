@@ -5,6 +5,14 @@ main {
     flex-direction: column;
     gap: 50px;
 }
+main.feeds{
+    /*border: 1px solid gray;*/
+    margin-top: 50px;
+    margin: 0px 4%;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
 
 /*
 
@@ -489,30 +497,26 @@ body.feeds-body{
    background-color: var(--background-color);
 }
 main.feeds{
+    position: relative;
    /* border: 1px solid rgb(0, 255, 157);*/
-    margin-top: 10px;
+    margin-top: 0px;
     display: grid;
-    grid-template-columns: 150px 5fr 2fr;
-    column-gap: 0px;
+    grid-template-columns: 120px 3fr 1.5fr;
+    column-gap: 30px;
     row-gap: 0%;
 }
-main.feeds>.feeds-header{
-    grid-column: 1/4;
-    grid-row: 1/2;
-    position: sticky;
-    top: 0%;
-}
+
 main.feeds>.feed-contents{
     /*border: 1px solid rgb(0, 255, 157);*/
     grid-column: 2/3;
     background-color: var(--background-color);
-    box-shadow: var(--box-shadow);
+   /* box-shadow: var(--box-shadow);*/
     /*border-bottom: var(--border);*/
     border-top: none;
     display: flex;
     flex-flow: column;
     gap: 0px;
-    padding: 13px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
 }
 main.feeds>.feed-contents>.feed-title{
    /* border: 1px solid rgba(18, 18, 18, 0.198);*/
@@ -616,9 +620,9 @@ main.feeds>.feed-contents>.article-wrapper>.article-info .posted>.date{
 }
 main.feeds>.feed-contents>.article-wrapper>.article-info .posted>.icli{
     /*border: 1px solid gray;*/
-    font-size: 20px;
+    font-size: 18px;
     display: inline-block;
-    margin-top: 3px;
+    padding-top: 2px;
 }
 /* Summery Content Info*/
 main.feeds>.feed-contents>.article-wrapper>.summery-content{
@@ -757,13 +761,13 @@ main.feeds>.feed-contents>.article-wrapper>.summery-content>.article-footer{
 /* Sidebar Content- DeskTop */
 .sidebar-content{
     position: sticky;
-    top: 60px;
+    top: 70px;
     height: max-content;
     grid-column: 3/4;
     grid-row: 2/3;
     background-color: var(--background-color);
    /* box-shadow: var(--box-shadow);*/
-   /* border: var(--border);*/
+    /* border: var(--border);*/
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -775,7 +779,7 @@ main.feeds>.feed-contents>.article-wrapper>.summery-content>.article-footer{
     background-color: #bbf58c;
     box-shadow: var(--box-shadow);
     border: var(--border);
-    width: 90%;
+    width: 95%;
     height: 180px;
     margin: 0%;
     padding: 15px 5px 20px  15px;

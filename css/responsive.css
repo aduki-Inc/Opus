@@ -15,6 +15,10 @@
     main {
         margin: 80px 2%;
     }
+    main.feeds{
+        /*border: 1px solid gray;*/
+        margin: 0px 2%;
+    }
     .editors-articles>.editors-article .editors-article-image{
         /* border: 1px solid rgb(0, 255, 157);*/
          width: 100%;
@@ -22,7 +26,42 @@
          padding: 10px;
      }
 }
-
+@media screen and (max-width: 1050px){
+    main.feeds{
+        margin-top: 0px;
+        display: grid;
+        grid-template-columns: 100px 3fr 1.5fr;
+        column-gap: 10px;
+        row-gap: 0%;
+    }
+}
+@media screen and (max-width: 980px) and (min-width: 900px){
+    main.feeds{
+        margin-top: 0px;
+        display: grid;
+        grid-template-columns: 100px 3fr 1.2fr;
+        column-gap: 10px;
+        row-gap: 0%;
+    }
+    .stats{
+        height: max-content;
+        row-gap: 20px;
+    }
+    .stats>.stats-today{
+        grid-column: 1/4;
+        /*border: 1px solid rgb(82, 207, 24);*/
+        margin: 0%;
+        padding: 0%;
+    }
+    .stats>.stats-month{
+        grid-column: 1/4;
+       /* border: 1px solid rgb(82, 207, 24);*/
+       display: inline-block;
+        margin: 0%;
+        padding: 0%;
+        padding-left: 0px;
+    }
+}
 @media screen and (max-width: 950px) {
     .account{
         margin-right: 5px;
@@ -164,12 +203,32 @@
          padding: 0px;
      }
 
+}
+@media screen and (max-width: 900px){
     /* Feeds*/
     main.feeds{
-        display: flex;
-        flex-flow: column;
+        margin-top: 0px;
+        display: grid;
+        grid-template-columns: 100px 3fr 1fr;
+        column-gap: 10px;
+        row-gap: 0%;
     }
-
+    .sidebar-content{
+        position: unset;
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+    main.feeds>.feed-contents{
+        /*border: 1px solid rgb(0, 255, 157);*/
+        grid-column: 2/4;
+    }
+    main.feeds>.feeds-header{
+        grid-column: 2/4;
+        position: sticky;
+        top: 0px;
+        height: 70px;
+        z-index: 3;
+      }
 }
 @media screen and (max-width: 750px) {
     html,body{
@@ -260,7 +319,36 @@
 
 }
 
-
+@media screen and (max-width: 650px) and (min-width: 500px){
+    main.feeds{
+        margin-top: 0px;
+        display: grid;
+        grid-template-columns: 50px 3fr 1fr;
+        column-gap: 10px;
+        row-gap: 0%;
+    }
+    .dashboard-sidebar{
+        top: 80px;
+        padding-top: 10px;
+        border-right: var(--border);
+    }
+    .sidebar-nav>.hr{
+        width: 60%;
+        border-bottom: var(--border);
+        margin: 0px 8px;
+      }
+    .logo-container{
+        padding-left: 8px;
+     }
+     .logo-container>.site-logo{
+        width: 28px;
+        height: 28px;
+     }
+    .content-link>.link>.link-text{
+        display: none;
+        border-right: var(--border);
+    }
+}
 
 @media screen and (max-width: 600px) {
     html,
@@ -281,7 +369,25 @@
     header #start{
         display: flex;
       }
+    main.feeds{
+        margin-top: 0px;
+        column-gap: 10px;
+        padding: 0%;
+        margin: 0%;
 
+    }
+    main.feeds>.feeds-header{
+       /* border: 1px solid rgb(218, 20, 20);*/
+        padding: 0%;
+        margin: 0%;
+        position: sticky;
+        top: 0px;
+        height: 50px;
+      }
+    main.feeds>.feeds-header{
+        grid-column: 1/4;
+
+      }
     header .profile-section{
           box-sizing: 0%;
           position: unset;
@@ -544,6 +650,22 @@
         /*border: 1px solid #14a73e05;*/
         color: var(--accent-color);
     }
+
+}
+
+
+@media screen and (max-width: 500px){
+    main{
+        margin: 60px 0px;
+    }
+    header{
+        opacity: 0.9;
+        height: 58px;
+    }
+    footer{
+        display: none;
+    }
+
     /* Feeds */
     .get-more{
         /* border: 1px solid blue;*/
@@ -551,11 +673,94 @@
          font-size: 0.9rem;
      }
     main.feeds{
-        margin-top: 80px;
-        display: flex;
-        flex-flow: column-reverse;
-        gap: 5px;
+        margin-top: 0px;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
     }
+
+    .feeds-header .header-content>.header-links{
+        display: none;
+    }
+    main.feeds>.feeds-header{
+       /* border: 1px solid rgb(218, 20, 20);*/
+        padding: 0%;
+        margin: 0%;
+        position: sticky;
+        top: 0px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+    }
+    main.feeds>.feeds-header>.header-content{
+        /*border: 1px solid rgb(218, 20, 20);*/
+        display: flex;
+        align-items: center;
+    }
+    main.feeds>.feeds-header>.header-content>.site-title{
+       /* border: 1px solid rgb(218, 20, 20);*/
+       font-size: 20px;
+       /* position: fixed;
+        top: 10px;
+        left: 10px;*/
+    }
+    .dashboard-sidebar{
+        display: none;
+        position: fixed;
+        box-shadow: var(--box-shadow);
+        border: var(--border);
+        z-index: 4;
+        top: 60px;
+        right: 5px;
+        min-width: 180px;
+        padding: 10px 20px;
+        padding-top: 0%;
+    }
+    .sidebar-nav>.hr{
+        width: 80%;
+        border-bottom: var(--border);
+        margin-left: 0px;
+      }
+    .logo-container{
+        display: none;
+    }
+    
+
+/* Hamburger Menu*/
+.hamburger{
+    z-index: 10;
+    display: inline-block;
+    background-color: transparent;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  /* General styles for the lines */
+  .hamburger .line{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: var(--gray-color);
+    margin-block: 9px; /*Adds separation to the bottom and the bottom*/
+    border-radius: 4px;
+    transition: transform .5s,
+    opacity .25s;
+  }
+  /* Selecting the lines individually to add different effects when the active class is added to the hamburger menu.*/
+  .hamburger.active .line:nth-child(1){
+    transform: translateY(13px)
+    rotate(45deg); /*Moves down this line 13px and rotates it 45 degrees to create the X*/
+  }
+  .hamburger.active .line:nth-child(2){
+    opacity: 0; /*Hides this line.*/
+  }
+  .hamburger.active .line:nth-child(3){
+    transform: translateY(-13px)
+    rotate(-45deg); /*Moves up this line 13px and rotates it -45 degrees to create the X*/
+  }
     main.feeds>.sidebar-content{
         margin: 0%;
         padding: 0%;
@@ -688,18 +893,8 @@
         border: unset;
     }
 
-}
-@media screen and (max-width: 500px){
-    main{
-        margin: 60px 0px;
-    }
-    header{
-        opacity: 0.9;
-        height: 58px;
-    }
-    footer{
-        display: none;
-    }
+
+
     .topics{
         margin-bottom: 10px;
     }

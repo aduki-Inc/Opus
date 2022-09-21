@@ -46,24 +46,30 @@
         </div>
     </header>
 -->
-
     <main class="feeds">
+        <button type="button" class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
         <div class="feeds-header">
-                <div class="welcome">
-                  <h3 class="welcome-title">Welcome to Opus.</h3>
-                  <p class="welcome-message">Hello femar, welcome back!</p>
+            <div class="header-content">
+                <h2 class="site-title">Opus</h2>
+                <div class="header-links">
+                    <a href="" title="Feed" class="header-link active">Feed</a>
+                    <a href="" title="For Your" class="header-link">Interest</a>
+                    <a href="" title="Trending" class="header-link">Trending</a>
+                    <a href="" title="Newsletters" class="header-link">Newsletters</a>
+                    <a href="" title="Recent" class="header-link">Recent</a>
                 </div>
-                <!--
-                <div class="search">
-                  <form action="" method="get">
-                    <input type="text" placeholder="Search Opus" />
-                    <input class="iconly-Search icli" type="submit" value="Search" />
-                    <span class="iconly-Search icli"></span>
-                  </form>
-               </div>
-               -->
+            </div>
         </div>
         <div class="dashboard-sidebar">
+            <div class="logo-container">
+                <div class="site-logo">
+                  <img src="img/favi.png" alt="Logo" />
+                </div>
+            </div>
             <div class="sidebar-nav">
               <div class="content-nav">
                 <ul class="linked-list content-list">
@@ -97,12 +103,6 @@
                       <span class="link-text">Explore</span>
                     </a>
                   </li>
-                  <li class="content-link">
-                    <a class="link" href="#">
-                      <span class="iconly-Heart icli"></span>
-                      <span class="link-text">Donate</span>
-                    </a>
-                  </li>
                 </ul>
               </div>
               <div class="hr"></div>
@@ -122,20 +122,14 @@
                   </li>
                   <li class="content-link">
                     <a class="link " href="#">
-                      <span class="iconly-Chart icli"></span>
-                      <span class="link-text">Trending</span>
-                    </a>
-                  </li>
-                  <li class="content-link">
-                    <a class="link " href="#">
                       <span class="iconly-More-Circle icli"></span>
                       <span class="link-text">Themes</span>
                     </a>
                   </li>
                   <li class="content-link">
-                    <a class="link" href="{% url 'user_issue_list' %}">
-                      <span class="iconly-Document icli"></span>
-                      <span class="link-text">Newsletters</span>
+                    <a class="link" href="#">
+                      <span class="iconly-Heart icli"></span>
+                      <span class="link-text">Donate</span>
                     </a>
                   </li>
                 </ul>
