@@ -364,7 +364,7 @@ main.feeds>.feeds-header{
   color: var(--hover-link-color);
 }
 .feeds-header .header-content>.header-links>.active{
-  border-bottom: 1px solid var(--alt-accent-color);
+  border-bottom: 1px solid #404040;
 }
 
 /*
