@@ -750,6 +750,17 @@
         padding: 10px 10px;
         padding-top: 0%;
     }
+    .search-header .header-content>.header-links{
+    /*border: 1px solid rgb(9, 21, 184);*/
+    padding: 0%;
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    flex-flow: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    }
     .sidebar-nav>.hr{
         width: 100%;
         border-bottom: var(--border);
@@ -758,6 +769,7 @@
     .logo-container{
         display: none;
     }
+
 
 
 /* Hamburger Menu*/
@@ -803,7 +815,7 @@
     }
     main.feeds>.feed-contents{
         /*border: 1px solid rgb(0, 255, 157);*/
-        margin: 15px 5px;
+        margin: 15px 5px 0px;
     }
     main.feeds>.feed-contents>.feed-title{
         /* border: 1px solid rgba(18, 18, 18, 0.198);*/
@@ -829,6 +841,10 @@
     }
     .sidebar-content>.topics{
         display: none;
+    }
+    main.search>.sidebar-content>.topics{
+        display: flex;
+        margin-bottom: 70px;
     }
     main.feeds>.feed-contents>.article-wrapper{
         /* border: 1px solid rgb(0, 255, 157);*/
