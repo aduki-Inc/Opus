@@ -505,6 +505,10 @@ main.feeds{
     column-gap: 30px;
     row-gap: 0%;
 }
+main.search{
+    border: 1px solid rgb(0, 255, 157);
+    grid-template-columns: 120px 3fr 1fr;
+}
 
 main.feeds>.feed-contents{
     /*border: 1px solid rgb(0, 255, 157);*/
