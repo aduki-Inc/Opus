@@ -506,7 +506,7 @@ main.feeds{
     row-gap: 0%;
 }
 main.search{
-    border: 1px solid rgb(0, 255, 157);
+    /*border: 1px solid rgb(0, 255, 157);*/
     grid-template-columns: 120px 3fr 1fr;
 }
 

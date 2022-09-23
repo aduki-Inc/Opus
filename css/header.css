@@ -359,14 +359,17 @@ main.search>.search-wrapper{
 .search-wrapper>form>i{
   position: absolute;
   color:var(--gray-color);
-  font-size: 20px;
+  font-size: 18px;
   left: 40px;
-  top: 8px;
+  top: 24%;
 }
 .search-wrapper>form>p>input[type="search"]{
   border: var(--border);
+  color:var(--gray-color);
+  padding-left: 32px;
   height: 30px;
   width: 100%;
+  outline: none;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
@@ -388,9 +391,22 @@ main.search>.search-header{
   flex-flow: row;
   align-items: flex-end;
 }
-.search-header>.header-content,
+.search-header{
+  border-bottom: var(--border);
+  background-color: var(--background-color);
+  max-height: max-content;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content;
+}
+.search-header>.header-content{
+  max-height: max-content;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content;
+}
 .feeds-header>.header-content{
-  /* border: 1px solid rgb(9, 21, 184);*/
+  border: 1px solid rgb(9, 21, 184);
    width: 100%;
    margin: 0%;
    padding: 0%;
