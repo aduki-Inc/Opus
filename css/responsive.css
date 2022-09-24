@@ -929,7 +929,7 @@
     main.feeds>.feed-contents>.article-wrapper>.article-info .posted>.date{
         display: inline-block;
        /*border: 1px solid gray;*/
-       align-self: flex-start;
+       align-self:baseline;
         font-size: 0.95rem;
         padding-top: 0px;
         margin: 0px;
