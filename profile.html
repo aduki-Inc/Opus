@@ -144,29 +144,39 @@
                     </a>
                 </div>
                 <div class="info-container">
-                    <div class="info-title">Name</div>
-                    <div class="info-content">Fredrick Ochieng</div>
-                    <div class="info-title">Email</div>
-                    <div class="info-content">isfescii@gmail.com</div>
-                    <div class="info-title">Bio</div>
-                    <div class="info-content">Enabling this will hide your contributions and
-                        activity from your GitHub profile and from social features like followers, stars, feeds,
-                        leaderboards and releases</div>
+                    <div class="info">
+                        <div class="info-title">Name</div>
+                        <div class="info-content">Fredrick Ochieng</div>
+                    </div>
+                    <div class="info">
+                        <div class="info-title">Email</div>
+                        <div class="info-content">isfescii@gmail.com</div>
+                    </div>
+                    <div class="info">
+                        <div class="info-title">Occupation</div>
+                        <div class="info-content">Student at The East African University</div>
+                    </div>
+                    <div class="info">
+                        <div class="info-title">Bio</div>
+                        <div class="info-content">Enabling this will hide your contributions and
+                            activity from your GitHub profile and from social features like followers, stars, feeds,
+                            leaderboards and releases</div>
+                    </div>
                 </div>
                 <div class="profile-image">
-                <div class="avatar-upload">
-                    <div class="avatar-edit">
-                        <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
-                        <label for="imageUpload"></label>
-                    </div>
-                    <div class="avatar-preview">
-                        <div id="clock"
-                            style="background-image: url(https://4.bp.blogspot.com/-H232JumEqSc/WFKY-6H-zdI/AAAAAAAAAEw/DcQaHyrxHi863t8YK4UWjYTBZ72lI0cNACLcB/s1600/profile%2Bpicture.png);">
+                    <div class="avatar-upload">
+                        <div class="avatar-edit">
+                            <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                            <label for="imageUpload"></label>
+                        </div>
+                        <div class="avatar-preview">
+                            <div id="clock"
+                                style="background-image: url(https://4.bp.blogspot.com/-H232JumEqSc/WFKY-6H-zdI/AAAAAAAAAEw/DcQaHyrxHi863t8YK4UWjYTBZ72lI0cNACLcB/s1600/profile%2Bpicture.png);">
+                            </div>
                         </div>
                     </div>
+                    <input type="submit" value="Update">
                 </div>
-                <input type="submit" value="Update">
-            </div>
             </div>
             <div class="contact-info">
                 <div class="profile-title">
@@ -177,14 +187,22 @@
                     </a>
                 </div>
                 <div class="info-container">
-                    <div class="info-title">Website</div>
-                    <div class="info-content">femar.co.ke</div>
-                    <div class="info-title">Twitter</div>
-                    <div class="info-content">@femar_will</div>
-                    <div class="info-title">Linkedin</div>
-                    <div class="info-content">in/femar</div>
-                    <div class="info-title">Location</div>
-                    <div class="info-content">Nairobi, Kenya</div>
+                    <div class="info">
+                        <div class="info-title">Website</div>
+                        <div class="info-content">femar.co.ke</div>
+                    </div>
+                    <div class="info">
+                        <div class="info-title">Twitter</div>
+                        <div class="info-content">@femar_will</div>
+                    </div>
+                    <div class="info">
+                        <div class="info-title">Linkedin</div>
+                        <div class="info-content">in/femar</div>
+                    </div>
+                    <div class="info">
+                        <div class="info-title">Location</div>
+                        <div class="info-content">Nairobi, Kenya</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -205,6 +223,20 @@
             <span class="iconly-Edit icli">
         </a>
     </div>
+    <script>
+        document.getElementById('imageUpload').addEventListener('change', readURL, true);
+        function readURL() {
+            const file = document.getElementById("imageUpload").files[0];
+            const reader = new FileReader();
+            reader.onloadend = function () {
+                document.getElementById('clock').style.backgroundImage = "url(" + reader.result + ")";
+            }
+            if (file) {
+                reader.readAsDataURL(file);
+            } else {
+            }
+        }
+    </script>
     <script src="js/dropdown.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/reveal.js"></script>

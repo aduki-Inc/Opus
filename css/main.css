@@ -962,7 +962,7 @@ main.profile>.profile-info>.general-info{
 main.profile>.profile-info>.contact-info{
     display: flex;
     flex-flow: column;
-    gap: 30px;
+    gap: 10px;
 }
 main.profile>.profile-info>.general-info>.profile-title{
     border-bottom: var(--border);
@@ -1089,3 +1089,25 @@ main.profile>.profile-info>.general-info>.profile-title{
     -o-border-radius: 50px;
     border-radius: 50px;
   }
+
+.info-container{
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    width: 70%;
+}
+.info-container>.info{
+    /*border: 1px solid var(--border-color);*/
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+}
+.info-container>.info>.info-title{
+    font-size: 1.2rem;
+    color: #404040;
+}
+.info-container>.info>.info-content{
+    padding-left: 5px;
+    color: var(--gray-color);
+}
