@@ -387,7 +387,8 @@
         z-index: 0;
       }
       .profile-image>input[type="submit"]{
-        width: 120px;
+        width: 150px;
+        padding: 4px;
       }
 
 }
@@ -799,12 +800,18 @@
      }
     main.profile>.site-title{
         border:none;
+       /* border: 1px solid rgb(0, 255, 157);*/
         width: 100%;
         margin: 0%;
+        padding-right: 20px;
+        display: flex;
+        align-items:baseline;
+        justify-content: center;
         position: sticky;
         z-index: 10;
         top: 0px;
-        padding-top: 50px;
+        padding-top: 60px;
+        padding-bottom: 5px;
         box-shadow: var(--box-shadow);
     }
     main.profile>.site-title>.section-title{
@@ -813,9 +820,16 @@
         left: 10px;
     }
     main.profile>.site-title>.edit{
-        position: fixed;
+        /*position: fixed;
         right: 10px;
         top: 70px;
+        border: 1px solid rgb(0, 255, 157);*/
+        padding: 4px;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
     }
     main.search>.search-wrapper{
         padding-top: 18px;
