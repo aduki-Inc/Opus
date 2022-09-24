@@ -759,7 +759,7 @@
         box-shadow: var(--box-shadow);
         border: var(--border);
         z-index: 4;
-        top: 60px;
+        top: 55px;
         right: 5px;
         min-width: 200px;
         padding: 10px 10px;
@@ -771,7 +771,7 @@
         box-shadow: var(--box-shadow);
         border: var(--border);
         z-index: 4;
-        top: 50px;
+        top: 70px;
         right: 5px;
         min-width: 200px;
         padding: 10px 10px;
