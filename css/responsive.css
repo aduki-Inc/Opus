@@ -919,27 +919,28 @@
     main.feeds>.feed-contents>.article-wrapper>.article-info .right{
         display: grid;
         grid-template-columns: max-content 1fr;
-        min-height: 30px;
+        min-height: max-content;
         padding: 0%;
-       border: 1px solid gray;
+       /*border: 1px solid gray;*/
         position: absolute;
         right: 5px;
         font-size: 0.9rem;
     }
     main.feeds>.feed-contents>.article-wrapper>.article-info .posted>.date{
         display: inline-block;
-       border: 1px solid gray;
+       /*border: 1px solid gray;*/
         font-size: 0.95rem;
         padding-top: 0px;
         margin: 0px;
     }
     main.feeds>.feed-contents>.article-wrapper>.article-info .posted>.icli{
-       border: 1px solid gray;
+       /*border: 1px solid gray;*/
         font-size: 18px;
         display: inline-block;
         padding: 0px;
         margin: 0%;
-        padding-bottom: 5px;
+        align-self: baseline;
+        padding-bottom: 3px;
     }
     main.feeds>.feed-contents>.article-wrapper>.summery-content{
         /* border: 1px solid rgb(250, 27, 27);*/
