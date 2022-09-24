@@ -937,9 +937,11 @@ main.profile{
 }
 main.profile>.site-title{
    /* border: 1px solid gray;*/
+   width: 90%;
     border-bottom: var(--border);
     background-color: var(--background-color);
     padding-left: 20px;
+    padding-right: 10px;
     grid-column: 2/3;
     grid-row: 1/2;
     position: sticky;
@@ -953,7 +955,7 @@ main.profile>.site-title{
 }
 main.profile>.site-title>.section-title{
     color: var(--accent-color);
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 main.profile>.site-title>.edit{
     text-decoration: none;
@@ -1035,6 +1037,8 @@ main.profile>.profile-info>.general-info>.profile-title{
     flex-flow: column;
     align-items: center;
     gap: 20px;
+    grid-column: 2/3;
+    grid-row: 2/3;
 
   }
 .avatar-upload {
@@ -1085,7 +1089,7 @@ main.profile>.profile-info>.general-info>.profile-title{
     position: relative;
     border-radius: 100%;
     border: 3px solid var(--alt-accent-color);
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--box-shadow);
     z-index: -1;
   }
   .avatar-upload .avatar-preview > div {
@@ -1120,6 +1124,14 @@ main.profile>.profile-info>.general-info>.profile-title{
     display: flex;
     flex-flow: column;
     gap: 15px;
+}
+.general-info.info-container{
+    /*border: 1px solid var(--border-color);*/
+    display: flex;
+    flex-flow: column;
+    gap: 15px;
+    grid-column: 1/2;
+    grid-row: 2/3;
 }
 main.profile>.profile-info>.contact-info>.info-container{
     display: grid;
