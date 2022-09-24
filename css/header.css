@@ -445,6 +445,10 @@ main.search>.search-header{
   display: flex;
   align-items: flex-end;
   gap: 20px;
+  flex-flow: row;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
 }
 .search-header .header-content>.header-links>.header-link,
 .feeds-header .header-content>.header-links>.header-link{
