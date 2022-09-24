@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opus - Feeds </title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link href="https://fonts.cdnfonts.com/css/product-sans" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body class="feeds-body">
+    <!--
+    <header id="menu">
+        <div class="site-logo">
+            <h2 class="site-name">Opus</h2>
+        </div>
+        <div class="welcome">
+              <h3 class="welcome-title">Welcome to Opus.</h3>
+              <p class="welcome-message">Hello femar, welcome back!</p>
+            </div>
+            <div class="search">
+              <form action="" method="get">
+                <input type="text" placeholder="Search Opus" />
+                <input class="iconly-Search icli" type="submit" value="Search" />
+                <span class="iconly-Search icli"></span>
+              </form>
+              <div class="create">
+                <span id="create-Btn" class="iconly-Plus icbo"></span>
+                <div class="create-dropdown">
+                    <h2 class="create-title">Contribute</h2>
+                    <a href="" title="Create" id="create"><span>Create Article</span><i class="iconly-Arrow-Right icbo"></i></a>
+                    <a href="" title="Create" id="create"><span>Add a Review</span><i class="iconly-Arrow-Right icbo"></i></a>
+                    <a href="" title="Create" id="create"><span>Add Product</span><i class="iconly-Arrow-Right icbo"></i></a>
+                    <a href="" title="Create" id="create"><span>Edit Your Articles</span><i class="iconly-Arrow-Right icbo"></i></a>
+                    <a href="" title="Create" id="create"><span>Become An Editor</span><i class="iconly-Arrow-Right icbo"></i></a>
+                    <a href="" title="Create" id="create"><span>Help Center</span><i class="iconly-Arrow-Right icbo"></i></a>
+                </div>
+              </div>
+        </div>
+    </header>
+-->
+    <main class="profile feeds">
+        <button type="button" class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
+        <div class="dashboard-sidebar">
+            <div class="logo-container">
+                <div class="site-logo">
+                    <img src="img/favi.png" alt="Logo" />
+                </div>
+            </div>
+            <div class="sidebar-nav">
+                <div class="content-nav">
+                    <ul class="linked-list content-list">
+                        <li class="content-link">
+                            <a class="link" href=" {% url 'dashboard' %}">
+                                <span id="select"></span>
+                                <span class="iconly-Home icli"></span>
+                                <span class="link-text">Home</span>
+                            </a>
+                        </li>
+                        <li class="content-link">
+                            <a class="link" href=" {% url 'create_post' %}">
+                                <span id="select"></span>
+                                <span class="iconly-Plus icli"></span>
+                                <span class="link-text">Create</span>
+                            </a>
+                        </li>
+                        <li class="content-link">
+                            <a class="link" href="{% url 'user_issue_list' %}">
+                                <span id="select"></span>
+                                <span class="iconly-Search icli"></span>
+                                <span class="link-text">Search</span>
+                            </a>
+                        </li>
+                        <li class="content-link">
+                            <a class="link " href="{% url 'user_product_list' %}">
+                                <span id="select"></span>
+                                <span class="iconly-Bag-2 icli"></span>
+                                <span class="link-text">Products</span>
+                            </a>
+                        </li>
+                        <li class="content-link">
+                            <a class="link" href="#">
+                                <span id="select"></span>
+                                <span class="iconly-Discovery icli"></span>
+                                <span class="link-text">Explore</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hr"></div>
+                <div class="settings-nav">
+                    <ul class="linked-list settings-list">
+                        <li class="content-link">
+                            <a class="link data-active" href=" {% url 'profile' username=user.username %}">
+                                <span id="select"></span>
+                                <span class="iconly-Profile icli"></span>
+                                <span class="link-text">Profile</span>
+                            </a>
+                        </li>
+                        <li class="content-link">
+                            <a class="link" href="#">
+                                <span id="select"></span>
+                                <span class="iconly-Bookmark icli"></span>
+                                <span class="link-text">My List</span>
+                            </a>
+                        </li>
+                        <li class="content-link">
+                            <a class="link " href="#">
+                                <span id="select"></span>
+                                <span class="iconly-More-Circle icli"></span>
+                                <span class="link-text">Themes</span>
+                            </a>
+                        </li>
+                        <li class="content-link">
+                            <a class="link" href="#">
+                                <span id="select"></span>
+                                <span class="iconly-Heart icli"></span>
+                                <span class="link-text">Donate</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h2 class="site-title">Opus</h2>
+        <div class="profile-info">
+            <div class="general-info">
+                <div class="profile-title">
+                    <div class="section-title">General Info</div>
+                    <a href="" class="edit">
+                        <i class="iconly-Edit icli"></i>
+                        <span class="edit-text">Edit</span>
+                    </a>
+                </div>
+                <div class="info-container">
+                    <div class="info-title">Name</div>
+                    <div class="info-content">Fredrick Ochieng</div>
+                    <div class="info-title">Email</div>
+                    <div class="info-content">isfescii@gmail.com</div>
+                    <div class="info-title">Bio</div>
+                    <div class="info-content">Enabling this will hide your contributions and
+                        activity from your GitHub profile and from social features like followers, stars, feeds,
+                        leaderboards and releases</div>
+                </div>
+                <div class="avatar-upload">
+                    <div class="avatar-edit">
+                        <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                        <label for="imageUpload"></label>
+                    </div>
+                    <div class="avatar-preview">
+                        <div id="clock"
+                            style="background-image: url(https://4.bp.blogspot.com/-H232JumEqSc/WFKY-6H-zdI/AAAAAAAAAEw/DcQaHyrxHi863t8YK4UWjYTBZ72lI0cNACLcB/s1600/profile%2Bpicture.png);">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-info">
+                <div class="profile-title">
+                    <div class="section-title">Contact Info</div>
+                    <a href="" class="edit">
+                        <i class="iconly-Edit icli"></i>
+                        <span class="edit-text">Edit</span>
+                    </a>
+                </div>
+                <div class="info-container">
+                    <div class="info-title">Website</div>
+                    <div class="info-content">femar.co.ke</div>
+                    <div class="info-title">Twitter</div>
+                    <div class="info-content">@femar_will</div>
+                    <div class="info-title">Linkedin</div>
+                    <div class="info-content">in/femar</div>
+                    <div class="info-title">Location</div>
+                    <div class="info-content">Nairobi, Kenya</div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </main>
+    <div class="mobile-footer">
+        <a href="" title="Home" class="mobile-footer-link active">
+            <span class="iconly-Home icli"></span>
+        </a>
+        <a href="" title="Search" class="mobile-footer-link">
+            <span class="iconly-Search icli"></span>
+        </a>
+        <a href="" title="Products" class="mobile-footer-link">
+            <span class="iconly-Bag-2 icli"></span>
+        </a>
+        <a href="" title="Create" class="mobile-footer-link">
+            <span class="iconly-Edit icli">
+        </a>
+    </div>
+    <script src="js/dropdown.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/reveal.js"></script>
+</body>
+
+</html>
