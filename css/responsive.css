@@ -797,6 +797,10 @@
     .logo-container{
         display: none;
     }
+    .search-wrapper>form{
+        /*border:  1px solid rgb(153, 51, 99);*/
+        width: 80%;
+      }
 
 
 
@@ -811,6 +815,11 @@
     border: none;
     outline: none;
     cursor: pointer;
+  }
+  .search>.hamburger{
+    position: fixed;
+    top: 20px;
+    right: 12px;
   }
   /* General styles for the lines */
   .hamburger .line{
