@@ -363,13 +363,13 @@ main.search>.search-wrapper{
   color:var(--gray-color);
   font-size: 18px;
   left: 10px;
-  top: 25%;
+  top: 30%;
 }
 .search-wrapper>form>p>input[type="search"]{
   border: var(--border);
   color:var(--gray-color);
-  padding-left: 32px;
-  height: 30px;
+  padding-left: 35px;
+  height: 40px;
   width: 100%;
   outline: none;
   -webkit-border-radius: 50px;
@@ -430,6 +430,14 @@ main.search>.search-header{
    font-size: 20px;
    color: var(--accent-color);
 }
+.search-header .header-content>.site-title{
+   margin: 0%;
+   margin:5px 0px 15px 0px;
+   padding: 5px 0%;
+   color: var(--accent-color);
+  /* border: 1px solid rgb(9, 21, 184);*/
+   font-size: 1.5rem;
+}
 .search-header .header-content>.header-links,
 .feeds-header .header-content>.header-links{
   /*border: 1px solid rgb(9, 21, 184);*/
@@ -452,6 +460,7 @@ main.search>.search-header{
 .search-header .header-content>.header-links>.active,
 .feeds-header .header-content>.header-links>.active{
   border-bottom:1px solid var(--accent-color);
+  color: var(--hover-link-color);
 }
 
 /*
@@ -663,7 +672,7 @@ main.search>.dashboard-sidebar{
 }
 .linked-list>.content-link .data-active{
    color:   #08b86e;
-   font-weight: bold;
+   /*font-weight: bold;*/
   /* border: 1px solid rgb(247, 23, 7);*/
 }
 

@@ -975,7 +975,7 @@
         color: var(--gray-color);
     }
     .mobile-footer>a.active{
-        color: var(--alt-accent-color);
+        color: var(--accent-color);
     }
     .mobile-footer>a .icli{
         font-size: 24px;
