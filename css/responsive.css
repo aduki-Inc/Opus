@@ -911,7 +911,7 @@
         padding: 0%;
     }
     main.feeds>.feed-contents>.article-wrapper>.article-info .posted>.icli{
-       /* border: 1px solid gray;*/
+       /*border: 1px solid gray;*/
         font-size: 17px;
         display: inline;
         padding-top: 0px;
@@ -930,8 +930,10 @@
        /* border: 1px solid gray;*/
         font-size: 18px;
         display: inline-block;
+        text-align: end;
         padding: 0px;
         margin: 0%;
+        margin-top: 5px;
     }
     main.feeds>.feed-contents>.article-wrapper>.summery-content{
         /* border: 1px solid rgb(250, 27, 27);*/
