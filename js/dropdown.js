@@ -90,7 +90,6 @@ if(sidebarLinks != null){
             let span = link.querySelector('#select')
             //span.classList.add('specific-link')
             link.classList.add('active-link')
-            link.appendChild(span)
         })
     })
     //Adding an event When mouse leaves the element
