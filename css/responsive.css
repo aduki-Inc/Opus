@@ -731,12 +731,13 @@
         display: none;
     }
     main.feeds>.feeds-header{
-       /* border: 1px solid rgb(218, 20, 20);*/
+        border: none;
+        box-shadow: 0.1rem 0.5rem 3rem #2a2b2a11;
         padding: 0%;
         margin: 0%;
         position: sticky;
         top: 0px;
-        height: 60px;
+        height: 50px;
         display: flex;
         align-items: center;
     }
@@ -770,11 +771,12 @@
         box-shadow: var(--box-shadow);
         border: var(--border);
         z-index: 4;
-        top: 60px;
+        top: 50px;
         right: 5px;
         min-width: 200px;
         padding: 10px 10px;
         padding-top: 0%;
+        margin: 0%;
     }
     .search-header .header-content>.header-links{
     /*border: 1px solid rgb(9, 21, 184);*/
@@ -804,7 +806,7 @@
     display: inline-block;
     background-color: transparent;
     position: fixed;
-    top: 10px;
+    top: 8px;
     right: 12px;
     border: none;
     outline: none;
@@ -813,26 +815,39 @@
   /* General styles for the lines */
   .hamburger .line{
     display: block;
-    width: 30px;
+    width: 28px;
     height: 4px;
     background-color: var(--gray-color);
-    margin-block: 9px; /*Adds separation to the bottom and the bottom*/
+    margin-block: 6px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
     border-radius: 4px;
-    transition: transform .5s,
-    opacity .25s;
-  }
+    -webkit-transition: transform .5s,    opacity .25s;
+    -moz-transition: transform .5s,    opacity .25s;
+    -ms-transition: transform .5s,    opacity .25s;
+    -o-transition: transform .5s,    opacity .25s;
+    transition: transform .5s,    opacity .25s;
+}
   /* Selecting the lines individually to add different effects when the active class is added to the hamburger menu.*/
   .hamburger.active .line:nth-child(1){
-    transform: translateY(13px)
-    rotate(45deg); /*Moves down this line 13px and rotates it 45 degrees to create the X*/
-  }
+    -webkit-transform: translateY(6px)    rotate(45deg);
+    -moz-transform: translateY(6px)    rotate(45deg);
+    -ms-transform: translateY(6px)    rotate(45deg);
+    -o-transform: translateY(6px)    rotate(45deg);
+    transform: translateY(6px)    rotate(45deg);
+}
   .hamburger.active .line:nth-child(2){
     opacity: 0; /*Hides this line.*/
   }
   .hamburger.active .line:nth-child(3){
-    transform: translateY(-13px)
-    rotate(-45deg); /*Moves up this line 13px and rotates it -45 degrees to create the X*/
-  }
+    -webkit-transform: translateY(-15px)    rotate(-45deg);
+    -moz-transform: translateY(-15px)    rotate(-45deg);
+    -ms-transform: translateY(-15px)    rotate(-45deg);
+    -o-transform: translateY(-15px)    rotate(-45deg);
+    transform: translateY(-15px)    rotate(-45deg);
+}
     main.feeds>.sidebar-content{
         margin: 0%;
         padding: 0%;
