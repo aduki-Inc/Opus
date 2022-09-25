@@ -782,6 +782,7 @@
 @media screen and (max-width: 500px){
     main{
         margin: 60px 0px;
+        position: relative;
     }
     header{
         opacity: 0.9;
@@ -791,8 +792,14 @@
         display: none;
     }
     main>.site-name{
+        /*border: 1px solid blue;*/
         display: inline-block;
-        left: 5%;
+        color: var(--alt-accent-color);
+        font-size: 1.5rem;
+        position: fixed;
+        margin: 0%;
+        left: 10px;
+        top: 12px;
         z-index: 12;
     }
     /* Feeds */
@@ -819,16 +826,17 @@
      }
     main.profile>.site-title{
         border:none;
-       /* border: 1px solid rgb(0, 255, 157);*/
+        /*border: 1px solid rgb(0, 255, 157);*/
         width: 100%;
         margin: 0%;
         display: flex;
         align-items:baseline;
         justify-content: center;
         position: sticky;
-        z-index: 10;
+        z-index: 5;
         top: 0px;
         padding-top: 60px;
+        padding-bottom: 3px;
         box-shadow: var(--box-shadow);
     }
     main.profile>.site-title>.edit{

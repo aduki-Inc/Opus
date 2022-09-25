@@ -497,10 +497,6 @@ body.feeds-body{
    background-color: var(--background-color);
 }
 main>.site-name{
-    color: var(--alt-accent-color);
-    font-size: 1.5rem;
-    position: fixed;
-    left: 10px;
     display: none;
 }
 main.feeds{
