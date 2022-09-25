@@ -237,6 +237,7 @@
         /* border: 1px solid rgb(0, 255, 157);*/
          margin-top: 0px;
          width: 100%;
+         margin-left: 20px;
          display: grid;
          grid-template-columns:120px 1fr;
          grid-template-rows: max-content;
@@ -390,6 +391,16 @@
         width: 150px;
         padding: 4px;
       }
+    main.profile>.profile-info>.contact-info>.info-container{
+        display: flex;
+        flex-flow: column;
+    }
+    main.profile>.site-title{
+       /* background-color: blue;*/
+        width: 100%;
+        z-index: 5;
+        padding: 40px 20px 0% 20px;
+    }
 
 }
 
@@ -415,6 +426,7 @@
         top: 80px;
         padding-top: 10px;
         border-right: var(--border);
+        padding-right: 5px;
     }
     .sidebar-nav>.hr{
         width: 60%;
@@ -486,6 +498,9 @@
         padding: 0%;
         margin: 0%;
 
+    }
+    main.profile{
+        margin-left: 20px;
     }
     /*main.feeds>.feeds-header{
         padding: 0%;
@@ -775,7 +790,11 @@
     footer{
         display: none;
     }
-
+    main>.site-name{
+        display: inline-block;
+        left: 5%;
+        z-index: 12;
+    }
     /* Feeds */
     .get-more{
         /* border: 1px solid blue;*/
@@ -790,7 +809,7 @@
     }
     main.profile{
         /*border: 1px solid rgb(0, 255, 157);*/
-         margin-top: 0px;
+         margin: 0px;
          width: 100%;
          display: grid;
          grid-template-columns:1fr;
@@ -803,7 +822,6 @@
        /* border: 1px solid rgb(0, 255, 157);*/
         width: 100%;
         margin: 0%;
-        padding-right: 20px;
         display: flex;
         align-items:baseline;
         justify-content: center;
@@ -811,21 +829,14 @@
         z-index: 10;
         top: 0px;
         padding-top: 60px;
-        padding-bottom: 5px;
         box-shadow: var(--box-shadow);
-    }
-    main.profile>.site-title>.section-title{
-        position: fixed;
-        top: 10px;
-        left: 10px;
     }
     main.profile>.site-title>.edit{
         /*position: fixed;
         right: 10px;
         top: 70px;
         border: 1px solid rgb(0, 255, 157);*/
-        padding: 4px;
-        width: 80%;
+        padding: 4px 15px;
         display: flex;
         align-items: center;
         justify-content: center;
