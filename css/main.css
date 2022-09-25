@@ -496,6 +496,12 @@ body.feeds-body{
    /* background-color: var(--body-background-color);*/
    background-color: var(--background-color);
 }
+main>.site-name{
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    position: fixed;
+    left: 6%;
+}
 main.feeds{
     position: relative;
    /* border: 1px solid rgb(0, 255, 157);*/
