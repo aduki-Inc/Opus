@@ -455,15 +455,18 @@ main.search>.search-header{
   /*border: 1px solid rgb(9, 21, 184);*/
   color: var(--gray-color);
   text-decoration: none;
+  margin-bottom: 0px;
   padding: 0px 8px 3px 8px;
 }
+
 .search-header .header-content>.header-links>.header-link:hover,
 .feeds-header .header-content>.header-links>.header-link:hover{
   color: var(--hover-link-color);
 }
 .search-header .header-content>.header-links>.active,
 .feeds-header .header-content>.header-links>.active{
-  border-bottom:1px solid var(--accent-color);
+  border-bottom:2px solid var(--accent-color);
+  margin-bottom: 0px;
   color: var(--hover-link-color);
 }
 

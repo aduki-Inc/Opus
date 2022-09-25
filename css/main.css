@@ -496,6 +496,9 @@ body.feeds-body{
    /* background-color: var(--body-background-color);*/
    background-color: var(--background-color);
 }
+main>.site-name{
+    display: none;
+}
 main.feeds{
     position: relative;
    /* border: 1px solid rgb(0, 255, 157);*/
@@ -955,7 +958,7 @@ main.profile>.site-title{
 }
 main.profile>.site-title>.section-title{
     color: var(--accent-color);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 main.profile>.site-title>.edit{
     text-decoration: none;
