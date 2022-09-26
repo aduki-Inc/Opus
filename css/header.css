@@ -100,8 +100,6 @@ header #start{
   color: white;
 }
 
-
-
 /*
   1.3.1 Header Dropdown Section
 */
@@ -684,6 +682,8 @@ main.search>.dashboard-sidebar{
    text-align: center;
    text-decoration: none;
    color: #808080;
+   /*border: 1px solid rgb(18, 223, 223);*/
+   min-width: max-content;
 }
 /*
 .linked-list>.content-link .link:hover{
@@ -721,7 +721,8 @@ main.search>.dashboard-sidebar{
    text-align: center;
    margin-top: 0%;
    height: 100%;
-  /* border: 1px solid rgb(18, 223, 223);*/
+  /*border: 1px solid rgb(18, 223, 223);*/
+  padding-right: 10px;
 }
 
 .hamburger{
