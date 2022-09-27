@@ -1162,9 +1162,14 @@
         font-size: 16px;
     }
     .newsletter-wrapper>.footer{
-        /*border: 1px solid var(--border-color);*/
+       /* border: 1px solid var(--border-color);*/
+        align-items: flex-start;
         margin: 0%;
-        padding: 10px 15px 10px 5px;
+        padding: 15px 15px 0px 5px;
+    }
+    .newsletter-wrapper>.footer>.subscribe{
+        text-align: center;
+        align-self: center;
     }
     main.feeds>.feed-contents>.feed-title{
         /*border: 1px solid rgba(18, 18, 18, 0.198);*/
