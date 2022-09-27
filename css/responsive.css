@@ -983,6 +983,7 @@
        /* border: 1px solid var(--border-color);*/
         box-shadow: 0.1rem 0.5rem 3rem #2a2b2a11;
         padding: 0%;
+        padding-left: 10px;
         margin: 0%;
         width: 100%;
         position: sticky;
@@ -1134,12 +1135,42 @@
     }
     main.feeds>.feed-contents{
        /* border: 1px solid rgb(0, 255, 157);*/
-        margin: 15px 0px;
+        margin: 15px 5px;
+    }
+    main.newsletters>.newsletters-feeds>.newsletter-wrapper:nth-of-type(6),
+    main.newsletters>.newsletters-feeds>.newsletter-wrapper:nth-of-type(7){
+    border-bottom: var(--border);
+    /*border: 1px solid rgb(0, 255, 157);*/
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    }
+    main.newsletters>.newsletters-feeds>.newsletter-wrapper:nth-of-type(7){
+        border-bottom: none;
+    }
+    main.newsletters>.newsletters-feeds>.newsletter-wrapper{
+        /*border: 1px solid rgb(0, 255, 157);*/
         padding: 0%;
+        padding: 0% 5px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    .newsletter-wrapper>.description{
+       /* border: 1px solid var(--border-color);*/
+        margin: 0%;
+        padding-left: 0px;
+        font-size: 16px;
+    }
+    .newsletter-wrapper>.footer{
+        /*border: 1px solid var(--border-color);*/
+        margin: 0%;
+        padding: 10px 15px 10px 5px;
     }
     main.feeds>.feed-contents>.feed-title{
         /*border: 1px solid rgba(18, 18, 18, 0.198);*/
          padding: 0%;
+         margin: 0%;
+         margin-bottom: 15px;
          justify-content: start;
          align-items: flex-start;
      }

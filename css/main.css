@@ -1245,7 +1245,7 @@ main.newsletters>.newsletters-feeds>.newsletter-wrapper:nth-of-type(7){
     gap: 10px;
 }
 .newsletter-wrapper>.newsletter-head>.info>.title{
-    color: var(--article-title-color);
+   /* color: var(--article-title-color);*/
     font-size: 1.3rem;
 }
 .newsletter-wrapper>.newsletter-head>.info>.author{
