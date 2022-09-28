@@ -1312,13 +1312,16 @@ main.newsletters>.newsletters-feeds>.newsletter-wrapper:nth-of-type(7){
 .newsletter-wrapper>.footer>.footer-info>.likes{
     color: var(--article-title-color);
     font-size: 1.0rem;
+    color: var(--gray-color);
 }
 .newsletter-wrapper>.footer>.footer-info>.topic{
     margin-left: 15px;
-    color: var(--gray-color);
+    /*color: var(--gray-color);*/
+    color: var(--accent-color);
+    opacity: 0.9;
     text-decoration: none;
     padding: 5px 15px 5px 15px;
-    background-color: rgba(57, 56, 56, 0.087);
+    /*background-color: rgba(57, 56, 56, 0.087);*/
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
