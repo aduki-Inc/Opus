@@ -1361,10 +1361,10 @@
     .mobile-footer>a .icli{
         font-size: 24px;
         display: inline-block;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     .mobile-footer>a>span#active{
-        display: inline-block;
+        display:none;
         position: absolute;
         bottom: 2px;
         left: 2px;
