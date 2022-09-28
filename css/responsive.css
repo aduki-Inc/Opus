@@ -567,7 +567,7 @@
       }
     main.feeds{
         margin-top: 0px;
-        column-gap: 10px;
+        column-gap: 0px;
         padding: 0%;
         margin: 0%;
         margin-left: 20px;
@@ -919,7 +919,7 @@
      }
     main.feeds{
         margin-top: 0px;
-        /*border: 1px solid rgb(9, 21, 184);*/
+        background-color: var(--body-background-color);
         margin: 0%;
         padding: 0%;
         display: grid;
@@ -927,14 +927,11 @@
         row-gap: 20px;
     }
     main.newsletters>.newsletters-feeds{
-       /* border: 1px solid rgb(0, 255, 157);*/
+       /*border: 1px solid rgb(0, 255, 157);*/
+        background-color: transparent;
         padding: 0%;
         margin: 0%;
     }
-    main.newsletters>.newsletters-feeds>.newsletter-wrapper{
-        /*border: 1px solid rgb(0, 255, 157);*/
-        margin: 0%;
-     }
     main.profile{
         /*border: 1px solid rgb(0, 255, 157);*/
          margin: 0px;
@@ -1135,11 +1132,32 @@
     }
     main.feeds>.feed-contents{
        /* border: 1px solid rgb(0, 255, 157);*/
-        margin: 15px 5px;
+        margin:  0px;
     }
+    main.feeds>.feed-contents>.feed-title{
+        /*border: 1px solid rgba(18, 18, 18, 0.198);*/
+        background-color: var(--background-color);
+         padding:15px;
+         margin: 0%;
+         margin-bottom: 0;
+         justify-content: start;
+         align-items: flex-start;
+     }
+    main.feeds>.feed-contents>.feed-title>.section-title{
+         /* border: 1px solid gray;*/
+          margin: 0%;
+          font-size: 1.3rem;
+          text-align: end;
+      }
+    main.feeds>.feed-contents>.feed-title>.icli{
+          /*border: 1px solid gray;*/
+          font-size: 20px;
+          margin-top: 6px;
+          color: var(--alt-accent-color);
+      }
     main.newsletters>.newsletters-feeds>.newsletter-wrapper:nth-of-type(6),
     main.newsletters>.newsletters-feeds>.newsletter-wrapper:nth-of-type(7){
-    border-bottom: var(--border);
+    /*border-bottom: var(--border);*/
     /*border: 1px solid rgb(0, 255, 157);*/
     margin-bottom: 20px;
     padding-bottom: 20px;
@@ -1149,9 +1167,13 @@
         border-bottom: none;
     }
     main.newsletters>.newsletters-feeds>.newsletter-wrapper{
-        /*border: 1px solid rgb(0, 255, 157);*/
-        padding: 0%;
-        padding: 0% 5px;
+        /* border: 1px solid rgb(0, 255, 157);*/
+        background-color: var(--background-color);
+        margin: 0%;
+        border: none;
+        width: 100%;
+        margin-bottom: 0px;
+        padding: 10px;
         padding-bottom: 20px;
         margin-bottom: 20px;
     }
@@ -1171,26 +1193,7 @@
         text-align: center;
         align-self: center;
     }
-    main.feeds>.feed-contents>.feed-title{
-        /*border: 1px solid rgba(18, 18, 18, 0.198);*/
-         padding: 0%;
-         margin: 0%;
-         margin-bottom: 15px;
-         justify-content: start;
-         align-items: flex-start;
-     }
-    main.feeds>.feed-contents>.feed-title>.section-title{
-         /* border: 1px solid gray;*/
-          margin: 0%;
-          font-size: 1.3rem;
-          text-align: end;
-      }
-    main.feeds>.feed-contents>.feed-title>.icli{
-          /*border: 1px solid gray;*/
-          font-size: 20px;
-          margin-top: 6px;
-          color: var(--alt-accent-color);
-      }
+
       .sidebar-content>.stats{
         margin-bottom: 20px;
         /*border: 1px solid rgb(0, 255, 157);*/
