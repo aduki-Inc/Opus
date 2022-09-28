@@ -915,7 +915,7 @@
     .get-more{
         /* border: 1px solid blue;*/
          border-top: none;
-         font-size: 0.9rem;
+         font-size: 1.0rem;
      }
     main.feeds{
         margin-top: 0px;
@@ -1353,12 +1353,15 @@
         cursor: unset;
     }
     /* Sidebar Content- DeskTop */
-    .sidebar-content{
+    main.feeds>.sidebar-content{
         position: unset;
         height: max-content;
         background-color: var(--background-color);
         box-shadow: unset;
         border: unset;
+        margin: 0%;
+        padding-top: 20px;
+        /*background-color: var(--alt-accent-color);*/
     }
 
     .topics{
