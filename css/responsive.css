@@ -921,6 +921,7 @@
         margin-top: 0px;
         background-color: var(--body-background-color);
         margin: 0%;
+        margin-bottom: 60px;
         padding: 0%;
         display: grid;
         grid-template-columns: 1fr;
