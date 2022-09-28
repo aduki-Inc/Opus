@@ -1280,6 +1280,9 @@ main.newsletters>.newsletters-feeds>.newsletter-wrapper:nth-of-type(7){
     font-size:16px;
     color: var(--summery-color);
 }
+.newsletter-wrapper>.description>p{
+    margin: 0%;
+}
 .newsletter-wrapper>.footer{
    /* border: 1px solid var(--border-color);*/
     padding: 5px;
