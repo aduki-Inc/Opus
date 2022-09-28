@@ -990,12 +990,12 @@
         height: max-content;
     }
     main.feeds>.feeds-header>.header-content{
-        /*border: 1px solid rgb(218, 20, 20);*/
+       /* border: 1px solid rgb(218, 20, 20);*/
         display: flex;
         align-items: flex-start;
         flex-flow: column;
         height: max-content;
-        gap: 23px;
+        gap: 30px;
     }
     main.feeds>.feeds-header>.header-content>.site-title{
        /*border: 1px solid rgb(218, 20, 20);*/
