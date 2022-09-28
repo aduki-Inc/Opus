@@ -1176,6 +1176,21 @@
         padding: 10px;
         padding-bottom: 20px;
     }
+    .newsletter-wrapper>.newsletter-head{
+       /* border: 1px solid var(--border-color);*/
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-bottom: 5px;
+    }
+    .newsletter-wrapper>.newsletter-head>.cover-image{
+        /* border: 1px solid var(--border-color);*/
+        /*justify-self: end;*/
+         height: 120px;
+         width: auto;
+         padding: 5px;
+     }
     main.feeds>.feed-contents>.more{
         background-color: var(--background-color);
         margin: 0%;
