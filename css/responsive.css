@@ -915,7 +915,7 @@
     .get-more{
         /* border: 1px solid blue;*/
          border-top: none;
-         font-size: 0.9rem;
+         font-size: 1.0rem;
      }
     main.feeds{
         margin-top: 0px;
@@ -1134,6 +1134,8 @@
     main.feeds>.feed-contents{
        /* border: 1px solid rgb(0, 255, 157);*/
         margin:  0px;
+        padding: 0%;
+        background-color: transparent;
     }
     main.feeds>.feed-contents>.feed-title{
         /*border: 1px solid rgba(18, 18, 18, 0.198);*/
@@ -1230,16 +1232,31 @@
         margin-bottom: 70px;
     }
     main.feeds>.feed-contents>.article-wrapper{
-        /* border: 1px solid rgb(0, 255, 157);*/
-         margin: 8px 0px 0% 0px;
-         padding: 15px 0px 0px 0%;
-         border-top: none;
-         border-bottom: 1px solid rgba(18, 18, 18, 0.198);
+        border:none;
+         margin: 0%;
+         padding: 15px 10px 20px 10px;
+         margin-bottom: 5px;
+         background-color: var(--background-color);
+
+     }
+     main.feeds>.feed-contents>.article-wrapper:last-of-type{
+        margin: 0%;
      }
     main.feeds>.feed-contents>.article-wrapper>.article-info{
        /* border: 1px solid rgb(250, 27, 27);*/
         padding: 0%;
     }
+    main.feeds>.feed-contents>.article-wrapper>.article-info{
+       /* border: 1px solid gray;*/
+        padding-left: 7px;
+     }
+     main.feeds>.feed-contents>.get-more{
+       /* border: 1px solid blue;*/
+        margin: 0%;
+        color: var(--hover-link-color);
+        background-color: var(--background-color);
+        padding-bottom: 20px;
+     }
     main.feeds>.feed-contents>.article-wrapper>.article-info .posted>.icli{
        /*border: 1px solid gray;*/
         font-size: 17px;
@@ -1353,12 +1370,15 @@
         cursor: unset;
     }
     /* Sidebar Content- DeskTop */
-    .sidebar-content{
+    main.feeds>.sidebar-content{
         position: unset;
         height: max-content;
         background-color: var(--background-color);
         box-shadow: unset;
         border: unset;
+        margin: 0%;
+        padding-top: 20px;
+        /*background-color: var(--alt-accent-color);*/
     }
 
     .topics{

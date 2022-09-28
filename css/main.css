@@ -701,9 +701,11 @@ main.feeds>.feed-contents>.article-wrapper>.summery-content>.article-footer{
 }
 .feed-contents>.article-wrapper>.summery-content>.article-footer>.article-tags>.tag{
     color: var(--gray-color);
+    /*color: var(--hover-link-color);*/
+    opacity: 0.8;
     text-decoration: none;
-    padding: 5px 12px 5px 12px;
-    background-color: rgba(57, 56, 56, 0.087);
+    padding: 4px 15px;
+    /*background-color: rgba(57, 56, 56, 0.087);*/
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
@@ -722,51 +724,39 @@ main.feeds>.feed-contents>.article-wrapper>.summery-content>.article-footer{
     gap: 20px;
     padding: 0% 10px;
 }
-.feed-contents>.article-wrapper>.summery-content>.article-footer>.article-actions>a,
-.feed-contents>.article-wrapper>.summery-content>.article-footer>.article-actions>div
+.feed-contents>.article-wrapper>.summery-content>.article-footer>.article-actions>a
 {
     text-decoration: none;
-    font-size: 20px;
     cursor: pointer;
     color: var(--gray-color);
-}
-.feed-contents>.article-wrapper>.summery-content>.article-footer>.article-actions>a>.icbo{
-    color: var(--alt-accent-color);
-}
-.feed-contents>.article-wrapper>.summery-content>.article-footer>.article-actions>a:hover,
-.feed-contents>.article-wrapper>.summery-content>.article-footer>.article-actions>div:hover{
-    color: var(--alt-accent-color);
-}
-.feed-contents>.article-wrapper>.summery-content>.article-footer>.article-actions>div.more{
-   /* border: 1px solid gray;*/
-    position: relative;
-    display: inline-block;
-}
-.feed-contents>.article-wrapper>.summery-content>.article-footer>.article-actions>div.more>.more-actions{
-    position: absolute;
-    background-color: var(--background-color);
-    padding: 5px 10px;
-    display: none;
-    flex-flow: column;
+   /* border: var(--border);*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 5px;
-    border: var(--border);
-    width: max-content;
-    bottom: 30px;
-    left: -72px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
+    padding: 5px 15px 5px 15px;
+    background-color: rgba(57, 56, 56, 0.087);
+   /* background-color: var(--alt-accent-color);*/
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border-radius: 50px;
+
 }
-.feed-contents>.article-wrapper>.summery-content>.article-footer>.article-actions>div.more>.more-actions>a{
-    text-decoration: none;
+.feed-contents>.article-wrapper>.summery-content>.article-footer>.article-actions>a>span{
     font-size: 1rem;
-    color: var(--gray-color);
 }
-.feed-contents>.article-wrapper>.summery-content>.article-footer>.article-actions>div.more>.more-actions>a:hover{
-    color: var(--hover-link-color);
+.feed-contents>.article-wrapper>.summery-content>.article-footer>.article-actions>a>i{
+    font-size:1rem;
+    display: inline-block;
+    margin-top: 5px;
 }
+
+.feed-contents>.article-wrapper>.summery-content>.article-footer>.article-actions>a:hover{
+    color: var(--alt-accent-color);
+}
+
 
 /* Sidebar Content- DeskTop */
 .sidebar-content{
@@ -777,7 +767,7 @@ main.feeds>.feed-contents>.article-wrapper>.summery-content>.article-footer{
     grid-row: 2/3;
     background-color: var(--background-color);
    /* box-shadow: var(--box-shadow);*/
-    /* border: var(--border);*/
+    /*border: var(--border);*/
     display: flex;
     flex-flow: column;
     align-items: center;
