@@ -684,20 +684,18 @@ main.feeds>.feed-contents>.article-wrapper>.summery-content>.article-footer{
     grid-column: 1/2;
     /*border: 1px solid gray;*/
     height: max-content;
-    padding: 0% 20px 0% 0%;
+    padding:0%;
     display: flex;
-    flex-flow: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
+    flex-flow: column;
+    align-items: flex-start;
+    gap: 20px;
 }
 .feed-contents>.article-wrapper>.summery-content>.article-footer>.article-tags{
-   /* border: 1px solid gray;*/
+    /*border: 1px solid gray;*/
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
     gap: 10px;
-    margin-left: 5px;
 }
 .feed-contents>.article-wrapper>.summery-content>.article-footer>.article-tags>.tag{
     color: var(--gray-color);
@@ -723,6 +721,9 @@ main.feeds>.feed-contents>.article-wrapper>.summery-content>.article-footer{
     flex-wrap: nowrap;
     gap: 20px;
     padding: 0% 10px;
+   /* border: 1px solid gray;*/
+    align-self: flex-end;
+    margin-right: 20px;
 }
 .feed-contents>.article-wrapper>.summery-content>.article-footer>.article-actions>a
 {
