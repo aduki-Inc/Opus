@@ -711,7 +711,7 @@ main.feeds>.feed-contents>.article-wrapper>.summery-content>.article-footer{
     border-radius: 50px;
 }
 .feed-contents>.article-wrapper>.summery-content>.article-footer>.article-tags>.tag:hover{
-    color: var(--hover-link-color)
+    color: var(--hover-link-color);
 }
 .feed-contents>.article-wrapper>.summery-content>.article-footer>.article-actions{
     display: flex;
