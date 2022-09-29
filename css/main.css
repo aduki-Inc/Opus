@@ -13,6 +13,9 @@ main.feeds{
     flex-direction: column;
     gap: 0px;
 }
+.create-option{
+    display: none;
+}
 
 /*
 
