@@ -1340,11 +1340,12 @@ main.newsletters>.newsletters-feeds>.newsletter-wrapper:nth-of-type(7){
 
 /*Rating*/
 form.feedback-form{
-    /*border: var(--border);*/
+    border-top: var(--border);
+    padding: 0px;
+    padding-top: 15px;
     display: flex;
     width: 100%;
     flex-flow: column;
-    padding: 0px;
     margin-top: 15px;
     gap: 15px;
 }
@@ -1354,7 +1355,7 @@ form.feedback-form>input[type="text"]{
   font-size: 1rem;
   padding-left: 15px;
   margin-right: 10px;
-  height: 30px;
+  height: 35px;
   outline: none;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
