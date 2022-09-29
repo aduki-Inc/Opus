@@ -1012,7 +1012,7 @@
         box-shadow: var(--box-shadow);
         border: var(--border);
         z-index: 4;
-        top: 95px;
+        top: 105px;
         right: 5px;
         min-width: 200px;
         padding: 10px 10px;
