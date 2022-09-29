@@ -1314,16 +1314,19 @@
     }
     .feed-contents>.article-wrapper>.summery-content>.article-footer>.article-tags{
         margin-top: 5px;
+        width: 100%;
         display: flex;
         flex-flow: row;
-        align-items: flex-end;
+        align-items: flex-start;
+       /* border: 1px solid gray;*/
         flex-wrap: wrap;
         gap: 15px;
     }
     .feed-contents>.article-wrapper>.summery-content>.article-footer>.article-tags>.tag{
-        font-size: 0.8rem;
+        font-size: 0.95rem;
         /*border: 1px solid rgb(250, 27, 27);*/
         padding: 4px 10px;
+        color: var(--hover-link-color);
     }
 
     .feed-contents>.article-wrapper>.summery-content>.article-footer>.article-actions{
