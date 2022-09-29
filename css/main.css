@@ -1337,3 +1337,94 @@ main.newsletters>.newsletters-feeds>.newsletter-wrapper:nth-of-type(7){
     -o-border-radius: 50px;
     border-radius: 50px;
 }
+
+/*Rating*/
+form.feedback-form{
+    /*border: var(--border);*/
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+    padding: 0px;
+    margin-top: 15px;
+    gap: 15px;
+}
+form.feedback-form>input[type="text"]{
+    border: var(--border);
+  color:var(--gray-color);
+  font-size: 1rem;
+  padding-left: 15px;
+  margin-right: 10px;
+  height: 30px;
+  outline: none;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+}
+form.feedback-form>.form-footer{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+}
+form.feedback-form>.form-footer>.rating{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+form.feedback-form>.form-footer>.rating>.rate-title{
+    color: var(--gray-color);
+    /*border: var(--border);*/
+    margin: 0%;
+    font-size: 1rem;
+    padding-left: 5px;
+    padding-right: 10px;
+    display:block;
+}
+form.feedback-form>.form-footer>.rating>label{
+    display: inline-block;
+    background-color: rgba(57, 56, 56, 0.087);
+    text-align: center;
+    color: var(--gray-color);
+    box-shadow: var(--box-shadow);
+    padding-top: 4px;
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border-radius: 50px;
+}
+form.feedback-form>.form-footer>.rating>input[type="radio"]{
+    display: none;
+}
+
+form.feedback-form>.form-footer>.rating>input[type="radio"]:checked + label{
+    background-color: var(--alt-accent-color);
+    color: white;
+}
+form.feedback-form>.form-footer>input[type="submit"]{
+    padding: 4px 15px;
+    margin-right: 5px;
+    box-shadow: var(--box-shadow);
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    background-color: var(--accent-color);
+    color: white;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border-radius: 50px;
+}
