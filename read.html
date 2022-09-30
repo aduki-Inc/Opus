@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opus - Feeds </title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link href="https://fonts.cdnfonts.com/css/product-sans" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body class="feeds-body">
+    <!--
+    <header id="menu">
+        <div class="site-logo">
+            <h2 class="site-name">Opus</h2>
+        </div>
+        <div class="welcome">
+              <h3 class="welcome-title">Welcome to Opus.</h3>
+              <p class="welcome-message">Hello femar, welcome back!</p>
+            </div>
+            <div class="search">
+              <form action="" method="get">
+                <input type="text" placeholder="Search Opus" />
+                <input class="iconly-Search icli" type="submit" value="Search" />
+                <span class="iconly-Search icli"></span>
+              </form>
+              <div class="create">
+                <span id="create-Btn" class="iconly-Plus icbo"></span>
+                <div class="create-dropdown">
+                    <h2 class="create-title">Contribute</h2>
+                    <a href="" title="Create" id="create"><span>Create Article</span><i class="iconly-Arrow-Right icbo"></i></a>
+                    <a href="" title="Create" id="create"><span>Add a Review</span><i class="iconly-Arrow-Right icbo"></i></a>
+                    <a href="" title="Create" id="create"><span>Add Product</span><i class="iconly-Arrow-Right icbo"></i></a>
+                    <a href="" title="Create" id="create"><span>Edit Your Articles</span><i class="iconly-Arrow-Right icbo"></i></a>
+                    <a href="" title="Create" id="create"><span>Become An Editor</span><i class="iconly-Arrow-Right icbo"></i></a>
+                    <a href="" title="Create" id="create"><span>Help Center</span><i class="iconly-Arrow-Right icbo"></i></a>
+                </div>
+              </div>
+        </div>
+    </header>
+-->
+    <main class="read">
+        <button type="button" class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
+        <div class="dashboard-sidebar">
+            <div class="logo-container">
+                <div class="site-logo">
+                  <img src="img/favi.png" alt="Logo" />
+                </div>
+            </div>
+            <div class="sidebar-nav">
+              <div class="content-nav">
+                <ul class="linked-list content-list">
+                  <li class="content-link">
+                    <a class="link data-active" href=" {% url 'dashboard' %}">
+                        <span id="select"></span>
+                      <span class="iconly-Home icli"></span>
+                      <span class="link-text">Home</span>
+                    </a>
+                  </li>
+                  <li class="content-link">
+                    <a class="link" href=" {% url 'create_post' %}">
+                        <span id="select"></span>
+                      <span class="iconly-Plus icli"></span>
+                      <span class="link-text">Create</span>
+                    </a>
+                  </li>
+                  <li class="content-link">
+                    <a class="link" href="{% url 'user_issue_list' %}">
+                        <span id="select"></span>
+                      <span class="iconly-Search icli"></span>
+                      <span class="link-text">Search</span>
+                    </a>
+                  </li>
+                  <li class="content-link">
+                    <a class="link " href="{% url 'user_product_list' %}">
+                        <span id="select"></span>
+                      <span class="iconly-Bag-2 icli"></span>
+                      <span class="link-text">Products</span>
+                    </a>
+                  </li>
+                  <li class="content-link">
+                    <a class="link " href="{% url 'user_product_list' %}">
+                        <span id="select"></span>
+                      <span class="iconly-Message icli"></span>
+                      <span class="link-text">Newsletters</span>
+                    </a>
+                  </li>
+                  <li class="content-link">
+                    <a class="link" href="#">
+                        <span id="select"></span>
+                      <span class="iconly-Discovery icli"></span>
+                      <span class="link-text">Explore</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="hr"></div>
+              <div class="settings-nav">
+                <ul class="linked-list settings-list">
+                  <li class="content-link">
+                    <a class="link " href=" {% url 'profile' username=user.username %}">
+                        <span id="select"></span>
+                      <span class="iconly-Profile icli"></span>
+                      <span class="link-text">Profile</span>
+                    </a>
+                  </li>
+                  <li class="content-link">
+                    <a class="link " href="#">
+                        <span id="select"></span>
+                      <span class="iconly-Bookmark icli"></span>
+                      <span class="link-text">My List</span>
+                    </a>
+                  </li>
+                  <li class="content-link">
+                    <a class="link " href="#">
+                        <span id="select"></span>
+                      <span class="iconly-Info-Circle icli"></span>
+                      <span class="link-text">Themes</span>
+                    </a>
+                  </li>
+                  <li class="content-link">
+                    <a class="link" href="#">
+                        <span id="select"></span>
+                      <span class="iconly-Heart icli"></span>
+                      <span class="link-text">Donate</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        <div class="article-wrapper">
+            <div class="article-info">
+                <div class="information">
+                    <div class="profile-wrapper">
+                        <img src="img/pro.jpg" alt="Profile">
+                    </div>
+                    <div class="art-info">
+                        <a href="#" class="author">Fredrick Ochieng</a>
+                        <div class="time-read">
+                            <span class="posted right"><span class="date">Jul 16</span></span>
+                            <span class="posted"><span class="dot">&#183;</span> 9 min read </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-actions">
+                    <a title="Save" href="">
+                        <span>Save</span>
+                        <i class="iconly-Bookmark icli"></i>
+                    </a>
+                    <a title="Share" href="">
+                        <span>Share</span>
+                        <i class="iconly-Send icli"> </i>
+                    </a>
+                    <a title="Share" href="">
+                        <span>Report</span>
+                        <i class="iconly-Info-Circle icli"> </i>
+                    </a>
+                </div>
+            </div>
+            <div class="summery-content">
+                <h2 class="article-title">
+                    <a href="" title="Article Title" class="article-title-link">This 40-Day Challenge can land you into MAANG!!</a>
+                </h2>
+                <div class="article-summery">
+                    <div id="mobile-image">
+                        <img id="" src="img/pexels-evie-shaffer-4004374.jpg" title="Someone's Image" alt="">
+                    </div>
+                    <p class="summery-text">
+                        We all know coding interview prep feels distressing.
+                        No matter how much you prepare, there’s something you forget to practice.
+                        It’s completely normal to feel this. But how can we overcome our emotions to ensure we...
+                    </p>
+                </div>
+                <div class="article-footer">
+                    <div class="article-tags">
+                        <a href="#" class="tag">Javascript</a>
+                        <a href="#" class="tag">Programming</a>
+                        <a href="#" class="tag">Recent</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar-content">
+            <div class="stats">
+                <h3 class="stats-title">My Stats</h3>
+                <div class="stats-today">
+                  <h4 class="today">Impressions</h4>
+                  <p class="today-stats">
+                    <span class="iconly-Show icbo"></span>403 Views
+                  </p>
+                </div>
+                <div class="stats-month">
+                  <h4 class="month">Engagements</h4>
+                  <p class="month-stats">
+                    <span class="iconly-User2 icbo"></span>47 Comments
+                  </p>
+                </div>
+                <a href=" {% url 'user_post_list' %}" class="go-to-articles"
+                  >See your articles performance
+                  <span class="iconly-Arrow-Right icli"></span>
+                </a>
+              </div>
+            <div class="topics">
+                <h2 class="sidebar-title">Discover Topics</h2>
+                <ul class="topic-list">
+                    <li> <a href="">Technology</a></li>
+                    <li><a href="">Science</a></li>
+                    <li><a href="">Web</a></li>
+                    <li><a href="">5G</a></li>
+                    <li><a href="">Food</a></li>
+                    <li><a href="">Health Care</a></li>
+                    <li><a href="">Metaverse</a></li>
+                    <li><a href="">Business</a></li>
+                    <li><a href="">Web</a></li>
+                    <li><a href="">5G</a></li>
+                    <li><a href="">Food</a></li>
+                    <li><a href="">Health & Fitness</a></li>
+                    <li><a href="">Personal Finance</a></li>
+                    <li><a href="">Self Improvement</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <a href="" class="create-option">
+        <span class="iconly-Edit icli"></span>
+        <span class="text">Create</span>
+    </a>
+    <div class="mobile-footer">
+        <a href="" title="Home" class="mobile-footer-link active">
+            <span class="iconly-Home icli"></span>
+        </a>
+        <a href="" title="Search" class="mobile-footer-link">
+            <span class="iconly-Search icli"></span>
+        </a>
+        <a href="" title="Search" class="mobile-footer-link">
+            <span class="iconly-Message icli"></span>
+        </a>
+        <a href="" title="Products" class="mobile-footer-link">
+            <span class="iconly-Bag-2 icli"></span>
+        </a>
+    </div>
+    <script src="js/dropdown.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/reveal.js"></script>
+</body>
+
+</html>
