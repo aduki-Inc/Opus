@@ -1598,23 +1598,25 @@ main.read>.article-wrapper>.content>.article-footer>.article-tags{
     /*border: var(--border);*/
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
 }
 main.read>.article-wrapper>.content>.article-footer>.article-tags>h3{
     color: var(--gray-color);
 }
 main.read>.article-wrapper>.content>.article-footer>.article-tags>a.tag{
     text-decoration: none;
-    /*border: var(--border);*/
-    font-size: 1.0rem;
+    /*border: var(--border);
+    */font-size: 1.0rem;
     color: var(--gray-color);
-    padding: 5px 15px 5px 15px;
-    background-color: rgba(57, 56, 56, 0.087);
-    /*background-color: var(--alt-accent-color);*/
+    padding: 5px;
+   /* background-color: rgba(57, 56, 56, 0.087);*/
+    /*background-color: var(--alt-accent-color);
+    */
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
+    -webkit-border-radius: 50px;
     border-radius: 50px;
 }
 main.read>.article-wrapper>.content>.article-footer>.article-tags>a.tag:hover{
