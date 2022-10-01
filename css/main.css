@@ -1856,5 +1856,5 @@ main.read>.comments-wrapper>.comments>.user-comment>.likes>.likes-icon-count{
 main.read>.comments-wrapper>.comments>.user-comment>.likes>.likes-icon-count>.icli{
     font-size: 19px;
     display: inline-block;
-    margin-top: 5px;
+    margin-top: 3px;
 }
