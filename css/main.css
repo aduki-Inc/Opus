@@ -1609,9 +1609,8 @@ main.read>.article-wrapper>.content>.article-footer>.article-tags>a.tag{
     */font-size: 1.0rem;
     color: var(--gray-color);
     padding: 5px;
-   /* background-color: rgba(57, 56, 56, 0.087);*/
-    /*background-color: var(--alt-accent-color);
-    */
+    /* background-color: rgba(57, 56, 56, 0.087);
+    background-color: var(--alt-accent-color);*/
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
@@ -1633,9 +1632,12 @@ main.read>.comments-wrapper{
     flex-flow: column;
     gap: 30px;
 }
+main.read>.comments-wrapper>.comments-head{
+    /*border: var(--border);*/
+    z-index: 5;
+}
 main.read>.comments-wrapper>.comments-head>.title{
     display: flex;
-    /*border: var(--border);*/
     align-items: center;
     gap: 10px;
 }
@@ -1728,4 +1730,127 @@ main.read>.comments-wrapper>.create-comment>button{
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
     border-radius: 50px;
+}
+/*comment*/
+main.read>.comments-wrapper>.comments{
+    /*border: var(--border);*/
+    padding: 0px;
+    display: flex;
+    flex-flow: column;
+    gap: 30px;
+}
+main.read>.comments-wrapper>.comments>.user-comment{
+    display:grid;
+    grid-template-columns: 40px 1fr;
+    column-gap: 8px;
+    row-gap: 10px;
+}
+main.read>.comments-wrapper>.comments>.user-comment>.profile{
+    width: 35px;
+    height: 35px;
+    margin-top: 2px;
+}
+main.read>.comments-wrapper>.comments>.user-comment>.profile>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border-radius: 50px
+}
+main.read>.comments-wrapper>.comments>.user-comment>.content{
+   /* border: var(--border);*/
+   background-color: rgba(106, 106, 106, 0.087);
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    padding: 10px 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+}
+main.read>.comments-wrapper>.comments>.user-comment>.content>.content-head{
+   /* border: var(--border);*/
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+main.read>.comments-wrapper>.comments>.user-comment>.content>.content-head>.author{
+    text-decoration: none;
+    color: #000000;
+}
+main.read>.comments-wrapper>.comments>.user-comment>.content>.content-head>.author:hover{
+    color: var(--accent-color);
+}
+main.read>.comments-wrapper>.comments>.user-comment>.content>.content-head>.time-read{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+    color: var(--gray-color);
+    font-size: 0.9rem;
+}
+main.read>.comments-wrapper>.comments>.user-comment>.content>.content-head>.time-read>.posted>.dot{
+    /*border: var(--border);*/
+    display: inline-block;
+    margin-top: 3px;
+}
+main.read>.comments-wrapper>.comments>.user-comment>.content>.content-head>.time-read>.posted{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+main.read>.comments-wrapper>.comments>.user-comment>.content>.content-text{
+    /*border: var(--border);*/
+    margin: 0%;
+}
+main.read>.comments-wrapper>.comments>.user-comment>.content>.content-text>*{
+    margin: 0%;
+    color: var(--article-title-color);
+}
+main.read>.comments-wrapper>.comments>.user-comment>.likes{
+    grid-column: 2/3;
+    padding: 0px 15px 10px 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+main.read>.comments-wrapper>.comments>.user-comment>.likes>.like{
+    text-decoration: none;
+    font-size: 1.0rem;
+    cursor: pointer;
+   /* color: var(--gray-color);*/
+    color: var(--article-title-color);
+    padding: 4px 13px;
+   /* background-color: var(--accent-color);*/
+    /*background-color: var(--alt-accent-color);*/
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+
+main.read>.comments-wrapper>.comments>.user-comment>.likes>.like:hover{
+    color: var(--accent-color);
+}
+main.read>.comments-wrapper>.comments>.user-comment>.likes>.likes-icon-count{
+    /*border: var(--border);*/
+    color: var(--accent-color);
+    font-size: 1.0rem;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+main.read>.comments-wrapper>.comments>.user-comment>.likes>.likes-icon-count>.icli{
+    font-size: 19px;
+    display: inline-block;
+    margin-top: 5px;
 }
