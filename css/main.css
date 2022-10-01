@@ -1765,7 +1765,7 @@ main.read>.comments-wrapper>.comments>.user-comment>.profile>img{
 }
 main.read>.comments-wrapper>.comments>.user-comment>.content{
    /* border: var(--border);*/
-    background-color: rgba(106, 106, 106, 0.053);
+    background-color: rgba(106, 106, 106, 0.147);
     box-shadow: 0rem 0.5rem 1rem #748f740a;
     display: flex;
     flex-flow: column;
