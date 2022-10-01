@@ -22,6 +22,9 @@ main.feeds{
     GLOBAL TO OTHER ARTICLES
 
 */
+#site-title{
+    display: none;
+}
 .mobile-footer{
     display: none;
 }
@@ -1762,7 +1765,8 @@ main.read>.comments-wrapper>.comments>.user-comment>.profile>img{
 }
 main.read>.comments-wrapper>.comments>.user-comment>.content{
    /* border: var(--border);*/
-   background-color: rgba(106, 106, 106, 0.087);
+    background-color: rgba(106, 106, 106, 0.053);
+    box-shadow: 0rem 0.5rem 1rem #748f740a;
     display: flex;
     flex-flow: column;
     gap: 10px;
