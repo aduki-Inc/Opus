@@ -1585,6 +1585,17 @@
        /* border: var(--border);*/
         padding: 0px 20px 0px 10px;
     }
+    main.read>.comments-wrapper>.comments>.user-comment>.content{
+        /* border: var(--border);*/
+         background-color: rgba(106, 106, 106, 0.132);
+         box-shadow: 0.5rem 0.5rem 0.8rem #748f7412;
+         padding: 10px 15px;
+         -webkit-border-radius: 15px;
+         -moz-border-radius: 15px;
+         -ms-border-radius: 15px;
+         -o-border-radius: 15px;
+         border-radius: 15px;
+     }
     main.read>.comments-wrapper>.comments>.user-comment>.content>.content-head>.author{
         color: var(--accent-color);
     }
