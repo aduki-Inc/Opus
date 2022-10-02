@@ -1158,6 +1158,7 @@ main.newsletters{
     /*border: var(--border);*/
     margin-bottom: 50px;
 }
+
 main.newsletters>.feeds-header{
     grid-column: 2/4;
 }
