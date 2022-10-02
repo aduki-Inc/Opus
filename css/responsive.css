@@ -1569,7 +1569,7 @@
     gap: 8px;
     }
     main.read>.comments-wrapper>.comments-head>.comments-filter>a{
-    padding: 4px 10px 4px 10px;
+    padding: 4px 12px 4px 12px;
     display: flex;
     font-size: 0.93rem;
     align-items: center;
@@ -1587,7 +1587,7 @@
     }
     main.read>.comments-wrapper>.comments>.user-comment>.content{
         /* border: var(--border);*/
-         background-color: rgba(106, 106, 106, 0.132);
+         background-color: rgba(106, 106, 106, 0.098);
          box-shadow: 0.5rem 0.5rem 0.8rem #748f7412;
          padding: 10px 15px;
          -webkit-border-radius: 15px;
@@ -1602,7 +1602,7 @@
     main.read>.comments-wrapper>.comments>.user-comment>.profile{
         width: 35px;
         height: 35px;
-        margin-top: 10px;
+        margin-top: 5px;
     }
     main.read>.comments-wrapper>.create-comment{
         border: none;
