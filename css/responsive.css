@@ -1559,7 +1559,7 @@
     }
     main.read>.comments-wrapper>.comments-head>.title>div>.num{
         color:var(--gray-color);
-        font-size: 0.9rem;
+        font-size: 0.93rem;
         margin-top: 2px;
     }
     main.read>.comments-wrapper>.comments-head>.comments-filter{
@@ -1569,9 +1569,9 @@
     gap: 8px;
     }
     main.read>.comments-wrapper>.comments-head>.comments-filter>a{
-    padding: 3px 10px 3px 10px;
+    padding: 4px 10px 4px 10px;
     display: flex;
-    font-size: 0.9rem;
+    font-size: 0.93rem;
     align-items: center;
     gap: 0px;
 }
