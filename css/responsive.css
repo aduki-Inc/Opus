@@ -1545,13 +1545,13 @@
         margin: 0%;
     }
     main.read>.comments-wrapper>.comments-head>.title>h2{
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
     main.read>.comments-wrapper>.comments-head>.title>div{
         display: flex;
         flex-flow: row;
         flex-wrap: nowrap;
-        margin-top: 2px;
+        margin-top: 1px;
         /*border: 1px solid navy;*/
     }
     main.read>.comments-wrapper>.comments-head>.title>div>.cover{
@@ -1584,6 +1584,9 @@
     main.read>.comments-wrapper>.comments{
        /* border: var(--border);*/
         padding: 0px 20px 0px 10px;
+    }
+    main.read>.comments-wrapper>.comments>.user-comment>.content>.content-head>.author{
+        color: var(--accent-color);
     }
     main.read>.comments-wrapper>.create-comment{
         border: none;
