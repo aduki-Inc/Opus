@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opus - Feeds </title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link href="https://fonts.cdnfonts.com/css/product-sans" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body class="feeds-body">
+
+    <main class="feeds newsletters">
+        <button type="button" class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
+        <div class="feeds-header">
+            <div class="header-content">
+                <h2 class="site-title">Newsletters</h2>
+                <div class="header-links">
+                    <a href="" title="Feeds" class="header-link active">Feeds</a>
+                    <a href="" title="Popular" class="header-link">Popular</a>
+                    <a href="" title="For Your" class="header-link">Interest</a>
+                    <a href="" title="Recent" class="header-link">Recent</a>
+                    <a href="" title="Topics" class="header-link">Topics</a>
+                </div>
+            </div>
+        </div>
+        <div class="dashboard-sidebar">
+            <div class="logo-container">
+                <div class="site-logo">
+                    <img src="img/favi.png" alt="Logo" />
+                </div>
+            </div>
+            <div class="sidebar-nav">
+                <div class="content-nav">
+                    <ul class="linked-list content-list">
+                        <li class="content-link">
+                            <a class="link" href=" {% url 'dashboard' %}">
+                                <span id="select"></span>
+                                <span class="iconly-Home icli"></span>
+                                <span class="link-text">Home</span>
+                            </a>
+                        </li>
+                        <li class="content-link">
+                            <a class="link" href=" {% url 'create_post' %}">
+                                <span id="select"></span>
+                                <span class="iconly-Plus icli"></span>
+                                <span class="link-text">Create</span>
+                            </a>
+                        </li>
+                        <li class="content-link">
+                            <a class="link" href="{% url 'user_issue_list' %}">
+                                <span id="select"></span>
+                                <span class="iconly-Search icli"></span>
+                                <span class="link-text">Search</span>
+                            </a>
+                        </li>
+                        <li class="content-link">
+                            <a class="link " href="{% url 'user_product_list' %}">
+                                <span id="select"></span>
+                                <span class="iconly-Bag-2 icli"></span>
+                                <span class="link-text">Products</span>
+                            </a>
+                        </li>
+                        <li class="content-link">
+                            <a class="link data-active" href="{% url 'user_product_list' %}">
+                                <span id="select"></span>
+                                <span class="iconly-Message icli"></span>
+                                <span class="link-text">Newsletters</span>
+                            </a>
+                        </li>
+                        <li class="content-link">
+                            <a class="link" href="#">
+                                <span id="select"></span>
+                                <span class="iconly-Discovery icli"></span>
+                                <span class="link-text">Explore</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hr"></div>
+                <div class="settings-nav">
+                    <ul class="linked-list settings-list">
+                        <li class="content-link">
+                            <a class="link " href=" {% url 'profile' username=user.username %}">
+                                <span id="select"></span>
+                                <span class="iconly-Profile icli"></span>
+                                <span class="link-text">Profile</span>
+                            </a>
+                        </li>
+                        <li class="content-link">
+                            <a class="link " href="#">
+                                <span id="select"></span>
+                                <span class="iconly-Bookmark icli"></span>
+                                <span class="link-text">My List</span>
+                            </a>
+                        </li>
+                        <li class="content-link">
+                            <a class="link " href="#">
+                                <span id="select"></span>
+                                <span class="iconly-Info-Circle icli"></span>
+                                <span class="link-text">Themes</span>
+                            </a>
+                        </li>
+                        <li class="content-link">
+                            <a class="link" href="#">
+                                <span id="select"></span>
+                                <span class="iconly-Heart icli"></span>
+                                <span class="link-text">Donate</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="newsletters-feeds feed-contents">
+            <div class="feed-title">
+                <div class="section-title">For you</div>
+                <i class="iconly-Arrow-Right-Circle icli"></i>
+            </div>
+            <div class="newsletter-wrapper">
+                <div class="newsletter-head">
+                    <div class="cover-image">
+                        <img src="img/pexels-uzunov-rostislav-5011647.jpg" alt="Newsletter cover" srcset="">
+                    </div>
+                    <div class="info">
+                        <div class="title">The Daily Upside</div>
+                        <div class="author"> <span class="by">By</span>The Daily Upside</div>
+                        <div class="release">
+                            <span class="published">Published :</span>
+                            <span class="text">Daily & Occasionally</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="description">
+                   <p>Traditional business news can be painfully dry and complex.</p>
+                   <p>The Daily Upside newsletter covers the most important stories in business in a style that’s
+                    engaging, insightful, and fun.</p>
+                   <p>Our daily email brings you the most important and engaging stories in business.</p>
+                </div>
+                <div class="footer">
+                    <div class="footer-info">
+                        <span class="iconly-Heart icli"></span>
+                        <div class="likes">677 Likes</div><a href="" class="topic">Business</a>
+                    </div>
+                    <a href="" class="subscribe">Subscribe</a>
+                </div>
+                <!--<form action="" class="feedback-form" method="post">
+                    <input type="text" name="feedback" id="feedback" placeholder="Leave a feedback">
+                    <div class="form-footer">
+                        <div class="rating">
+                            <div class="rate-title">Rate</div>
+                            <input type="radio" name="rate" id="one" value="one">
+                            <label for="one">1</label>
+                            <input type="radio" name="rate" id="two" value="two">
+                            <label for="two">2</label>
+                            <input type="radio" name="rate" id="three" value="three">
+                            <label for="three">3</label>
+                            <input type="radio" name="rate" id="four" value="four">
+                            <label for="four">4</label>
+                            <input type="radio" name="rate" id="five" value="five">
+                            <label for="five">5</label>
+                        </div>
+                        <input type="submit" value="Send">
+                    </div>
+                </form>-->
+            </div>
+            <div class="newsletter-wrapper">
+                <div class="newsletter-head">
+                    <div class="cover-image">
+                        <img src="img/pexels-uzunov-rostislav-5011647.jpg" alt="Newsletter cover" srcset="">
+                    </div>
+                    <div class="info">
+                        <div class="title">The Daily Upside</div>
+                        <div class="author"> <span class="by">By</span>The Daily Upside</div>
+                        <div class="release">
+                            <span class="published">Published :</span>
+                            <span class="text">Daily & Occasionally</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="description">
+                   <p>Traditional business news can be painfully dry and complex.</p>
+                   <p>The Daily Upside newsletter covers the most important stories in business in a style that’s
+                    engaging, insightful, and fun.</p>
+                   <p>Our daily email brings you the most important and engaging stories in business.</p>
+                </div>
+                <div class="footer">
+                    <div class="footer-info">
+                        <span class="iconly-Heart icli"></span>
+                        <div class="likes">677 Likes</div><a href="" class="topic">Business</a>
+                    </div>
+                    <a href="" class="subscribe">Subscribe</a>
+                </div>
+                <!--<form action="" class="feedback-form" method="post">
+                    <input type="text" name="feedback" id="feedback" placeholder="Leave a feedback">
+                    <div class="form-footer">
+                        <div class="rating">
+                            <div class="rate-title">Rate</div>
+                            <input type="radio" name="rate" id="one" value="one">
+                            <label for="one">1</label>
+                            <input type="radio" name="rate" id="two" value="two">
+                            <label for="two">2</label>
+                            <input type="radio" name="rate" id="three" value="three">
+                            <label for="three">3</label>
+                            <input type="radio" name="rate" id="four" value="four">
+                            <label for="four">4</label>
+                            <input type="radio" name="rate" id="five" value="five">
+                            <label for="five">5</label>
+                        </div>
+                        <input type="submit" value="Send">
+                    </div>
+                </form>-->
+            </div>
+            <div class="newsletter-wrapper">
+                <div class="newsletter-head">
+                    <div class="cover-image">
+                        <img src="img/pexels-uzunov-rostislav-5011647.jpg" alt="Newsletter cover" srcset="">
+                    </div>
+                    <div class="info">
+                        <div class="title">The Daily Upside</div>
+                        <div class="author"> <span class="by">By</span>The Daily Upside</div>
+                        <div class="release">
+                            <span class="published">Published :</span>
+                            <span class="text">Daily & Occasionally</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="description">
+                   <p>Traditional business news can be painfully dry and complex.</p>
+                   <p>The Daily Upside newsletter covers the most important stories in business in a style that’s
+                    engaging, insightful, and fun.</p>
+                   <p>Our daily email brings you the most important and engaging stories in business.</p>
+                </div>
+                <div class="footer">
+                    <div class="footer-info">
+                        <span class="iconly-Heart icli"></span>
+                        <div class="likes">677 Likes</div><a href="" class="topic">Business</a>
+                    </div>
+                    <a href="" class="subscribe">Subscribe</a>
+                </div>
+                <!--<form action="" class="feedback-form" method="post">
+                    <input type="text" name="feedback" id="feedback" placeholder="Leave a feedback">
+                    <div class="form-footer">
+                        <div class="rating">
+                            <div class="rate-title">Rate</div>
+                            <input type="radio" name="rate" id="one" value="one">
+                            <label for="one">1</label>
+                            <input type="radio" name="rate" id="two" value="two">
+                            <label for="two">2</label>
+                            <input type="radio" name="rate" id="three" value="three">
+                            <label for="three">3</label>
+                            <input type="radio" name="rate" id="four" value="four">
+                            <label for="four">4</label>
+                            <input type="radio" name="rate" id="five" value="five">
+                            <label for="five">5</label>
+                        </div>
+                        <input type="submit" value="Send">
+                    </div>
+                </form>-->
+            </div>
+            <div class="newsletter-wrapper">
+                <div class="newsletter-head">
+                    <div class="cover-image">
+                        <img src="img/pexels-uzunov-rostislav-5011647.jpg" alt="Newsletter cover" srcset="">
+                    </div>
+                    <div class="info">
+                        <div class="title">The Daily Upside</div>
+                        <div class="author"> <span class="by">By</span>The Daily Upside</div>
+                        <div class="release">
+                            <span class="published">Published :</span>
+                            <span class="text">Daily & Occasionally</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="description">
+                   <p>Traditional business news can be painfully dry and complex.</p>
+                   <p>The Daily Upside newsletter covers the most important stories in business in a style that’s
+                    engaging, insightful, and fun.</p>
+                   <p>Our daily email brings you the most important and engaging stories in business.</p>
+                </div>
+                <div class="footer">
+                    <div class="footer-info">
+                        <span class="iconly-Heart icli"></span>
+                        <div class="likes">677 Likes</div><a href="" class="topic">Business</a>
+                    </div>
+                    <a href="" class="subscribe">Subscribe</a>
+                </div>
+                <!--<form action="" class="feedback-form" method="post">
+                    <input type="text" name="feedback" id="feedback" placeholder="Leave a feedback">
+                    <div class="form-footer">
+                        <div class="rating">
+                            <div class="rate-title">Rate</div>
+                            <input type="radio" name="rate" id="one" value="one">
+                            <label for="one">1</label>
+                            <input type="radio" name="rate" id="two" value="two">
+                            <label for="two">2</label>
+                            <input type="radio" name="rate" id="three" value="three">
+                            <label for="three">3</label>
+                            <input type="radio" name="rate" id="four" value="four">
+                            <label for="four">4</label>
+                            <input type="radio" name="rate" id="five" value="five">
+                            <label for="five">5</label>
+                        </div>
+                        <input type="submit" value="Send">
+                    </div>
+                </form>-->
+            </div>
+            <div class="newsletter-wrapper">
+                <div class="newsletter-head">
+                    <div class="cover-image">
+                        <img src="img/pexels-uzunov-rostislav-5011647.jpg" alt="Newsletter cover" srcset="">
+                    </div>
+                    <div class="info">
+                        <div class="title">The Daily Upside</div>
+                        <div class="author"> <span class="by">By</span>The Daily Upside</div>
+                        <div class="release">
+                            <span class="published">Published :</span>
+                            <span class="text">Daily & Occasionally</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="description">
+                   <p>Traditional business news can be painfully dry and complex.</p>
+                   <p>The Daily Upside newsletter covers the most important stories in business in a style that’s
+                    engaging, insightful, and fun.</p>
+                   <p>Our daily email brings you the most important and engaging stories in business.</p>
+                </div>
+                <div class="footer">
+                    <div class="footer-info">
+                        <span class="iconly-Heart icli"></span>
+                        <div class="likes">677 Likes</div><a href="" class="topic">Business</a>
+                    </div>
+                    <a href="" class="subscribe">Subscribe</a>
+                </div>
+                <!--<form action="" class="feedback-form" method="post">
+                    <input type="text" name="feedback" id="feedback" placeholder="Leave a feedback">
+                    <div class="form-footer">
+                        <div class="rating">
+                            <div class="rate-title">Rate</div>
+                            <input type="radio" name="rate" id="one" value="one">
+                            <label for="one">1</label>
+                            <input type="radio" name="rate" id="two" value="two">
+                            <label for="two">2</label>
+                            <input type="radio" name="rate" id="three" value="three">
+                            <label for="three">3</label>
+                            <input type="radio" name="rate" id="four" value="four">
+                            <label for="four">4</label>
+                            <input type="radio" name="rate" id="five" value="five">
+                            <label for="five">5</label>
+                        </div>
+                        <input type="submit" value="Send">
+                    </div>
+                </form>-->
+            </div>
+            <div class="newsletter-wrapper">
+                <div class="newsletter-head">
+                    <div class="cover-image">
+                        <img src="img/pexels-uzunov-rostislav-5011647.jpg" alt="Newsletter cover" srcset="">
+                    </div>
+                    <div class="info">
+                        <div class="title">The Daily Upside</div>
+                        <div class="author"> <span class="by">By</span>The Daily Upside</div>
+                        <div class="release">
+                            <span class="published">Published :</span>
+                            <span class="text">Daily & Occasionally</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="description">
+                   <p>Traditional business news can be painfully dry and complex.</p>
+                   <p>The Daily Upside newsletter covers the most important stories in business in a style that’s
+                    engaging, insightful, and fun.</p>
+                   <p>Our daily email brings you the most important and engaging stories in business.</p>
+                </div>
+                <div class="footer">
+                    <div class="footer-info">
+                        <span class="iconly-Heart icli"></span>
+                        <div class="likes">677 Likes</div><a href="" class="topic">Business</a>
+                    </div>
+                    <a href="" class="subscribe">Subscribe</a>
+                </div>
+                <!--<form action="" class="feedback-form" method="post">
+                    <input type="text" name="feedback" id="feedback" placeholder="Leave a feedback">
+                    <div class="form-footer">
+                        <div class="rating">
+                            <div class="rate-title">Rate</div>
+                            <input type="radio" name="rate" id="one" value="one">
+                            <label for="one">1</label>
+                            <input type="radio" name="rate" id="two" value="two">
+                            <label for="two">2</label>
+                            <input type="radio" name="rate" id="three" value="three">
+                            <label for="three">3</label>
+                            <input type="radio" name="rate" id="four" value="four">
+                            <label for="four">4</label>
+                            <input type="radio" name="rate" id="five" value="five">
+                            <label for="five">5</label>
+                        </div>
+                        <input type="submit" value="Send">
+                    </div>
+                </form>-->
+            </div>
+        </div>
+    </main>
+    <div class="mobile-footer">
+        <a href="" title="Home" class="mobile-footer-link">
+            <span class="iconly-Home icli"></span>
+            <span id="active"></span>
+        </a>
+        <a href="" title="Search" class="mobile-footer-link">
+            <span class="iconly-Search icli"></span>
+            <span id="active"></span>
+        </a>
+        <a href="" title="Search" class="mobile-footer-link active">
+            <span class="iconly-Message icli"></span>
+            <span id="active"></span>
+        </a>
+        <a href="" title="Products" class="mobile-footer-link">
+            <span class="iconly-Bag-2 icli"></span>
+            <span id="active"></span>
+        </a>
+        <!--
+        <a href="" title="Create" class="mobile-footer-link">
+            <span class="iconly-Edit icli"></span>
+            <span id="active"></span>
+        </a>
+        -->
+    </div>
+    <script src="js/dropdown.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/reveal.js"></script>
+</body>
+
+</html>

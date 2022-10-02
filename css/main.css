@@ -1153,10 +1153,12 @@ main.profile>.profile-info>.contact-info>.info-container{
 }
 
 /*Newsletters*/
-/*
+
 main.newsletters{
-    border: var(--border);
-}*/
+    /*border: var(--border);*/
+    margin-bottom: 50px;
+}
+
 main.newsletters>.feeds-header{
     grid-column: 2/4;
 }
