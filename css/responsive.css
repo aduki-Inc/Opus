@@ -1588,6 +1588,11 @@
     main.read>.comments-wrapper>.comments>.user-comment>.content>.content-head>.author{
         color: var(--accent-color);
     }
+    main.read>.comments-wrapper>.comments>.user-comment>.profile{
+        width: 35px;
+        height: 35px;
+        margin-top: 10px;
+    }
     main.read>.comments-wrapper>.create-comment{
         border: none;
         border-top: var(--border);
