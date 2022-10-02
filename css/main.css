@@ -1819,13 +1819,12 @@ main.read>.comments-wrapper>.comments>.user-comment>.content>.content-text>*{
     color: var(--article-title-color);
 }
 main.read>.comments-wrapper>.comments>.user-comment>.content>.likes{
-    padding: 10px 15px 0px 10px;
+    padding: 10px 15px 0px 0px;
     margin-top: 5px;
     border-top: var(--border);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 5px;
 }
 main.read>.comments-wrapper>.comments>.user-comment>.content>.likes>.like{
     text-decoration: none;
@@ -1833,7 +1832,7 @@ main.read>.comments-wrapper>.comments>.user-comment>.content>.likes>.like{
     cursor: pointer;
    /* color: var(--gray-color);*/
     color: var(--article-title-color);
-    padding: 4px 13px;
+    padding: 4px 8px;
    /* background-color: var(--accent-color);*/
     /*background-color: var(--alt-accent-color);*/
     -webkit-border-radius:50px;
