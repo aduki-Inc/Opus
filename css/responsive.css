@@ -1635,6 +1635,23 @@
     .topics{
         margin-bottom: 10px;
     }
+    main.feeds>.feed-contents>.feed-title{
+        padding:15px 0px 10px 15px ;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+    }
+    main.feeds>.feed-contents>.feed-title>.section-title{
+       width: 50%;
+       text-align: start;
+   }
+   main.feeds>.feed-contents>.feed-title>.icli{
+    text-align: end;
+    width: 50%;
+    margin-right: 10px;
+    font-weight: bold;
+   }
     .mobile-footer{
         box-sizing: border-box;
         background-color: var(--background-color);

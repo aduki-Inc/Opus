@@ -544,7 +544,7 @@ main.feeds>.feed-contents>.feed-title{
     gap: 2px;
 }
 main.feeds>.feed-contents>.feed-title>.section-title{
-  /*  border: 1px solid gray;*/
+    /*border: 1px solid gray;*/
     margin: 0%;
     width: max-content;
     font-weight: 500;
@@ -553,6 +553,7 @@ main.feeds>.feed-contents>.feed-title>.section-title{
 }
 main.feeds>.feed-contents>.feed-title>.icli{
     /*border: 1px solid gray;*/
+    display: inline-block;
     font-size: 20px;
     margin-top: 10px;
     color: var(--alt-accent-color);
