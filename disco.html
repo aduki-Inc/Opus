@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opus - Feeds </title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link href="https://fonts.cdnfonts.com/css/product-sans" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body class="feeds-body">
+    <main class="feeds">
+        <button type="button" class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
+        <div class="feeds-header">
+            <div class="header-content">
+                <h2 class="site-title">Articles</h2>
+                <div class="header-links">
+                    <a href="" title="Feed" class="header-link active">Feeds</a>
+                    <a href="" title="For Your" class="header-link">Interest</a>
+                    <a href="" title="Trending" class="header-link">Trending</a>
+                    <a href="" title="Recent" class="header-link">Recent</a>
+                    <a href="" title="Topics" class="header-link">Topics</a>
+                </div>
+            </div>
+        </div>
+        <div class="dashboard-sidebar">
+            <div class="logo-container">
+                <div class="site-logo">
+                  <img src="img/favi.png" alt="Logo" />
+                </div>
+            </div>
+            <div class="sidebar-nav">
+              <div class="content-nav">
+                <ul class="linked-list content-list">
+                  <li class="content-link">
+                    <a class="link" href=" {% url 'dashboard' %}">
+                        <span id="select"></span>
+                      <span class="iconly-Home icli"></span>
+                      <span class="link-text">Home</span>
+                    </a>
+                  </li>
+                  <li class="content-link">
+                    <a class="link" href=" {% url 'create_post' %}">
+                        <span id="select"></span>
+                      <span class="iconly-Plus icli"></span>
+                      <span class="link-text">Create</span>
+                    </a>
+                  </li>
+                  <li class="content-link">
+                    <a class="link" href="{% url 'user_issue_list' %}">
+                        <span id="select"></span>
+                      <span class="iconly-Search icli"></span>
+                      <span class="link-text">Search</span>
+                    </a>
+                  </li>
+                  <li class="content-link">
+                    <a class="link " href="{% url 'user_product_list' %}">
+                        <span id="select"></span>
+                      <span class="iconly-Bag-2 icli"></span>
+                      <span class="link-text">Products</span>
+                    </a>
+                  </li>
+                  <li class="content-link">
+                    <a class="link " href="{% url 'user_product_list' %}">
+                        <span id="select"></span>
+                      <span class="iconly-Message icli"></span>
+                      <span class="link-text">Newsletters</span>
+                    </a>
+                  </li>
+                  <li class="content-link">
+                    <a class="link data-active" href="#">
+                        <span id="select"></span>
+                      <span class="iconly-Discovery icli"></span>
+                      <span class="link-text">Explore</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="hr"></div>
+              <div class="settings-nav">
+                <ul class="linked-list settings-list">
+                  <li class="content-link">
+                    <a class="link " href=" {% url 'profile' username=user.username %}">
+                        <span id="select"></span>
+                      <span class="iconly-Profile icli"></span>
+                      <span class="link-text">Profile</span>
+                    </a>
+                  </li>
+                  <li class="content-link">
+                    <a class="link " href="#">
+                        <span id="select"></span>
+                      <span class="iconly-Bookmark icli"></span>
+                      <span class="link-text">My List</span>
+                    </a>
+                  </li>
+                  <li class="content-link">
+                    <a class="link " href="#">
+                        <span id="select"></span>
+                      <span class="iconly-Info-Circle icli"></span>
+                      <span class="link-text">Themes</span>
+                    </a>
+                  </li>
+                  <li class="content-link">
+                    <a class="link" href="#">
+                        <span id="select"></span>
+                      <span class="iconly-Heart icli"></span>
+                      <span class="link-text">Donate</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        <div class="discover-topics feed-contents">
+            <div class="feed-title">
+                <div class="section-title">Discover</div>
+                <i class="iconly-Arrow-Right-Circle icli"></i>
+            </div>
+            <div class="topic-wrapper">
+                <div class="topic-title">
+                    Technology
+                </div>
+                <div class="topic-footer">
+                    <a href="" class="topic-link">Explore</a>
+                    <div class="count">59 Articles</div>
+                </div>
+            </div>
+            <div class="topic-wrapper">
+                <div class="topic-title">
+                    Technology
+                </div>
+                <div class="topic-footer">
+                    <a href="" class="topic-link">Explore</a>
+                    <div class="count">59 Articles</div>
+                </div>
+            </div>
+            <div class="topic-wrapper">
+                <div class="topic-title">
+                    Technology
+                </div>
+                <div class="topic-footer">
+                    <a href="" class="topic-link">Explore</a>
+                    <div class="count">59 Articles</div>
+                </div>
+            </div>
+            <div class="topic-wrapper">
+                <div class="topic-title">
+                    Technology
+                </div>
+                <div class="topic-footer">
+                    <a href="" class="topic-link">Explore</a>
+                    <div class="count">59 Articles</div>
+                </div>
+            </div>
+            <div class="topic-wrapper">
+                <div class="topic-title">
+                    Technology
+                </div>
+                <div class="topic-footer">
+                    <a href="" class="topic-link">Explore</a>
+                    <div class="count">59 Articles</div>
+                </div>
+            </div>
+            <div class="topic-wrapper">
+                <div class="topic-title">
+                    Technology
+                </div>
+                <div class="topic-footer">
+                    <a href="" class="topic-link">Explore</a>
+                    <div class="count">59 Articles</div>
+                </div>
+            </div>
+            <div class="topic-wrapper">
+                <div class="topic-title">
+                    Technology
+                </div>
+                <div class="topic-footer">
+                    <a href="" class="topic-link">Explore</a>
+                    <div class="count">59 Articles</div>
+                </div>
+            </div>
+            <div class="topic-wrapper">
+                <div class="topic-title">
+                    Technology
+                </div>
+                <div class="topic-footer">
+                    <a href="" class="topic-link">Explore</a>
+                    <div class="count">59 Articles</div>
+                </div>
+            </div><div class="topic-wrapper">
+                <div class="topic-title">
+                    Technology
+                </div>
+                <div class="topic-footer">
+                    <a href="" class="topic-link">Explore</a>
+                    <div class="count">59 Articles</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <a href="" class="create-option">
+        <span class="iconly-Edit icli"></span>
+        <span class="text">Create</span>
+    </a>
+    <div class="mobile-footer">
+        <a href="" title="Home" class="mobile-footer-link active">
+            <span class="iconly-Home icli"></span>
+        </a>
+        <a href="" title="Search" class="mobile-footer-link">
+            <span class="iconly-Search icli"></span>
+        </a>
+        <a href="" title="Search" class="mobile-footer-link">
+            <span class="iconly-Message icli"></span>
+        </a>
+        <a href="" title="Products" class="mobile-footer-link">
+            <span class="iconly-Bag-2 icli"></span>
+        </a>
+    </div>
+    <script src="js/dropdown.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/reveal.js"></script>
+</body>
+
+</html>

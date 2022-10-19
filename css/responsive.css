@@ -370,6 +370,7 @@
         margin: 0%;
         /*border: var(--border)*/
     }
+
     .newsletter-wrapper>.newsletter-head{
         /* border: 1px solid var(--border-color);*/
          display: grid;
@@ -384,6 +385,22 @@
          flex-flow: column;
          gap: 5px;
      }
+     main.feeds>.discover-topics {
+        /*border: 1px solid rgb(0, 255, 157);*/
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+    }
+    main.feeds>.discover-topics>.feed-title {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    main.feeds>.discover-topics>.topic-wrapper>.topic-title{
+        /*border: 1px solid rgba(18, 18, 18, 0.198);*/
+        height: 120px;
+        text-align: center;
+        padding-top: 50px;
+        font-size: 1.7rem;
+    }
 }
 @media screen and (max-width: 750px) {
     html,body{
@@ -649,6 +666,22 @@
         font-size: 1.5rem;
         color: var(--accent-color);
      }
+     main.feeds>.discover-topics {
+        /*border: 1px solid rgb(0, 255, 157);*/
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+    }
+    main.feeds>.discover-topics>.feed-title {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    main.feeds>.discover-topics>.topic-wrapper>.topic-title{
+        /*border: 1px solid rgba(18, 18, 18, 0.198);*/
+        height: 120px;
+        text-align: center;
+        padding-top: 40px;
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -1048,9 +1081,8 @@
         margin: 0%;
         margin-bottom: 60px;
         padding: 0%;
-        display: grid;
-        grid-template-columns: 1fr;
-        row-gap: 20px;
+        display: flex;
+        flex-flow: column;
     }
     main.newsletters>.newsletters-feeds{
        /*border: 1px solid rgb(0, 255, 157);*/
@@ -1725,6 +1757,31 @@
         font-size: 30px;
         margin-top: 0px;
         font-weight: 600;
+    }
+    main.feeds>.discover-topics {
+        /* border: 1px solid rgb(0, 255, 157);*/
+         margin: 0%;
+         display: flex;
+         flex-flow: column;
+         gap: 20px;
+     }
+     main.feeds>.discover-topics>.feed-title {
+         grid-column: 1/2;
+         grid-row: 1/2;
+     }
+     main.feeds>.discover-topics>.topic-wrapper{
+         grid-column: 1/2;
+         margin: 0% 15px;
+     }
+     main.feeds>.discover-topics>.topic-wrapper>.topic-title{
+         /*border: 1px solid rgba(18, 18, 18, 0.198);*/
+         height: 150px;
+         text-align: center;
+         padding-top: 50px;
+         font-size: 1.5rem;
+     }
+    main.feeds>.discover-topics>.topic-wrapper>.topic-footer>a{
+        cursor: default;
     }
 
 }
