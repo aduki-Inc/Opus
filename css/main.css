@@ -2300,12 +2300,12 @@ main.feeds>.discover-topics>.topic-wrapper>.topic-footer>.count {
 }
 
 .popup .icons a:nth-child(3) {
-    color: #e1306c;
-    border-color: #f5bccf;
+    color: #30cce1;
+    border-color:  #30cce1;
 }
 
 .popup .icons a:nth-child(3):hover {
-    background: #e1306c;
+    background: #30cce1;
 }
 
 .popup .icons a:nth-child(4) {
