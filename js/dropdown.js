@@ -144,3 +144,30 @@ viewBtns.forEach((viewBtn,index)=>{
 
 })
 
+
+// Notification-actions
+actionBtns = document.querySelectorAll('.three-dots')
+actionModals = document.querySelectorAll('.more-options')
+if (actionBtns != null && actionModals != null) {
+    actionBtns.forEach((actionBtn,index)=>{
+        actionBtn.addEventListener('click', (e) => {
+            modal = actionModals[index]
+            if (modal.style.display === 'flex') {
+                modal.style.setProperty('display', 'none')
+                actionBtn.style.backgroundColor = 'transparent'
+            }
+            else {
+                try{
+                    actionModals.forEach((actionModal,index)=>{
+                        actionBtns[index].style.backgroundColor = 'transparent'
+                        actionModal.style.display = 'none'
+                    })
+                }
+                finally{
+                    modal.style.setProperty('display', 'flex')
+                    actionBtn.style.backgroundColor = 'rgba(174, 173, 173, 0.149)'
+                }
+            }
+        })
+    })
+}
