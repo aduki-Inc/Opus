@@ -444,7 +444,8 @@ main.search>.search-header{
   align-items: flex-end;
   gap: 20px;
   flex-flow: row;
-  overflow-x: scroll;
+  overflow-x: hidden;
+  width: 100%;
   overflow-y: hidden;
   white-space: nowrap;
 }

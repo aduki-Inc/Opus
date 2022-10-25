@@ -21,9 +21,12 @@ body{
         --body-background-color: rgb(40, 40, 41);
 
         --accent-color: rgb(255, 136, 0);
-        --section-title-color: rgb(250, 197, 136);
-        --article-title-color:rgb(250, 226, 204);
+        --alt-accent-color: #08b86f;
+        --gray-color:#f5f3f3;
+        --section-title-color: rgb(255, 255, 255);
+        --article-title-color:rgb(246, 245, 243);
 
+        --hover-link-color:rgb(255, 136, 0);
         --bg-color: #000;
         --text: rgba(121, 250, 250, 0.904);
         --title-one-color:#fff;
@@ -45,7 +48,9 @@ body{
 
         --shading:rgb(15, 15, 15);
 
-        --background-color: #0f0f1a;
+        --background-color: #0e0e0e;
+        --body-background-color: #0f0f1a;
+        --border: 1px solid #ffffff70;
         --ba-color:#0f0f1a;
         --bg-color-one: #0e0e0e;
 
