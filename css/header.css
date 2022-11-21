@@ -702,6 +702,7 @@ main.search>.dashboard-sidebar{
 .linked-list>.content-link .data-active{
    color:   #08b86e;
    background-color: rgba(57, 56, 56, 0.087);
+   box-shadow: 2px 8px 50px #00000009;
    -webkit-border-radius: 5px;
    -moz-border-radius: 5px;
    -ms-border-radius: 5px;
